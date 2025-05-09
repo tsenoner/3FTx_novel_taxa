@@ -1,0 +1,2 @@
+data/interm/exabayes/merged_aligned_auto.fasta filter=lfs diff=lfs merge=lfs -text
+data/interm/exabayes/merged_aligned_auto.phy filter=lfs diff=lfs merge=lfs -text
