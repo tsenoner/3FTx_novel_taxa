@@ -1,0 +1,152 @@
+{
+  "primary_interpro_short_name": {
+    "colors": {
+      "LY6G5B": "rgb(31, 119, 180)",
+      "LY6_UPA_recep-like": "rgb(255, 127, 14)",
+      "Snake_toxin-like_sf": "rgb(44, 160, 44)",
+      "LY6H/LY6L_nAChR_modulators": "rgb(214, 39, 40)",
+      "Unknown": "rgb(127, 127, 127)",
+      "LY6G6d/LY6G6f": "rgb(148, 103, 189)",
+      "Ly6D": "rgb(140, 86, 75)",
+      "LY6G6C": "rgb(227, 119, 194)",
+      "LY6G5C": "rgb(188, 189, 34)",
+      "QVR-like": "rgb(23, 190, 207)",
+      "Toxin/TOLIP": "rgb(152, 223, 138)",
+      "Snake_3FTx": "rgb(174, 199, 232)",
+      "LYPD6-like": "rgb(255, 187, 120)"
+    },
+    "shapes": {
+      "LY6G5B": "circle",
+      "LY6_UPA_recep-like": "square",
+      "Snake_toxin-like_sf": "diamond",
+      "LY6H/LY6L_nAChR_modulators": "cross",
+      "Unknown": "circle-open",
+      "LY6G6d/LY6G6f": "x",
+      "Ly6D": "star",
+      "LY6G6C": "pentagon",
+      "LY6G5C": "hexagon",
+      "QVR-like": "bowtie",
+      "Toxin/TOLIP": "hourglass",
+      "Snake_3FTx": "octagon",
+      "LYPD6-like": "hexagon2"
+    }
+  },
+  "is_helix": {
+    "colors": {
+      "True": "rgb(44, 160, 44)",
+      "False": "rgb(210, 210, 210)"
+    },
+    "shapes": {
+      "True": "square",
+      "False": "circle-open"
+    }
+  },
+  "is_transmembrane": {
+    "colors": {
+      "True": "rgb(148, 103, 189)",
+      "False": "rgb(210, 210, 210)"
+    },
+    "shapes": {
+      "True": "diamond",
+      "False": "circle-open"
+    }
+  },
+  "has_signal": {
+    "colors": {
+      "True": "rgb(31, 119, 180)",
+      "False": "rgb(210, 210, 210)"
+    },
+    "shapes": {
+      "True": "star",
+      "False": "circle-open"
+    }
+  },
+  "primary_interpro_id": {
+    "colors": {
+      "IPR045860": "rgb(44, 160, 44)",
+      "IPR038773": "rgb(31, 119, 180)",
+      "<NA>": "rgb(127, 127, 127)",
+      "IPR035076": "rgb(152, 223, 138)",
+      "IPR031424": "rgb(23, 190, 207)",
+      "IPR039457": "rgb(255, 187, 120)",
+      "IPR039237": "rgb(227, 119, 194)",
+      "IPR051445": "rgb(214, 39, 40)",
+      "IPR003571": "rgb(174, 199, 232)",
+      "IPR026110": "rgb(188, 189, 34)",
+      "IPR016054": "rgb(255, 127, 14)",
+      "IPR026524": "rgb(148, 103, 189)",
+      "IPR042339": "rgb(140, 86, 75)"
+    },
+    "shapes": {
+      "IPR045860": "diamond",
+      "IPR038773": "circle",
+      "<NA>": "circle-open",
+      "IPR035076": "hourglass",
+      "IPR031424": "bowtie",
+      "IPR039457": "hexagon2",
+      "IPR039237": "pentagon",
+      "IPR051445": "cross",
+      "IPR003571": "octagon",
+      "IPR026110": "hexagon",
+      "IPR016054": "square",
+      "IPR026524": "x",
+      "IPR042339": "star"
+    }
+  },
+  "phylum": {
+    "colors": {
+      "Arthropoda": "rgb(31, 119, 180)",
+      "Platyhelminthes": "rgb(255, 127, 14)",
+      "Bryozoa": "rgb(44, 160, 44)",
+      "Porifera": "rgb(214, 39, 40)",
+      "Tardigrada": "rgb(148, 103, 189)",
+      "Annelida": "rgb(140, 86, 75)",
+      "Mollusca": "rgb(227, 119, 194)",
+      "Brachiopoda": "rgb(127, 127, 127)",
+      "Echinodermata": "rgb(188, 189, 34)",
+      "Cnidaria": "rgb(23, 190, 207)",
+      "Rotifera": "rgb(152, 223, 138)",
+      "Ctenophora": "rgb(174, 199, 232)",
+      "Chordata": "rgb(255, 187, 120)",
+      "Orthonectida": "rgb(255, 152, 150)",
+      "Nematoda": "rgb(196, 156, 148)"
+    },
+    "shapes": {
+      "Arthropoda": "circle",
+      "Platyhelminthes": "square",
+      "Bryozoa": "diamond",
+      "Porifera": "cross",
+      "Tardigrada": "x",
+      "Annelida": "star",
+      "Mollusca": "pentagon",
+      "Brachiopoda": "hexagon",
+      "Echinodermata": "bowtie",
+      "Cnidaria": "hourglass",
+      "Rotifera": "octagon",
+      "Ctenophora": "hexagon2",
+      "Chordata": "hexagram",
+      "Orthonectida": "star-diamond",
+      "Nematoda": "star-square"
+    }
+  },
+  "functional_group": {
+    "colors": {
+      "Long-chain": "rgba(36, 99, 143, 0.9)",
+      "Ly6": "rgba(204, 221, 44, 0.9)",
+      "Non-standard": "rgba(120, 142, 66, 0.9)",
+      "Plesiotypic": "rgba(103, 189, 69, 0.9)",
+      "Short-chain": "rgba(99, 203, 229, 0.9)",
+      "annotated": "rgba(178, 102, 255, 0.9)",
+      "scoloptoxin": "rgba(255, 87, 51, 0.9)"
+    },
+    "shapes": {
+      "Long-chain": "circle",
+      "Ly6": "square",
+      "Non-standard": "diamond",
+      "Plesiotypic": "cross",
+      "Short-chain": "x",
+      "annotated": "triangle-up",
+      "scoloptoxin": "triangle-down"
+    }
+  }
+}

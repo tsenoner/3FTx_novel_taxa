@@ -1,28 +1,28 @@
 # 3FTx_novel_taxa
 
-## Overview
+Investigates Three-Finger Toxins (3FTx) evolution beyond snakes.
+Full details: `docs/project_specification.md`.
 
-This project aims to analyse and identify possible 3FTx in other taxa outside of snakes as potentially found in centipedes and spiders.
+## Setup
 
-For a detailed project structure and component overview, please see `docs/project_specification.md`.
-
-## Installation
-
-1.  Ensure you have `uv` installed. If not, follow the instructions at [https://github.com/astral-sh/uv](https://github.com/astral-sh/uv).
-2.  Create a virtual environment and install dependencies:
+1.  Requires `uv` ([https://github.com/astral-sh/uv](https://github.com/astral-sh/uv)).
+2.  Clone repo & `cd` to root.
+3.  Install dependencies:
     ```bash
     uv venv
     uv sync
     ```
 
-## Usage
+## Example: Process FASTA
 
-[Instructions on how to run the main scripts or workflows will go here. e.g., python src/data_processing/process_metadata.py --input data/raw/ --output data/processed/]
+Clean raw centipede FASTA (remove stops/duplicates, new IDs) and output to default `data/interm/centipede_3ftx_quiver_upar_like/`:
+```bash
+uv run python src/data_processing/process_centipede_fasta.py -i data/raw/centipede_3ftx_quiver_upar_like/3ftx_Quiver_UPAR-like_in_Centipedes_AW_210425.fasta
+```
+For more, see script help (`-h`) or project docs.
 
-## Contributing
+## Data Sources
 
-[Optional: Information on how to contribute to the project.]
-
-## License
-
-[Optional: Specify the project license.]
+Raw data is located in `data/raw/`:
+*   `uniprot/`: Sequences queried from UniProt (see `README.md` within for details).
+*   `centipede_3ftx_quiver_upar_like/`: Manually annotated centipede FASTA/GFF files.
