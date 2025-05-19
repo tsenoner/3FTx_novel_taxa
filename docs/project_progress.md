@@ -81,7 +81,7 @@ With the curated sequences and comprehensive metadata, the next step involves wo
     *   PacMAP (Pairwise Controlled Manifold Approximation)
     These techniques help in projecting the embeddings into lower-dimensional spaces, facilitating the identification of clusters and relationships between sequences.
 
-### 8. Interactive Visualization with Protospace
+### 8. Interactive Visualization with ProtSpace
 
 To interactively explore the sequence landscape based on their ProtT5 embeddings and associated metadata, the Protospace visualization tool is utilized. This involves two main steps:
 
@@ -112,3 +112,10 @@ To prepare the curated sequences for phylogenetic tree construction using ExaBay
 *   **Conversion to PHYLIP Format**: The aligned FASTA file was then converted to the PHYLIP format, which is required by many phylogenetic software packages, including ExaBayes. This conversion was performed using the `src/data_processing/fasta2phy.py` script. This script takes the aligned FASTA file (`data/interm/exabayes/merged_aligned_auto.fasta`) as input and produces a corresponding `.phy` file.
 
 This structured approach aims to build a robust dataset and analytical framework to investigate the evolutionary origins and characteristics of 3FTx-like proteins in novel taxa.
+
+
+### Supplementary
+
+Signal peptides were removed where present using SignalP 6 with this command:
+
+signalp6 --fastafile interm/merged/merged_sanitized.fasta --output_dir interm/sp6/ --organism eukarya --mode fast
