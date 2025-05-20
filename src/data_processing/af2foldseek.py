@@ -3,6 +3,11 @@ from Bio import SeqIO
 import os
 from tqdm import tqdm
 
+# rm SPs from fasta (0.8 probability cutoff)
+# rm SPs from PDB files based on SP6 output (do not rerun with ColabFold)
+# run ColabFold on all missing structures using option with template (not the ones with cut off SPs of the ones we already have from AF)
+# run Foldseek on changed PDBs, AF predictions, and new AF predictions of the missing structures
+
 def check_alphafold(uniprot_id):
     url = f"https://alphafold.ebi.ac.uk/files/AF-{uniprot_id}-F1-model_v4.pdb"
     r = requests.head(url)
