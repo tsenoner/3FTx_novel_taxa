@@ -12,3 +12,7 @@ wheels/
 # OS-generated files
 .DS_Store
 .idea
+
+# Data
+data/interm/pdb/*
+data/raw/pdb/*
