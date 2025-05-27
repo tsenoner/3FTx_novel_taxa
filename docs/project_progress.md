@@ -116,6 +116,6 @@ This structured approach aims to build a robust dataset and analytical framework
 
 ### Supplementary
 
-Signal peptides were removed where present using SignalP 6 with this command:
+Signal peptides were removed where present using SignalP6 with this command:
 
-signalp6 --fastafile interm/merged/merged_sanitized.fasta --output_dir interm/sp6/ --organism eukarya --mode fast
+signalp6 --fastafile interm/merged/merged_sanitized.fasta --output_dir interm/sp6/ --format none --organism eukarya --mode slow --model_dir path/to/model
