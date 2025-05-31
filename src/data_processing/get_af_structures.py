@@ -20,8 +20,7 @@ import requests
 from Bio import SeqIO
 from tqdm import tqdm
 
-ALPHAFOLD_URL_TEMPLATE =
-"https://alphafold.ebi.ac.uk/files/AF-{uniprot}-F1-model_v4.pdb"
+ALPHAFOLD_URL_TEMPLATE = "https://alphafold.ebi.ac.uk/files/AF-{uniprot}-F1-model_v4.pdb"
 
 
 def check_alphafold(uniprot_id):

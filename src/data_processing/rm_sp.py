@@ -39,23 +39,25 @@ class ChainMatureSelect(Select):
         return True
 
 
-def parse_signalp_results(results_file, threshold):
+def parse_signalp_results_gff3(results_file, threshold):
+    """
+    Parses SignalP 6.0 GFF3 output to extract cleavage sites with scores over the threshold.
+    Returns a dict: {sequence_id: cleavage_site}
+    """
     cleavages = {}
     with open(results_file) as f:
         for line in f:
-            if line.startswith('#') or not line.strip():
+            if line.startswith("#"):
                 continue
-            parts = line.strip().split()
-            if len(parts) < 3:
+            parts = line.strip().split('\t')
+            if len(parts) < 6:
                 continue
-            seq_id, site_str, score_str = parts[:3]
-            try:
-                site = int(site_str)
-                score = float(score_str)
-            except ValueError:
-                continue
-            if score >= threshold:
-                cleavages[seq_id] = site
+            seq_id = parts[0]
+            feature_type = parts[2]
+            end = int(parts[4])  # SP ends at this position (inclusive, 1-based)
+            score = float(parts[5])
+            if feature_type == "signal_peptide" and score >= threshold:
+                cleavages[seq_id] = end
     return cleavages
 
 
@@ -119,7 +121,7 @@ def main():
     )
     args = parser.parse_args()
 
-    cleavages = parse_signalp_results(args.signalp, args.threshold)
+    cleavages = parse_signalp_results_gff3(args.signalp, args.threshold)
     if not cleavages:
         print("No signal peptides detected over threshold; outputs will be unchanged.")
 
@@ -131,5 +133,68 @@ def main():
     for pdb_path in pdb_files:
         write_mature_pdbs_for_file(pdb_path, cleavages, args.out_pdb_dir)
 
+def extract_fasta_by_uniprot_ids(input_fasta, id_file, output_fasta):
+    """
+    Extracts sequences from a FASTA file that match UniProt IDs listed in a text file.
+
+    Parameters:
+    - input_fasta (str): Path to the source FASTA file.
+    - id_file (str): Path to the text file containing UniProt IDs (one per line).
+    - output_fasta (str): Path to the output FASTA file to write matched sequences.
+    """
+    # Load UniProt IDs from file
+    with open(id_file) as f:
+        missing_ids = set(line.strip() for line in f if line.strip())
+
+    matched = 0
+    with open(output_fasta, "w") as out_f:
+        for record in SeqIO.parse(input_fasta, "fasta"):
+            # Extract ID from FASTA header (e.g. >sp|P12345|... or >P12345 ...)
+            header_id = record.id.split('|')[1] if '|' in record.id else record.id
+            if header_id in missing_ids:
+                SeqIO.write(record, out_f, "fasta")
+                matched += 1
+
+    print(f"✓ Extracted {matched} sequences to {output_fasta}")
+
+
+def count_fasta_sequences(filepath):
+    """
+    Counts the number of sequences in a FASTA file.
+
+    Parameters:
+    - filepath (str): Path to the FASTA file.
+
+    Returns:
+    - int: Number of sequences.
+    """
+    count = sum(1 for _ in SeqIO.parse(filepath, "fasta"))
+    print(f"{filepath}: {count} sequences")
+    return count
+
+
 if __name__ == '__main__':
-    main()
+    # usage:
+    # python rm_sp.py
+    # --pdb_dir ../../data/raw/pdb/
+    # --signalp ../../data/interm/sp6/output.gff3
+    # --fasta ../../data/interm/merged/merged_sanitized.fasta
+    # --out_pdb_dir ../../data/interm/pdb
+    # --out_fasta ../../data/interm/pdb
+    # --threshold 0.8
+    #main()
+
+    extract_fasta_by_uniprot_ids(
+        input_fasta="../../data/interm/pdb/mature_sequences.fasta",
+        id_file="../../data/raw/pdb/missing.txt",
+        output_fasta="../../data/interm/pdb/mature_missing_sequences.fasta"
+    )
+
+    # Compare counts
+    # processed_count = count_fasta_sequences("../../data/interm/merged/merged_sanitized.fasta")
+    #
+    # processed_count = count_fasta_sequences("../../data/interm/pdb/mature_missing_sequences.fasta")
+    # merged_count = count_fasta_sequences("../../data/interm/pdb/mature_sequences.fasta")
+    #
+    # missing = merged_count - processed_count
+    # print(f"\nMissing sequences: {missing}")
