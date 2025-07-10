@@ -1,0 +1,1201 @@
+protein_id,protein_name,organism,sequence_length,domain_start,domain_end,domain_score,signature_name
+A0A024AX16,Short neurotoxin,Micropechis ikaheca (New Guinean small-eyed snake),83,22,82,,InterPro:IPR003571
+A0A024AXD4,Short neurotoxin,Micropechis ikaheca (New Guinean small-eyed snake),83,22,82,,InterPro:IPR003571
+A0A024AXD8,Long neurotoxin,Micropechis ikaheca (New Guinean small-eyed snake),104,23,85,,InterPro:IPR003571
+A0A024AXH2,Long neurotoxin,Micropechis ikaheca (New Guinean small-eyed snake),104,23,85,,InterPro:IPR003571
+A0A024AXY1,Long neurotoxin,Micropechis ikaheca (New Guinean small-eyed snake),103,23,85,,InterPro:IPR003571
+A0A024AYC2,Short neurotoxin,Micropechis ikaheca (New Guinean small-eyed snake),83,22,82,,InterPro:IPR003571
+A0A090LL14,Uncharacterized protein,Strongyloides ratti (Parasitic roundworm),343,32,90,,InterPro:IPR003571
+A0A098LWQ5,Three finger toxin,Python regius (Ball python),82,25,79,,InterPro:IPR003571
+A0A098LWU4,3Ftx,Opheodrys aestivus,104,22,84,,InterPro:IPR003571
+A0A098LWU5,3Ftx,Opheodrys aestivus,86,23,85,,InterPro:IPR003571
+A0A098LWV3,3Ftx B,Opheodrys aestivus,88,22,87,,InterPro:IPR003571
+A0A098LY55,Three finger toxin,Python regius (Ball python),86,23,85,,InterPro:IPR003571
+A0A098LY61,Three finger toxin,Python regius (Ball python),84,22,84,,InterPro:IPR003571
+A0A098LYA2,3Ftx,Opheodrys aestivus,84,22,84,,InterPro:IPR003571
+A0A098LYB1,3Ftx,Opheodrys aestivus,86,23,85,,InterPro:IPR003571
+A0A098LYG6,Three finger toxin,Pantherophis guttatus (Corn snake),85,23,84,,InterPro:IPR003571
+A0A098LYH6,Three finger toxin,Pantherophis guttatus (Corn snake),107,22,91,,InterPro:IPR003571
+A0A098LYI1,Three finger toxin,Pantherophis guttatus (Corn snake),85,23,84,,InterPro:IPR003571
+A0A098LYI5,Three finger toxin,Pantherophis guttatus (Corn snake),77,24,77,,InterPro:IPR003571
+A0A098M253,Three-finger toxin,Hypsiglena sp. JMG-2014,84,22,81,,InterPro:IPR003571
+A0A0A1WCI9,3 Finger toxin B,Echis coloratus (Carpet viper),88,22,87,,InterPro:IPR003571
+A0A0B8RS19,Three-finger toxin 8e,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A0B8RS22,Three-finger toxin 7d,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A0B8RS24,Three-finger toxin 6b,Philothamnus irregularis (brown tree snake),84,22,84,,InterPro:IPR003571
+A0A0B8RS37,Three-finger toxin 4b,Philothamnus irregularis (brown tree snake),105,35,103,,InterPro:IPR003571
+A0A0B8RS39,Three-finger toxin 3b,Philothamnus irregularis (brown tree snake),111,42,109,,InterPro:IPR003571
+A0A0B8RS42,Three-finger toxin 3c,Philothamnus irregularis (brown tree snake),111,42,109,,InterPro:IPR003571
+A0A0B8RS43,Three-finger toxin 2e,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A0B8RS45,Three-finger toxin 1f,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A0B8RS46,Three-finger toxin 1a,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A0B8RS48,Three-finger toxin 10e,Philothamnus irregularis (brown tree snake),104,35,102,,InterPro:IPR003571
+A0A0B8RSX8,Three-finger toxin 8b,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A0B8RSY0,Three-finger toxin 7c,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A0B8RSY1,Three-finger toxin 6a,Philothamnus irregularis (brown tree snake),84,22,84,,InterPro:IPR003571
+A0A0B8RSY6,Three-finger toxin 4a,Philothamnus irregularis (brown tree snake),105,35,103,,InterPro:IPR003571
+A0A0B8RSZ0,Three-finger toxin 2d,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A0B8RSZ1,Three-finger toxin 1e,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A0B8RSZ2,Snake toxin/toxin-like domain-containing protein,Philothamnus irregularis (brown tree snake),127,35,125,,InterPro:IPR003571
+A0A0B8RSZ3,Three-finger toxin 10d,Philothamnus irregularis (brown tree snake),104,35,102,,InterPro:IPR003571
+A0A0B8RV99,Snake toxin/toxin-like domain-containing protein,Philothamnus irregularis (brown tree snake),105,35,103,,InterPro:IPR003571
+A0A0B8RVA2,Snake toxin/toxin-like domain-containing protein,Philothamnus irregularis (brown tree snake),105,35,103,,InterPro:IPR003571
+A0A0B8RVA3,Three-finger toxin 8c,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A0B8RVA5,Three-finger toxin 7b,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A0B8RVA6,Three-finger toxin 5,Philothamnus irregularis (brown tree snake),84,22,84,,InterPro:IPR003571
+A0A0B8RVB2,Three-finger toxin 3k,Philothamnus irregularis (brown tree snake),111,42,109,,InterPro:IPR003571
+A0A0B8RVB7,Three-finger toxin 3a,Philothamnus irregularis (brown tree snake),111,42,109,,InterPro:IPR003571
+A0A0B8RVB9,Three-finger toxin 2c,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A0B8RVC5,Three-finger toxin 10c,Philothamnus irregularis (brown tree snake),101,35,99,,InterPro:IPR003571
+A0A0B8RYW2,Three-finger toxin 9f,Philothamnus irregularis (brown tree snake),104,35,102,,InterPro:IPR003571
+A0A0B8RYW4,Snake toxin/toxin-like domain-containing protein,Philothamnus irregularis (brown tree snake),105,35,103,,InterPro:IPR003571
+A0A0B8RYW8,Three-finger toxin 7a,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A0B8RYX1,Three-finger toxin 4d,Philothamnus irregularis (brown tree snake),104,35,102,,InterPro:IPR003571
+A0A0B8RYX5,Three-finger toxin 3j,Philothamnus irregularis (brown tree snake),110,42,108,,InterPro:IPR003571
+A0A0B8RYY0,Three-finger toxin 2g,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A0B8RYY3,Three-finger toxin 2b,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A0B8RYY5,Three-finger toxin 1c,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A0B8RYY9,Snake toxin/toxin-like domain-containing protein,Philothamnus irregularis (brown tree snake),105,35,103,,InterPro:IPR003571
+A0A0B8RZW9,Three-finger toxin 9e,Philothamnus irregularis (brown tree snake),104,35,102,,InterPro:IPR003571
+A0A0B8RZX0,Three-finger toxin 8f,Philothamnus irregularis (brown tree snake),108,46,106,,InterPro:IPR003571
+A0A0B8RZX1,Three-finger toxin 8a,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A0B8RZX2,Three-finger toxin 6c,Philothamnus irregularis (brown tree snake),83,22,83,,InterPro:IPR003571
+A0A0B8RZX3,Three-finger toxin 4c,Philothamnus irregularis (brown tree snake),105,35,103,,InterPro:IPR003571
+A0A0B8RZX5,Three-finger toxin 3d,Philothamnus irregularis (brown tree snake),111,42,109,,InterPro:IPR003571
+A0A0B8RZX6,Three-finger toxin 2f,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A0B8RZX7,Three-finger toxin 2a,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A0B8RZX8,Three-finger toxin 1b,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A0B8RZX9,Snake toxin/toxin-like domain-containing protein,Philothamnus irregularis (brown tree snake),105,35,103,,InterPro:IPR003571
+A0A0B8RZY0,Snake toxin/toxin-like domain-containing protein,Philothamnus irregularis (brown tree snake),105,35,103,,InterPro:IPR003571
+A0A0F7YYX2,Three-finger toxin 10c,Micrurus fulvius (Eastern coral snake),87,22,86,,InterPro:IPR003571
+A0A0F7YZ34,Three-finger toxin 10b,Micrurus fulvius (Eastern coral snake),87,22,86,,InterPro:IPR003571
+A0A0F7Z047,Three-finger toxin 3,Micrurus fulvius (Eastern coral snake),79,32,78,,InterPro:IPR003571
+A0A0F7Z3R9,Three-finger toxin 6a,Micrurus fulvius (Eastern coral snake),79,32,78,,InterPro:IPR003571
+A0A0F7Z3S3,Three-finger toxin 1,Micrurus fulvius (Eastern coral snake),88,22,85,,InterPro:IPR003571
+A0A0F7Z3S7,Three-finger toxin 11a,Micrurus fulvius (Eastern coral snake),88,25,87,,InterPro:IPR003571
+A0A0G3YJD1,Short chain alpha neurotoxin DH,Micrurus diastema (variable coral snake),81,22,80,,InterPro:IPR003571
+A0A0G3YLL2,Three-finger toxin LB,Micrurus laticollaris (Balsas coral snake),78,22,77,,InterPro:IPR003571
+A0A0H4BEF7,Three-finger toxin D.I,Micrurus diastema (variable coral snake),83,22,82,,InterPro:IPR003571
+A0A0H4BEG1,Three-finger toxin D.N,Micrurus diastema (variable coral snake),88,25,87,,InterPro:IPR003571
+A0A0H4BEG5,Three-finger toxin B.C,Micrurus browni (Brown's coral snake),82,23,81,,InterPro:IPR003571
+A0A0H4BFP9,Three-finger toxin L.D,Micrurus laticollaris (Balsas coral snake),79,32,78,,InterPro:IPR003571
+A0A0H4BFQ4,Three-finger toxin D.K,Micrurus diastema (variable coral snake),86,22,83,,InterPro:IPR003571
+A0A0H4BFQ5,Three-finger toxin D.Q,Micrurus diastema (variable coral snake),84,22,83,,InterPro:IPR003571
+A0A0H4BJD1,Three-finger toxin L.F,Micrurus laticollaris (Balsas coral snake),87,22,84,,InterPro:IPR003571
+A0A0H4BJD4,Three-finger toxin D.M,Micrurus diastema (variable coral snake),79,32,78,,InterPro:IPR003571
+A0A0H4BJD8,Three-finger toxin B.B,Micrurus browni (Brown's coral snake),98,22,83,,InterPro:IPR003571
+A0A0H4BKJ0,Three-finger toxin D.J,Micrurus diastema (variable coral snake),87,22,84,,InterPro:IPR003571
+A0A0H4BKJ5,Three-finger toxin D.P,Micrurus diastema (variable coral snake),87,22,86,,InterPro:IPR003571
+A0A0H4BLY9,Three-finger toxin L.E,Micrurus laticollaris (Balsas coral snake),87,22,84,,InterPro:IPR003571
+A0A0H4BLZ2,Three-finger toxin D.L,Micrurus diastema (variable coral snake),98,22,83,,InterPro:IPR003571
+A0A0H4BLZ7,Three-finger toxin B.A,Micrurus browni (Brown's coral snake),83,22,82,,InterPro:IPR003571
+A0A0H4IRA8,Three-finger toxin B.H,Micrurus browni (Brown's coral snake),87,22,86,,InterPro:IPR003571
+A0A0H4IRB3,Three-finger toxin T.D,Micrurus tener (Texas coral snake),88,25,87,,InterPro:IPR003571
+A0A0H4IS74,Three-finger toxin B.F,Micrurus browni (Brown's coral snake),79,33,78,,InterPro:IPR003571
+A0A0H4IS80,Three-finger toxin T.B,Micrurus tener (Texas coral snake),83,22,82,,InterPro:IPR003571
+A0A0H4IUN8,Three-finger toxin B.G,Micrurus browni (Brown's coral snake),87,22,86,,InterPro:IPR003571
+A0A0H4IUP1,Three-finger toxin T.C,Micrurus tener (Texas coral snake),82,23,81,,InterPro:IPR003571
+A0A0H4IVP7,Short chain alpha neurotoxin B.E,Micrurus browni (Brown's coral snake),81,22,80,,InterPro:IPR003571
+A0A0H4IVQ2,Three-finger toxin T.A,Micrurus tener (Texas coral snake),87,22,84,,InterPro:IPR003571
+A0A0H4IVQ6,Three-finger toxin T.F,Micrurus tener (Texas coral snake),88,25,87,,InterPro:IPR003571
+A0A0H4J512,Short chain alpha neurotoxin B.D,Micrurus browni (Brown's coral snake),81,22,80,,InterPro:IPR003571
+A0A0H4J516,Three-finger toxin B.I,Micrurus browni (Brown's coral snake),87,22,84,,InterPro:IPR003571
+A0A0H4J521,Three-finger toxin 14,Micrurus tener (Texas coral snake),79,32,78,,InterPro:IPR003571
+A0A0U4N5W4,Cytotoxin 13,Naja naja (Indian cobra),72,13,72,,InterPro:IPR003571
+A0A0U4W6H0,Cytotoxin 15,Naja naja (Indian cobra),72,13,72,,InterPro:IPR003571
+A0A0U4W6K7,Cytotoxin 16,Naja naja (Indian cobra),72,13,72,,InterPro:IPR003571
+A0A0U5AL91,Cytotoxin 17,Naja naja (Indian cobra),72,13,72,,InterPro:IPR003571
+A0A0U5ALB9,Cytotoxin 14,Naja naja (Indian cobra),72,13,72,,InterPro:IPR003571
+A0A0U5AR60,Cytotoxin 12,Naja naja (Indian cobra),72,13,72,,InterPro:IPR003571
+A0A0U5ARS4,Cytotoxin 11,Naja naja (Indian cobra),72,13,72,,InterPro:IPR003571
+A0A0U5AUY6,Cytotoxin 9,Naja naja (Indian cobra),72,13,72,,InterPro:IPR003571
+A0A182C5Y1,Three finger toxins,Phalotris mertensi,86,22,84,,InterPro:IPR003571
+A0A193CHK9,Three finger toxin,Oxybelis fulgidus (Green vine snake),108,47,106,,InterPro:IPR003571
+A0A193CHL1,Three finger toxin 1,Boiga cynodon,109,46,107,,InterPro:IPR003571
+A0A193CHL2,Three finger toxin 2,Boiga cynodon,111,42,109,,InterPro:IPR003571
+A0A193CHL3,Three finger toxin 1,Ahaetulla prasina,86,22,85,,InterPro:IPR003571
+A0A193CHL4,Snake toxin/toxin-like domain-containing protein,Philothamnus irregularis (brown tree snake),105,35,103,,InterPro:IPR003571
+A0A193CHL5,Three finger toxin 2,Ahaetulla prasina,95,24,87,,InterPro:IPR003571
+A0A193CHL6,Three finger toxin 5,Philothamnus irregularis (brown tree snake),105,37,103,,InterPro:IPR003571
+A0A193CHL7,Three finger toxin 6,Philothamnus irregularis (brown tree snake),111,42,109,,InterPro:IPR003571
+A0A193CHL8,Three finger toxin,Boiga nigriceps (black-headed cat snake),114,46,107,,InterPro:IPR003571
+A0A193CHL9,Three finger toxin 3,Philothamnus irregularis (brown tree snake),105,35,103,,InterPro:IPR003571
+A0A193CHM0,Snake toxin/toxin-like domain-containing protein,Philothamnus irregularis (brown tree snake),105,35,103,,InterPro:IPR003571
+A0A193CHM1,Three finger toxin 3,Trimorphodon lambda (Sonoran lyre snake),110,43,108,,InterPro:IPR003571
+A0A193CHM4,Three finger toxin 1,Trimorphodon lambda (Sonoran lyre snake),111,47,109,,InterPro:IPR003571
+A0A193CHM5,Three finger toxin 2,Trimorphodon lambda (Sonoran lyre snake),111,46,109,,InterPro:IPR003571
+A0A194APB1,Long-chain neurotoxin 1b,Micrurus tener (Texas coral snake),87,22,84,,InterPro:IPR003571
+A0A194APE1,Three-finger toxin 9a,Micrurus tener (Texas coral snake),88,25,87,,InterPro:IPR003571
+A0A194APE5,Three-finger toxin 8d,Micrurus tener (Texas coral snake),88,25,87,,InterPro:IPR003571
+A0A194APF0,Three-finger toxin 7a,Micrurus tener (Texas coral snake),86,23,85,,InterPro:IPR003571
+A0A194APG0,Three-finger toxin 2,Micrurus tener (Texas coral snake),88,22,85,,InterPro:IPR003571
+A0A194APH5,Three-finger toxin 16a,Micrurus tener (Texas coral snake),79,22,78,,InterPro:IPR003571
+A0A194API9,Three-finger toxin 10d,Micrurus tener (Texas coral snake),82,23,81,,InterPro:IPR003571
+A0A194ARB2,Three-finger toxin 8c,Micrurus tener (Texas coral snake),88,25,87,,InterPro:IPR003571
+A0A194ARB6,Three-finger toxin 6,Micrurus tener (Texas coral snake),86,22,85,,InterPro:IPR003571
+A0A194ARC5,Three-finger toxin 20,Micrurus tener (Texas coral snake),79,22,78,,InterPro:IPR003571
+A0A194ARE1,Long-chain neurotoxin 2,Micrurus tener (Texas coral snake),87,22,84,,InterPro:IPR003571
+A0A194ARE8,Three-finger toxin 13a,Micrurus tener (Texas coral snake),79,33,78,,InterPro:IPR003571
+A0A194ARF2,Three-finger toxin 10c,Micrurus tener (Texas coral snake),82,23,81,,InterPro:IPR003571
+A0A194ARH7,Three-finger toxin 8a,Micrurus tener (Texas coral snake),88,25,87,,InterPro:IPR003571
+A0A194ARJ0,Three-finger toxin 19,Micrurus tener (Texas coral snake),78,22,77,,InterPro:IPR003571
+A0A194ARK4,Three-finger toxin 16d,Micrurus tener (Texas coral snake),79,22,78,,InterPro:IPR003571
+A0A194ARK8,Three-finger toxin 15a,Micrurus tener (Texas coral snake),87,22,86,,InterPro:IPR003571
+A0A194ARL3,Three-finger toxin 12,Micrurus tener (Texas coral snake),87,22,86,,InterPro:IPR003571
+A0A194ARL8,Three-finger toxin 10a,Micrurus tener (Texas coral snake),82,23,81,,InterPro:IPR003571
+A0A194ASA3,Long-chain neurotoxin 1d,Micrurus tener (Texas coral snake),87,22,84,,InterPro:IPR003571
+A0A194ASD1,Three-finger toxin 8e,Micrurus tener (Texas coral snake),88,25,87,,InterPro:IPR003571
+A0A194ASE0,Three-finger toxin 5b,Micrurus tener (Texas coral snake),81,22,80,,InterPro:IPR003571
+A0A194ASE2,Three-finger toxin 3,Micrurus tener (Texas coral snake),78,22,77,,InterPro:IPR003571
+A0A194ASE3,Three-finger toxin 18,Micrurus tener (Texas coral snake),85,22,78,,InterPro:IPR003571
+A0A194ASF2,Three-finger toxin 16c,Micrurus tener (Texas coral snake),79,22,78,,InterPro:IPR003571
+A0A194ASF5,Three-finger toxin 11,Micrurus tener (Texas coral snake),83,22,82,,InterPro:IPR003571
+A0A194AT81,Long-chain neurotoxin 1a,Micrurus tener (Texas coral snake),87,22,84,,InterPro:IPR003571
+A0A194ATA3,Three-finger toxin 8g,Micrurus tener (Texas coral snake),88,25,87,,InterPro:IPR003571
+A0A194ATA6,Three-finger toxin 8b,Micrurus tener (Texas coral snake),88,25,87,,InterPro:IPR003571
+A0A194ATB0,Three-finger toxin 5a,Micrurus tener (Texas coral snake),81,22,80,,InterPro:IPR003571
+A0A194ATC7,Three-finger toxin 16e,Micrurus tener (Texas coral snake),79,22,78,,InterPro:IPR003571
+A0A194ATD1,Three-finger toxin 15b,Micrurus tener (Texas coral snake),87,22,86,,InterPro:IPR003571
+A0A194ATD7,Three-finger toxin 10b,Micrurus tener (Texas coral snake),82,25,81,,InterPro:IPR003571
+A0A1D8BAW6,Short-chain postsynaptic neurotoxin,Pseudechis papuanus (Papuan black snake),83,22,82,,InterPro:IPR003571
+A0A1J0CQH1,Neurotoxin-like protein,Naja naja (Indian cobra),86,22,85,,InterPro:IPR003571
+A0A1W7RBC9,Cadam10_3FTx-2,Crotalus adamanteus (Eastern diamondback rattlesnake),85,22,84,,InterPro:IPR003571
+A0A1W7RBD9,Cadam10_3FTx-1,Crotalus adamanteus (Eastern diamondback rattlesnake),86,24,86,,InterPro:IPR003571
+A0A1Z1WD59,Tat pathway signal protein,Streptomyces alboflavus,1381,706,748,,InterPro:IPR003571
+A0A235BNZ0,Transposase,candidate division WOR-3 bacterium JGI_Cruoil_03_44_89,566,375,407,,InterPro:IPR003571
+A0A261AH13,G-protein coupled receptors family 1 profile domain-containing protein,Caenorhabditis latens,648,537,605,,InterPro:IPR003571
+A0A2D4ET78,Uncharacterized protein,Micrurus corallinus (Brazilian coral snake),101,39,100,,InterPro:IPR003571
+A0A2D4H8R7,Uncharacterized protein,Micrurus lemniscatus lemniscatus,101,36,98,,InterPro:IPR003571
+A0A2D4H8V3,Uncharacterized protein,Micrurus lemniscatus lemniscatus,101,36,98,,InterPro:IPR003571
+A0A2D4MS59,Uncharacterized protein,Micrurus spixii (Amazon coral snake),102,39,101,,InterPro:IPR003571
+A0A2D4NY04,Uncharacterized protein,Micrurus surinamensis (Surinam coral snake),100,35,99,,InterPro:IPR003571
+A0A2D4P2Z1,Uncharacterized protein,Micrurus surinamensis (Surinam coral snake),101,36,98,,InterPro:IPR003571
+A0A2D4PD59,Snake toxin/toxin-like domain-containing protein,Micrurus surinamensis (Surinam coral snake),103,38,102,,InterPro:IPR003571
+A0A2D4PR89,UPAR/Ly6 domain-containing protein,Micrurus surinamensis (Surinam coral snake),113,48,104,,InterPro:IPR003571
+A0A2H6N490,Snake toxin/toxin-like domain-containing protein,Micrurus carvalhoi,109,49,108,,InterPro:IPR003571
+A0A2P1BSS8,Mipartoxin-4,Micrurus mipartitus (Red-tailed coral snake),82,22,81,,InterPro:IPR003571
+A0A2P1BSU3,Mipartoxin-3,Micrurus mipartitus (Red-tailed coral snake),79,22,78,,InterPro:IPR003571
+A0A2Z4N9R1,Three-finger toxin,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A2Z4N9R4,Three-finger toxin,Philothamnus irregularis (brown tree snake),103,35,101,,InterPro:IPR003571
+A0A2Z4N9R7,Three-finger toxin,Philothamnus irregularis (brown tree snake),103,35,101,,InterPro:IPR003571
+A0A2Z4N9R8,Three-finger toxin,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A2Z4N9S1,Snake toxin/toxin-like domain-containing protein,Philothamnus irregularis (brown tree snake),105,37,103,,InterPro:IPR003571
+A0A2Z4N9S6,Three-finger toxin,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A2Z4N9S8,Snake toxin/toxin-like domain-containing protein,Philothamnus irregularis (brown tree snake),105,35,103,,InterPro:IPR003571
+A0A2Z4N9T0,Three-finger toxin,Philothamnus irregularis (brown tree snake),105,37,103,,InterPro:IPR003571
+A0A2Z4N9T1,Three-finger toxin,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A2Z4N9T3,Three-finger toxin,Philothamnus irregularis (brown tree snake),105,37,103,,InterPro:IPR003571
+A0A2Z4N9T5,Three-finger toxin,Philothamnus irregularis (brown tree snake),105,35,103,,InterPro:IPR003571
+A0A2Z4N9T7,Three-finger toxin,Philothamnus irregularis (brown tree snake),111,42,109,,InterPro:IPR003571
+A0A2Z4N9T8,Three-finger toxin,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A2Z4N9T9,Three-finger toxin,Philothamnus irregularis (brown tree snake),105,37,103,,InterPro:IPR003571
+A0A2Z4N9U1,Three-finger toxin,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A2Z4N9U2,Three-finger toxin,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A2Z4N9U3,Three-finger toxin,Philothamnus irregularis (brown tree snake),103,35,101,,InterPro:IPR003571
+A0A2Z4N9U4,Three-finger toxin,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A2Z4N9U5,Three-finger toxin,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A2Z4N9U6,Three-finger toxin,Philothamnus irregularis (brown tree snake),111,42,109,,InterPro:IPR003571
+A0A2Z4N9U7,Three-finger toxin,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A2Z4N9V0,Three-finger toxin,Philothamnus irregularis (brown tree snake),122,52,120,,InterPro:IPR003571
+A0A2Z4N9V1,Three-finger toxin,Philothamnus irregularis (brown tree snake),105,37,103,,InterPro:IPR003571
+A0A2Z4N9V3,Three-finger toxin,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A2Z4N9V6,Three-finger toxin,Philothamnus irregularis (brown tree snake),116,47,114,,InterPro:IPR003571
+A0A2Z4N9V8,Three-finger toxin,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A2Z4N9W0,Three-finger toxin,Philothamnus irregularis (brown tree snake),90,27,88,,InterPro:IPR003571
+A0A2Z4N9W2,Three-finger toxin,Philothamnus irregularis (brown tree snake),121,58,119,,InterPro:IPR003571
+A0A2Z4N9W4,Three-finger toxin,Philothamnus irregularis (brown tree snake),113,43,111,,InterPro:IPR003571
+A0A2Z4N9W5,Three-finger toxin,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A2Z4N9W6,Three-finger toxin,Philothamnus irregularis (brown tree snake),105,37,103,,InterPro:IPR003571
+A0A2Z4N9W7,Three-finger toxin,Philothamnus irregularis (brown tree snake),117,54,115,,InterPro:IPR003571
+A0A2Z4N9W8,Three-finger toxin,Philothamnus irregularis (brown tree snake),103,35,101,,InterPro:IPR003571
+A0A2Z4N9X3,Three-finger toxin,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A2Z4N9X5,Snake toxin/toxin-like domain-containing protein,Philothamnus irregularis (brown tree snake),113,43,111,,InterPro:IPR003571
+A0A2Z4N9X8,Three-finger toxin,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A2Z4N9X9,Three-finger toxin,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A2Z4N9Y0,Three-finger toxin,Philothamnus irregularis (brown tree snake),111,42,109,,InterPro:IPR003571
+A0A2Z4N9Y2,Three-finger toxin,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A2Z4N9Y5,Three-finger toxin,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A2Z4N9Y9,Three-finger toxin,Philothamnus irregularis (brown tree snake),111,42,109,,InterPro:IPR003571
+A0A2Z4N9Z1,Three-finger toxin,Philothamnus irregularis (brown tree snake),90,27,88,,InterPro:IPR003571
+A0A2Z4N9Z2,Three-finger toxin,Philothamnus irregularis (brown tree snake),110,42,108,,InterPro:IPR003571
+A0A2Z4N9Z4,Three-finger toxin,Philothamnus irregularis (brown tree snake),90,27,88,,InterPro:IPR003571
+A0A2Z4N9Z5,Three-finger toxin,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A2Z4N9Z6,Three-finger toxin,Philothamnus irregularis (brown tree snake),115,45,113,,InterPro:IPR003571
+A0A2Z4N9Z7,Three-finger toxin,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A2Z4N9Z8,Three-finger toxin,Philothamnus irregularis (brown tree snake),103,35,101,,InterPro:IPR003571
+A0A2Z4N9Z9,Three-finger toxin,Philothamnus irregularis (brown tree snake),105,35,103,,InterPro:IPR003571
+A0A2Z4NA03,Three-finger toxin,Philothamnus irregularis (brown tree snake),108,46,106,,InterPro:IPR003571
+A0A2Z4NA05,Three-finger toxin,Philothamnus irregularis (brown tree snake),104,37,102,,InterPro:IPR003571
+A0A2Z4NA07,Three-finger toxin,Philothamnus irregularis (brown tree snake),104,37,102,,InterPro:IPR003571
+A0A2Z4NA09,Three-finger toxin,Philothamnus irregularis (brown tree snake),105,35,103,,InterPro:IPR003571
+A0A2Z4NA10,Three-finger toxin,Philothamnus irregularis (brown tree snake),105,37,103,,InterPro:IPR003571
+A0A2Z4NA13,Three-finger toxin,Philothamnus irregularis (brown tree snake),103,35,101,,InterPro:IPR003571
+A0A2Z4NA14,Three-finger toxin,Philothamnus irregularis (brown tree snake),109,46,107,,InterPro:IPR003571
+A0A2Z4NA18,Three-finger toxin,Philothamnus irregularis (brown tree snake),105,35,103,,InterPro:IPR003571
+A0A2Z4NA20,Three-finger toxin,Philothamnus irregularis (brown tree snake),103,35,101,,InterPro:IPR003571
+A0A346CI88,Three-finger toxin 15,Spilotes sulphureus (Amazon puffing snake),86,22,85,,InterPro:IPR003571
+A0A346CI89,Three-finger toxin 13,Spilotes sulphureus (Amazon puffing snake),84,22,84,,InterPro:IPR003571
+A0A346CI93,Three-finger toxin 1,Spilotes sulphureus (Amazon puffing snake),111,47,109,,InterPro:IPR003571
+A0A346CI94,Three-finger toxin 9,Spilotes sulphureus (Amazon puffing snake),107,47,105,,InterPro:IPR003571
+A0A346CI95,Three-finger toxin 12,Spilotes sulphureus (Amazon puffing snake),86,22,84,,InterPro:IPR003571
+A0A346CIA0,Sulditoxin subunit A,Spilotes sulphureus (Amazon puffing snake),111,47,109,,InterPro:IPR003571
+A0A346CIA9,Three-finger toxin 3,Spilotes sulphureus (Amazon puffing snake),107,43,105,,InterPro:IPR003571
+A0A346CIB0,Sulmotoxin 2,Spilotes sulphureus (Amazon puffing snake),86,22,84,,InterPro:IPR003571
+A0A346CIB1,Three-finger toxin 7,Spilotes sulphureus (Amazon puffing snake),111,43,109,,InterPro:IPR003571
+A0A346CIB2,Sulmotoxin 1,Spilotes sulphureus (Amazon puffing snake),107,47,105,,InterPro:IPR003571
+A0A346CIB3,Sulditoxin subunit B,Spilotes sulphureus (Amazon puffing snake),111,43,109,,InterPro:IPR003571
+A0A346CIB4,Three-finger toxin 5,Spilotes sulphureus (Amazon puffing snake),107,47,105,,InterPro:IPR003571
+A0A346CIB5,Three-finger toxin 4,Spilotes sulphureus (Amazon puffing snake),107,43,105,,InterPro:IPR003571
+A0A346CIB6,Three-finger toxin 8,Spilotes sulphureus (Amazon puffing snake),111,47,109,,InterPro:IPR003571
+A0A346CLY6,Three-finger toxin 8,Ahaetulla prasina,85,22,85,,InterPro:IPR003571
+A0A346CLY7,Three-finger toxin 10,Ahaetulla prasina,86,22,85,,InterPro:IPR003571
+A0A346CLY8,Three-finger toxin 3,Ahaetulla prasina,95,24,87,,InterPro:IPR003571
+A0A346CLY9,Three-finger toxin 4,Ahaetulla prasina,95,27,87,,InterPro:IPR003571
+A0A346CLZ0,Three-finger toxin 7,Ahaetulla prasina,95,27,87,,InterPro:IPR003571
+A0A346CLZ1,Three-finger toxin 5,Ahaetulla prasina,95,27,87,,InterPro:IPR003571
+A0A346CM08,Three-finger toxin 9,Ahaetulla prasina,85,22,84,,InterPro:IPR003571
+A0A346CM15,Three-finger toxin 1,Ahaetulla prasina,95,27,87,,InterPro:IPR003571
+A0A346CM25,Three-finger toxin 2,Ahaetulla prasina,95,27,87,,InterPro:IPR003571
+A0A3M7S2J2,Snake toxin/toxin-like domain-containing protein,Brachionus plicatilis (Marine rotifer),148,69,139,,InterPro:IPR003571
+A0A481MQJ1,Three-Finger Toxin 03,Boiga dendrophila (Mangrove snake),103,33,101,,InterPro:IPR003571
+A0A481MQJ6,Three-Finger Toxin 08,Boiga dendrophila (Mangrove snake),105,35,101,,InterPro:IPR003571
+A0A481MQK0,Three-Finger Toxin 05,Boiga dendrophila (Mangrove snake),111,47,109,,InterPro:IPR003571
+A0A481MQK7,Three-Finger Toxin 01,Boiga dendrophila (Mangrove snake),103,35,101,,InterPro:IPR003571
+A0A481MQL5,Three-Finger Toxin 10,Boiga dendrophila (Mangrove snake),116,42,107,,InterPro:IPR003571
+A0A481MQL6,Three-Finger Toxin 09,Boiga dendrophila (Mangrove snake),111,47,109,,InterPro:IPR003571
+A0A481MQL7,Three-Finger Toxin 00,Boiga dendrophila (Mangrove snake),103,35,101,,InterPro:IPR003571
+A0A481MQL8,Three-Finger Toxin 02,Boiga dendrophila (Mangrove snake),103,33,101,,InterPro:IPR003571
+A0A481MQL9,Three-Finger Toxin 11,Boiga dendrophila (Mangrove snake),116,47,107,,InterPro:IPR003571
+A0A481MQM5,Three-finger toxin 00,Boiga cynodon,84,24,84,,InterPro:IPR003571
+A0A481MQN2,Three-Finger Toxin 04,Boiga dendrophila (Mangrove snake),103,33,101,,InterPro:IPR003571
+A0A481MQP4,Three-Finger Toxin 06,Boiga dendrophila (Mangrove snake),84,22,84,,InterPro:IPR003571
+A0A4P1LYC9,Dendroaspis polylepis MT9,Dendroaspis polylepis polylepis (Black mamba),57,1,56,,InterPro:IPR003571
+A0A4Q8K440,U57-Liphistoxin-Lth1a_1,Liphistius thaleban,94,25,91,,InterPro:IPR003571
+A0A4Q8K4C8,U57-Liphistoxin-Lth1a_2,Liphistius thaleban,94,25,91,,InterPro:IPR003571
+A0A646QBR0,Three-finger toxin,Thelotornis mossambicanus,86,22,85,,InterPro:IPR003571
+A0A646QDR7,Three-finger toxin,Thelotornis mossambicanus,86,22,85,,InterPro:IPR003571
+A0A6G1S2M3,Three-Finger Toxin 01,Boiga nigriceps (black-headed cat snake),103,35,101,,InterPro:IPR003571
+A0A6G1S2M9,Snake toxin/toxin-like domain-containing protein,Boiga nigriceps (black-headed cat snake),105,35,103,,InterPro:IPR003571
+A0A6G1S2N1,Three-Finger Toxin 00,Boiga nigriceps (black-headed cat snake),84,22,84,,InterPro:IPR003571
+A0A6G1S327,Three-Finger Toxin 04,Boiga nigriceps (black-headed cat snake),109,46,107,,InterPro:IPR003571
+A0A6G1S330,Three-Finger Toxin 05,Boiga nigriceps (black-headed cat snake),109,42,107,,InterPro:IPR003571
+A0A6G1S3L8,Three-Finger Toxin 03,Boiga nigriceps (black-headed cat snake),109,46,107,,InterPro:IPR003571
+A0A6G1S4A6,Three-Finger Toxin 06,Boiga nigriceps (black-headed cat snake),111,42,109,,InterPro:IPR003571
+A0A6J1VI58,Short neurotoxin 1,Notechis scutatus (mainland tiger snake),81,22,80,,InterPro:IPR003571
+A0A6P9C806,Toxin 3FTx-Dis4-like,Pantherophis guttatus (Corn snake),85,22,53,,InterPro:IPR003571
+A0A6P9C8Z9,Probable weak neurotoxin 3FTx-Lio1,Pantherophis guttatus (Corn snake),89,23,86,,InterPro:IPR003571
+A0A7T7DMY7,Cytotoxin 1,Naja sumatrana (Equatorial spitting cobra),81,22,81,,InterPro:IPR003571
+A0A813QMS0,Protein kinase domain-containing protein,Brachionus calyciflorus,1136,1034,1096,,InterPro:IPR003571
+A0A813TGG0,Uncharacterized protein,Adineta ricciae (Rotifer),187,91,160,,InterPro:IPR003571
+A0A813V9Y2,UPAR/Ly6 domain-containing protein,Adineta ricciae (Rotifer),160,72,136,,InterPro:IPR003571
+A0A813XKR2,Snake toxin/toxin-like domain-containing protein,Brachionus calyciflorus,109,26,84,,InterPro:IPR003571
+A0A814FEB7,Uncharacterized protein,Rotaria sordida,181,81,155,,InterPro:IPR003571
+A0A814G8T3,Uncharacterized protein,Rotaria magnacalcarata,122,24,90,,InterPro:IPR003571
+A0A814TXC6,Uncharacterized protein,Adineta steineri,174,81,151,,InterPro:IPR003571
+A0A815C0A8,Uncharacterized protein,Adineta steineri,175,82,152,,InterPro:IPR003571
+A0A815DFA2,Uncharacterized protein,Rotaria sordida,181,81,155,,InterPro:IPR003571
+A0A815FLC7,UPAR/Ly6 domain-containing protein,Adineta ricciae (Rotifer),149,61,125,,InterPro:IPR003571
+A0A815MCD1,Uncharacterized protein,Rotaria magnacalcarata,179,83,153,,InterPro:IPR003571
+A0A815P0J3,Uncharacterized protein,Adineta steineri,175,82,152,,InterPro:IPR003571
+A0A816TU28,Uncharacterized protein,Rotaria magnacalcarata,179,83,153,,InterPro:IPR003571
+A0A818EXY6,Uncharacterized protein,Rotaria socialis,122,24,90,,InterPro:IPR003571
+A0A818LZ99,Uncharacterized protein,Rotaria socialis,179,83,153,,InterPro:IPR003571
+A0A818RL83,Uncharacterized protein,Rotaria sordida,181,81,155,,InterPro:IPR003571
+A0A898IJN7,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),88,22,85,,InterPro:IPR003571
+A0A898IJU7,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),92,25,87,,InterPro:IPR003571
+A0A898IJX5,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),78,22,77,,InterPro:IPR003571
+A0A898IJZ2,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),80,22,79,,InterPro:IPR003571
+A0A898IKP8,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),80,22,77,,InterPro:IPR003571
+A0A898IKR2,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),84,22,77,,InterPro:IPR003571
+A0A898IKZ4,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),81,22,80,,InterPro:IPR003571
+A0A898IL04,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),78,22,77,,InterPro:IPR003571
+A0A898IL27,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),80,22,77,,InterPro:IPR003571
+A0A898IL68,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),81,22,80,,InterPro:IPR003571
+A0A898ILD4,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),74,22,73,,InterPro:IPR003571
+A0A898ILG1,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),76,22,75,,InterPro:IPR003571
+A0A898ILL6,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),81,25,80,,InterPro:IPR003571
+A0A898ILP2,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),81,22,80,,InterPro:IPR003571
+A0A898ILQ5,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),76,22,75,,InterPro:IPR003571
+A0A898IMW8,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),92,22,87,,InterPro:IPR003571
+A0A898IMX4,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),85,22,84,,InterPro:IPR003571
+A0A898IN02,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),80,22,77,,InterPro:IPR003571
+A0A898IN07,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),78,22,77,,InterPro:IPR003571
+A0A898IN20,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),92,25,87,,InterPro:IPR003571
+A0A898IN21,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),75,22,74,,InterPro:IPR003571
+A0A898IN37,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),78,22,77,,InterPro:IPR003571
+A0A898IN41,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),80,22,79,,InterPro:IPR003571
+A0A898IN50,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),75,22,74,,InterPro:IPR003571
+A0A898IN56,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),74,22,73,,InterPro:IPR003571
+A0A898IN64,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),76,29,75,,InterPro:IPR003571
+A0A898IN70,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),81,22,80,,InterPro:IPR003571
+A0A898IN78,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),81,22,80,,InterPro:IPR003571
+A0A898IN91,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),76,29,75,,InterPro:IPR003571
+A0A898IN96,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),76,30,75,,InterPro:IPR003571
+A0A898INK0,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),90,22,88,,InterPro:IPR003571
+A0A898INL0,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),78,22,77,,InterPro:IPR003571
+A0A898INL5,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),81,22,80,,InterPro:IPR003571
+A0A898INM0,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),79,22,78,,InterPro:IPR003571
+A0A898IPF7,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),74,22,73,,InterPro:IPR003571
+A0A898IPI1,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),78,22,77,,InterPro:IPR003571
+A0A898IPI9,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),81,22,80,,InterPro:IPR003571
+A0A898IPK1,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),79,22,78,,InterPro:IPR003571
+A0A898IPK7,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),78,22,77,,InterPro:IPR003571
+A0A898IPN0,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),76,22,75,,InterPro:IPR003571
+A0A898IPN2,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),79,22,77,,InterPro:IPR003571
+A0A898IPN4,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),81,25,80,,InterPro:IPR003571
+A0A898IPN6,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),81,22,80,,InterPro:IPR003571
+A0A898IPP1,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),81,22,80,,InterPro:IPR003571
+A0A898IPP4,Three-finger toxin,Calliophis bivirgatus (Blue Malaysian coral snake),84,22,84,,InterPro:IPR003571
+A0A8C6XA92,Uncharacterized protein,Naja naja (Indian cobra),96,22,57,,InterPro:IPR003571
+A0A8C6XDS2,Uncharacterized protein,Naja naja (Indian cobra),87,22,48,,InterPro:IPR003571
+A0A8C6XDU5,Uncharacterized protein,Naja naja (Indian cobra),65,1,64,,InterPro:IPR003571
+A0A8C6XDY8,Uncharacterized protein,Naja naja (Indian cobra),86,26,85,,InterPro:IPR003571
+A0A8C6XET3,Uncharacterized protein,Naja naja (Indian cobra),86,22,85,,InterPro:IPR003571
+A0A8C6XF04,Uncharacterized protein,Naja naja (Indian cobra),99,35,98,,InterPro:IPR003571
+A0A8C6XFH6,Uncharacterized protein,Naja naja (Indian cobra),81,22,81,,InterPro:IPR003571
+A0A8C6XFM5,Uncharacterized protein,Naja naja (Indian cobra),81,22,81,,InterPro:IPR003571
+A0A8C6XG05,Uncharacterized protein,Naja naja (Indian cobra),81,22,81,,InterPro:IPR003571
+A0A8C6XGV8,Uncharacterized protein,Naja naja (Indian cobra),86,22,85,,InterPro:IPR003571
+A0A8C6XHB2,Uncharacterized protein,Naja naja (Indian cobra),87,28,87,,InterPro:IPR003571
+A0A8C6XIA8,Uncharacterized protein,Naja naja (Indian cobra),71,3,63,,InterPro:IPR003571
+A0A8C6XLA1,Uncharacterized protein,Naja naja (Indian cobra),81,22,81,,InterPro:IPR003571
+A0A8C6XLE6,Uncharacterized protein,Naja naja (Indian cobra),85,21,84,,InterPro:IPR003571
+A0A8C6XLI6,Uncharacterized protein,Naja naja (Indian cobra),58,1,58,,InterPro:IPR003571
+A0A8C6XPA7,Uncharacterized protein,Naja naja (Indian cobra),83,22,83,,InterPro:IPR003571
+A0A8C6XQ33,Uncharacterized protein,Naja naja (Indian cobra),81,22,81,,InterPro:IPR003571
+A0A8C6XQF9,Uncharacterized protein,Naja naja (Indian cobra),86,22,85,,InterPro:IPR003571
+A0A8C6XRN7,Uncharacterized protein,Naja naja (Indian cobra),83,22,83,,InterPro:IPR003571
+A0A8C7DVX6,Uncharacterized protein,Naja naja (Indian cobra),187,123,186,,InterPro:IPR003571
+A0A8C7DYM9,Uncharacterized protein,Naja naja (Indian cobra),81,22,81,,InterPro:IPR003571
+A0A8C7DYP2,Uncharacterized protein,Naja naja (Indian cobra),115,56,115,,InterPro:IPR003571
+A0A8J9Z921,UPAR/Ly6 domain-containing protein,Branchiostoma lanceolatum (Common lancelet),862,14,92,,InterPro:IPR003571
+A0A8J9Z9R8,Snake toxin/toxin-like domain-containing protein,Branchiostoma lanceolatum (Common lancelet),176,25,100,,InterPro:IPR003571
+A0A8J9ZFT3,DOMON domain-containing protein,Branchiostoma lanceolatum (Common lancelet),409,295,376,,InterPro:IPR003571
+A0A8R1DQ65,CD59 glycoprotein-like,Caenorhabditis japonica,156,46,114,,InterPro:IPR003571
+A0A8S1E6S4,Guanylate cyclase,Caenorhabditis bovis,1076,22,90,,InterPro:IPR003571
+A0A8S3SZ43,ShKT domain-containing protein,Mytilus edulis (Blue mussel),1478,329,403,,InterPro:IPR003571
+A0A8S3T0B0,MAM domain-containing protein,Mytilus edulis (Blue mussel),624,89,160,,InterPro:IPR003571
+A0A8S4NPY5,UPAR/Ly6 domain-containing protein,Owenia fusiformis (Polychaete worm),148,50,119,,InterPro:IPR003571
+A0A913WSI7,WSC domain-containing protein,Exaiptasia diaphana (Tropical sea anemone),381,198,271,,InterPro:IPR003571
+A0A913YJ15,WSC domain-containing protein,Exaiptasia diaphana (Tropical sea anemone),730,198,271,,InterPro:IPR003571
+A0A914GLY3,Beta-glucosidase,Panagrolaimus sp. ES5,560,9,71,,InterPro:IPR003571
+A0A914IUI8,Lactase-phlorizin hydrolase-like,Panagrolaimus sp. JU765,983,545,607,,InterPro:IPR003571
+A0A914IX96,Lactase-phlorizin hydrolase-like,Panagrolaimus sp. JU765,1009,571,633,,InterPro:IPR003571
+A0A9D1E7W6,Butyryl-CoA:acetate CoA-transferase,Candidatus Pullilachnospira gallistercoris,447,72,101,,InterPro:IPR003571
+A0A9D4I5S4,Fibrinogen C-terminal domain-containing protein,Dreissena polymorpha (Zebra mussel),642,37,116,,InterPro:IPR003571
+A0A9D4IF63,Uncharacterized protein,Dreissena polymorpha (Zebra mussel),750,41,122,,InterPro:IPR003571
+A0A9P1MLX1,Uncharacterized protein,Auanema sp. JU1783,908,766,832,,InterPro:IPR003571
+A0A9W3BB33,SRCR domain-containing protein,Biomphalaria glabrata (Bloodfluke planorb),892,21,111,,InterPro:IPR003571
+A0AA35LG58,Snake toxin/toxin-like domain-containing protein,Podarcis lilfordi (Lilford's wall lizard),104,41,96,,InterPro:IPR003571
+A0AA36CKW9,Uncharacterized protein,Mesorhabditis spiculigera,320,24,80,,InterPro:IPR003571
+A0AA36D3B7,Uncharacterized protein,Mesorhabditis spiculigera,320,24,80,,InterPro:IPR003571
+A0AA39H3S7,Uncharacterized protein,Steinernema hermaphroditum,519,412,475,,InterPro:IPR003571
+A0AA39IAI0,4Fe-4S ferredoxin-type domain-containing protein,Steinernema hermaphroditum,219,25,81,,InterPro:IPR003571
+A0AA50NXL8,C2H2-type domain-containing protein,Oxybelis aeneus (Gray vine snake),111,44,109,,InterPro:IPR003571
+A0AA50NXU0,Three-finger toxin,Oxybelis aeneus (Gray vine snake),112,44,110,,InterPro:IPR003571
+A0AA50NXX1,Three finger toxin,Chironius multiventris,98,46,98,,InterPro:IPR003571
+A0AA50NYC5,Three-finger toxin,Oxybelis aeneus (Gray vine snake),111,47,109,,InterPro:IPR003571
+A0AA50NYG7,Three-finger toxin,Oxybelis aeneus (Gray vine snake),108,47,106,,InterPro:IPR003571
+A0AA50NYJ2,Three-finger toxin,Chironius multiventris,107,46,105,,InterPro:IPR003571
+A0AA50NZJ7,Three finger toxin,Spilotes sulphureus (Amazon puffing snake),87,22,85,,InterPro:IPR003571
+A0AA50NZK7,Three finger toxin,Spilotes sulphureus (Amazon puffing snake),107,43,105,,InterPro:IPR003571
+A0AA50NZS2,Three-finger toxin,Chironius multiventris,108,44,106,,InterPro:IPR003571
+A0AA50NZZ9,Three-finger toxin,Rhinobothryum bovallii,111,44,109,,InterPro:IPR003571
+A0AA50P015,Three-finger toxin,Chironius multiventris,108,44,106,,InterPro:IPR003571
+A0AA50P0P5,Three-finger toxin,Oxybelis aeneus (Gray vine snake),108,43,106,,InterPro:IPR003571
+A0AA50RSC0,Three finger toxin,Chironius multiventris,93,25,91,,InterPro:IPR003571
+A0AA50RSC4,Three-finger toxin,Chironius multiventris,117,50,115,,InterPro:IPR003571
+A0AA50RTI9,Three-finger toxin,Chironius multiventris,112,42,110,,InterPro:IPR003571
+A0AA50RTJ7,Three-finger toxin,Chironius multiventris,111,44,109,,InterPro:IPR003571
+A0AA50S1U2,Snake toxin/toxin-like domain-containing protein,Rhinobothryum bovallii,116,44,109,,InterPro:IPR003571
+A0AA50S1U3,Three finger toxin,Spilotes sulphureus (Amazon puffing snake),111,43,109,,InterPro:IPR003571
+A0AA50S1V1,Snake toxin/toxin-like domain-containing protein,Oxybelis aeneus (Gray vine snake),87,22,85,,InterPro:IPR003571
+A0AA50S1V3,Three finger toxin,Spilotes sulphureus (Amazon puffing snake),111,43,109,,InterPro:IPR003571
+A0AA50S1V7,Three finger toxin,Chironius multiventris,112,56,110,,InterPro:IPR003571
+A0AA50S1W0,Three-finger toxin,Chironius multiventris,111,44,109,,InterPro:IPR003571
+A0AAJ7T9K6,Uncharacterized protein LOC116943799 isoform X2,Petromyzon marinus (Sea lamprey),219,90,148,,InterPro:IPR003571
+A0AAJ7WWT7,Uncharacterized protein LOC116943799 isoform X1,Petromyzon marinus (Sea lamprey),221,92,150,,InterPro:IPR003571
+A0AAN9B2L4,Uncharacterized protein,Littorina saxatilis,374,276,357,,InterPro:IPR003571
+A0AAV5TNH1,Uncharacterized protein,Pristionchus entomophagus,276,21,84,,InterPro:IPR003571
+A0AAW0PV41,Uncharacterized protein,Mugilogobius chulae (yellowstripe goby),3958,121,201,,InterPro:IPR003571
+A0AAW1BKT6,Three-fingered toxin-12,Crotalus adamanteus (Eastern diamondback rattlesnake),80,22,80,,InterPro:IPR003571
+A0AAW1BL01,Three-fingered toxin-05,Crotalus adamanteus (Eastern diamondback rattlesnake),85,22,85,,InterPro:IPR003571
+A0AAW1BLJ7,Three-fingered toxin-06,Crotalus adamanteus (Eastern diamondback rattlesnake),90,34,87,,InterPro:IPR003571
+A0AAW1BLL8,VENOM COMPONENT: three-fingered toxin-04,Crotalus adamanteus (Eastern diamondback rattlesnake),85,22,84,,InterPro:IPR003571
+A0AAW1BLQ4,Three-fingered toxin-18,Crotalus adamanteus (Eastern diamondback rattlesnake),84,34,83,,InterPro:IPR003571
+A0AAW1BLR8,Three-fingered toxin-33,Crotalus adamanteus (Eastern diamondback rattlesnake),90,22,84,,InterPro:IPR003571
+A0AAW1BLY0,VENOM COMPONENT: three-fingered toxin-02,Crotalus adamanteus (Eastern diamondback rattlesnake),86,22,86,,InterPro:IPR003571
+A0AAW1BM52,Three-fingered toxin-13,Crotalus adamanteus (Eastern diamondback rattlesnake),85,22,85,,InterPro:IPR003571
+A0AAW1BM85,VENOM COMPONENT: three-fingered toxin-07,Crotalus adamanteus (Eastern diamondback rattlesnake),100,22,90,,InterPro:IPR003571
+A0AAW1BN42,Three-fingered toxin-14,Crotalus adamanteus (Eastern diamondback rattlesnake),83,22,83,,InterPro:IPR003571
+A0S864,Irditoxin subunit A,Boiga irregularis (Brown tree snake),109,46,107,,InterPro:IPR003571
+A0S865,Irditoxin subunit B,Boiga irregularis (Brown tree snake),111,42,109,,InterPro:IPR003571
+A1IVR7,Alpha-elapitoxin-Bc2c,Bungarus candidus (Malayan krait),75,3,67,,InterPro:IPR003571
+A1IVR8,Alpha-elapitoxin-Bc2a,Bungarus candidus (Malayan krait),75,3,67,,InterPro:IPR003571
+A1IVR9,Alpha-elapitoxin-Bc2b,Bungarus candidus (Malayan krait),75,3,67,,InterPro:IPR003571
+A2CKF6,Neurotoxin 3FTx-8a,Bungarus fasciatus (Banded krait),86,22,85,,InterPro:IPR003571
+A2CKF7,Neurotoxin 3FTx-LT,Bungarus fasciatus (Banded krait),86,22,85,,InterPro:IPR003571
+A3FM53,Long neurotoxin 2,Hydrophis hardwickii (Hardwick's spine-bellied seasnake),93,23,85,,InterPro:IPR003571
+A5X2W6,Three finger toxin 1,Sistrurus catenatus edwardsii (Desert massasauga),88,22,86,,InterPro:IPR003571
+A5X2W7,Three finger toxin 2,Sistrurus catenatus edwardsii (Desert massasauga),85,22,84,,InterPro:IPR003571
+A5X2W8,Three-finger toxin 3,Sistrurus catenatus edwardsii (Desert massasauga),89,24,88,,InterPro:IPR003571
+A5X2W9,Snake toxin/toxin-like domain-containing protein,Sistrurus catenatus edwardsii (Desert massasauga),86,22,84,,InterPro:IPR003571
+A5X2X0,Snake toxin/toxin-like domain-containing protein,Sistrurus catenatus edwardsii (Desert massasauga),85,22,84,,InterPro:IPR003571
+A6MFK4,Long neurotoxin LNTX-1,Demansia vestigiata (Lesser black whip snake),88,22,85,,InterPro:IPR003571
+A6MFK5,Long neurotoxin LNTX-2,Demansia vestigiata (Lesser black whip snake),88,22,85,,InterPro:IPR003571
+A6MFK6,Short neurotoxin SNTX-1,Demansia vestigiata (Lesser black whip snake),84,23,83,,InterPro:IPR003571
+A7X3M3,Toxin 3FTx-Psa1,Psammophis mossambicus (Olive sand snake),90,22,83,,InterPro:IPR003571
+A7X3M9,Probable weak neurotoxin 3FTx-Lio1,Erythrolamprus poecilogyrus (Water snake),85,19,82,,InterPro:IPR003571
+A7X3N6,3FTx-Tel1,Telescopus dhara (Egyptian catsnake),84,22,84,,InterPro:IPR003571
+A7X3P8,3FTx-Lio3,Erythrolamprus poecilogyrus (Water snake),77,22,76,,InterPro:IPR003571
+A7X3Q4,3FTx-Dis1,Dispholidus typus (Boomslang),84,22,84,,InterPro:IPR003571
+A7X3Q9,3FTx-Tri1,Trimorphodon biscutatus (Western lyre snake),85,22,85,,InterPro:IPR003571
+A7X3R6,Toxin 3FTx-Lei1,Leioheterodon madagascariensis (Malagasy giant hognose snake),85,22,85,,InterPro:IPR003571
+A7X3S0,Toxin 3FTx-Tri2,Trimorphodon biscutatus (Western lyre snake),111,47,109,,InterPro:IPR003571
+A7X3S2,Toxin 3FTx-Tri3,Trimorphodon biscutatus (Western lyre snake),111,82,109,,InterPro:IPR003571
+A7X3S5,Snake toxin/toxin-like domain-containing protein,Telescopus dhara (Egyptian catsnake),92,25,90,,InterPro:IPR003571
+A7X3S8,Snake toxin/toxin-like domain-containing protein,Telescopus dhara (Egyptian catsnake),92,25,90,,InterPro:IPR003571
+A7X3T2,3FTx-Dis2,Dispholidus typus (Boomslang),94,25,91,,InterPro:IPR003571
+A7X3T6,3FTx-Thr1,Thrasops jacksonii (Jackson's black tree snake),94,25,91,,InterPro:IPR003571
+A7X3U0,3FTx-Dis3,Dispholidus typus (Boomslang),94,25,91,,InterPro:IPR003571
+A7X3U4,3FTx-Thr2,Thrasops jacksonii (Jackson's black tree snake),88,23,86,,InterPro:IPR003571
+A7X3U7,Snake toxin/toxin-like domain-containing protein,Thrasops jacksonii (Jackson's black tree snake),89,23,86,,InterPro:IPR003571
+A7X3V0,Toxin 3FTx-Tel4,Telescopus dhara (Egyptian catsnake),111,47,109,,InterPro:IPR003571
+A7X4Q3,Long neurotoxin 3FTx-Oxy1,Oxyuranus microlepidotus (Inland taipan),92,22,86,,InterPro:IPR003571
+A7X4R0,Long neurotoxin 3FTx-Oxy2,Oxyuranus microlepidotus (Inland taipan),92,22,86,,InterPro:IPR003571
+A7X4R5,Short neurotoxin 3FTx-Oxy3,Oxyuranus microlepidotus (Inland taipan),83,22,82,,InterPro:IPR003571
+A7X4S0,Short neurotoxin 3FTx-Oxy4,Oxyuranus microlepidotus (Inland taipan),83,22,82,,InterPro:IPR003571
+A7X4S7,Toxin 3FTx-Oxy5,Oxyuranus microlepidotus (Inland taipan),79,22,78,,InterPro:IPR003571
+A7X4T2,Three-finger toxin 3FTx-Oxy6,Oxyuranus microlepidotus (Inland taipan),81,22,80,,InterPro:IPR003571
+A7X6I4,Toxin 3FTx-Thr5,Thrasops jacksonii (Jackson's black tree snake),86,22,85,,InterPro:IPR003571
+A7X6J0,Toxin 3FTx-Dis4,Dispholidus typus (Boomslang),86,22,85,,InterPro:IPR003571
+A8HDJ4,Alpha-elapitoxin-Ppr1,Pseudechis porphyriacus (Red-bellied black snake),83,22,82,,InterPro:IPR003571
+A8HDJ5,Short neurotoxin 1,Tropidechis carinatus (Australian rough-scaled snake),81,22,80,,InterPro:IPR003571
+A8HDJ6,Short neurotoxin 2,Tropidechis carinatus (Australian rough-scaled snake),81,22,80,,InterPro:IPR003571
+A8HDJ7,Short neurotoxin 1,Cryptophis nigrescens (Eastern small-eyed snake),81,22,80,,InterPro:IPR003571
+A8HDJ8,Short neurotoxin 2,Cryptophis nigrescens (Eastern small-eyed snake),81,22,80,,InterPro:IPR003571
+A8HDJ9,Short neurotoxin 1,Hoplocephalus stephensii (Stephens's banded snake),81,22,80,,InterPro:IPR003571
+A8HDK0,Short neurotoxin 1,Notechis scutatus scutatus (Mainland tiger snake),81,22,80,,InterPro:IPR003571
+A8HDK1,Short neurotoxin 8,Pseudonaja textilis (Eastern brown snake),79,22,78,,InterPro:IPR003571
+A8HDK2,Short neurotoxin 3,Oxyuranus scutellatus scutellatus (Australian taipan),79,22,78,,InterPro:IPR003571
+A8HDK4,Long neurotoxin 1,Tropidechis carinatus (Australian rough-scaled snake),93,22,85,,InterPro:IPR003571
+A8HDK6,Long neurotoxin 1,Pseudonaja textilis (Eastern brown snake),89,31,81,,InterPro:IPR003571
+A8HDK7,Long neurotoxin 1,Oxyuranus microlepidotus (Inland taipan),92,22,86,,InterPro:IPR003571
+A8HDK8,Long neurotoxin 2,Oxyuranus microlepidotus (Inland taipan),92,22,86,,InterPro:IPR003571
+A8HDK9,Long neurotoxin 1,Oxyuranus scutellatus scutellatus (Australian taipan),92,22,86,,InterPro:IPR003571
+A8N285,Long neurotoxin LNTX-2 homolog,Ophiophagus hannah (King cobra),93,23,85,,InterPro:IPR003571
+A8N286,Haditoxin,Ophiophagus hannah (King cobra),86,22,85,,InterPro:IPR003571
+A8S6A4,Short neurotoxin 1,Austrelaps superbus (Lowland copperhead snake),81,22,80,,InterPro:IPR003571
+A8S6A8,Long neurotoxin 1,Austrelaps superbus (Lowland copperhead snake),90,22,85,,InterPro:IPR003571
+A8S6B0,Alpha-elapitoxin-As2a,Austrelaps superbus (Lowland copperhead snake),92,22,84,,InterPro:IPR003571
+B0FXL8,Siamenotoxin I,Naja siamensis,83,22,82,,InterPro:IPR003571
+B2BRQ5,Alpha-elapitoxin-Al2b,Austrelaps labialis (Pygmy copperhead),96,22,84,,InterPro:IPR003571
+B2BRQ6,Alpha-elapitoxin-Al2a,Austrelaps labialis (Pygmy copperhead),107,22,84,,InterPro:IPR003571
+B2BRQ7,Putative long neurotoxin,Austrelaps labialis (Pygmy copperhead),89,30,81,,InterPro:IPR003571
+B2BRQ8,Putative long neurotoxin,Austrelaps labialis (Pygmy copperhead),88,22,85,,InterPro:IPR003571
+B2BRQ9,Putative long neurotoxin,Austrelaps labialis (Pygmy copperhead),90,22,85,,InterPro:IPR003571
+B2BRR0,Putative long neurotoxin,Austrelaps labialis (Pygmy copperhead),88,22,85,,InterPro:IPR003571
+B2BRR1,Putative long neurotoxin,Austrelaps labialis (Pygmy copperhead),88,22,85,,InterPro:IPR003571
+B2BRR2,Putative long neurotoxin,Austrelaps labialis (Pygmy copperhead),88,22,85,,InterPro:IPR003571
+B2BRR3,Putative long neurotoxin,Austrelaps labialis (Pygmy copperhead),88,22,84,,InterPro:IPR003571
+B2BRR4,Putative long neurotoxin,Austrelaps labialis (Pygmy copperhead),88,22,85,,InterPro:IPR003571
+B2BRR5,Putative long neurotoxin,Austrelaps labialis (Pygmy copperhead),88,22,85,,InterPro:IPR003571
+B2BRR6,Putative long neurotoxin,Austrelaps labialis (Pygmy copperhead),88,22,85,,InterPro:IPR003571
+B2BRR7,Putative long neurotoxin,Austrelaps labialis (Pygmy copperhead),88,22,85,,InterPro:IPR003571
+B2BRR8,Putative long neurotoxin,Austrelaps labialis (Pygmy copperhead),88,22,85,,InterPro:IPR003571
+B2BRS1,Putative long neurotoxin,Austrelaps labialis (Pygmy copperhead),93,22,85,,InterPro:IPR003571
+B2BRS2,Putative short neurotoxin,Austrelaps labialis (Pygmy copperhead),81,22,80,,InterPro:IPR003571
+B2BRS3,Putative short neurotoxin,Austrelaps labialis (Pygmy copperhead),81,22,80,,InterPro:IPR003571
+B3EWH9,Three-finger hemachatoxin,Hemachatus haemachatus (Rinkhals),61,1,61,,InterPro:IPR003571
+B4Y143,Three finger toxin 2,Sistrurus catenatus edwardsii (Desert massasauga),85,22,84,,InterPro:IPR003571
+B4Y144,Three finger toxin 4,Sistrurus catenatus edwardsii (Desert massasauga),86,22,84,,InterPro:IPR003571
+B4Y145,Three finger toxin 5,Sistrurus catenatus edwardsii (Desert massasauga),86,22,84,,InterPro:IPR003571
+B5G6F6,SNTX-1,Oxyuranus microlepidotus (Inland taipan),83,22,82,,InterPro:IPR003571
+B6V825,Short chain neurotoxin 2,Hydrophis cyanocinctus (Asian annulated sea snake),68,9,67,,InterPro:IPR003571
+B6V826,Short chain neurotoxin 2,Deinagkistrodon acutus (Hundred-pace snake),68,9,67,,InterPro:IPR003571
+C0HJB0,Mambalgin-3,Dendroaspis angusticeps (Eastern green mamba),57,1,56,,InterPro:IPR003571
+C0HJD3,Fulgimotoxin,Oxybelis fulgidus (Green vine snake),74,13,73,,InterPro:IPR003571
+C0HJD7,Alpha-elapitoxin-Dpp2d,Dendroaspis polylepis polylepis (Black mamba),72,2,64,,InterPro:IPR003571
+C0HJR1,Micrurotoxin 1,Micrurus mipartitus (Red-tailed coral snake),64,1,64,,InterPro:IPR003571
+C0HJR2,Micrurotoxin 2,Micrurus mipartitus (Red-tailed coral snake),64,1,64,,InterPro:IPR003571
+C0HJT5,Ringhalexin,Hemachatus haemachatus (Rinkhals),65,1,64,,InterPro:IPR003571
+C0HK04,Clarkitoxin-1,Micrurus clarki (Clark's coral snake),66,1,65,,InterPro:IPR003571
+C0HLK3,Three-finger toxin Tschuditoxin-I,Micrurus tschudii (Desert coral snake),57,1,57,,InterPro:IPR003571
+C0HLK5,Clarkitoxin-I-Mdum,Micrurus dumerilii (Coral snake),66,1,65,,InterPro:IPR003571
+C0HM08,Alpha-elapitoxin-Nn2a,Naja naja (Indian cobra),62,1,61,,InterPro:IPR003571
+C0HM09,Alpha-elapitoxin-Nn3a,Naja naja (Indian cobra),71,3,63,,InterPro:IPR003571
+C1IC47,Three-finger toxin W-III,Walterinnesia aegyptia (Desert black snake),83,24,82,,InterPro:IPR003571
+C1IC48,Three-finger toxin W-IV,Walterinnesia aegyptia (Desert black snake),83,22,82,,InterPro:IPR003571
+C1IC49,Three-finger toxin W-V,Walterinnesia aegyptia (Desert black snake),86,22,85,,InterPro:IPR003571
+C5ILC5,Alpha-elapitoxin-Oh2a,Ophiophagus hannah (King cobra),93,22,86,,InterPro:IPR003571
+C6JUP0,3FTx,Micrurus corallinus (Brazilian coral snake),82,22,81,,InterPro:IPR003571
+C6JUP2,Three-finger toxin 3FTx-2,Micrurus corallinus (Brazilian coral snake),88,25,87,,InterPro:IPR003571
+C6JUP3,Three-finger toxin MicTx3,Micrurus corallinus (Brazilian coral snake),82,22,81,,InterPro:IPR003571
+C6JUP4,3FTx,Micrurus corallinus (Brazilian coral snake),79,33,78,,InterPro:IPR003571
+C6JUP5,3FTx,Micrurus corallinus (Brazilian coral snake),79,27,78,,InterPro:IPR003571
+D2N116,Alpha-delta-bungarotoxin-4,Bungarus caeruleus (Indian krait),76,3,68,,InterPro:IPR003571
+D2N117,Alpha-bungarotoxin (A5),Bungarus candidus (Malayan krait),76,10,68,,InterPro:IPR003571
+D2N118,Alpha-bungarotoxin (A31),Bungarus candidus (Malayan krait),76,10,68,,InterPro:IPR003571
+D2N120,Alpha-bungarotoxin (T7/A8),Bungarus candidus (Malayan krait),76,3,68,,InterPro:IPR003571
+D2N121,Alpha-bungarotoxin (A31),Bungarus multicinctus (Many-banded krait),76,10,68,,InterPro:IPR003571
+D2N122,Alpha-bungarotoxin (L32),Bungarus multicinctus (Many-banded krait),76,10,68,,InterPro:IPR003571
+D5J9N8,Short-chain three finger toxin isoform 1,Bungarus flaviceps,86,24,85,,InterPro:IPR003571
+D5J9N9,Short-chain three finger toxin isoform 2,Bungarus flaviceps,86,24,85,,InterPro:IPR003571
+D5J9P0,Short-chain three finger toxin isoform 3,Bungarus flaviceps,86,24,85,,InterPro:IPR003571
+D5J9P1,Short-chain three finger toxin isoform 4,Bungarus flaviceps,85,22,84,,InterPro:IPR003571
+D5J9P2,Short-chain three finger toxin isoform 5,Bungarus flaviceps,85,22,84,,InterPro:IPR003571
+D5J9P3,Short-chain three finger toxin isoform 6,Bungarus flaviceps,86,24,85,,InterPro:IPR003571
+D5J9P4,Short-chain three finger toxin isoform 7,Bungarus flaviceps,86,22,85,,InterPro:IPR003571
+D5J9P5,Non-conventional three finger toxin isoform 1,Bungarus flaviceps,88,22,87,,InterPro:IPR003571
+D5J9P6,Non-conventional three finger toxin isoform 2,Bungarus flaviceps,88,22,87,,InterPro:IPR003571
+D5J9P8,Non-conventional three finger toxin isoform 4,Bungarus flaviceps,88,22,87,,InterPro:IPR003571
+D5J9P9,Non-conventional three finger toxin isoform 5,Bungarus flaviceps,86,22,85,,InterPro:IPR003571
+D5J9Q0,Non-conventional three finger toxin isoform 6,Bungarus flaviceps,86,22,85,,InterPro:IPR003571
+D5J9Q1,Non-conventional three finger toxin isoform 7,Bungarus flaviceps,86,22,85,,InterPro:IPR003571
+D5J9Q2,Kappa-toxin,Bungarus flaviceps,63,3,62,,InterPro:IPR003571
+D5J9Q3,Muscarinic toxin-like protein,Bungarus flaviceps,103,22,97,,InterPro:IPR003571
+E2ITZ2,Three-finger toxin,Naja atra (Chinese cobra),86,22,85,,InterPro:IPR003571
+E2ITZ3,Alpha-elapitoxin-Na1a,Naja atra (Chinese cobra),83,22,82,,InterPro:IPR003571
+E2ITZ4,Three-finger toxin,Naja atra (Chinese cobra),82,22,81,,InterPro:IPR003571
+E2ITZ6,Three-finger toxin,Naja atra (Chinese cobra),86,22,85,,InterPro:IPR003571
+E2ITZ7,Three-finger toxin,Naja atra (Chinese cobra),81,22,81,,InterPro:IPR003571
+E2ITZ9,Three-finger toxin,Naja atra (Chinese cobra),63,3,62,,InterPro:IPR003571
+E2IU01,Three-finger toxin,Naja atra (Chinese cobra),57,7,51,,InterPro:IPR003571
+E2IU02,Three-finger toxin,Naja atra (Chinese cobra),67,3,66,,InterPro:IPR003571
+E2IU04,Three-finger toxin,Naja atra (Chinese cobra),62,3,62,,InterPro:IPR003571
+E2IU05,Three-finger toxin,Naja atra (Chinese cobra),62,3,62,,InterPro:IPR003571
+E2IU12,Three-finger toxin,Bungarus multicinctus (Many-banded krait),30,4,29,,InterPro:IPR003571
+E2IU14,Three-finger toxin,Bungarus multicinctus (Many-banded krait),30,1,29,,InterPro:IPR003571
+E2IU15,Three-finger toxin,Bungarus multicinctus (Many-banded krait),88,49,88,,InterPro:IPR003571
+F5CPD1,Putative three finger toxin,Micrurus altirostris (Uruguayan coral snake),82,23,81,,InterPro:IPR003571
+F5CPD2,Putative three finger toxin,Micrurus altirostris (Uruguayan coral snake),83,22,82,,InterPro:IPR003571
+F5CPD3,Three-finger toxin MALT0044C,Micrurus altirostris (Uruguayan coral snake),85,22,84,,InterPro:IPR003571
+F5CPD4,Putative three finger toxin,Micrurus altirostris (Uruguayan coral snake),84,24,83,,InterPro:IPR003571
+F5CPD5,Three-finger toxin MALT0051C,Micrurus altirostris (Uruguayan coral snake),81,22,80,,InterPro:IPR003571
+F5CPD6,Three-finger toxin MALT0052C,Micrurus altirostris (Uruguayan coral snake),83,22,82,,InterPro:IPR003571
+F5CPD7,Three finger toxin MALT0054C,Micrurus altirostris (Uruguayan coral snake),83,22,82,,InterPro:IPR003571
+F5CPD8,Three-finger toxin MALT0057C,Micrurus altirostris (Uruguayan coral snake),81,22,80,,InterPro:IPR003571
+F5CPD9,Three-finger toxin MALT0058C,Micrurus altirostris (Uruguayan coral snake),83,22,82,,InterPro:IPR003571
+F5CPE1,Putative three finger toxin,Micrurus altirostris (Uruguayan coral snake),83,22,82,,InterPro:IPR003571
+F5CPE4,Three-finger toxin MALT0066C,Micrurus altirostris (Uruguayan coral snake),83,22,82,,InterPro:IPR003571
+F5CPE5,Putative three finger toxin,Micrurus altirostris (Uruguayan coral snake),86,23,85,,InterPro:IPR003571
+F5CPE7,Putative three finger toxin,Micrurus altirostris (Uruguayan coral snake),81,22,80,,InterPro:IPR003571
+F8J2B3,Long neurotoxin 13,Drysdalia coronoides (White-lipped snake),108,22,85,,InterPro:IPR003571
+F8J2D6,Putative long chain neurotoxin 173,Drysdalia coronoides (White-lipped snake),108,22,85,,InterPro:IPR003571
+F8J2D7,Long neurotoxin 43,Drysdalia coronoides (White-lipped snake),108,22,85,,InterPro:IPR003571
+F8J2D8,Putative long chain neurotoxin 620,Drysdalia coronoides (White-lipped snake),92,22,84,,InterPro:IPR003571
+F8J2D9,Putative long chain neurotoxin 346,Drysdalia coronoides (White-lipped snake),108,22,85,,InterPro:IPR003571
+F8J2E0,Putative long chain neurotoxin 67,Drysdalia coronoides (White-lipped snake),92,22,84,,InterPro:IPR003571
+F8J2E1,Long neurotoxin 73,Drysdalia coronoides (White-lipped snake),92,22,84,,InterPro:IPR003571
+F8J2E2,Long neurotoxin 77,Drysdalia coronoides (White-lipped snake),92,22,84,,InterPro:IPR003571
+F8J2E3,Putative long chain neurotoxin 291,Drysdalia coronoides (White-lipped snake),88,22,85,,InterPro:IPR003571
+F8J2E5,Long neurotoxin 469,Drysdalia coronoides (White-lipped snake),92,22,84,,InterPro:IPR003571
+F8J2E6,Long neurotoxin 31,Drysdalia coronoides (White-lipped snake),88,22,85,,InterPro:IPR003571
+F8J2E7,Putative long chain neurotoxin 29b,Drysdalia coronoides (White-lipped snake),92,22,84,,InterPro:IPR003571
+F8J2E8,Putative long chain neurotoxin 472,Drysdalia coronoides (White-lipped snake),88,22,85,,InterPro:IPR003571
+F8J2E9,Putative long chain neurotoxin 146R,Drysdalia coronoides (White-lipped snake),108,22,85,,InterPro:IPR003571
+F8J2F0,Putative long chain neurotoxin 98R,Drysdalia coronoides (White-lipped snake),92,22,84,,InterPro:IPR003571
+F8J2F1,Putative long chain neurotoxin 178R,Drysdalia coronoides (White-lipped snake),88,22,85,,InterPro:IPR003571
+F8J2F2,Long neurotoxin 20,Drysdalia coronoides (White-lipped snake),88,22,85,,InterPro:IPR003571
+F8J2G2,Putative short chain neurotoxin 45,Drysdalia coronoides (White-lipped snake),81,22,80,,InterPro:IPR003571
+F8J2G3,Short neurotoxin 2,Drysdalia coronoides (White-lipped snake),81,22,80,,InterPro:IPR003571
+F8J2G4,Putative short chain neurotoxin 360,Drysdalia coronoides (White-lipped snake),81,22,80,,InterPro:IPR003571
+F8J2G5,Short neurotoxin 342,Drysdalia coronoides (White-lipped snake),78,22,77,,InterPro:IPR003571
+F8J2G6,Putative short chain neurotoxin 434,Drysdalia coronoides (White-lipped snake),78,22,77,,InterPro:IPR003571
+F8J2G7,Putative short chain neurotoxin 597,Drysdalia coronoides (White-lipped snake),86,22,75,,InterPro:IPR003571
+F8J2G8,Putative short chain neurotoxin 37R,Drysdalia coronoides (White-lipped snake),81,22,80,,InterPro:IPR003571
+F8J2G9,Putative short chain neurotoxin 101R,Drysdalia coronoides (White-lipped snake),88,22,80,,InterPro:IPR003571
+F8J2H0,Putative short chain neurotoxin 110R,Drysdalia coronoides (White-lipped snake),81,22,80,,InterPro:IPR003571
+F8J2H1,Putative short chain neurotoxin 61R,Drysdalia coronoides (White-lipped snake),81,22,80,,InterPro:IPR003571
+F8J2H2,Putative short chain neurotoxin 149R,Drysdalia coronoides (White-lipped snake),81,22,80,,InterPro:IPR003571
+F8QZ63,Putative neurotoxin 513V5,Drysdalia coronoides (White-lipped snake),78,25,78,,InterPro:IPR003571
+F8QZ65,Putative neurotoxin 513V11,Drysdalia coronoides (White-lipped snake),78,25,78,,InterPro:IPR003571
+H8PG58,Short-chain neurotoxin isoform 1,Suta nigriceps (Mallee black-backed snake),81,22,80,,InterPro:IPR003571
+H8PG59,Short-chain neurotoxin isoform 2,Suta nigriceps (Mallee black-backed snake),81,22,80,,InterPro:IPR003571
+H8PG60,Short-chain neurotoxin isoform 3,Suta nigriceps (Mallee black-backed snake),81,22,80,,InterPro:IPR003571
+H8PG61,Short-chain neurotoxin isoform 4,Suta nigriceps (Mallee black-backed snake),81,22,80,,InterPro:IPR003571
+H8PG62,Short-chain neurotoxin isoform 5,Suta nigriceps (Mallee black-backed snake),81,22,79,,InterPro:IPR003571
+H8PG63,Short-chain neurotoxin isoform 6,Suta nigriceps (Mallee black-backed snake),81,23,80,,InterPro:IPR003571
+H8PG64,Short-chain neurotoxin isoform 7,Suta nigriceps (Mallee black-backed snake),81,22,80,,InterPro:IPR003571
+H8PG65,Short-chain neurotoxin isoform 8,Suta nigriceps (Mallee black-backed snake),81,23,80,,InterPro:IPR003571
+H8PG66,Short-chain neurotoxin isoform 9,Suta nigriceps (Mallee black-backed snake),76,22,76,,InterPro:IPR003571
+H8PG67,Long-chain neurotoxin isoform 1,Suta nigriceps (Mallee black-backed snake),104,22,85,,InterPro:IPR003571
+H8PG68,Long-chain neurotoxin isoform 2,Suta nigriceps (Mallee black-backed snake),103,22,84,,InterPro:IPR003571
+K9MCH1,Three-finger toxin A1,Micrurus laticollaris (Balsas coral snake),81,22,80,,InterPro:IPR003571
+K9MCX0,Three-finger toxin A2,Micrurus laticollaris (Balsas coral snake),79,32,78,,InterPro:IPR003571
+M9SZR1,3FTx-Cyl-1,Cylindrophis ruffus (Red-tailed pipe snake),82,22,81,,InterPro:IPR003571
+M9T2J4,3FTx-Aze-1,Azemiops feae (Fea's viper),88,22,87,,InterPro:IPR003571
+O12961,Kappa-4-bungarotoxin,Bungarus multicinctus (Many-banded krait),87,22,86,,InterPro:IPR003571
+O12962,Kappa-5-bungarotoxin,Bungarus multicinctus (Many-banded krait),87,23,86,,InterPro:IPR003571
+O12963,Long neurotoxin homolog TA-bm16,Bungarus multicinctus (Many-banded krait),89,24,88,,InterPro:IPR003571
+O42255,Weak neurotoxin 5,Naja sputatrix (Malayan spitting cobra),86,22,85,,InterPro:IPR003571
+O42256,Weak neurotoxin 6,Naja sputatrix (Malayan spitting cobra),86,22,85,,InterPro:IPR003571
+O42257,Long neurotoxin 7,Naja sputatrix (Malayan spitting cobra),90,24,84,,InterPro:IPR003571
+O57326,Alpha-neurotoxin NTX-3,Naja sputatrix (Malayan spitting cobra),83,22,82,,InterPro:IPR003571
+O57327,Alpha-neurotoxin NTX-4,Naja sputatrix (Malayan spitting cobra),83,22,82,,InterPro:IPR003571
+O73856,Cytotoxin 4b,Naja sputatrix (Malayan spitting cobra),81,22,81,,InterPro:IPR003571
+O73857,Cytotoxin 5a,Naja sputatrix (Malayan spitting cobra),81,22,81,,InterPro:IPR003571
+O73858,Cytotoxin 6,Naja sputatrix (Malayan spitting cobra),62,3,62,,InterPro:IPR003571
+O73859,Cytotoxin 7,Naja sputatrix (Malayan spitting cobra),62,3,62,,InterPro:IPR003571
+O93422,Long neurotoxin homolog,Naja atra (Chinese cobra),86,22,85,,InterPro:IPR003571
+O93443,Naja naja atra deletetion of cardiotoxin 5,Naja atra (Chinese cobra),48,21,48,,InterPro:IPR003571
+O93471,Cytotoxin 1,Naja sputatrix (Malayan spitting cobra),81,22,81,,InterPro:IPR003571
+O93472,Cytotoxin 2c,Naja sputatrix (Malayan spitting cobra),81,22,81,,InterPro:IPR003571
+O93473,Cytotoxin 4a,Naja sputatrix (Malayan spitting cobra),81,22,81,,InterPro:IPR003571
+P01379,Alpha-elapitoxin-Ls2a,Laticauda semifasciata (Black-banded sea krait),87,22,84,,InterPro:IPR003571
+P01380,Alpha-elapitoxin-Ast2a,Hydrophis stokesii (Stokes's sea snake),70,10,63,,InterPro:IPR003571
+P01381,Alpha-elapitoxin-Ast2b,Hydrophis stokesii (Stokes's sea snake),72,10,63,,InterPro:IPR003571
+P01382,Alpha-elapitoxin-Nno2a,Naja oxiana (Central Asian cobra),73,1,65,,InterPro:IPR003571
+P01383,Long neurotoxin 1,Naja melanoleuca (Forest cobra),71,3,64,,InterPro:IPR003571
+P01384,Alpha-elapitoxin-Nss2a,Notechis scutatus scutatus (Mainland tiger snake),94,22,84,,InterPro:IPR003571
+P01385,Alpha-elapitoxin-Aa2b,Acanthophis antarcticus (Common death adder),73,10,63,,InterPro:IPR003571
+P01386,Long neurotoxin 2,Ophiophagus hannah (King cobra),73,2,64,,InterPro:IPR003571
+P01387,Long neurotoxin 1,Ophiophagus hannah (King cobra),73,2,64,,InterPro:IPR003571
+P01388,Long neurotoxin 2,Naja melanoleuca (Forest cobra),71,3,63,,InterPro:IPR003571
+P01389,Long neurotoxin 1,Naja anchietae (Anchieta's cobra),72,3,64,,InterPro:IPR003571
+P01390,Long neurotoxin 1,Naja nivea (Cape cobra),71,3,63,,InterPro:IPR003571
+P01391,Alpha-cobratoxin,Naja kaouthia (Monocled cobra),71,3,63,,InterPro:IPR003571
+P01393,Alpha-elapitoxin-Djk2a,Dendroaspis jamesoni kaimosae (Eastern Jameson's mamba),72,1,64,,InterPro:IPR003571
+P01394,Alpha-elapitoxin-Dv2b,Dendroaspis viridis (Western green mamba),72,1,63,,InterPro:IPR003571
+P01395,Alpha-elapitoxin-Dv2a,Dendroaspis viridis (Western green mamba),73,1,64,,InterPro:IPR003571
+P01396,Alpha-elapitoxin-Dpp2a,Dendroaspis polylepis polylepis (Black mamba),72,2,63,,InterPro:IPR003571
+P01397,Alpha-elapitoxin-Dpp2c,Dendroaspis polylepis polylepis (Black mamba),72,1,64,,InterPro:IPR003571
+P01398,Kappa-bungarotoxin,Bungarus multicinctus (Many-banded krait),87,22,86,,InterPro:IPR003571
+P01399,Weak toxin CM-13b,Naja annulifera (Banded Egyptian cobra),65,1,64,,InterPro:IPR003571
+P01400,Weak toxin S4C11,Naja melanoleuca (Forest cobra),65,1,64,,InterPro:IPR003571
+P01401,Weak toxin CM-11,Naja haje haje (Egyptian cobra),65,1,64,,InterPro:IPR003571
+P01402,Weak toxin CM-1b,Hemachatus haemachatus (Rinkhals),57,1,56,,InterPro:IPR003571
+P01404,Toxin F-VIII,Dendroaspis angusticeps (Eastern green mamba),81,22,80,,InterPro:IPR003571
+P01405,Toxin 4.9.6,Dendroaspis viridis (Western green mamba),60,1,59,,InterPro:IPR003571
+P01406,Toxin S5C4,Dendroaspis jamesoni kaimosae (Eastern Jameson's mamba),60,1,59,,InterPro:IPR003571
+P01407,Synergistic-type venom protein S2C4,Dendroaspis jamesoni kaimosae (Eastern Jameson's mamba),62,1,62,,InterPro:IPR003571
+P01408,"Synergistic-type venom protein C9S3, chain 1",Dendroaspis angusticeps (Eastern green mamba),63,1,62,,InterPro:IPR003571
+P01409,"Synergistic-type venom protein C9S3, chain 2",Dendroaspis angusticeps (Eastern green mamba),63,1,62,,InterPro:IPR003571
+P01410,"Synergistic-type venom protein C8S2, chain 1",Dendroaspis angusticeps (Eastern green mamba),62,1,62,,InterPro:IPR003571
+P01411,"Synergistic-type venom protein C8S2, chain 2",Dendroaspis angusticeps (Eastern green mamba),62,1,62,,InterPro:IPR003571
+P01412,Weak toxin DE-1,Ophiophagus hannah (King cobra),83,22,82,,InterPro:IPR003571
+P01414,Toxin FS-2,Dendroaspis polylepis polylepis (Black mamba),60,1,59,,InterPro:IPR003571
+P01415,Weak toxin CM-2,Naja haje haje (Egyptian cobra),61,1,60,,InterPro:IPR003571
+P01416,Short neurotoxin 1,Dendroaspis polylepis polylepis (Black mamba),60,1,59,,InterPro:IPR003571
+P01417,Short neurotoxin 1,Dendroaspis jamesoni kaimosae (Eastern Jameson's mamba),60,1,59,,InterPro:IPR003571
+P01418,Short neurotoxin 1,Dendroaspis viridis (Western green mamba),60,1,59,,InterPro:IPR003571
+P01419,Toxin S5C10,Dendroaspis jamesoni kaimosae (Eastern Jameson's mamba),58,1,57,,InterPro:IPR003571
+P01420,Short neurotoxin 3,Naja annulifera (Banded Egyptian cobra),61,1,60,,InterPro:IPR003571
+P01421,Short neurotoxin 4,Naja annulifera (Banded Egyptian cobra),61,1,60,,InterPro:IPR003571
+P01422,Short neurotoxin 2,Naja annulifera (Banded Egyptian cobra),61,1,60,,InterPro:IPR003571
+P01423,Short neurotoxin 2,Naja nivea (Cape cobra),61,1,60,,InterPro:IPR003571
+P01424,Short neurotoxin 1,Naja melanoleuca (Forest cobra),61,1,60,,InterPro:IPR003571
+P01425,Short neurotoxin 1,Hemachatus haemachatus (Rinkhals),61,1,60,,InterPro:IPR003571
+P01426,Short neurotoxin 1,Naja pallida (Red spitting cobra),61,1,60,,InterPro:IPR003571
+P01427,Short neurotoxin 1,Naja oxiana (Central Asian cobra),61,1,60,,InterPro:IPR003571
+P01431,Short neurotoxin 1,Naja mossambica (Mozambique spitting cobra),62,1,61,,InterPro:IPR003571
+P01432,Short neurotoxin 3,Naja mossambica (Mozambique spitting cobra),62,1,61,,InterPro:IPR003571
+P01433,Short neurotoxin 2,Hemachatus haemachatus (Rinkhals),61,1,60,,InterPro:IPR003571
+P01434,Short neurotoxin 1,Acanthophis antarcticus (Common death adder),62,3,61,,InterPro:IPR003571
+P01437,Short neurotoxin 1,Hydrophis lapemoides (Persian gulf sea snake),60,1,59,,InterPro:IPR003571
+P01440,Cytotoxin 2,Naja naja (Indian cobra),60,1,60,,InterPro:IPR003571
+P01441,Cytotoxin 2,Naja oxiana (Central Asian cobra),60,1,60,,InterPro:IPR003571
+P01442,Cytotoxin 2,Naja atra (Chinese cobra),81,22,81,,InterPro:IPR003571
+P01443,Cytotoxin 4,Naja atra (Chinese cobra),81,23,81,,InterPro:IPR003571
+P01445,Cytotoxin 2,Naja kaouthia (Monocled cobra),60,1,60,,InterPro:IPR003571
+P01446,Cytotoxin 3,Naja kaouthia (Monocled cobra),60,1,60,,InterPro:IPR003571
+P01447,Cytotoxin 1,Naja naja (Indian cobra),60,1,60,,InterPro:IPR003571
+P01448,Cytotoxin 1,Naja melanoleuca (Forest cobra),60,3,60,,InterPro:IPR003571
+P01451,Cytotoxin 1,Naja oxiana (Central Asian cobra),60,1,60,,InterPro:IPR003571
+P01452,Cytotoxin 4,Naja mossambica (Mozambique spitting cobra),60,1,60,,InterPro:IPR003571
+P01453,Cytotoxin 10,Naja annulifera (Banded Egyptian cobra),60,3,60,,InterPro:IPR003571
+P01454,Cytotoxin 9,Naja annulifera (Banded Egyptian cobra),60,3,60,,InterPro:IPR003571
+P01455,Cytotoxin 1,Naja annulifera (Banded Egyptian cobra),60,1,60,,InterPro:IPR003571
+P01456,Cytotoxin 1,Naja nivea (Cape cobra),60,1,60,,InterPro:IPR003571
+P01457,Cytotoxin 5,Naja haje haje (Egyptian cobra),60,1,60,,InterPro:IPR003571
+P01458,Cytotoxin 3,Naja nivea (Cape cobra),60,1,60,,InterPro:IPR003571
+P01459,Cytotoxin 3,Naja annulifera (Banded Egyptian cobra),60,1,60,,InterPro:IPR003571
+P01460,Cytotoxin 8,Naja annulifera (Banded Egyptian cobra),60,1,60,,InterPro:IPR003571
+P01461,Cytotoxin 4,Naja annulifera (Banded Egyptian cobra),60,1,60,,InterPro:IPR003571
+P01462,Cytotoxin 2,Naja annulifera (Banded Egyptian cobra),60,1,60,,InterPro:IPR003571
+P01463,Cytotoxin 2,Naja nivea (Cape cobra),60,1,60,,InterPro:IPR003571
+P01464,Cytotoxin 5,Naja annulifera (Banded Egyptian cobra),60,1,60,,InterPro:IPR003571
+P01465,Cytotoxin 6,Naja annulifera (Banded Egyptian cobra),60,1,60,,InterPro:IPR003571
+P01466,Cytotoxin 7,Naja annulifera (Banded Egyptian cobra),60,1,60,,InterPro:IPR003571
+P01467,Cytotoxin 1,Naja mossambica (Mozambique spitting cobra),60,1,60,,InterPro:IPR003571
+P01468,Cytotoxin 1,Naja pallida (Red spitting cobra),60,1,60,,InterPro:IPR003571
+P01469,Cytotoxin 2,Naja mossambica (Mozambique spitting cobra),60,1,60,,InterPro:IPR003571
+P01470,Cytotoxin 3,Naja mossambica (Mozambique spitting cobra),60,1,60,,InterPro:IPR003571
+P01471,Cytotoxin 1,Hemachatus haemachatus (Rinkhals),61,1,61,,InterPro:IPR003571
+P01473,Cytotoxin homolog 3,Naja melanoleuca (Forest cobra),61,4,61,,InterPro:IPR003571
+P01474,Cytotoxin homolog 2,Naja melanoleuca (Forest cobra),61,4,61,,InterPro:IPR003571
+P07525,Cytotoxin 5,Naja atra (Chinese cobra),60,1,60,,InterPro:IPR003571
+P07526,Long neurotoxin 3,Ophiophagus hannah (King cobra),73,2,63,,InterPro:IPR003571
+P0C1Y9,Fasciculin-1,Dendroaspis angusticeps (Eastern green mamba),61,1,60,,InterPro:IPR003571
+P0C1Z0,Fasciculin-2,Dendroaspis angusticeps (Eastern green mamba),61,1,60,,InterPro:IPR003571
+P0C552,Neurotoxin 3FTx-LK,Bungarus fasciatus (Banded krait),78,22,77,,InterPro:IPR003571
+P0C553,Neurotoxin 3FTx-LI,Bungarus fasciatus (Banded krait),79,22,78,,InterPro:IPR003571
+P0C554,Neurotoxin 3FTx-RK,Bungarus fasciatus (Banded krait),86,22,85,,InterPro:IPR003571
+P0C555,Neurotoxin 3FTx-RI,Bungarus fasciatus (Banded krait),83,22,82,,InterPro:IPR003571
+P0C8R6,Alpha-elapitoxin-Lc2c,Laticauda colubrina (Yellow-lipped sea krait),69,1,63,,InterPro:IPR003571
+P0C8R7,Toxin Lc a,Laticauda colubrina (Yellow-lipped sea krait),69,1,63,,InterPro:IPR003571
+P0C8R8,Toxin Lc b,Laticauda colubrina (Yellow-lipped sea krait),69,1,63,,InterPro:IPR003571
+P0CAR1,Short neurotoxin D1,Micrurus pyrrhocryptus (Coral snake),60,1,59,,InterPro:IPR003571
+P0CAR2,Short neurotoxin D2A,Micrurus pyrrhocryptus (Coral snake),47,1,47,,InterPro:IPR003571
+P0CAR4,Weak neurotoxin D2B,Micrurus pyrrhocryptus (Coral snake),58,1,57,,InterPro:IPR003571
+P0CB06,Short neurotoxin 2,Oxyuranus scutellatus scutellatus (Australian taipan),62,1,61,,InterPro:IPR003571
+P0CG02,Toxin aagardi,Hydrophis torquatus (West Coast black-headed sea snake),60,1,59,,InterPro:IPR003571
+P0CH80,Cytotoxin 1,Naja kaouthia (Monocled cobra),60,1,60,,InterPro:IPR003571
+P0DKR6,Mambalgin-1,Dendroaspis polylepis polylepis (Black mamba),78,22,77,,InterPro:IPR003571
+P0DKS3,Mambalgin-2,Dendroaspis polylepis polylepis (Black mamba),57,1,56,,InterPro:IPR003571
+P0DKW9,Alpha-elapitoxin-Aa2e,Acanthophis antarcticus (Common death adder),79,10,63,,InterPro:IPR003571
+P0DL82,Delta-elapitoxin-Cb1a,Calliophis bivirgatus (Blue Malaysian coral snake),57,1,56,,InterPro:IPR003571
+P0DQH2,Exactin,Hemachatus haemachatus (Rinkhals),57,1,56,,InterPro:IPR003571
+P0DQP2,Venom protein SynTx,Dendroaspis jamesoni jamesoni (Jameson's mamba),84,20,83,,InterPro:IPR003571
+P0DQQ1,Long neurotoxin Tx-NM2,Naja melanoleuca (Forest cobra),72,3,64,,InterPro:IPR003571
+P0DQQ2,Long neurotoxin Tx-NM3-1,Naja melanoleuca (Forest cobra),71,3,63,,InterPro:IPR003571
+P0DQQ3,Muscarinic toxin-like protein Tx-NM3-2,Naja melanoleuca (Forest cobra),65,1,64,,InterPro:IPR003571
+P0DSM9,Weak toxin NWT,Naja kaouthia (Monocled cobra),53,1,53,,InterPro:IPR003571
+P0DSN0,Nakoroxin,Naja kaouthia (Monocled cobra),61,10,56,,InterPro:IPR003571
+P0DSN1,Naniproin,Naja nigricollis (Black-necked spitting cobra),60,1,60,,InterPro:IPR003571
+P0DUK7,Mu-elapitoxin-Na1a,Naja atra (Chinese cobra),62,1,62,,InterPro:IPR003571
+P0DXT0,Alpha-elapitoxin-Pc1,Pseudechis colletti (Collett's snake),62,1,61,,InterPro:IPR003571
+P10455,Short neurotoxin C,Laticauda colubrina (Yellow-lipped sea krait),83,22,82,,InterPro:IPR003571
+P10456,Short neurotoxin D,Laticauda colubrina (Yellow-lipped sea krait),83,22,82,,InterPro:IPR003571
+P10457,Short neurotoxin II,Laticauda colubrina (Yellow-lipped sea krait),83,22,82,,InterPro:IPR003571
+P10458,Short neurotoxin C,Laticauda crockeri (Crocker's sea snake),62,1,61,,InterPro:IPR003571
+P10459,Short neurotoxin B,Laticauda laticaudata (Blue-ringed sea krait),83,22,82,,InterPro:IPR003571
+P10460,Short neurotoxin C,Laticauda laticaudata (Blue-ringed sea krait),62,1,61,,InterPro:IPR003571
+P10808,Short neurotoxin 1,Bungarus fasciatus (Banded krait),64,1,63,,InterPro:IPR003571
+P13495,Pseudonajatoxin b,Pseudonaja textilis (Eastern brown snake),71,1,65,,InterPro:IPR003571
+P14541,Cytotoxin homolog,Naja kaouthia (Monocled cobra),62,1,62,,InterPro:IPR003571
+P14612,Long neurotoxin homolog Pa ID,Pseudechis australis (Mulga snake),89,22,85,,InterPro:IPR003571
+P14613,Short neurotoxin 1,Naja kaouthia (Monocled cobra),62,1,61,,InterPro:IPR003571
+P15815,Kappa-flavitoxin,Bungarus flaviceps flaviceps (Red-headed krait),66,1,65,,InterPro:IPR003571
+P15816,Kappa-2-bungarotoxin,Bungarus multicinctus (Many-banded krait),87,23,86,,InterPro:IPR003571
+P15817,Kappa-3-bungarotoxin,Bungarus multicinctus (Many-banded krait),87,22,86,,InterPro:IPR003571
+P15818,Long neurotoxin homolog,Bungarus multicinctus (Many-banded krait),87,22,87,,InterPro:IPR003571
+P17696,Synergistic-like venom protein,Dendroaspis angusticeps (Eastern green mamba),86,22,85,,InterPro:IPR003571
+P18328,Muscarinic toxin 2,Dendroaspis angusticeps (Eastern green mamba),86,22,85,,InterPro:IPR003571
+P18329,Toxin C13S1C1,Dendroaspis angusticeps (Eastern green mamba),80,22,80,,InterPro:IPR003571
+P19003,Cytotoxin homolog S3C2,Aspidelaps scutatus (Shield-nose snake),63,1,62,,InterPro:IPR003571
+P19004,Cytotoxin homolog S4C8,Aspidelaps scutatus (Shield-nose snake),64,1,63,,InterPro:IPR003571
+P19958,Short neurotoxin C,Aipysurus laevis (Olive sea snake),60,1,59,,InterPro:IPR003571
+P19959,Short neurotoxin B,Aipysurus laevis (Olive sea snake),81,22,80,,InterPro:IPR003571
+P19960,Short neurotoxin D,Aipysurus laevis (Olive sea snake),81,22,80,,InterPro:IPR003571
+P22947,Calciseptin,Dendroaspis polylepis polylepis (Black mamba),60,1,59,,InterPro:IPR003571
+P24776,Cytotoxin 2,Hemachatus haemachatus (Rinkhals),61,1,61,,InterPro:IPR003571
+P24777,Cytotoxin 3,Hemachatus haemachatus (Rinkhals),61,1,61,,InterPro:IPR003571
+P24778,Cytotoxin homolog,Hemachatus haemachatus (Rinkhals),63,1,62,,InterPro:IPR003571
+P24779,Cytotoxin 5,Naja kaouthia (Monocled cobra),60,1,60,,InterPro:IPR003571
+P24780,Cytotoxin 3,Naja naja (Indian cobra),60,1,60,,InterPro:IPR003571
+P25494,Short neurotoxin 1,Hydrophis cyanocinctus (Asian annulated sea snake),60,1,59,,InterPro:IPR003571
+P25495,Short neurotoxin A,Laticauda crockeri (Crocker's sea snake),62,1,61,,InterPro:IPR003571
+P25496,Short neurotoxin B,Laticauda crockeri (Crocker's sea snake),62,1,61,,InterPro:IPR003571
+P25497,Short neurotoxin 1,Pseudechis australis (Mulga snake),83,22,82,,InterPro:IPR003571
+P25517,Cytotoxin 5,Naja mossambica (Mozambique spitting cobra),60,1,60,,InterPro:IPR003571
+P25518,Adrenergic toxin rho-elapitoxin-Dp1b,Dendroaspis polylepis polylepis (Black mamba),65,1,64,,InterPro:IPR003571
+P25667,Alpha-elapitoxin-Dpp2b,Dendroaspis polylepis polylepis (Black mamba),72,2,64,,InterPro:IPR003571
+P25668,Long neurotoxin 1,Naja naja (Indian cobra),71,3,62,,InterPro:IPR003571
+P25669,Long neurotoxin 2,Naja naja (Indian cobra),71,3,62,,InterPro:IPR003571
+P25670,Long neurotoxin 1,Aspidelaps scutatus (Shield-nose snake),68,1,63,,InterPro:IPR003571
+P25671,Long neurotoxin 3,Naja naja (Indian cobra),71,3,62,,InterPro:IPR003571
+P25672,Long neurotoxin 4,Naja naja (Indian cobra),71,3,62,,InterPro:IPR003571
+P25673,Long neurotoxin 5,Naja naja (Indian cobra),71,3,62,,InterPro:IPR003571
+P25674,Long neurotoxin 1,Naja haje haje (Egyptian cobra),71,3,63,,InterPro:IPR003571
+P25675,Short neurotoxin 2,Naja haje haje (Egyptian cobra),61,1,60,,InterPro:IPR003571
+P25676,Weak toxin CM-1c,Hemachatus haemachatus (Rinkhals),61,1,60,,InterPro:IPR003571
+P25678,Weak toxin CM-2a,Naja annulifera (Banded Egyptian cobra),61,1,56,,InterPro:IPR003571
+P25679,Weak toxin CM-9a,Naja kaouthia (Monocled cobra),64,1,63,,InterPro:IPR003571
+P25680,Weak toxin CM-10,Naja nivea (Cape cobra),65,1,64,,InterPro:IPR003571
+P25681,Acetylcholinesterase toxin C,Dendroaspis polylepis polylepis (Black mamba),61,1,60,,InterPro:IPR003571
+P25683,Toxin S4C8,Dendroaspis jamesoni kaimosae (Eastern Jameson's mamba),60,1,59,,InterPro:IPR003571
+P25684,Toxin C10S2C2,Dendroaspis angusticeps (Eastern green mamba),60,1,59,,InterPro:IPR003571
+P28375,Dendroaspin,Dendroaspis jamesoni kaimosae (Eastern Jameson's mamba),59,1,58,,InterPro:IPR003571
+P29179,Weak neurotoxin 5,Naja naja (Indian cobra),62,1,61,,InterPro:IPR003571
+P29180,Weak neurotoxin 6,Naja naja (Indian cobra),65,1,64,,InterPro:IPR003571
+P29181,Weak neurotoxin 7,Naja naja (Indian cobra),65,1,64,,InterPro:IPR003571
+P29182,Weak neurotoxin 8,Naja naja (Indian cobra),65,1,64,,InterPro:IPR003571
+P32879,Short neurotoxin A,Aipysurus laevis (Olive sea snake),60,1,59,,InterPro:IPR003571
+P34073,Alpha-elapitoxin-Aa2d,Acanthophis antarcticus (Common death adder),74,1,64,,InterPro:IPR003571
+P34074,Long neurotoxin 1,Naja annulata annulata (Banded water cobra),71,3,63,,InterPro:IPR003571
+P34075,Short neurotoxin 1,Naja annulata annulata (Banded water cobra),61,2,60,,InterPro:IPR003571
+P34076,Short neurotoxin 1,Naja christyi (Christy's water cobra),62,1,61,,InterPro:IPR003571
+P43445,Short neurotoxin homolog,Bungarus multicinctus (Many-banded krait),83,33,82,,InterPro:IPR003571
+P49122,Cytotoxin 7,Naja atra (Chinese cobra),82,22,82,,InterPro:IPR003571
+P49123,Cytotoxin 8,Naja atra (Chinese cobra),81,22,80,,InterPro:IPR003571
+P58370,Alpha-neurotoxin homolog 8,Micrurus corallinus (Brazilian coral snake),86,22,86,,InterPro:IPR003571
+P59275,Cobrotoxin-b,Naja kaouthia (Monocled cobra),61,1,60,,InterPro:IPR003571
+P59276,Cobrotoxin-c,Naja kaouthia (Monocled cobra),61,1,60,,InterPro:IPR003571
+P60234,Muscarinic m1-toxin2,Dendroaspis angusticeps (Eastern green mamba),65,1,64,,InterPro:IPR003571
+P60235,Muscarinic m1-toxin3,Dendroaspis angusticeps (Eastern green mamba),40,1,40,,InterPro:IPR003571
+P60236,Muscarinic m1-toxin4,Dendroaspis angusticeps (Eastern green mamba),40,1,40,,InterPro:IPR003571
+P60237,Muscarinic toxin 2,Dendroaspis angusticeps (Eastern green mamba),63,1,62,,InterPro:IPR003571
+P60301,Cytotoxin 3,Naja atra (Chinese cobra),81,22,81,,InterPro:IPR003571
+P60302,Cytotoxin 3,Naja sputatrix (Malayan spitting cobra),81,22,81,,InterPro:IPR003571
+P60303,Cytotoxin 4,Naja kaouthia (Monocled cobra),81,22,81,,InterPro:IPR003571
+P60304,Cytotoxin 1,Naja atra (Chinese cobra),81,22,81,,InterPro:IPR003571
+P60305,Cytotoxin 1,Naja kaouthia (Monocled cobra),60,1,60,,InterPro:IPR003571
+P60306,Cytotoxin SP13b,Naja atra (Chinese cobra),60,1,60,,InterPro:IPR003571
+P60307,Cytotoxin SP15a,Naja atra (Chinese cobra),60,1,60,,InterPro:IPR003571
+P60308,Cytotoxin SP15c,Naja atra (Chinese cobra),60,1,60,,InterPro:IPR003571
+P60309,Cytotoxin SP15d,Naja atra (Chinese cobra),60,1,60,,InterPro:IPR003571
+P60310,Cytotoxin 5b,Naja sputatrix (Malayan spitting cobra),81,22,81,,InterPro:IPR003571
+P60311,Cytotoxin KJC3,Naja sputatrix (Malayan spitting cobra),60,2,60,,InterPro:IPR003571
+P60615,Alpha-bungarotoxin,Bungarus multicinctus (Many-banded krait),95,29,87,,InterPro:IPR003571
+P60616,Alpha-bungarotoxin isoform V31,Bungarus multicinctus (Many-banded krait),95,29,87,,InterPro:IPR003571
+P60770,Cobrotoxin,Naja atra (Chinese cobra),83,22,82,,InterPro:IPR003571
+P60771,Cobrotoxin,Naja kaouthia (Monocled cobra),83,22,82,,InterPro:IPR003571
+P60772,Neurotoxin 5,Naja sputatrix (Malayan spitting cobra),61,1,60,,InterPro:IPR003571
+P60773,Short neurotoxin 1,Naja philippinensis (Philippine cobra),61,1,60,,InterPro:IPR003571
+P60774,Short neurotoxin 1,Naja samarensis (Peters' cobra),61,1,60,,InterPro:IPR003571
+P60775,Erabutoxin a,Laticauda semifasciata (Black-banded sea krait),83,22,82,,InterPro:IPR003571
+P60814,Probable weak neurotoxin NNAM2I,Naja atra (Chinese cobra),86,22,85,,InterPro:IPR003571
+P62375,Cytotoxin A5,Naja atra (Chinese cobra),83,22,83,,InterPro:IPR003571
+P62376,Short neurotoxin 2,Hydrophis cyanocinctus (Asian annulated sea snake),79,20,78,,InterPro:IPR003571
+P62377,Cytotoxin-like basic protein,Naja naja (Indian cobra),62,1,62,,InterPro:IPR003571
+P62388,Pelamitoxin a,Hydrophis platurus (Yellow-bellied sea snake),60,1,59,,InterPro:IPR003571
+P62389,Toxin 5,Hydrophis schistosus (Beaked sea snake),60,1,59,,InterPro:IPR003571
+P62390,Cytotoxin 11,Naja annulifera (Banded Egyptian cobra),62,1,62,,InterPro:IPR003571
+P62394,Cytotoxin 11,Naja haje haje (Egyptian cobra),62,1,62,,InterPro:IPR003571
+P68412,Short neurotoxin 1,Hydrophis stokesii (Stokes's sea snake),60,1,59,,InterPro:IPR003571
+P68413,Short neurotoxin 1,Hydrophis ornatus (Ornate reef seasnake),60,1,59,,InterPro:IPR003571
+P68415,Short neurotoxin 1,Hydrophis schistosus (Beaked sea snake),60,1,59,,InterPro:IPR003571
+P68416,Short neurotoxin 1,Hydrophis hardwickii (Hardwick's spine-bellied seasnake),81,22,80,,InterPro:IPR003571
+P68417,Short neurotoxin 1,Naja annulifera (Banded Egyptian cobra),61,1,60,,InterPro:IPR003571
+P68418,Short neurotoxin 1,Naja haje haje (Egyptian cobra),61,1,60,,InterPro:IPR003571
+P68419,Short neurotoxin 1,Naja nivea (Cape cobra),61,1,60,,InterPro:IPR003571
+P79688,Cardiotoxin homolog TA-ctx-like,Bungarus multicinctus (Many-banded krait),86,23,85,,InterPro:IPR003571
+P79810,Cytotoxin 1c,Naja atra (Chinese cobra),81,22,81,,InterPro:IPR003571
+P80156,Long neurotoxin 4,Ophiophagus hannah (King cobra),72,1,65,,InterPro:IPR003571
+P80245,Cytotoxin 6,Naja atra (Chinese cobra),81,22,81,,InterPro:IPR003571
+P80494,Muscarinic toxin alpha,Dendroaspis polylepis polylepis (Black mamba),66,1,65,,InterPro:IPR003571
+P80495,Adrenergic toxin rho-elapitoxin-Dp1a,Dendroaspis polylepis polylepis (Black mamba),65,1,64,,InterPro:IPR003571
+P80548,Three-finger toxin Mnn I,Micrurus nigrocinctus (Central American coral snake),60,1,59,,InterPro:IPR003571
+P80958,Cobrotoxin-b,Naja atra (Chinese cobra),82,22,81,,InterPro:IPR003571
+P80965,Long neurotoxin OH-5,Ophiophagus hannah (King cobra),72,1,64,,InterPro:IPR003571
+P81030,Muscarinic toxin 1,Dendroaspis angusticeps (Eastern green mamba),66,1,65,,InterPro:IPR003571
+P81031,Muscarinic toxin 3,Dendroaspis angusticeps (Eastern green mamba),65,1,64,,InterPro:IPR003571
+P81783,Candoxin,Bungarus candidus (Malayan krait),87,22,87,,InterPro:IPR003571
+P81946,Thrombostatin,Dendroaspis angusticeps (Eastern green mamba),59,1,58,,InterPro:IPR003571
+P82462,Muscarinic toxin-like protein 1,Naja kaouthia (Monocled cobra),65,1,64,,InterPro:IPR003571
+P82463,Muscarinic toxin-like protein 2,Naja kaouthia (Monocled cobra),65,1,64,,InterPro:IPR003571
+P82464,Muscarinic toxin-like protein 3,Naja kaouthia (Monocled cobra),65,1,64,,InterPro:IPR003571
+P82662,Alpha-elapitoxin-Oh2b,Ophiophagus hannah (King cobra),91,22,84,,InterPro:IPR003571
+P82849,Cobrotoxin II,Naja kaouthia (Monocled cobra),62,1,61,,InterPro:IPR003571
+P82935,Tryptophan-containing weak neurotoxin,Naja kaouthia (Monocled cobra),86,22,85,,InterPro:IPR003571
+P83302,Neurotoxin Oh9-1,Ophiophagus hannah (King cobra),57,10,56,,InterPro:IPR003571
+P83345,Cytotoxin sagitoxin,Naja sagittifera (Andaman cobra),60,1,60,,InterPro:IPR003571
+P83346,Bucain,Bungarus candidus (Malayan krait),65,1,64,,InterPro:IPR003571
+P83490,Alpha-colubritoxin,Coelognathus radiatus (Radiated ratsnake),77,13,77,,InterPro:IPR003571
+P84716,Neurotoxin-like protein 1,Causus rhombeatus (Rhombic night adder),61,1,60,,InterPro:IPR003571
+P85092,Toxin AdTx1,Dendroaspis angusticeps (Eastern green mamba),65,1,64,,InterPro:IPR003571
+P85140,Alpha-bungarotoxin N3,Bungarus candidus (Malayan krait),73,8,65,,InterPro:IPR003571
+P85520,Oxiana weak toxin,Naja oxiana (Central Asian cobra),65,1,64,,InterPro:IPR003571
+P86094,Short neurotoxin MS11,Micrurus surinamensis (Surinam coral snake),58,1,57,,InterPro:IPR003571
+P86095,Three-finger toxin MS1,Micrurus surinamensis (Surinam coral snake),59,1,58,,InterPro:IPR003571
+P86096,Long neurotoxin MS2,Micrurus surinamensis (Surinam coral snake),64,1,64,,InterPro:IPR003571
+P86097,Three-finger toxin MS3,Micrurus surinamensis (Surinam coral snake),60,1,58,,InterPro:IPR003571
+P86098,Long neurotoxin MS4,Micrurus surinamensis (Surinam coral snake),64,1,64,,InterPro:IPR003571
+P86099,Long neurotoxin MS5,Micrurus surinamensis (Surinam coral snake),64,1,63,,InterPro:IPR003571
+P86382,Cytotoxin 7,Naja naja (Indian cobra),60,1,60,,InterPro:IPR003571
+P86419,Rho-elapitoxin-Da1b,Dendroaspis angusticeps (Eastern green mamba),66,1,65,,InterPro:IPR003571
+P86420,Frontoxin I,Micrurus frontalis (Coral snake),56,1,55,,InterPro:IPR003571
+P86422,Frontoxin III,Micrurus frontalis (Coral snake),62,1,61,,InterPro:IPR003571
+P86423,Frontoxin IV,Micrurus frontalis (Coral snake),64,1,64,,InterPro:IPR003571
+P86424,Frontoxin V,Micrurus frontalis (Coral snake),64,1,64,,InterPro:IPR003571
+P86538,Cytotoxin 2a,Naja naja (Indian cobra),60,1,60,,InterPro:IPR003571
+P86540,Cytotoxin 8,Naja naja (Indian cobra),60,1,60,,InterPro:IPR003571
+P86541,Cytotoxin 10,Naja naja (Indian cobra),60,1,60,,InterPro:IPR003571
+Q02454,Cytotoxin,Naja sputatrix (Malayan spitting cobra),81,22,81,,InterPro:IPR003571
+Q06ZW0,Denmotoxin,Boiga dendrophila (Mangrove snake),111,44,109,,InterPro:IPR003571
+Q2VBN0,Muscarinic toxin 38,Ophiophagus hannah (King cobra),86,22,85,,InterPro:IPR003571
+Q2VBN1,Muscarinic toxin MTX6,Ophiophagus hannah (King cobra),86,22,85,,InterPro:IPR003571
+Q2VBN2,Weak neurotoxin WNTX34,Ophiophagus hannah (King cobra),86,22,85,,InterPro:IPR003571
+Q2VBN3,Weak neurotoxin WNTX33,Ophiophagus hannah (King cobra),83,22,82,,InterPro:IPR003571
+Q2VBN4,Beta-cardiotoxin CTX23,Ophiophagus hannah (King cobra),84,22,83,,InterPro:IPR003571
+Q2VBN5,Beta-cardiotoxin CTX21,Ophiophagus hannah (King cobra),84,22,83,,InterPro:IPR003571
+Q2VBN7,Beta-cardiotoxin CTX14,Ophiophagus hannah (King cobra),84,22,82,,InterPro:IPR003571
+Q2VBN8,Beta-cardiotoxin CTX9,Ophiophagus hannah (King cobra),84,22,83,,InterPro:IPR003571
+Q2VBN9,Short neurotoxin SNTX26,Ophiophagus hannah (King cobra),78,22,77,,InterPro:IPR003571
+Q2VBP0,Short neurotoxin SNTX14,Ophiophagus hannah (King cobra),78,22,77,,InterPro:IPR003571
+Q2VBP1,Short neurotoxin SNTX11,Ophiophagus hannah (King cobra),78,31,77,,InterPro:IPR003571
+Q2VBP2,Short neurotoxin SNTX6,Ophiophagus hannah (King cobra),78,22,77,,InterPro:IPR003571
+Q2VBP3,Long neurotoxin LNTX37,Ophiophagus hannah (King cobra),94,22,86,,InterPro:IPR003571
+Q2VBP4,Long neurotoxin LNTX28,Ophiophagus hannah (King cobra),91,22,84,,InterPro:IPR003571
+Q2VBP5,Long neurotoxin LNTX22,Ophiophagus hannah (King cobra),93,23,85,,InterPro:IPR003571
+Q2VBP6,Long neurotoxin LNTX8,Ophiophagus hannah (King cobra),94,22,86,,InterPro:IPR003571
+Q2VBP8,Long neurotoxin LNTX1,Ophiophagus hannah (King cobra),94,22,86,,InterPro:IPR003571
+Q45Z11,Short neurotoxin 1,Oxyuranus scutellatus scutellatus (Australian taipan),83,22,82,,InterPro:IPR003571
+Q4VRI0,Scutelatoxin,Oxyuranus scutellatus scutellatus (Australian taipan),79,22,78,,InterPro:IPR003571
+Q53B46,Beta-cardiotoxin CTX15,Ophiophagus hannah (King cobra),84,22,83,,InterPro:IPR003571
+Q53B47,Short neurotoxin OH-5,Ophiophagus hannah (King cobra),78,31,77,,InterPro:IPR003571
+Q53B48,Short neurotoxin OH-46,Ophiophagus hannah (King cobra),78,22,77,,InterPro:IPR003571
+Q53B49,Short neurotoxin OH-35,Ophiophagus hannah (King cobra),86,22,85,,InterPro:IPR003571
+Q53B50,Short neurotoxin OH-32,Ophiophagus hannah (King cobra),77,31,77,,InterPro:IPR003571
+Q53B52,Short neurotoxin OH-26,Ophiophagus hannah (King cobra),78,22,77,,InterPro:IPR003571
+Q53B53,Long neurotoxin OH-34,Ophiophagus hannah (King cobra),90,22,84,,InterPro:IPR003571
+Q53B54,Long neurotoxin OH-17,Ophiophagus hannah (King cobra),72,2,64,,InterPro:IPR003571
+Q53B55,Long neurotoxin-like OH-31,Ophiophagus hannah (King cobra),94,56,88,,InterPro:IPR003571
+Q53B56,Long neurotoxin OH-57,Ophiophagus hannah (King cobra),91,22,84,,InterPro:IPR003571
+Q53B57,Long neurotoxin OH-56,Ophiophagus hannah (King cobra),91,23,85,,InterPro:IPR003571
+Q53B58,Alpha-elapitoxin-Oh3a,Ophiophagus hannah (King cobra),93,23,85,,InterPro:IPR003571
+Q53B59,Long neurotoxin OH-37,Ophiophagus hannah (King cobra),91,22,84,,InterPro:IPR003571
+Q53B61,Weak neurotoxin OH-72,Ophiophagus hannah (King cobra),81,17,80,,InterPro:IPR003571
+Q5UFR7,Short neurotoxin 2,Hydrophis peronii (Spiny-headed seasnake),81,22,80,,InterPro:IPR003571
+Q5UFR8,Short neurotoxin 1,Hydrophis peronii (Spiny-headed seasnake),81,22,80,,InterPro:IPR003571
+Q69CJ8,Weak toxin DE-1 homolog 1,Ophiophagus hannah (King cobra),83,22,82,,InterPro:IPR003571
+Q69CK0,Beta-cardiotoxin CTX27,Ophiophagus hannah (King cobra),84,22,83,,InterPro:IPR003571
+Q6IZ95,Neurotoxin Ntx4,Bungarus candidus (Malayan krait),86,22,85,,InterPro:IPR003571
+Q6TAR6,Alpha-neurotoxin,Bungarus candidus (Malayan krait),36,1,36,,InterPro:IPR003571
+Q70WS8,Neurotoxin BM10-1-like,Bungarus multicinctus (Many-banded krait),84,22,83,,InterPro:IPR003571
+Q7T2I1,Short neurotoxin OKI-10,Laticauda laticaudata (Blue-ringed sea krait),82,21,81,,InterPro:IPR003571
+Q7T2I3,Long neurotoxin LlLong,Laticauda laticaudata (Blue-ringed sea krait),87,21,84,,InterPro:IPR003571
+Q7T2I5,Erabutoxin c,Laticauda semifasciata (Black-banded sea krait),83,22,82,,InterPro:IPR003571
+Q7T3J2,"Alpha-bungarotoxin, isoform A31",Bungarus candidus (Malayan krait),95,29,87,,InterPro:IPR003571
+Q7ZT13,Neurotoxin-like protein pMD18-NTL1/2/4/5,Bungarus multicinctus (Many-banded krait),86,23,85,,InterPro:IPR003571
+Q800Y3,Neurotoxin-like protein pMD18-NTL3,Bungarus multicinctus (Many-banded krait),86,23,85,,InterPro:IPR003571
+Q802B2,Weak neurotoxin 10,Naja sputatrix (Malayan spitting cobra),86,22,85,,InterPro:IPR003571
+Q802B3,Weak neurotoxin 8,Naja sputatrix (Malayan spitting cobra),86,22,85,,InterPro:IPR003571
+Q8AY49,Weak toxin 3,Bungarus candidus (Malayan krait),86,22,85,,InterPro:IPR003571
+Q8AY50,Weak toxin 2,Bungarus candidus (Malayan krait),86,22,85,,InterPro:IPR003571
+Q8AY51,Weak toxin 1,Bungarus candidus (Malayan krait),86,22,85,,InterPro:IPR003571
+Q8AY52,Candiduxin-2,Bungarus candidus (Malayan krait),86,23,85,,InterPro:IPR003571
+Q8AY53,Candiduxin-1,Bungarus candidus (Malayan krait),86,23,85,,InterPro:IPR003571
+Q8AY55,Kappa 1b-bungarotoxin,Bungarus candidus (Malayan krait),87,22,86,,InterPro:IPR003571
+Q8AY56,Kappa 1a-bungarotoxin,Bungarus candidus (Malayan krait),87,22,86,,InterPro:IPR003571
+Q8JFX7,Muscarinic toxin BM14,Bungarus multicinctus (Many-banded krait),103,23,96,,InterPro:IPR003571
+Q8QGR0,Muscarinic toxin 7,Dendroaspis angusticeps (Eastern green mamba),86,22,85,,InterPro:IPR003571
+Q8UUK0,Cytotoxin homolog Clbp-3,Naja atra (Chinese cobra),82,22,82,,InterPro:IPR003571
+Q8UW26,Short neurotoxin 2,Hydrophis hardwickii (Hardwick's spine-bellied seasnake),81,22,80,,InterPro:IPR003571
+Q8UW27,Short neurotoxin SN160,Hydrophis hardwickii (Hardwick's spine-bellied seasnake),81,22,80,,InterPro:IPR003571
+Q8UW28,Alpha-elapitoxin-Lh2a,Hydrophis hardwickii (Hardwick's spine-bellied seasnake),92,31,84,,InterPro:IPR003571
+Q8UW29,Long neurotoxin 1,Hydrophis hardwickii (Hardwick's spine-bellied seasnake),92,22,84,,InterPro:IPR003571
+Q90VW1,Erabutoxin b,Laticauda semifasciata (Black-banded sea krait),83,22,82,,InterPro:IPR003571
+Q91124,Cytotoxin 8,Naja atra (Chinese cobra),81,22,81,,InterPro:IPR003571
+Q91126,Cardiotoxin 7a,Naja atra (Chinese cobra),83,22,83,,InterPro:IPR003571
+Q91135,Cytotoxin I-like P-15,Naja atra (Chinese cobra),81,22,81,,InterPro:IPR003571
+Q91136,Cytotoxin I-like T-15,Naja atra (Chinese cobra),81,22,81,,InterPro:IPR003571
+Q91137,Cytotoxin homolog 5,Naja atra (Chinese cobra),83,22,83,,InterPro:IPR003571
+Q91996,Cardiotoxin 7'',Naja atra (Chinese cobra),83,22,83,,InterPro:IPR003571
+Q98956,Cytotoxin 1b,Naja atra (Chinese cobra),81,22,81,,InterPro:IPR003571
+Q98957,Cytotoxin 1a,Naja atra (Chinese cobra),81,22,81,,InterPro:IPR003571
+Q98958,Cytotoxin 1d/1e,Naja atra (Chinese cobra),81,22,81,,InterPro:IPR003571
+Q98959,Cytotoxin 3a,Naja atra (Chinese cobra),81,22,81,,InterPro:IPR003571
+Q98960,Cytotoxin 3b,Naja atra (Chinese cobra),81,22,81,,InterPro:IPR003571
+Q98961,Cytotoxin 5,Naja atra (Chinese cobra),81,22,81,,InterPro:IPR003571
+Q98962,Cytotoxin 3d,Naja atra (Chinese cobra),81,22,81,,InterPro:IPR003571
+Q98965,Cytotoxin 6,Naja atra (Chinese cobra),82,22,81,,InterPro:IPR003571
+Q9DEQ3,Neurotoxin homolog NL1,Naja atra (Chinese cobra),86,22,85,,InterPro:IPR003571
+Q9DGH9,Cytotoxin 2,Naja kaouthia (Monocled cobra),81,22,81,,InterPro:IPR003571
+Q9PS33,VC-1=CYTOTOXIN,Naja oxiana (Central Asian cobra),59,1,59,,InterPro:IPR003571
+Q9PS34,Cytotoxin Vc-5,Naja oxiana (Central Asian cobra),60,1,60,,InterPro:IPR003571
+Q9PSN1,Muscarinic toxin 4,Dendroaspis angusticeps (Eastern green mamba),66,1,65,,InterPro:IPR003571
+Q9PSN6,Neurotoxin 3,Naja sputatrix (Malayan spitting cobra),62,1,61,,InterPro:IPR003571
+Q9PST3,Cytotoxin 2b,Naja sputatrix (Malayan spitting cobra),81,22,81,,InterPro:IPR003571
+Q9PST4,Cytotoxin 2a,Naja sputatrix (Malayan spitting cobra),81,22,81,,InterPro:IPR003571
+Q9PTT0,Cobrotoxin homolog,Naja naja (Indian cobra),83,22,82,,InterPro:IPR003571
+Q9PUB7,Alpha-neurotoxin homolog 1,Micrurus corallinus (Brazilian coral snake),78,22,77,,InterPro:IPR003571
+Q9PW19,Toxin BMLCL,Bungarus multicinctus (Many-banded krait),103,23,96,,InterPro:IPR003571
+Q9W6W6,Cytotoxin 10,Naja atra (Chinese cobra),82,23,82,,InterPro:IPR003571
+Q9W6W9,Cytotoxin 4N,Naja atra (Chinese cobra),81,23,81,,InterPro:IPR003571
+Q9W716,Cytotoxin homolog 5V,Naja atra (Chinese cobra),83,22,83,,InterPro:IPR003571
+Q9W717,Neurotoxin-like protein NTL2,Naja atra (Chinese cobra),86,22,85,,InterPro:IPR003571
+Q9W727,Muscarinic toxin-like protein,Bungarus multicinctus (Many-banded krait),86,22,85,,InterPro:IPR003571
+Q9W729,Kappa-6-bungarotoxin,Bungarus multicinctus (Many-banded krait),87,22,86,,InterPro:IPR003571
+Q9W7I3,Weak neurotoxin 9,Naja sputatrix (Malayan spitting cobra),86,22,85,,InterPro:IPR003571
+Q9W7J5,Pseudonajatoxin b homolog,Pseudonaja textilis (Eastern brown snake),103,22,86,,InterPro:IPR003571
+Q9W7J6,Short neurotoxin 7,Pseudonaja textilis (Eastern brown snake),79,22,78,,InterPro:IPR003571
+Q9W7J7,Short neurotoxin 6,Pseudonaja textilis (Eastern brown snake),79,22,78,,InterPro:IPR003571
+Q9W7J9,Short neurotoxin 4,Pseudonaja textilis (Eastern brown snake),79,22,78,,InterPro:IPR003571
+Q9W7K0,Short neurotoxin 3,Pseudonaja textilis (Eastern brown snake),79,22,78,,InterPro:IPR003571
+Q9W7K1,Short neurotoxin 2,Pseudonaja textilis (Eastern brown snake),79,22,78,,InterPro:IPR003571
+Q9W7K2,Short neurotoxin 1/5,Pseudonaja textilis (Eastern brown snake),79,22,78,,InterPro:IPR003571
+Q9YGC2,Short neurotoxin OKI-17/NCA-06,Laticauda laticaudata (Blue-ringed sea krait),83,22,82,,InterPro:IPR003571
+Q9YGC4,Short neurotoxin OKI-01/OKI-19,Laticauda laticaudata (Blue-ringed sea krait),83,22,82,,InterPro:IPR003571
+Q9YGC7,Short neurotoxin NCA-02/NCA-05/UER-05,Laticauda colubrina (Yellow-lipped sea krait),83,22,82,,InterPro:IPR003571
+Q9YGH0,Cytotoxin-like protein TA-BMBGT3,Bungarus multicinctus (Many-banded krait),103,23,96,,InterPro:IPR003571
+Q9YGH9,Long neurotoxin homolog NTL2,Bungarus multicinctus (Many-banded krait),89,24,87,,InterPro:IPR003571
+Q9YGI0,Short neurotoxin homolog NTL1,Bungarus multicinctus (Many-banded krait),86,23,85,,InterPro:IPR003571
+Q9YGI1,Probable weak neurotoxin NNAM3,Naja atra (Chinese cobra),86,22,85,,InterPro:IPR003571
+Q9YGI2,Probable weak neurotoxin NNAM1,Naja atra (Chinese cobra),86,22,85,,InterPro:IPR003571
+Q9YGI4,Probable weak neurotoxin NNAM2,Naja atra (Chinese cobra),86,22,85,,InterPro:IPR003571
+Q9YGI8,Short neurotoxin homolog NTL4,Bungarus multicinctus (Many-banded krait),86,22,85,,InterPro:IPR003571
+Q9YGJ0,Gamma-bungarotoxin,Bungarus multicinctus (Many-banded krait),89,24,88,,InterPro:IPR003571
+Q9YGJ5,Alpha-neurotoxin NTX-2,Naja sputatrix (Malayan spitting cobra),83,22,82,,InterPro:IPR003571
+Q9YGJ6,Alpha-neurotoxin NTX-1,Naja sputatrix (Malayan spitting cobra),83,22,82,,InterPro:IPR003571
+Q9YGW8,Short neurotoxin VAN-29,Laticauda laticaudata (Blue-ringed sea krait),83,22,82,,InterPro:IPR003571
+Q9YGW9,Short neurotoxin VAN-10,Laticauda laticaudata (Blue-ringed sea krait),83,22,82,,InterPro:IPR003571
+Q9YGX0,Short neurotoxin NCA-04,Laticauda colubrina (Yellow-lipped sea krait),83,22,82,,InterPro:IPR003571
+Q9YGX1,Short neurotoxin OKI-Ed,Laticauda semifasciata (Black-banded sea krait),83,22,82,,InterPro:IPR003571
+Q9YH67,Alpha-bungarotoxin deletion,Bungarus multicinctus (Many-banded krait),60,22,52,,InterPro:IPR003571
+R4FI70,3FTx-Aca-55,Acanthophis wellsi,94,32,84,,InterPro:IPR003571
+R4FI75,3FTx-Aca-53,Acanthophis wellsi,88,23,85,,InterPro:IPR003571
+R4FI89,3FTx-Bra-36,Brachyurophis roperi (Northern shovel-nosed snake),83,22,82,,InterPro:IPR003571
+R4FI96,3FTx-Bra-10,Brachyurophis roperi (Northern shovel-nosed snake),89,30,83,,InterPro:IPR003571
+R4FIB4,3FTx-Cac-236,Cacophis squamulosus,81,36,80,,InterPro:IPR003571
+R4FIB8,3FTx-Cac-203,Cacophis squamulosus,81,24,80,,InterPro:IPR003571
+R4FIC0,3FTx-Cac-81,Cacophis squamulosus,87,22,86,,InterPro:IPR003571
+R4FID4,3FTx-Den-15,Denisonia devisi (De Vis' banded snake),93,22,85,,InterPro:IPR003571
+R4FIG8,3FTx-Fur-67,Furina ornata,79,35,78,,InterPro:IPR003571
+R4FIH0,3FTx-Fur-58,Furina ornata,81,22,80,,InterPro:IPR003571
+R4FIH4,3FTx-Fur-33,Furina ornata,92,31,83,,InterPro:IPR003571
+R4FIH7,3FTx-Fur-11,Furina ornata,92,31,83,,InterPro:IPR003571
+R4FIH9,3FTx-Fur-13,Furina ornata,95,31,83,,InterPro:IPR003571
+R4FIK1,3FTx-Hem-18,Hemiaspis signata,81,22,80,,InterPro:IPR003571
+R4FIK4,3FTx-Hem-9,Hemiaspis signata,105,22,84,,InterPro:IPR003571
+R4FIP4,3FTx-Hop-25,Hoplocephalus bungaroides,81,22,80,,InterPro:IPR003571
+R4FIQ0,3FTx-Hop-7,Hoplocephalus bungaroides,93,22,85,,InterPro:IPR003571
+R4FIT0,3FTx-Pse-93,Pseudonaja modesta,95,22,86,,InterPro:IPR003571
+R4FIT5,3FTx-Pse-89,Pseudonaja modesta,95,22,87,,InterPro:IPR003571
+R4FIU6,3FTx-Pse-23,Pseudonaja modesta,89,31,81,,InterPro:IPR003571
+R4FIV9,3FTx-Pse-272,Pseudonaja modesta,79,22,78,,InterPro:IPR003571
+R4FIW2,3FTx-Pse-183,Pseudonaja modesta,79,22,78,,InterPro:IPR003571
+R4FIW5,3FTx-Pse-268,Pseudonaja modesta,79,22,78,,InterPro:IPR003571
+R4FIW8,3FTx-Pse-211,Pseudonaja modesta,79,22,78,,InterPro:IPR003571
+R4FIY3,3FTx-Sut-134,Suta fasciata,93,22,84,,InterPro:IPR003571
+R4FIZ2,3FTx-Ver-30,Vermicella annulata (Eastern bandy-bandy),83,22,82,,InterPro:IPR003571
+R4FIZ6,3FTx-Ver-3,Vermicella annulata (Eastern bandy-bandy),88,23,85,,InterPro:IPR003571
+R4FIZ8,3FTx-Ver-49,Vermicella annulata (Eastern bandy-bandy),81,22,80,,InterPro:IPR003571
+R4FJG1,3FTx-Bra-38,Brachyurophis roperi (Northern shovel-nosed snake),83,22,82,,InterPro:IPR003571
+R4FJH1,3FTx-Bra-12,Brachyurophis roperi (Northern shovel-nosed snake),89,32,83,,InterPro:IPR003571
+R4FJH6,3FTx-Bra-3,Brachyurophis roperi (Northern shovel-nosed snake),93,22,85,,InterPro:IPR003571
+R4FJK0,3FTx-Cac-220,Cacophis squamulosus,81,36,80,,InterPro:IPR003571
+R4FJK2,3FTx-Cac-139,Cacophis squamulosus,87,22,86,,InterPro:IPR003571
+R4FJQ3,3FTx-Ech-12,Echiopsis curta,93,23,85,,InterPro:IPR003571
+R4FJR7,3FTx-Fur-74,Furina ornata,79,35,78,,InterPro:IPR003571
+R4FJS0,3FTx-Fur-61,Furina ornata,81,22,80,,InterPro:IPR003571
+R4FJS5,3FTx-Fur-44,Furina ornata,92,31,85,,InterPro:IPR003571
+R4FJT0,3FTx-Fur-26,Furina ornata,95,22,83,,InterPro:IPR003571
+R4FJT6,3FTx-Fur-14,Furina ornata,95,31,83,,InterPro:IPR003571
+R4FJX3,3FTx-Hem-11,Hemiaspis signata,107,22,85,,InterPro:IPR003571
+R4FK28,3FTx-Hop-9,Hoplocephalus bungaroides,92,22,84,,InterPro:IPR003571
+R4FK68,3FTx-Pse-105,Pseudonaja modesta,109,22,86,,InterPro:IPR003571
+R4FK75,3FTx-Pse-110,Pseudonaja modesta,88,22,85,,InterPro:IPR003571
+R4FK93,3FTx-Pse-38,Pseudonaja modesta,89,31,81,,InterPro:IPR003571
+R4FKA6,3FTx-Pse-288,Pseudonaja modesta,79,22,78,,InterPro:IPR003571
+R4FKB1,3FTx-Pse-204,Pseudonaja modesta,79,22,78,,InterPro:IPR003571
+R4FKC0,3FTx-Pse-273,Pseudonaja modesta,79,22,78,,InterPro:IPR003571
+R4FKC4,3FTx-Pse-217,Pseudonaja modesta,79,22,78,,InterPro:IPR003571
+R4FKC7,3FTx-Pse-241,Pseudonaja modesta,79,22,78,,InterPro:IPR003571
+R4FKF8,3FTx-Ver-27,Vermicella annulata (Eastern bandy-bandy),83,22,82,,InterPro:IPR003571
+R4FKG3,3FTx-Ver-5,Vermicella annulata (Eastern bandy-bandy),96,30,84,,InterPro:IPR003571
+R4FKG7,3FTx-Ver-47,Vermicella annulata (Eastern bandy-bandy),81,22,80,,InterPro:IPR003571
+R4G2D7,3FTx-Aca-112,Acanthophis wellsi,83,24,82,,InterPro:IPR003571
+R4G2D8,3FTx-Aca-57,Acanthophis wellsi,100,31,84,,InterPro:IPR003571
+R4G2D9,3FTx-Aca-27,Acanthophis wellsi,94,31,84,,InterPro:IPR003571
+R4G2E3,3FTx-Bra-30,Brachyurophis roperi (Northern shovel-nosed snake),83,22,82,,InterPro:IPR003571
+R4G2E4,3FTx-Bra-17,Brachyurophis roperi (Northern shovel-nosed snake),100,23,85,,InterPro:IPR003571
+R4G2E5,3FTx-Bra-8,Brachyurophis roperi (Northern shovel-nosed snake),89,30,83,,InterPro:IPR003571
+R4G2F0,3FTx-Cac-228,Cacophis squamulosus,81,36,80,,InterPro:IPR003571
+R4G2F2,3FTx-Cac-16,Cacophis squamulosus,92,31,84,,InterPro:IPR003571
+R4G2F6,3FTx-Den-5,Denisonia devisi (De Vis' banded snake),93,22,85,,InterPro:IPR003571
+R4G2G2,3FTx-Ech-25,Echiopsis curta,94,22,84,,InterPro:IPR003571
+R4G2G7,3FTx-Fur-55,Furina ornata,81,27,80,,InterPro:IPR003571
+R4G2G8,3FTx-Fur-28,Furina ornata,95,31,83,,InterPro:IPR003571
+R4G2G9,3FTx-Fur-17,Furina ornata,92,31,83,,InterPro:IPR003571
+R4G2H6,3FTx-Hem-16,Hemiaspis signata,81,22,80,,InterPro:IPR003571
+R4G2H7,3FTx-Hem-14,Hemiaspis signata,105,22,84,,InterPro:IPR003571
+R4G2H8,3FTx-Hem-6,Hemiaspis signata,93,22,85,,InterPro:IPR003571
+R4G2J4,3FTx-Pse-116,Pseudonaja modesta,110,22,87,,InterPro:IPR003571
+R4G2J5,3FTx-Pse-24,Pseudonaja modesta,89,31,81,,InterPro:IPR003571
+R4G2J6,3FTx-Pse-287,Pseudonaja modesta,79,22,78,,InterPro:IPR003571
+R4G2J7,3FTx-Pse-207,Pseudonaja modesta,79,22,78,,InterPro:IPR003571
+R4G2J9,3FTx-Pse-263,Pseudonaja modesta,79,22,78,,InterPro:IPR003571
+R4G2K1,3FTx-Pse-180,Pseudonaja modesta,79,22,78,,InterPro:IPR003571
+R4G2K2,3FTx-Pse-256,Pseudonaja modesta,79,22,78,,InterPro:IPR003571
+R4G2K4,3FTx-Pse-178,Pseudonaja modesta,84,22,78,,InterPro:IPR003571
+R4G2K6,3FTx-Pse-243,Pseudonaja modesta,79,22,78,,InterPro:IPR003571
+R4G2L3,3FTx-Sut-50,Suta fasciata,92,22,84,,InterPro:IPR003571
+R4G2L7,3FTx-Ver-7,Vermicella annulata (Eastern bandy-bandy),96,33,84,,InterPro:IPR003571
+R4G2M0,3FTx-Ver-128,Vermicella annulata (Eastern bandy-bandy),82,26,78,,InterPro:IPR003571
+R4G2M2,3FTx-Ver-100,Vermicella annulata (Eastern bandy-bandy),81,22,80,,InterPro:IPR003571
+R4G2P2,3FTx-Aca-108,Acanthophis wellsi,83,24,82,,InterPro:IPR003571
+R4G2P6,3FTx-Aca-18,Acanthophis wellsi,88,22,85,,InterPro:IPR003571
+R4G2Q5,3FTx-Bra-28,Brachyurophis roperi (Northern shovel-nosed snake),83,22,82,,InterPro:IPR003571
+R4G2Q7,3FTx-Bra-13,Brachyurophis roperi (Northern shovel-nosed snake),88,31,82,,InterPro:IPR003571
+R4G2Q9,3FTx-Bra-6,Brachyurophis roperi (Northern shovel-nosed snake),102,22,84,,InterPro:IPR003571
+R4G2S0,3FTx-Cac-225,Cacophis squamulosus,81,36,80,,InterPro:IPR003571
+R4G2S3,3FTx-Cac-152,Cacophis squamulosus,87,22,86,,InterPro:IPR003571
+R4G2T5,3FTx-Den-1,Denisonia devisi (De Vis' banded snake),93,22,85,,InterPro:IPR003571
+R4G2U8,3FTx-Ech-21,Echiopsis curta,94,22,84,,InterPro:IPR003571
+R4G2V7,3FTx-Fur-62,Furina ornata,81,22,80,,InterPro:IPR003571
+R4G2W0,3FTx-Fur-46,Furina ornata,92,31,85,,InterPro:IPR003571
+R4G2W2,3FTx-Fur-27,Furina ornata,95,22,83,,InterPro:IPR003571
+R4G2W4,3FTx-Fur-12,Furina ornata,95,31,83,,InterPro:IPR003571
+R4G2Y2,3FTx-Hem-12,Hemiaspis signata,105,22,84,,InterPro:IPR003571
+R4G2Y4,3FTx-Hem-5,Hemiaspis signata,93,22,85,,InterPro:IPR003571
+R4G305,3FTx-Hop-14,Hoplocephalus bungaroides,81,22,80,,InterPro:IPR003571
+R4G319,3FTx-Pse-78,Pseudonaja modesta,88,22,85,,InterPro:IPR003571
+R4G321,3FTx-Pse-99,Pseudonaja modesta,99,22,87,,InterPro:IPR003571
+R4G323,3FTx-Pse-15,Pseudonaja modesta,89,31,81,,InterPro:IPR003571
+R4G326,3FTx-Pse-290,Pseudonaja modesta,79,22,78,,InterPro:IPR003571
+R4G327,3FTx-Pse-206,Pseudonaja modesta,79,22,78,,InterPro:IPR003571
+R4G330,3FTx-Pse-200,Pseudonaja modesta,79,22,78,,InterPro:IPR003571
+R4G332,3FTx-Pse-179,Pseudonaja modesta,79,22,78,,InterPro:IPR003571
+R4G334,3FTx-Pse-271,Pseudonaja modesta,79,22,78,,InterPro:IPR003571
+R4G336,3FTx-Pse-215,Pseudonaja modesta,79,22,78,,InterPro:IPR003571
+R4G338,3FTx-Pse-229,Pseudonaja modesta,79,22,78,,InterPro:IPR003571
+R4G346,3FTx-Sut-45,Suta fasciata,92,22,84,,InterPro:IPR003571
+R4G350,3FTx-Ver-28,Vermicella annulata (Eastern bandy-bandy),83,22,82,,InterPro:IPR003571
+R4G352,3FTx-Ver-10,Vermicella annulata (Eastern bandy-bandy),92,30,84,,InterPro:IPR003571
+R4G354,3FTx-Ver-124,Vermicella annulata (Eastern bandy-bandy),81,22,80,,InterPro:IPR003571
+R4G7E6,3FTx-Aca-118,Acanthophis wellsi,83,24,82,,InterPro:IPR003571
+R4G7E7,3FTx-Aca-62,Acanthophis wellsi,100,32,84,,InterPro:IPR003571
+R4G7E8,3FTx-Aca-30,Acanthophis wellsi,94,31,84,,InterPro:IPR003571
+R4G7F2,3FTx-Bra-34,Brachyurophis roperi (Northern shovel-nosed snake),81,22,80,,InterPro:IPR003571
+R4G7F4,3FTx-Bra-9,Brachyurophis roperi (Northern shovel-nosed snake),89,30,83,,InterPro:IPR003571
+R4G7G0,3FTx-Cac-180,Cacophis squamulosus,81,24,80,,InterPro:IPR003571
+R4G7G5,3FTx-Den-9,Denisonia devisi (De Vis' banded snake),93,22,85,,InterPro:IPR003571
+R4G7H1,3FTx-Ech-35,Echiopsis curta,106,23,85,,InterPro:IPR003571
+R4G7H5,3FTx-Fur-64,Furina ornata,79,34,78,,InterPro:IPR003571
+R4G7H6,3FTx-Fur-57,Furina ornata,81,22,80,,InterPro:IPR003571
+R4G7H7,3FTx-Fur-31,Furina ornata,95,22,83,,InterPro:IPR003571
+R4G7H8,3FTx-Fur-10,Furina ornata,95,33,83,,InterPro:IPR003571
+R4G7I5,3FTx-Hem-29,Hemiaspis signata,81,22,80,,InterPro:IPR003571
+R4G7I7,3FTx-Hem-2,Hemiaspis signata,93,22,85,,InterPro:IPR003571
+R4G7K3,3FTx-Pse-121,Pseudonaja modesta,95,22,86,,InterPro:IPR003571
+R4G7K4,3FTx-Pse-39,Pseudonaja modesta,89,31,81,,InterPro:IPR003571
+R4G7K5,3FTx-Pse-197,Pseudonaja modesta,79,22,78,,InterPro:IPR003571
+R4G7K6,3FTx-Pse-239,Pseudonaja modesta,79,22,78,,InterPro:IPR003571
+R4G7K7,3FTx-Pse-275,Pseudonaja modesta,79,22,78,,InterPro:IPR003571
+R4G7K8,3FTx-Pse-191,Pseudonaja modesta,79,22,78,,InterPro:IPR003571
+R4G7K9,3FTx-Pse-267,Pseudonaja modesta,79,22,78,,InterPro:IPR003571
+R4G7L0,3FTx-Pse-188,Pseudonaja modesta,79,22,78,,InterPro:IPR003571
+R4G7L1,3FTx-Pse-242,Pseudonaja modesta,79,22,78,,InterPro:IPR003571
+R4G7L5,3FTx-Sut-59,Suta fasciata,92,22,84,,InterPro:IPR003571
+R4G7L8,3FTx-Ver-24,Vermicella annulata (Eastern bandy-bandy),83,22,82,,InterPro:IPR003571
+R4G7L9,3FTx-Ver-130,Vermicella annulata (Eastern bandy-bandy),81,22,80,,InterPro:IPR003571
+R4G7M0,3FTx-Ver-70,Vermicella annulata (Eastern bandy-bandy),81,22,80,,InterPro:IPR003571
+S6BCL7,Three-finger toxin,Pseudechis rossignolii (Papuan pigmy mulga snake),83,22,82,,InterPro:IPR003571
+S6CB76,Three-finger toxin,Pseudechis rossignolii (Papuan pigmy mulga snake),88,22,85,,InterPro:IPR003571
+U3EPI1,Long chain neurotoxin 3,Micrurus fulvius (Eastern coral snake),87,22,84,,InterPro:IPR003571
+U3EPK7,Three-finger toxin 10a,Micrurus fulvius (Eastern coral snake),87,22,86,,InterPro:IPR003571
+U3EPL9,Three-finger toxin 2a,Micrurus fulvius (Eastern coral snake),79,32,78,,InterPro:IPR003571
+U3EPM4,Three-finger toxin 11c,Micrurus fulvius (Eastern coral snake),88,25,87,,InterPro:IPR003571
+U3EPM9,Three-finger toxin 12,Micrurus fulvius (Eastern coral snake),86,23,85,,InterPro:IPR003571
+U3F5B1,Long chain neurotoxin 4,Micrurus fulvius (Eastern coral snake),87,22,84,,InterPro:IPR003571
+U3F5B5,Long chain neurotoxin 1a,Micrurus fulvius (Eastern coral snake),87,22,84,,InterPro:IPR003571
+U3F5D3,Three-finger toxin 7,Micrurus fulvius (Eastern coral snake),88,25,87,,InterPro:IPR003571
+U3F5E1,Three-finger toxin 2d,Micrurus fulvius (Eastern coral snake),79,32,78,,InterPro:IPR003571
+U3F5E9,Three-finger toxin 13,Micrurus fulvius (Eastern coral snake),78,22,77,,InterPro:IPR003571
+U3FAB7,Long chain neurotoxin 7,Micrurus fulvius (Eastern coral snake),82,22,82,,InterPro:IPR003571
+U3FAC0,Long chain neurotoxin 2,Micrurus fulvius (Eastern coral snake),87,22,84,,InterPro:IPR003571
+U3FAE7,Three-finger toxin 11b,Micrurus fulvius (Eastern coral snake),88,25,87,,InterPro:IPR003571
+U3FAF0,Three-finger toxin 11,Micrurus fulvius (Eastern coral snake),88,25,87,,InterPro:IPR003571
+U3FVG5,Long chain neurotoxin 5,Micrurus fulvius (Eastern coral snake),87,22,83,,InterPro:IPR003571
+U3FVG7,Long chain neurotoxin 1b,Micrurus fulvius (Eastern coral snake),87,22,84,,InterPro:IPR003571
+U3FVH6,Snake toxin/toxin-like domain-containing protein,Micrurus fulvius (Eastern coral snake),84,22,83,,InterPro:IPR003571
+U3FVH8,Three-finger toxin 4a,Micrurus fulvius (Eastern coral snake),82,22,81,,InterPro:IPR003571
+U3FVI0,Three-finger toxin 2e,Micrurus fulvius (Eastern coral snake),79,32,78,,InterPro:IPR003571
+U3FVI5,Three-finger toxin 14,Micrurus fulvius (Eastern coral snake),79,32,78,,InterPro:IPR003571
+U3FYQ0,Long chain neurotoxin 6,Micrurus fulvius (Eastern coral snake),84,19,81,,InterPro:IPR003571
+U3FYQ1,Long chain neurotoxin 1c,Micrurus fulvius (Eastern coral snake),87,22,84,,InterPro:IPR003571
+U3FYQ5,Three-finger toxin 13,Micrurus fulvius (Eastern coral snake),79,22,78,,InterPro:IPR003571
+U3FYQ7,Three-finger toxin 2f,Micrurus fulvius (Eastern coral snake),79,32,78,,InterPro:IPR003571
+U3FYQ9,Three-finger toxin 12,Micrurus fulvius (Eastern coral snake),83,22,82,,InterPro:IPR003571
+U3FYR0,Three-finger toxin 10,Micrurus fulvius (Eastern coral snake),79,22,78,,InterPro:IPR003571
+U3T794,Three-finger toxin,Protobothrops flavoviridis (Habu),89,22,88,,InterPro:IPR003571
+V8N212,Uncharacterized protein,Ophiophagus hannah (King cobra),115,3,35,,InterPro:IPR003571
+V8N389,Uncharacterized protein,Ophiophagus hannah (King cobra),72,3,65,,InterPro:IPR003571
+V8N3G9,Uncharacterized protein,Ophiophagus hannah (King cobra),86,22,85,,InterPro:IPR003571
+V8N440,Uncharacterized protein,Ophiophagus hannah (King cobra),84,1,84,,InterPro:IPR003571
+V8N4I1,3FTx,Ophiophagus hannah (King cobra),78,31,77,,InterPro:IPR003571
+V8N5J6,Uncharacterized protein,Ophiophagus hannah (King cobra),138,76,137,,InterPro:IPR003571
+V8N6H4,Uncharacterized protein,Ophiophagus hannah (King cobra),73,44,72,,InterPro:IPR003571
+V8N9N7,Uncharacterized protein,Ophiophagus hannah (King cobra),86,22,85,,InterPro:IPR003571

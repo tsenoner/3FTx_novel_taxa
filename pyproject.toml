@@ -9,6 +9,7 @@ dependencies = [
     "matplotlib>=3.10.3",
     "pandas>=2.2.3",
     "plotly>=6.0.1",
-    "protspace[frontend]>=1.2.0",
+    "protspace[frontend]>=2.0.1",
     "taxopy>=0.14.0",
+    "tqdm>=4.67.1",
 ]
