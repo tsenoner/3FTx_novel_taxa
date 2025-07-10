@@ -1,0 +1,13 @@
+protein_id,protein_name,tax_id,scientific_name,sequence_length,domain_start,domain_end,signature_name,interpro_domain_name
+I6R1R5,Omega-scoloptoxin(05)-Ssm1a,2836329,Scolopendra mutilans,129,24,110,IPR045860,Snake toxin-like superfamily
+P0DPX5,U-scoloptoxin(05)-Sa1a,1329349,Scolopendra alternans,133,24,107,IPR045860,Snake toxin-like superfamily
+P0DPX9,U-scoloptoxin(05)-Er2a,62613,Ethmostigmus rubripes,134,17,104,IPR045860,Snake toxin-like superfamily
+P0DPY0,U-scoloptoxin(05)-Er3a,62613,Ethmostigmus rubripes,132,22,106,IPR045860,Snake toxin-like superfamily
+P0DPY1,U-scoloptoxin(05)-Cw1a,1096223,Cormocephalus westwoodi,118,22,101,IPR045860,Snake toxin-like superfamily
+P0DPX7,U-scoloptoxin(05)-Sm1a,943129,Scolopendra morsitans,125,20,103,IPR045860,Snake toxin-like superfamily
+P0DPX7,U-scoloptoxin(05)-Sm1a,943129,Scolopendra morsitans,125,3,121,IPR050975,Sleep homeostasis regulator
+P0DPX8,U-scoloptoxin(05)-Er1a,62613,Ethmostigmus rubripes,125,5,122,IPR050975,Sleep homeostasis regulator
+P0DPX6,U-scoloptoxin(05)-Sa2a,1329349,Scolopendra alternans,105,26,103,IPR035076,Snake toxin/toxin-like
+P0DPX6,U-scoloptoxin(05)-Sa2a,1329349,Scolopendra alternans,105,22,105,IPR045860,Snake toxin-like superfamily
+P0DPU8,U-scoloptoxin(05)-Ssd1a,2609776,Scolopendra dehaani,105,26,103,IPR035076,Snake toxin/toxin-like
+P0DPU8,U-scoloptoxin(05)-Ssd1a,2609776,Scolopendra dehaani,105,22,105,IPR045860,Snake toxin-like superfamily

@@ -1,0 +1,3817 @@
+{
+  "entry_info": {
+    "metadata": {
+      "accession": "IPR026110",
+      "entry_id": null,
+      "type": "family",
+      "go_terms": null,
+      "source_database": "interpro",
+      "member_databases": {
+        "panther": {
+          "PTHR14909": "LYMPHOCYTE ANTIGEN 6 COMPLEX LOCUS PROTEIN G5C"
+        }
+      },
+      "integrated": null,
+      "hierarchy": {
+        "accession": "IPR026110",
+        "name": "Lymphocyte antigen 6 complex locus protein G5c",
+        "type": "Family",
+        "children": []
+      },
+      "name": {
+        "name": "Lymphocyte antigen 6 complex locus protein G5c",
+        "short": "LY6G5C"
+      },
+      "description": [
+        {
+          "text": "<p>Proteins in this family may have a role in hematopoietic cell differentiation [[cite:PUB00060029]].</p>",
+          "llm": false,
+          "checked": false,
+          "updated": false
+        }
+      ],
+      "wikipedia": null,
+      "literature": {
+        "PUB00060029": {
+          "PMID": 12079290,
+          "ISBN": null,
+          "volume": "80",
+          "issue": "1",
+          "year": 2002,
+          "title": "Transcriptional analysis of a novel cluster of LY-6 family members in the human and mouse major histocompatibility complex: five genes with many splice forms.",
+          "URL": null,
+          "raw_pages": "113-23",
+          "medline_journal": "Genomics",
+          "ISO_journal": "Genomics",
+          "authors": [
+            "Mallya M",
+            "Campbell RD",
+            "Aguado B."
+          ],
+          "DOI_URL": "http://dx.doi.org/10.1006/geno.2002.6794"
+        }
+      },
+      "set_info": null,
+      "overlaps_with": null,
+      "counters": {
+        "subfamilies": 0,
+        "domain_architectures": 0,
+        "interactions": 0,
+        "matches": 162,
+        "pathways": 0,
+        "proteins": 162,
+        "proteomes": 117,
+        "sets": 0,
+        "structural_models": {
+          "alphafold": 102,
+          "bfvd": 0
+        },
+        "structures": 0,
+        "taxa": 413
+      },
+      "entry_annotations": {},
+      "cross_references": {},
+      "is_llm": false,
+      "is_reviewed_llm": false,
+      "is_updated_llm": false,
+      "representative_structure": null
+    }
+  },
+  "proteins_data": {
+    "proteins": {
+      "A0A091CTY9": {
+        "metadata": {
+          "accession": "A0A091CTY9",
+          "name": "Uncharacterized protein",
+          "source_database": "unreviewed",
+          "length": 209,
+          "source_organism": {
+            "taxId": "885580",
+            "scientificName": "Fukomys damarensis",
+            "fullName": "Fukomys damarensis (Damaraland mole rat)"
+          },
+          "gene": "H920_17549",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            4,
+            63,
+            null
+          ]
+        ]
+      },
+      "A0A0D9R8D3": {
+        "metadata": {
+          "accession": "A0A0D9R8D3",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 148,
+          "source_organism": {
+            "taxId": "60711",
+            "scientificName": "Chlorocebus sabaeus",
+            "fullName": "Chlorocebus sabaeus (Green monkey)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            148,
+            null
+          ]
+        ]
+      },
+      "A0A140T929": {
+        "metadata": {
+          "accession": "A0A140T929",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 225,
+          "source_organism": {
+            "taxId": "9606",
+            "scientificName": "Homo sapiens",
+            "fullName": "Homo sapiens (Human)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            114,
+            225,
+            null
+          ]
+        ]
+      },
+      "A0A140T9A4": {
+        "metadata": {
+          "accession": "A0A140T9A4",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 225,
+          "source_organism": {
+            "taxId": "9606",
+            "scientificName": "Homo sapiens",
+            "fullName": "Homo sapiens (Human)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            114,
+            225,
+            null
+          ]
+        ]
+      },
+      "A0A140T9E2": {
+        "metadata": {
+          "accession": "A0A140T9E2",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 225,
+          "source_organism": {
+            "taxId": "9606",
+            "scientificName": "Homo sapiens",
+            "fullName": "Homo sapiens (Human)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            114,
+            225,
+            null
+          ]
+        ]
+      },
+      "A0A140T9E8": {
+        "metadata": {
+          "accession": "A0A140T9E8",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 225,
+          "source_organism": {
+            "taxId": "9606",
+            "scientificName": "Homo sapiens",
+            "fullName": "Homo sapiens (Human)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            114,
+            225,
+            null
+          ]
+        ]
+      },
+      "A0A140T9H6": {
+        "metadata": {
+          "accession": "A0A140T9H6",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 225,
+          "source_organism": {
+            "taxId": "9606",
+            "scientificName": "Homo sapiens",
+            "fullName": "Homo sapiens (Human)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            114,
+            225,
+            null
+          ]
+        ]
+      },
+      "A0A140T9R3": {
+        "metadata": {
+          "accession": "A0A140T9R3",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 225,
+          "source_organism": {
+            "taxId": "9606",
+            "scientificName": "Homo sapiens",
+            "fullName": "Homo sapiens (Human)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            114,
+            225,
+            null
+          ]
+        ]
+      },
+      "A0A1S3AMB9": {
+        "metadata": {
+          "accession": "A0A1S3AMB9",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 147,
+          "source_organism": {
+            "taxId": "9365",
+            "scientificName": "Erinaceus europaeus",
+            "fullName": "Erinaceus europaeus (Western European hedgehog)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            146,
+            null
+          ]
+        ]
+      },
+      "A0A1U7UAX8": {
+        "metadata": {
+          "accession": "A0A1U7UAX8",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 150,
+          "source_organism": {
+            "taxId": "1868482",
+            "scientificName": "Carlito syrichta",
+            "fullName": "Carlito syrichta (Philippine tarsier)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            149,
+            null
+          ]
+        ]
+      },
+      "A0A1U9X7Y6": {
+        "metadata": {
+          "accession": "A0A1U9X7Y6",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 150,
+          "source_organism": {
+            "taxId": "9606",
+            "scientificName": "Homo sapiens",
+            "fullName": "Homo sapiens (Human)"
+          },
+          "gene": null,
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            150,
+            null
+          ]
+        ]
+      },
+      "A0A1U9X7Z9": {
+        "metadata": {
+          "accession": "A0A1U9X7Z9",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 150,
+          "source_organism": {
+            "taxId": "9606",
+            "scientificName": "Homo sapiens",
+            "fullName": "Homo sapiens (Human)"
+          },
+          "gene": null,
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            150,
+            null
+          ]
+        ]
+      },
+      "A0A212D4L0": {
+        "metadata": {
+          "accession": "A0A212D4L0",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 140,
+          "source_organism": {
+            "taxId": "46360",
+            "scientificName": "Cervus elaphus hippelaphus",
+            "fullName": "Cervus elaphus hippelaphus (European red deer)"
+          },
+          "gene": "Celaphus_00014450",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            139,
+            null
+          ]
+        ]
+      },
+      "A0A2I3HF29": {
+        "metadata": {
+          "accession": "A0A2I3HF29",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 147,
+          "source_organism": {
+            "taxId": "61853",
+            "scientificName": "Nomascus leucogenys",
+            "fullName": "Nomascus leucogenys (Northern white-cheeked gibbon)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            147,
+            null
+          ]
+        ]
+      },
+      "A0A2J8NXV3": {
+        "metadata": {
+          "accession": "A0A2J8NXV3",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 224,
+          "source_organism": {
+            "taxId": "9598",
+            "scientificName": "Pan troglodytes",
+            "fullName": "Pan troglodytes (Chimpanzee)"
+          },
+          "gene": "CK820_G0006860",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            113,
+            224,
+            null
+          ]
+        ]
+      },
+      "A0A2J8NXX1": {
+        "metadata": {
+          "accession": "A0A2J8NXX1",
+          "name": "LY6G5C isoform 6",
+          "source_database": "unreviewed",
+          "length": 69,
+          "source_organism": {
+            "taxId": "9598",
+            "scientificName": "Pan troglodytes",
+            "fullName": "Pan troglodytes (Chimpanzee)"
+          },
+          "gene": "CK820_G0006860",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            40,
+            null
+          ]
+        ]
+      },
+      "A0A2J8R4P1": {
+        "metadata": {
+          "accession": "A0A2J8R4P1",
+          "name": "LY6G5C isoform 7",
+          "source_database": "unreviewed",
+          "length": 69,
+          "source_organism": {
+            "taxId": "9601",
+            "scientificName": "Pongo abelii",
+            "fullName": "Pongo abelii (Sumatran orangutan)"
+          },
+          "gene": "CR201_G0054042",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            40,
+            null
+          ]
+        ]
+      },
+      "A0A2J8R4R9": {
+        "metadata": {
+          "accession": "A0A2J8R4R9",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 224,
+          "source_organism": {
+            "taxId": "9601",
+            "scientificName": "Pongo abelii",
+            "fullName": "Pongo abelii (Sumatran orangutan)"
+          },
+          "gene": "CR201_G0054042",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            113,
+            224,
+            null
+          ]
+        ]
+      },
+      "A0A2K5DFK4": {
+        "metadata": {
+          "accession": "A0A2K5DFK4",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 128,
+          "source_organism": {
+            "taxId": "37293",
+            "scientificName": "Aotus nancymaae",
+            "fullName": "Aotus nancymaae (Ma's night monkey)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            127,
+            null
+          ]
+        ]
+      },
+      "A0A2K5K189": {
+        "metadata": {
+          "accession": "A0A2K5K189",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 148,
+          "source_organism": {
+            "taxId": "336983",
+            "scientificName": "Colobus angolensis palliatus",
+            "fullName": "Colobus angolensis palliatus (Peters' Angolan colobus)"
+          },
+          "gene": null,
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            147,
+            null
+          ]
+        ]
+      },
+      "A0A2K5MZY0": {
+        "metadata": {
+          "accession": "A0A2K5MZY0",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 150,
+          "source_organism": {
+            "taxId": "9531",
+            "scientificName": "Cercocebus atys",
+            "fullName": "Cercocebus atys (Sooty mangabey)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            149,
+            null
+          ]
+        ]
+      },
+      "A0A2K5R3I6": {
+        "metadata": {
+          "accession": "A0A2K5R3I6",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 150,
+          "source_organism": {
+            "taxId": "2715852",
+            "scientificName": "Cebus imitator",
+            "fullName": "Cebus imitator (Panamanian white-faced capuchin)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            148,
+            null
+          ]
+        ]
+      },
+      "A0A2K5YF08": {
+        "metadata": {
+          "accession": "A0A2K5YF08",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 150,
+          "source_organism": {
+            "taxId": "9568",
+            "scientificName": "Mandrillus leucophaeus",
+            "fullName": "Mandrillus leucophaeus (Drill)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            149,
+            null
+          ]
+        ]
+      },
+      "A0A2K6E7B1": {
+        "metadata": {
+          "accession": "A0A2K6E7B1",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 150,
+          "source_organism": {
+            "taxId": "9545",
+            "scientificName": "Macaca nemestrina",
+            "fullName": "Macaca nemestrina (Pig-tailed macaque)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            149,
+            null
+          ]
+        ]
+      },
+      "A0A2K6F9R8": {
+        "metadata": {
+          "accession": "A0A2K6F9R8",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 150,
+          "source_organism": {
+            "taxId": "379532",
+            "scientificName": "Propithecus coquereli",
+            "fullName": "Propithecus coquereli (Coquerel's sifaka)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            150,
+            null
+          ]
+        ]
+      },
+      "A0A2K6N5Q0": {
+        "metadata": {
+          "accession": "A0A2K6N5Q0",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 150,
+          "source_organism": {
+            "taxId": "61621",
+            "scientificName": "Rhinopithecus bieti",
+            "fullName": "Rhinopithecus bieti (Black snub-nosed monkey)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            149,
+            null
+          ]
+        ]
+      },
+      "A0A2K6NHU5": {
+        "metadata": {
+          "accession": "A0A2K6NHU5",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 150,
+          "source_organism": {
+            "taxId": "61622",
+            "scientificName": "Rhinopithecus roxellana",
+            "fullName": "Rhinopithecus roxellana (Golden snub-nosed monkey)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            149,
+            null
+          ]
+        ]
+      },
+      "A0A2K6UYN2": {
+        "metadata": {
+          "accession": "A0A2K6UYN2",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 149,
+          "source_organism": {
+            "taxId": "39432",
+            "scientificName": "Saimiri boliviensis boliviensis",
+            "fullName": "Saimiri boliviensis boliviensis (Bolivian squirrel monkey)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            148,
+            null
+          ]
+        ]
+      },
+      "A0A2R9CSZ1": {
+        "metadata": {
+          "accession": "A0A2R9CSZ1",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 150,
+          "source_organism": {
+            "taxId": "9597",
+            "scientificName": "Pan paniscus",
+            "fullName": "Pan paniscus (Pygmy chimpanzee)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            150,
+            null
+          ]
+        ]
+      },
+      "A0A2U3X007": {
+        "metadata": {
+          "accession": "A0A2U3X007",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 147,
+          "source_organism": {
+            "taxId": "9708",
+            "scientificName": "Odobenus rosmarus divergens",
+            "fullName": "Odobenus rosmarus divergens (Pacific walrus)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            147,
+            null
+          ]
+        ]
+      },
+      "A0A2U3Y479": {
+        "metadata": {
+          "accession": "A0A2U3Y479",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 147,
+          "source_organism": {
+            "taxId": "9713",
+            "scientificName": "Leptonychotes weddellii",
+            "fullName": "Leptonychotes weddellii (Weddell seal)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            147,
+            null
+          ]
+        ]
+      },
+      "A0A2Y9EC75": {
+        "metadata": {
+          "accession": "A0A2Y9EC75",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 150,
+          "source_organism": {
+            "taxId": "127582",
+            "scientificName": "Trichechus manatus latirostris",
+            "fullName": "Trichechus manatus latirostris (Florida manatee)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            149,
+            null
+          ]
+        ]
+      },
+      "A0A2Y9HMD7": {
+        "metadata": {
+          "accession": "A0A2Y9HMD7",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 147,
+          "source_organism": {
+            "taxId": "29088",
+            "scientificName": "Neomonachus schauinslandi",
+            "fullName": "Neomonachus schauinslandi (Hawaiian monk seal)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            147,
+            null
+          ]
+        ]
+      },
+      "A0A2Y9K0I0": {
+        "metadata": {
+          "accession": "A0A2Y9K0I0",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 163,
+          "source_organism": {
+            "taxId": "391180",
+            "scientificName": "Enhydra lutris kenyoni",
+            "fullName": "Enhydra lutris kenyoni (northern sea otter)"
+          },
+          "gene": "LOC111152421",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            163,
+            null
+          ]
+        ]
+      },
+      "A0A2Y9MLP7": {
+        "metadata": {
+          "accession": "A0A2Y9MLP7",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 101,
+          "source_organism": {
+            "taxId": "9749",
+            "scientificName": "Delphinapterus leucas",
+            "fullName": "Delphinapterus leucas (Beluga whale)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            101,
+            null
+          ]
+        ]
+      },
+      "A0A340XHV2": {
+        "metadata": {
+          "accession": "A0A340XHV2",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 142,
+          "source_organism": {
+            "taxId": "118797",
+            "scientificName": "Lipotes vexillifer",
+            "fullName": "Lipotes vexillifer (Yangtze river dolphin)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            140,
+            null
+          ]
+        ]
+      },
+      "A0A341AVB8": {
+        "metadata": {
+          "accession": "A0A341AVB8",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 121,
+          "source_organism": {
+            "taxId": "1706337",
+            "scientificName": "Neophocaena asiaeorientalis asiaeorientalis",
+            "fullName": "Neophocaena asiaeorientalis asiaeorientalis (Yangtze finless porpoise)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            121,
+            null
+          ]
+        ]
+      },
+      "A0A384B3A4": {
+        "metadata": {
+          "accession": "A0A384B3A4",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 283,
+          "source_organism": {
+            "taxId": "310752",
+            "scientificName": "Balaenoptera acutorostrata scammoni",
+            "fullName": "Balaenoptera acutorostrata scammoni (North Pacific minke whale)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            140,
+            281,
+            null
+          ]
+        ]
+      },
+      "A0A384DTK4": {
+        "metadata": {
+          "accession": "A0A384DTK4",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 129,
+          "source_organism": {
+            "taxId": "29073",
+            "scientificName": "Ursus maritimus",
+            "fullName": "Ursus maritimus (Polar bear)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            23,
+            129,
+            null
+          ]
+        ]
+      },
+      "A0A384DTL2": {
+        "metadata": {
+          "accession": "A0A384DTL2",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 147,
+          "source_organism": {
+            "taxId": "29073",
+            "scientificName": "Ursus maritimus",
+            "fullName": "Ursus maritimus (Polar bear)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            147,
+            null
+          ]
+        ]
+      },
+      "A0A387LB59": {
+        "metadata": {
+          "accession": "A0A387LB59",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 121,
+          "source_organism": {
+            "taxId": "82174",
+            "scientificName": "Pseudorca crassidens",
+            "fullName": "Pseudorca crassidens (False killer whale)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            121,
+            null
+          ]
+        ]
+      },
+      "A0A3Q7PQE1": {
+        "metadata": {
+          "accession": "A0A3Q7PQE1",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 147,
+          "source_organism": {
+            "taxId": "34884",
+            "scientificName": "Callorhinus ursinus",
+            "fullName": "Callorhinus ursinus (Northern fur seal)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            147,
+            null
+          ]
+        ]
+      },
+      "A0A3Q7RK91": {
+        "metadata": {
+          "accession": "A0A3Q7RK91",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 157,
+          "source_organism": {
+            "taxId": "9627",
+            "scientificName": "Vulpes vulpes",
+            "fullName": "Vulpes vulpes (Red fox)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            157,
+            null
+          ]
+        ]
+      },
+      "A0A452FJD0": {
+        "metadata": {
+          "accession": "A0A452FJD0",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 136,
+          "source_organism": {
+            "taxId": "9925",
+            "scientificName": "Capra hircus",
+            "fullName": "Capra hircus (Goat)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            136,
+            null
+          ]
+        ]
+      },
+      "A0A452R9I0": {
+        "metadata": {
+          "accession": "A0A452R9I0",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 135,
+          "source_organism": {
+            "taxId": "9643",
+            "scientificName": "Ursus americanus",
+            "fullName": "Ursus americanus (American black bear)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            135,
+            null
+          ]
+        ]
+      },
+      "A0A452UEK3": {
+        "metadata": {
+          "accession": "A0A452UEK3",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 149,
+          "source_organism": {
+            "taxId": "29073",
+            "scientificName": "Ursus maritimus",
+            "fullName": "Ursus maritimus (Polar bear)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            23,
+            77,
+            null
+          ]
+        ]
+      },
+      "A0A455ATY2": {
+        "metadata": {
+          "accession": "A0A455ATY2",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 144,
+          "source_organism": {
+            "taxId": "9755",
+            "scientificName": "Physeter macrocephalus",
+            "fullName": "Physeter macrocephalus (Sperm whale)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            142,
+            null
+          ]
+        ]
+      },
+      "A0A485PQ61": {
+        "metadata": {
+          "accession": "A0A485PQ61",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 138,
+          "source_organism": {
+            "taxId": "191816",
+            "scientificName": "Lynx pardinus",
+            "fullName": "Lynx pardinus (Iberian lynx)"
+          },
+          "gene": "LYPA_23C018971",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            2,
+            138,
+            null
+          ]
+        ]
+      },
+      "A0A4U1EFK7": {
+        "metadata": {
+          "accession": "A0A4U1EFK7",
+          "name": "Uncharacterized protein",
+          "source_database": "unreviewed",
+          "length": 241,
+          "source_organism": {
+            "taxId": "40151",
+            "scientificName": "Monodon monoceros",
+            "fullName": "Monodon monoceros (Narwhal)"
+          },
+          "gene": "EI555_003620",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            121,
+            241,
+            null
+          ]
+        ]
+      },
+      "A0A4W2C441": {
+        "metadata": {
+          "accession": "A0A4W2C441",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 140,
+          "source_organism": {
+            "taxId": "30522",
+            "scientificName": "Bos indicus x Bos taurus",
+            "fullName": "Bos indicus x Bos taurus (Hybrid cattle)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            140,
+            null
+          ]
+        ]
+      },
+      "A0A4X1VAI9": {
+        "metadata": {
+          "accession": "A0A4X1VAI9",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 142,
+          "source_organism": {
+            "taxId": "9823",
+            "scientificName": "Sus scrofa",
+            "fullName": "Sus scrofa (Pig)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            142,
+            null
+          ]
+        ]
+      },
+      "A0A5F7ZT52": {
+        "metadata": {
+          "accession": "A0A5F7ZT52",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 141,
+          "source_organism": {
+            "taxId": "9544",
+            "scientificName": "Macaca mulatta",
+            "fullName": "Macaca mulatta (Rhesus macaque)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            141,
+            null
+          ]
+        ]
+      },
+      "A0A5N3W0J2": {
+        "metadata": {
+          "accession": "A0A5N3W0J2",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 140,
+          "source_organism": {
+            "taxId": "9886",
+            "scientificName": "Muntiacus reevesi",
+            "fullName": "Muntiacus reevesi (Reeves' muntjac)"
+          },
+          "gene": "FD755_022439",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            139,
+            null
+          ]
+        ]
+      },
+      "A0A5N3W680": {
+        "metadata": {
+          "accession": "A0A5N3W680",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 140,
+          "source_organism": {
+            "taxId": "9888",
+            "scientificName": "Muntiacus muntjak",
+            "fullName": "Muntiacus muntjak (Barking deer)"
+          },
+          "gene": "FD754_001089",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            139,
+            null
+          ]
+        ]
+      },
+      "A0A643CAV0": {
+        "metadata": {
+          "accession": "A0A643CAV0",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 205,
+          "source_organism": {
+            "taxId": "9770",
+            "scientificName": "Balaenoptera physalus",
+            "fullName": "Balaenoptera physalus (Fin whale)"
+          },
+          "gene": "E2I00_009830",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            75,
+            203,
+            null
+          ]
+        ]
+      },
+      "A0A667GKJ2": {
+        "metadata": {
+          "accession": "A0A667GKJ2",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 145,
+          "source_organism": {
+            "taxId": "61383",
+            "scientificName": "Lynx canadensis",
+            "fullName": "Lynx canadensis (Canada lynx)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            145,
+            null
+          ]
+        ]
+      },
+      "A0A671DTS9": {
+        "metadata": {
+          "accession": "A0A671DTS9",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 150,
+          "source_organism": {
+            "taxId": "59479",
+            "scientificName": "Rhinolophus ferrumequinum",
+            "fullName": "Rhinolophus ferrumequinum (Greater horseshoe bat)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            150,
+            null
+          ]
+        ]
+      },
+      "A0A673T285": {
+        "metadata": {
+          "accession": "A0A673T285",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 150,
+          "source_organism": {
+            "taxId": "37032",
+            "scientificName": "Suricata suricatta",
+            "fullName": "Suricata suricatta (Meerkat)"
+          },
+          "gene": null,
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            150,
+            null
+          ]
+        ]
+      },
+      "A0A6B0S6F5": {
+        "metadata": {
+          "accession": "A0A6B0S6F5",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 103,
+          "source_organism": {
+            "taxId": "72004",
+            "scientificName": "Bos mutus",
+            "fullName": "Bos mutus (wild yak)"
+          },
+          "gene": "E5288_WYG005275",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            75,
+            null
+          ]
+        ]
+      },
+      "A0A6D2XDT3": {
+        "metadata": {
+          "accession": "A0A6D2XDT3",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 150,
+          "source_organism": {
+            "taxId": "9598",
+            "scientificName": "Pan troglodytes",
+            "fullName": "Pan troglodytes (Chimpanzee)"
+          },
+          "gene": "CK820_G0006860",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            150,
+            null
+          ]
+        ]
+      },
+      "A0A6G1B1P6": {
+        "metadata": {
+          "accession": "A0A6G1B1P6",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 151,
+          "source_organism": {
+            "taxId": "9678",
+            "scientificName": "Crocuta crocuta",
+            "fullName": "Crocuta crocuta (Spotted hyena)"
+          },
+          "gene": "Ly6g5c",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            3,
+            151,
+            null
+          ]
+        ]
+      },
+      "A0A6J0XUD7": {
+        "metadata": {
+          "accession": "A0A6J0XUD7",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 158,
+          "source_organism": {
+            "taxId": "9880",
+            "scientificName": "Odocoileus virginianus texanus",
+            "fullName": "Odocoileus virginianus texanus"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            102,
+            157,
+            null
+          ]
+        ]
+      },
+      "A0A6J1Z5Y0": {
+        "metadata": {
+          "accession": "A0A6J1Z5Y0",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 127,
+          "source_organism": {
+            "taxId": "32536",
+            "scientificName": "Acinonyx jubatus",
+            "fullName": "Acinonyx jubatus (Cheetah)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            15,
+            127,
+            null
+          ]
+        ]
+      },
+      "A0A6J2E0K7": {
+        "metadata": {
+          "accession": "A0A6J2E0K7",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 147,
+          "source_organism": {
+            "taxId": "9704",
+            "scientificName": "Zalophus californianus",
+            "fullName": "Zalophus californianus (California sealion)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            147,
+            null
+          ]
+        ]
+      },
+      "A0A6J2LA01": {
+        "metadata": {
+          "accession": "A0A6J2LA01",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 149,
+          "source_organism": {
+            "taxId": "89673",
+            "scientificName": "Phyllostomus discolor",
+            "fullName": "Phyllostomus discolor (pale spear-nosed bat)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            148,
+            null
+          ]
+        ]
+      },
+      "A0A6J3BCF0": {
+        "metadata": {
+          "accession": "A0A6J3BCF0",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 128,
+          "source_organism": {
+            "taxId": "30538",
+            "scientificName": "Vicugna pacos",
+            "fullName": "Vicugna pacos (Alpaca)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            16,
+            127,
+            null
+          ]
+        ]
+      },
+      "A0A6J3H4A0": {
+        "metadata": {
+          "accession": "A0A6J3H4A0",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 151,
+          "source_organism": {
+            "taxId": "9515",
+            "scientificName": "Sapajus apella",
+            "fullName": "Sapajus apella (Brown-capped capuchin)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            149,
+            null
+          ]
+        ]
+      },
+      "A0A6J3RZ38": {
+        "metadata": {
+          "accession": "A0A6J3RZ38",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 144,
+          "source_organism": {
+            "taxId": "9739",
+            "scientificName": "Tursiops truncatus",
+            "fullName": "Tursiops truncatus (Atlantic bottle-nosed dolphin)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            142,
+            null
+          ]
+        ]
+      },
+      "A0A6P3ERJ3": {
+        "metadata": {
+          "accession": "A0A6P3ERJ3",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 150,
+          "source_organism": {
+            "taxId": "10160",
+            "scientificName": "Octodon degus",
+            "fullName": "Octodon degus (Degu)"
+          },
+          "gene": "Ly6g5c",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            6,
+            149,
+            null
+          ]
+        ]
+      },
+      "A0A6P3GJ97": {
+        "metadata": {
+          "accession": "A0A6P3GJ97",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 140,
+          "source_organism": {
+            "taxId": "43346",
+            "scientificName": "Bison bison bison",
+            "fullName": "Bison bison bison (North American plains bison)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            140,
+            null
+          ]
+        ]
+      },
+      "A0A6P3RIZ2": {
+        "metadata": {
+          "accession": "A0A6P3RIZ2",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 150,
+          "source_organism": {
+            "taxId": "132908",
+            "scientificName": "Pteropus vampyrus",
+            "fullName": "Pteropus vampyrus (Large flying fox)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            150,
+            null
+          ]
+        ]
+      },
+      "A0A6P5DUY3": {
+        "metadata": {
+          "accession": "A0A6P5DUY3",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 140,
+          "source_organism": {
+            "taxId": "9915",
+            "scientificName": "Bos indicus",
+            "fullName": "Bos indicus (Zebu)"
+          },
+          "gene": "LOC109576674",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            140,
+            null
+          ]
+        ]
+      },
+      "A0A6P5J6B2": {
+        "metadata": {
+          "accession": "A0A6P5J6B2",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 159,
+          "source_organism": {
+            "taxId": "38626",
+            "scientificName": "Phascolarctos cinereus",
+            "fullName": "Phascolarctos cinereus (Koala)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            5,
+            120,
+            null
+          ]
+        ]
+      },
+      "A0A6P5NSE3": {
+        "metadata": {
+          "accession": "A0A6P5NSE3",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 149,
+          "source_organism": {
+            "taxId": "10089",
+            "scientificName": "Mus caroli",
+            "fullName": "Mus caroli (Ryukyu mouse)"
+          },
+          "gene": "Ly6g5c",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            149,
+            null
+          ]
+        ]
+      },
+      "A0A6P6HBK1": {
+        "metadata": {
+          "accession": "A0A6P6HBK1",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 227,
+          "source_organism": {
+            "taxId": "9696",
+            "scientificName": "Puma concolor",
+            "fullName": "Puma concolor (Mountain lion)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            72,
+            217,
+            null
+          ]
+        ]
+      },
+      "A0A6P7D6H3": {
+        "metadata": {
+          "accession": "A0A6P7D6H3",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 115,
+          "source_organism": {
+            "taxId": "9940",
+            "scientificName": "Ovis aries",
+            "fullName": "Ovis aries (Sheep)"
+          },
+          "gene": "JEQ12_010500",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            115,
+            null
+          ]
+        ]
+      },
+      "A0A7J7EIV1": {
+        "metadata": {
+          "accession": "A0A7J7EIV1",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 149,
+          "source_organism": {
+            "taxId": "77932",
+            "scientificName": "Diceros bicornis minor",
+            "fullName": "Diceros bicornis minor (South-central black rhinoceros)"
+          },
+          "gene": "HPG69_012726",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            149,
+            null
+          ]
+        ]
+      },
+      "A0A7J7RKK0": {
+        "metadata": {
+          "accession": "A0A7J7RKK0",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 147,
+          "source_organism": {
+            "taxId": "51298",
+            "scientificName": "Myotis myotis",
+            "fullName": "Myotis myotis (Greater mouse-eared bat)"
+          },
+          "gene": "mMyoMyo1_012589",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            146,
+            null
+          ]
+        ]
+      },
+      "A0A7J7YMH3": {
+        "metadata": {
+          "accession": "A0A7J7YMH3",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 137,
+          "source_organism": {
+            "taxId": "59472",
+            "scientificName": "Pipistrellus kuhlii",
+            "fullName": "Pipistrellus kuhlii (Kuhl's pipistrelle)"
+          },
+          "gene": "mPipKuh1_011045",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            137,
+            null
+          ]
+        ]
+      },
+      "A0A7J7YMP1": {
+        "metadata": {
+          "accession": "A0A7J7YMP1",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 150,
+          "source_organism": {
+            "taxId": "59472",
+            "scientificName": "Pipistrellus kuhlii",
+            "fullName": "Pipistrellus kuhlii (Kuhl's pipistrelle)"
+          },
+          "gene": "mPipKuh1_011045",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            150,
+            null
+          ]
+        ]
+      },
+      "A0A7J8GR79": {
+        "metadata": {
+          "accession": "A0A7J8GR79",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 150,
+          "source_organism": {
+            "taxId": "27622",
+            "scientificName": "Molossus molossus",
+            "fullName": "Molossus molossus (Pallas' mastiff bat)"
+          },
+          "gene": "HJG59_011738",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            150,
+            null
+          ]
+        ]
+      },
+      "A0A7J8KBV3": {
+        "metadata": {
+          "accession": "A0A7J8KBV3",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 150,
+          "source_organism": {
+            "taxId": "9407",
+            "scientificName": "Rousettus aegyptiacus",
+            "fullName": "Rousettus aegyptiacus (Egyptian fruit bat)"
+          },
+          "gene": "HJG63_012816",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            150,
+            null
+          ]
+        ]
+      },
+      "A0A7N9CQK9": {
+        "metadata": {
+          "accession": "A0A7N9CQK9",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 150,
+          "source_organism": {
+            "taxId": "9541",
+            "scientificName": "Macaca fascicularis",
+            "fullName": "Macaca fascicularis (Crab-eating macaque)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            149,
+            null
+          ]
+        ]
+      },
+      "A0A811YLM1": {
+        "metadata": {
+          "accession": "A0A811YLM1",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 150,
+          "source_organism": {
+            "taxId": "34880",
+            "scientificName": "Nyctereutes procyonoides",
+            "fullName": "Nyctereutes procyonoides (Raccoon dog)"
+          },
+          "gene": "NYPRO_LOCUS10416",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            150,
+            null
+          ]
+        ]
+      },
+      "A0A8B7ANR3": {
+        "metadata": {
+          "accession": "A0A8B7ANR3",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 150,
+          "source_organism": {
+            "taxId": "1230840",
+            "scientificName": "Orycteropus afer afer",
+            "fullName": "Orycteropus afer afer"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            149,
+            null
+          ]
+        ]
+      },
+      "A0A8B7Q394": {
+        "metadata": {
+          "accession": "A0A8B7Q394",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 150,
+          "source_organism": {
+            "taxId": "186990",
+            "scientificName": "Hipposideros armiger",
+            "fullName": "Hipposideros armiger (Great Himalayan leaf-nosed bat)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            149,
+            null
+          ]
+        ]
+      },
+      "A0A8B7VKY5": {
+        "metadata": {
+          "accession": "A0A8B7VKY5",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 147,
+          "source_organism": {
+            "taxId": "51338",
+            "scientificName": "Castor canadensis",
+            "fullName": "Castor canadensis (American beaver)"
+          },
+          "gene": "Ly6g5c",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            146,
+            null
+          ]
+        ]
+      },
+      "A0A8B8RN93": {
+        "metadata": {
+          "accession": "A0A8B8RN93",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 127,
+          "source_organism": {
+            "taxId": "419612",
+            "scientificName": "Camelus ferus",
+            "fullName": "Camelus ferus (Wild bactrian camel)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            14,
+            126,
+            null
+          ]
+        ]
+      },
+      "A0A8B9XKN2": {
+        "metadata": {
+          "accession": "A0A8B9XKN2",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 140,
+          "source_organism": {
+            "taxId": "30521",
+            "scientificName": "Bos mutus grunniens",
+            "fullName": "Bos mutus grunniens (Wild yak)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            140,
+            null
+          ]
+        ]
+      },
+      "A0A8C0DJ48": {
+        "metadata": {
+          "accession": "A0A8C0DJ48",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 144,
+          "source_organism": {
+            "taxId": "9771",
+            "scientificName": "Balaenoptera musculus",
+            "fullName": "Balaenoptera musculus (Blue whale)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            142,
+            null
+          ]
+        ]
+      },
+      "A0A8C0LB98": {
+        "metadata": {
+          "accession": "A0A8C0LB98",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 128,
+          "source_organism": {
+            "taxId": "286419",
+            "scientificName": "Canis lupus dingo",
+            "fullName": "Canis lupus dingo (dingo)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            7,
+            128,
+            null
+          ]
+        ]
+      },
+      "A0A8C0WH74": {
+        "metadata": {
+          "accession": "A0A8C0WH74",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 144,
+          "source_organism": {
+            "taxId": "51338",
+            "scientificName": "Castor canadensis",
+            "fullName": "Castor canadensis (American beaver)"
+          },
+          "gene": "Ly6g5c",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            143,
+            null
+          ]
+        ]
+      },
+      "A0A8C2RUH3": {
+        "metadata": {
+          "accession": "A0A8C2RUH3",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 140,
+          "source_organism": {
+            "taxId": "9925",
+            "scientificName": "Capra hircus",
+            "fullName": "Capra hircus (Goat)"
+          },
+          "gene": null,
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            140,
+            null
+          ]
+        ]
+      },
+      "A0A8C2VN21": {
+        "metadata": {
+          "accession": "A0A8C2VN21",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 123,
+          "source_organism": {
+            "taxId": "34839",
+            "scientificName": "Chinchilla lanigera",
+            "fullName": "Chinchilla lanigera (Long-tailed chinchilla)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            2,
+            122,
+            null
+          ]
+        ]
+      },
+      "A0A8C3VYZ9": {
+        "metadata": {
+          "accession": "A0A8C3VYZ9",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 144,
+          "source_organism": {
+            "taxId": "51154",
+            "scientificName": "Catagonus wagneri",
+            "fullName": "Catagonus wagneri (Chacoan peccary)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            144,
+            null
+          ]
+        ]
+      },
+      "A0A8C4MB21": {
+        "metadata": {
+          "accession": "A0A8C4MB21",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 149,
+          "source_organism": {
+            "taxId": "9793",
+            "scientificName": "Equus asinus",
+            "fullName": "Equus asinus (Donkey)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            147,
+            null
+          ]
+        ]
+      },
+      "A0A8C5YGD5": {
+        "metadata": {
+          "accession": "A0A8C5YGD5",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 150,
+          "source_organism": {
+            "taxId": "30608",
+            "scientificName": "Microcebus murinus",
+            "fullName": "Microcebus murinus (Gray mouse lemur)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            150,
+            null
+          ]
+        ]
+      },
+      "A0A8C5ZAL7": {
+        "metadata": {
+          "accession": "A0A8C5ZAL7",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 150,
+          "source_organism": {
+            "taxId": "9994",
+            "scientificName": "Marmota marmota marmota",
+            "fullName": "Marmota marmota marmota (Alpine marmot)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            5,
+            149,
+            null
+          ]
+        ]
+      },
+      "A0A8C6BKE1": {
+        "metadata": {
+          "accession": "A0A8C6BKE1",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 143,
+          "source_organism": {
+            "taxId": "40151",
+            "scientificName": "Monodon monoceros",
+            "fullName": "Monodon monoceros (Narwhal)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            141,
+            null
+          ]
+        ]
+      },
+      "A0A8C6DWT3": {
+        "metadata": {
+          "accession": "A0A8C6DWT3",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 138,
+          "source_organism": {
+            "taxId": "68415",
+            "scientificName": "Moschus moschiferus",
+            "fullName": "Moschus moschiferus (Siberian musk deer)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            138,
+            null
+          ]
+        ]
+      },
+      "A0A8C6GI79": {
+        "metadata": {
+          "accession": "A0A8C6GI79",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 149,
+          "source_organism": {
+            "taxId": "10103",
+            "scientificName": "Mus spicilegus",
+            "fullName": "Mus spicilegus (Steppe mouse)"
+          },
+          "gene": null,
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            149,
+            null
+          ]
+        ]
+      },
+      "A0A8C6WA89": {
+        "metadata": {
+          "accession": "A0A8C6WA89",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 149,
+          "source_organism": {
+            "taxId": "1026970",
+            "scientificName": "Nannospalax galili",
+            "fullName": "Nannospalax galili (Northern Israeli blind subterranean mole rat)"
+          },
+          "gene": "Ly6g5c",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            149,
+            null
+          ]
+        ]
+      },
+      "A0A8C7BGD2": {
+        "metadata": {
+          "accession": "A0A8C7BGD2",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 143,
+          "source_organism": {
+            "taxId": "452646",
+            "scientificName": "Neovison vison",
+            "fullName": "Neovison vison (American mink)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            143,
+            null
+          ]
+        ]
+      },
+      "A0A8C8T5K9": {
+        "metadata": {
+          "accession": "A0A8C8T5K9",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 141,
+          "source_organism": {
+            "taxId": "230844",
+            "scientificName": "Peromyscus maniculatus bairdii",
+            "fullName": "Peromyscus maniculatus bairdii (Prairie deer mouse)"
+          },
+          "gene": null,
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            35,
+            140,
+            null
+          ]
+        ]
+      },
+      "A0A8C8ZXX6": {
+        "metadata": {
+          "accession": "A0A8C8ZXX6",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 150,
+          "source_organism": {
+            "taxId": "1328070",
+            "scientificName": "Prolemur simus",
+            "fullName": "Prolemur simus (Greater bamboo lemur)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            150,
+            null
+          ]
+        ]
+      },
+      "A0A8C9D323": {
+        "metadata": {
+          "accession": "A0A8C9D323",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 146,
+          "source_organism": {
+            "taxId": "9689",
+            "scientificName": "Panthera leo",
+            "fullName": "Panthera leo (Lion)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            146,
+            null
+          ]
+        ]
+      },
+      "A0A8C9EFW2": {
+        "metadata": {
+          "accession": "A0A8C9EFW2",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 143,
+          "source_organism": {
+            "taxId": "42100",
+            "scientificName": "Phocoena sinus",
+            "fullName": "Phocoena sinus (Vaquita)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            141,
+            null
+          ]
+        ]
+      },
+      "A0A8C9ISJ9": {
+        "metadata": {
+          "accession": "A0A8C9ISJ9",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 150,
+          "source_organism": {
+            "taxId": "591936",
+            "scientificName": "Piliocolobus tephrosceles",
+            "fullName": "Piliocolobus tephrosceles (Ugandan red Colobus)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            149,
+            null
+          ]
+        ]
+      },
+      "A0A8C9KA12": {
+        "metadata": {
+          "accession": "A0A8C9KA12",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 166,
+          "source_organism": {
+            "taxId": "74533",
+            "scientificName": "Panthera tigris altaica",
+            "fullName": "Panthera tigris altaica (Siberian tiger)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            21,
+            166,
+            null
+          ]
+        ]
+      },
+      "A0A8C9P7V8": {
+        "metadata": {
+          "accession": "A0A8C9P7V8",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 150,
+          "source_organism": {
+            "taxId": "99837",
+            "scientificName": "Spermophilus dauricus",
+            "fullName": "Spermophilus dauricus (Daurian ground squirrel)"
+          },
+          "gene": null,
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            5,
+            149,
+            null
+          ]
+        ]
+      },
+      "A0A8D0KBB5": {
+        "metadata": {
+          "accession": "A0A8D0KBB5",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 142,
+          "source_organism": {
+            "taxId": "9823",
+            "scientificName": "Sus scrofa",
+            "fullName": "Sus scrofa (Pig)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            142,
+            null
+          ]
+        ]
+      },
+      "A0A8D0QHI1": {
+        "metadata": {
+          "accession": "A0A8D0QHI1",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 138,
+          "source_organism": {
+            "taxId": "9823",
+            "scientificName": "Sus scrofa",
+            "fullName": "Sus scrofa (Pig)"
+          },
+          "gene": null,
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            26,
+            138,
+            null
+          ]
+        ]
+      },
+      "A0A8D0TN85": {
+        "metadata": {
+          "accession": "A0A8D0TN85",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 142,
+          "source_organism": {
+            "taxId": "9823",
+            "scientificName": "Sus scrofa",
+            "fullName": "Sus scrofa (Pig)"
+          },
+          "gene": null,
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            142,
+            null
+          ]
+        ]
+      },
+      "A0A8D1IJ84": {
+        "metadata": {
+          "accession": "A0A8D1IJ84",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 164,
+          "source_organism": {
+            "taxId": "9823",
+            "scientificName": "Sus scrofa",
+            "fullName": "Sus scrofa (Pig)"
+          },
+          "gene": null,
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            52,
+            164,
+            null
+          ]
+        ]
+      },
+      "A0A8D2DFU7": {
+        "metadata": {
+          "accession": "A0A8D2DFU7",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 152,
+          "source_organism": {
+            "taxId": "55149",
+            "scientificName": "Sciurus vulgaris",
+            "fullName": "Sciurus vulgaris (Eurasian red squirrel)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            2,
+            151,
+            null
+          ]
+        ]
+      },
+      "A0A8D2GKM6": {
+        "metadata": {
+          "accession": "A0A8D2GKM6",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 150,
+          "source_organism": {
+            "taxId": "9565",
+            "scientificName": "Theropithecus gelada",
+            "fullName": "Theropithecus gelada (Gelada baboon)"
+          },
+          "gene": null,
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            149,
+            null
+          ]
+        ]
+      },
+      "A0A8D2KMZ5": {
+        "metadata": {
+          "accession": "A0A8D2KMZ5",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 152,
+          "source_organism": {
+            "taxId": "9999",
+            "scientificName": "Urocitellus parryii",
+            "fullName": "Urocitellus parryii (Arctic ground squirrel)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            7,
+            151,
+            null
+          ]
+        ]
+      },
+      "A0A8I3WQ66": {
+        "metadata": {
+          "accession": "A0A8I3WQ66",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 148,
+          "source_organism": {
+            "taxId": "9483",
+            "scientificName": "Callithrix jacchus",
+            "fullName": "Callithrix jacchus (White-tufted-ear marmoset)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            148,
+            null
+          ]
+        ]
+      },
+      "A0A8J6A6H0": {
+        "metadata": {
+          "accession": "A0A8J6A6H0",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 101,
+          "source_organism": {
+            "taxId": "202257",
+            "scientificName": "Galemys pyrenaicus",
+            "fullName": "Galemys pyrenaicus (Iberian desman)"
+          },
+          "gene": "J0S82_001489",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            85,
+            null
+          ]
+        ]
+      },
+      "A0A8U0T7Y1": {
+        "metadata": {
+          "accession": "A0A8U0T7Y1",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 159,
+          "source_organism": {
+            "taxId": "9669",
+            "scientificName": "Mustela putorius furo",
+            "fullName": "Mustela putorius furo (European domestic ferret)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            159,
+            null
+          ]
+        ]
+      },
+      "A0A9B0X210": {
+        "metadata": {
+          "accession": "A0A9B0X210",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 145,
+          "source_organism": {
+            "taxId": "185453",
+            "scientificName": "Chrysochloris asiatica",
+            "fullName": "Chrysochloris asiatica (Cape golden mole)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            143,
+            null
+          ]
+        ]
+      },
+      "A0A9J7F0H2": {
+        "metadata": {
+          "accession": "A0A9J7F0H2",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 165,
+          "source_organism": {
+            "taxId": "10029",
+            "scientificName": "Cricetulus griseus",
+            "fullName": "Cricetulus griseus (Chinese hamster)"
+          },
+          "gene": "Ly6g5c",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            33,
+            81,
+            null
+          ]
+        ]
+      },
+      "A0A9W2VRP1": {
+        "metadata": {
+          "accession": "A0A9W2VRP1",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 144,
+          "source_organism": {
+            "taxId": "9691",
+            "scientificName": "Panthera pardus",
+            "fullName": "Panthera pardus (Leopard)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            144,
+            null
+          ]
+        ]
+      },
+      "A0A9W3GEH8": {
+        "metadata": {
+          "accession": "A0A9W3GEH8",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 115,
+          "source_organism": {
+            "taxId": "9837",
+            "scientificName": "Camelus bactrianus",
+            "fullName": "Camelus bactrianus (Bactrian camel)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            114,
+            null
+          ]
+        ]
+      },
+      "A0A9X9M5K5": {
+        "metadata": {
+          "accession": "A0A9X9M5K5",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 141,
+          "source_organism": {
+            "taxId": "48420",
+            "scientificName": "Gulo gulo",
+            "fullName": "Gulo gulo (Wolverine)"
+          },
+          "gene": "BN2614_LOCUS11",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            2,
+            141,
+            null
+          ]
+        ]
+      },
+      "A0AA40HA67": {
+        "metadata": {
+          "accession": "A0AA40HA67",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 174,
+          "source_organism": {
+            "taxId": "3371016",
+            "scientificName": "Cnephaeus nilssonii",
+            "fullName": "Cnephaeus nilssonii (Northern bat)"
+          },
+          "gene": "QTO34_013019",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            98,
+            null
+          ]
+        ]
+      },
+      "A0AA41MJU7": {
+        "metadata": {
+          "accession": "A0AA41MJU7",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 589,
+          "source_organism": {
+            "taxId": "30640",
+            "scientificName": "Sciurus carolinensis",
+            "fullName": "Sciurus carolinensis (Eastern gray squirrel)"
+          },
+          "gene": "SUZIE_122210",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            479,
+            588,
+            null
+          ]
+        ]
+      },
+      "A0AAX6T198": {
+        "metadata": {
+          "accession": "A0AAX6T198",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 119,
+          "source_organism": {
+            "taxId": "10181",
+            "scientificName": "Heterocephalus glaber",
+            "fullName": "Heterocephalus glaber (Naked mole rat)"
+          },
+          "gene": "Ly6g5c",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            9,
+            118,
+            null
+          ]
+        ]
+      },
+      "A0ABD2EZ81": {
+        "metadata": {
+          "accession": "A0ABD2EZ81",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 109,
+          "source_organism": {
+            "taxId": "31869",
+            "scientificName": "Daubentonia madagascariensis",
+            "fullName": "Daubentonia madagascariensis (Aye-aye)"
+          },
+          "gene": "WCI35_006961",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            2,
+            109,
+            null
+          ]
+        ]
+      },
+      "A6KTT8": {
+        "metadata": {
+          "accession": "A6KTT8",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 148,
+          "source_organism": {
+            "taxId": "10116",
+            "scientificName": "Rattus norvegicus",
+            "fullName": "Rattus norvegicus (Rat)"
+          },
+          "gene": "Ly6g5c",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            148,
+            null
+          ]
+        ]
+      },
+      "D2I4A2": {
+        "metadata": {
+          "accession": "D2I4A2",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 109,
+          "source_organism": {
+            "taxId": "9646",
+            "scientificName": "Ailuropoda melanoleuca",
+            "fullName": "Ailuropoda melanoleuca (Giant panda)"
+          },
+          "gene": "PANDA_020407",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            3,
+            109,
+            null
+          ]
+        ]
+      },
+      "F1MY32": {
+        "metadata": {
+          "accession": "F1MY32",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 140,
+          "source_organism": {
+            "taxId": "9913",
+            "scientificName": "Bos taurus",
+            "fullName": "Bos taurus (Bovine)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            140,
+            null
+          ]
+        ]
+      },
+      "F6QWZ0": {
+        "metadata": {
+          "accession": "F6QWZ0",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 150,
+          "source_organism": {
+            "taxId": "9544",
+            "scientificName": "Macaca mulatta",
+            "fullName": "Macaca mulatta (Rhesus macaque)"
+          },
+          "gene": "EGK_14717",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            149,
+            null
+          ]
+        ]
+      },
+      "F6ZWR3": {
+        "metadata": {
+          "accession": "F6ZWR3",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 147,
+          "source_organism": {
+            "taxId": "9796",
+            "scientificName": "Equus caballus",
+            "fullName": "Equus caballus (Horse)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            147,
+            null
+          ]
+        ]
+      },
+      "F8WBQ4": {
+        "metadata": {
+          "accession": "F8WBQ4",
+          "name": "Lymphocyte antigen 6 family member G5C",
+          "source_database": "unreviewed",
+          "length": 69,
+          "source_organism": {
+            "taxId": "9606",
+            "scientificName": "Homo sapiens",
+            "fullName": "Homo sapiens (Human)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            40,
+            null
+          ]
+        ]
+      },
+      "G1LRP9": {
+        "metadata": {
+          "accession": "G1LRP9",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 147,
+          "source_organism": {
+            "taxId": "9646",
+            "scientificName": "Ailuropoda melanoleuca",
+            "fullName": "Ailuropoda melanoleuca (Giant panda)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            147,
+            null
+          ]
+        ]
+      },
+      "G1QE52": {
+        "metadata": {
+          "accession": "G1QE52",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 147,
+          "source_organism": {
+            "taxId": "59463",
+            "scientificName": "Myotis lucifugus",
+            "fullName": "Myotis lucifugus (Little brown bat)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            146,
+            null
+          ]
+        ]
+      },
+      "G1SU48": {
+        "metadata": {
+          "accession": "G1SU48",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 139,
+          "source_organism": {
+            "taxId": "9986",
+            "scientificName": "Oryctolagus cuniculus",
+            "fullName": "Oryctolagus cuniculus (Rabbit)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            139,
+            null
+          ]
+        ]
+      },
+      "G3R3A3": {
+        "metadata": {
+          "accession": "G3R3A3",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 150,
+          "source_organism": {
+            "taxId": "9595",
+            "scientificName": "Gorilla gorilla gorilla",
+            "fullName": "Gorilla gorilla gorilla (Western lowland gorilla)"
+          },
+          "gene": null,
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            150,
+            null
+          ]
+        ]
+      },
+      "G3TS53": {
+        "metadata": {
+          "accession": "G3TS53",
+          "name": "Lymphocyte antigen 6 family member G5C",
+          "source_database": "unreviewed",
+          "length": 148,
+          "source_organism": {
+            "taxId": "9785",
+            "scientificName": "Loxodonta africana",
+            "fullName": "Loxodonta africana (African elephant)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            148,
+            null
+          ]
+        ]
+      },
+      "G3V630": {
+        "metadata": {
+          "accession": "G3V630",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 148,
+          "source_organism": {
+            "taxId": "10116",
+            "scientificName": "Rattus norvegicus",
+            "fullName": "Rattus norvegicus (Rat)"
+          },
+          "gene": "Ly6g5c",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            148,
+            null
+          ]
+        ]
+      },
+      "G7P4Q4": {
+        "metadata": {
+          "accession": "G7P4Q4",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 150,
+          "source_organism": {
+            "taxId": "9541",
+            "scientificName": "Macaca fascicularis",
+            "fullName": "Macaca fascicularis (Crab-eating macaque)"
+          },
+          "gene": "EGM_13455",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            149,
+            null
+          ]
+        ]
+      },
+      "H0VHQ1": {
+        "metadata": {
+          "accession": "H0VHQ1",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 141,
+          "source_organism": {
+            "taxId": "10141",
+            "scientificName": "Cavia porcellus",
+            "fullName": "Cavia porcellus (Guinea pig)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            11,
+            141,
+            null
+          ]
+        ]
+      },
+      "H0XPQ0": {
+        "metadata": {
+          "accession": "H0XPQ0",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 147,
+          "source_organism": {
+            "taxId": "30611",
+            "scientificName": "Otolemur garnettii",
+            "fullName": "Otolemur garnettii (Small-eared galago)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            146,
+            null
+          ]
+        ]
+      },
+      "H2PIJ4": {
+        "metadata": {
+          "accession": "H2PIJ4",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 150,
+          "source_organism": {
+            "taxId": "9601",
+            "scientificName": "Pongo abelii",
+            "fullName": "Pongo abelii (Sumatran orangutan)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            150,
+            null
+          ]
+        ]
+      },
+      "H2QSN5": {
+        "metadata": {
+          "accession": "H2QSN5",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 150,
+          "source_organism": {
+            "taxId": "9598",
+            "scientificName": "Pan troglodytes",
+            "fullName": "Pan troglodytes (Chimpanzee)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            150,
+            null
+          ]
+        ]
+      },
+      "H7BYB1": {
+        "metadata": {
+          "accession": "H7BYB1",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 225,
+          "source_organism": {
+            "taxId": "9606",
+            "scientificName": "Homo sapiens",
+            "fullName": "Homo sapiens (Human)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": false,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            114,
+            225,
+            null
+          ]
+        ]
+      },
+      "H9F251": {
+        "metadata": {
+          "accession": "H9F251",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 57,
+          "source_organism": {
+            "taxId": "9544",
+            "scientificName": "Macaca mulatta",
+            "fullName": "Macaca mulatta (Rhesus macaque)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            56,
+            null
+          ]
+        ]
+      },
+      "I3MK73": {
+        "metadata": {
+          "accession": "I3MK73",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 144,
+          "source_organism": {
+            "taxId": "43179",
+            "scientificName": "Ictidomys tridecemlineatus",
+            "fullName": "Ictidomys tridecemlineatus (Thirteen-lined ground squirrel)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            143,
+            null
+          ]
+        ]
+      },
+      "L5L7C4": {
+        "metadata": {
+          "accession": "L5L7C4",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 154,
+          "source_organism": {
+            "taxId": "9402",
+            "scientificName": "Pteropus alecto",
+            "fullName": "Pteropus alecto (Black flying fox)"
+          },
+          "gene": "PAL_GLEAN10001086",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            128,
+            null
+          ]
+        ]
+      },
+      "L5LB03": {
+        "metadata": {
+          "accession": "L5LB03",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 147,
+          "source_organism": {
+            "taxId": "225400",
+            "scientificName": "Myotis davidii",
+            "fullName": "Myotis davidii (David's myotis)"
+          },
+          "gene": "MDA_GLEAN10005627",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            146,
+            null
+          ]
+        ]
+      },
+      "L8I4K7": {
+        "metadata": {
+          "accession": "L8I4K7",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 243,
+          "source_organism": {
+            "taxId": "72004",
+            "scientificName": "Bos mutus",
+            "fullName": "Bos mutus (wild yak)"
+          },
+          "gene": "M91_10764",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            112,
+            243,
+            null
+          ]
+        ]
+      },
+      "L9KGJ1": {
+        "metadata": {
+          "accession": "L9KGJ1",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 151,
+          "source_organism": {
+            "taxId": "246437",
+            "scientificName": "Tupaia chinensis",
+            "fullName": "Tupaia chinensis (Chinese tree shrew)"
+          },
+          "gene": "TREES_T100017801",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            150,
+            null
+          ]
+        ]
+      },
+      "M3XFX3": {
+        "metadata": {
+          "accession": "M3XFX3",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 145,
+          "source_organism": {
+            "taxId": "9685",
+            "scientificName": "Felis catus",
+            "fullName": "Felis catus (Cat)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            145,
+            null
+          ]
+        ]
+      },
+      "M3YI77": {
+        "metadata": {
+          "accession": "M3YI77",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 142,
+          "source_organism": {
+            "taxId": "9669",
+            "scientificName": "Mustela putorius furo",
+            "fullName": "Mustela putorius furo (European domestic ferret)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            142,
+            null
+          ]
+        ]
+      },
+      "Q5SRR4": {
+        "metadata": {
+          "accession": "Q5SRR4",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "reviewed",
+          "length": 150,
+          "source_organism": {
+            "taxId": "9606",
+            "scientificName": "Homo sapiens",
+            "fullName": "Homo sapiens (Human)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            150,
+            null
+          ]
+        ]
+      },
+      "Q863H0": {
+        "metadata": {
+          "accession": "Q863H0",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "reviewed",
+          "length": 140,
+          "source_organism": {
+            "taxId": "9544",
+            "scientificName": "Macaca mulatta",
+            "fullName": "Macaca mulatta (Rhesus macaque)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            139,
+            null
+          ]
+        ]
+      },
+      "Q8CHN2": {
+        "metadata": {
+          "accession": "Q8CHN2",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "reviewed",
+          "length": 145,
+          "source_organism": {
+            "taxId": "10116",
+            "scientificName": "Rattus norvegicus",
+            "fullName": "Rattus norvegicus (Rat)"
+          },
+          "gene": "Ly6g5c",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            145,
+            null
+          ]
+        ]
+      },
+      "Q8K1T5": {
+        "metadata": {
+          "accession": "Q8K1T5",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "reviewed",
+          "length": 149,
+          "source_organism": {
+            "taxId": "10090",
+            "scientificName": "Mus musculus",
+            "fullName": "Mus musculus (Mouse)"
+          },
+          "gene": "Ly6g5c",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            149,
+            null
+          ]
+        ]
+      },
+      "Q9XSV5": {
+        "metadata": {
+          "accession": "Q9XSV5",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "reviewed",
+          "length": 128,
+          "source_organism": {
+            "taxId": "9615",
+            "scientificName": "Canis lupus familiaris",
+            "fullName": "Canis lupus familiaris (Dog)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            7,
+            128,
+            null
+          ]
+        ]
+      },
+      "S7P7Q4": {
+        "metadata": {
+          "accession": "S7P7Q4",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 147,
+          "source_organism": {
+            "taxId": "109478",
+            "scientificName": "Myotis brandtii",
+            "fullName": "Myotis brandtii (Brandt's bat)"
+          },
+          "gene": "D623_10007257",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            146,
+            null
+          ]
+        ]
+      },
+      "W5P9F5": {
+        "metadata": {
+          "accession": "W5P9F5",
+          "name": "Lymphocyte antigen 6 complex locus protein G5c",
+          "source_database": "unreviewed",
+          "length": 140,
+          "source_organism": {
+            "taxId": "9940",
+            "scientificName": "Ovis aries",
+            "fullName": "Ovis aries (Sheep)"
+          },
+          "gene": "LY6G5C",
+          "in_alphafold": true,
+          "in_bfvd": false
+        },
+        "locations": [
+          [
+            1,
+            140,
+            null
+          ]
+        ]
+      }
+    }
+  },
+  "fetch_time": "2025-07-09T17:11:36.414618",
+  "fetch_args": {
+    "interpro_id": "IPR026110",
+    "limit": null,
+    "no_sequences": false,
+    "output_dir": null
+  }
+}
