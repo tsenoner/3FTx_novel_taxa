@@ -1,0 +1,21 @@
+Domain Extraction Summary Report
+========================================
+
+Total proteins processed: 52828
+Total sequences loaded: 52828
+Total domains extracted: 58039
+Overlapping domain cases resolved: 18779
+
+Domains extracted per InterPro ID:
+  IPR003571: 167 domains
+  IPR016054: 10915 domains
+  IPR026110: 157 domains
+  IPR026524: 405 domains
+  IPR031424: 5591 domains
+  IPR035076: 78 domains
+  IPR038773: 205 domains
+  IPR039237: 210 domains
+  IPR039457: 1760 domains
+  IPR042339: 163 domains
+  IPR045860: 37930 domains
+  IPR051445: 458 domains
