@@ -145,13 +145,19 @@ class DomainExtractor:
         if len(domains) == 1:
             return domains
         
+####################################################################################
+
+#       IF THIS TAKES TOO LONG; PUT BACK IN THE CODE; IF A PROTEIN HAS MORE THAN 15 DOMAINS; IT WILL USE A WORSE BUT FASTER ALGORITHM
+
         # For small numbers of domains, try all combinations
-        if len(domains) <= 15:  # 2^15 = 32K combinations, manageable
-            return self._find_optimal_by_enumeration(domains)
-        else:
+        #if len(domains) <= 15:  # 2^15 = 32K combinations, manageable
+        return self._find_optimal_by_enumeration(domains)
+        #else:
             # For larger sets, use interval scheduling approach
-            return self._find_optimal_by_interval_scheduling(domains)
+        #    return self._find_optimal_by_interval_scheduling(domains)
     
+#####################################################################################
+
     def _find_optimal_by_enumeration(self, domains):
         """Find optimal set by trying all possible combinations (for small sets)"""
         from itertools import combinations
