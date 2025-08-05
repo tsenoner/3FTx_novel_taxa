@@ -5,6 +5,7 @@ import sys
 import logging
 import re  # For parsing Centipede headers
 from typing import Dict, List, Any
+import numpy as np  # Added numpy import
 
 # Setup logging
 logging.basicConfig(
@@ -25,6 +26,7 @@ MANUSCRIPT_GROUP_CSV_PATH = (
 )
 
 PROTOSPACE_METADATA_CSV_PATH = INTERM_DIR / "protspace" / "protspace_metadata.csv"
+P25682_VS_ALL_TSV_PATH = INTERM_DIR / "mmseqs" / "P25682_vs_all.tsv"
 
 TMBED_COLUMNS = [
     "uniprot_id",
@@ -364,6 +366,109 @@ def load_manuscript_group_data(file_path: Path) -> pd.DataFrame:
         return pd.DataFrame(columns=["identifier", "group_modified"])
 
 
+def load_and_process_fident_data(file_path: Path) -> pd.DataFrame:
+    logging.info(f"Reading fident data from: {file_path}")
+    expected_output_columns = ["identifier", "fident_score", "neg_log_evalue", "bits"]
+    try:
+        # Read all columns first to check for 'qcov' and other essential columns
+        df_full = pd.read_csv(file_path, sep="\t", header=0)
+
+        # Define essential columns that *must* be present in the input TSV
+        # Using the original names from the TSV file here
+        required_cols_from_file = {"target", "fident", "evalue", "bits"}
+        if not required_cols_from_file.issubset(df_full.columns):
+            missing = required_cols_from_file - set(df_full.columns)
+            msg = f"Essential columns {list(missing)} not found in {file_path}. Found columns: {list(df_full.columns)}"
+            logging.error(msg)
+            raise ValueError(msg)
+
+        # Prepare the base DataFrame with essential columns, renaming as needed for internal consistency
+        df = pd.DataFrame()
+        df["identifier"] = df_full["target"]
+        df["fident_score_raw"] = pd.to_numeric(df_full["fident"], errors="coerce")
+        df["evalue"] = pd.to_numeric(df_full["evalue"], errors="coerce")
+        df["bits"] = pd.to_numeric(df_full["bits"], errors="coerce")
+
+        # Diagnostic log for bits column (ensure it uses the correct column name if 'bits' is changed)
+        if "bits" in df.columns:
+            logging.info(
+                f"'bits' column diagnostics after loading and numeric conversion:"
+            )
+            logging.info(f"  Non-NA count: {df['bits'].notna().sum()}")
+            logging.info(f"  NA count: {df['bits'].isna().sum()}")
+            if df["bits"].notna().any():
+                logging.info(f"  Min: {df['bits'].min(skipna=True)}")
+                logging.info(f"  Max: {df['bits'].max(skipna=True)}")
+                logging.info(f"  Mean: {df['bits'].mean(skipna=True)}")
+                unique_bits = df["bits"].dropna().unique()
+                if len(unique_bits) < 10:
+                    logging.info(f"  Unique values: {unique_bits}")
+                else:
+                    logging.info(f"  Number of unique values: {len(unique_bits)}")
+            else:
+                logging.info("  All 'bits' values are NA after conversion.")
+        else:
+            logging.warning(
+                "'bits' column not found for diagnostics (should be present)."
+            )
+
+        # Calculate negative log e-value
+        df["evalue_corrected"] = df["evalue"].replace(0, 1e-300)
+        df["neg_log_evalue"] = -np.log10(df["evalue_corrected"])
+        df["neg_log_evalue"] = df["neg_log_evalue"].replace([np.inf, -np.inf], pd.NA)
+
+        # --- qcov processing ---
+        qcov_col_name = "qcov"
+        if qcov_col_name in df_full.columns:
+            logging.info(f"Found '{qcov_col_name}' column. Adjusting fident score.")
+            df[qcov_col_name] = pd.to_numeric(df_full[qcov_col_name], errors="coerce")
+
+            df["fident_score"] = df["fident_score_raw"] * df[qcov_col_name]
+
+            adjusted_count = df["fident_score"].notna().sum()
+            original_notna_count = df["fident_score_raw"].notna().sum()
+            qcov_notna_count = df[qcov_col_name].notna().sum()
+            logging.info(
+                f"Adjusted fident score for {adjusted_count} entries using '{qcov_col_name}' (non-NA: {qcov_notna_count}). Original non-NA fident_score_raw: {original_notna_count}."
+            )
+            if df[qcov_col_name].isna().any() and df["fident_score_raw"].notna().any():
+                logging.info(
+                    f"  Note: Some '{qcov_col_name}' values were NA, leading to NA in adjusted fident_score even if raw fident was present."
+                )
+        else:
+            logging.warning(
+                f"Column '{qcov_col_name}' not found in {file_path} (columns found: {list(df_full.columns)}). "
+                f"Using raw 'fident' as 'fident_score' without qcov adjustment."
+            )
+            df["fident_score"] = df["fident_score_raw"]  # Use original fident
+
+        # Ensure all expected output columns are present
+        for col in expected_output_columns:
+            if col not in df.columns:
+                df[col] = pd.NA
+
+        logging.info(
+            f"Loaded and processed {len(df)} entries from fident data file {file_path}."
+        )
+        return df[expected_output_columns].copy()
+
+    except FileNotFoundError:
+        logging.error(
+            f"Fident data file not found at {file_path}. Returning empty DataFrame."
+        )
+        return pd.DataFrame(columns=expected_output_columns)
+    except ValueError as ve:
+        logging.error(
+            f"ValueError during processing of {file_path}: {ve}. Returning empty DataFrame."
+        )
+        return pd.DataFrame(columns=expected_output_columns)
+    except Exception as e:
+        logging.error(
+            f"Error reading or processing fident data TSV {file_path}: {e}. Returning empty DataFrame."
+        )
+        return pd.DataFrame(columns=expected_output_columns)
+
+
 def add_primary_interpro_info(
     df: pd.DataFrame, priority_order: List[str], mapping: Dict[str, str]
 ) -> pd.DataFrame:
@@ -405,6 +510,175 @@ def save_dataframe(df: pd.DataFrame, output_path: Path):
         raise RuntimeError(f"Error saving final data to {output_path}: {e}")
 
 
+# --- Helper function for fident binning ---
+def add_fident_column_and_binning(
+    df: pd.DataFrame, reference_id: str = "P25682"
+) -> pd.DataFrame:
+    logging.info(f"Adding and binning fident column. Reference ID: {reference_id}")
+    if "fident_score" not in df.columns:
+        logging.warning("'fident_score' column not found. Skipping fident binning.")
+        df["fident"] = pd.NA
+        return df
+
+    # Initialize fident column with NA
+    df["fident"] = pd.NA
+
+    # Set 'Reference' for the reference_id
+    df.loc[df["identifier"] == reference_id, "fident"] = "Reference"
+
+    # Define bins and labels
+    bins = [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+    labels = [
+        "0.0-0.1",
+        "0.1-0.2",
+        "0.2-0.3",
+        "0.3-0.4",
+        "0.4-0.5",
+        "0.5-0.6",
+        "0.6-0.7",
+        "0.7-0.8",
+        "0.8-0.9",
+        "0.9-1.0",
+    ]
+
+    # Apply binning to non-reference entries that have a fident_score
+    # Ensure we only try to bin numeric, non-NA fident_scores
+    mask_to_bin = (df["identifier"] != reference_id) & (
+        pd.to_numeric(df["fident_score"], errors="coerce").notna()
+    )
+
+    # Convert fident_score to numeric for binning, coercing errors
+    fident_scores_to_bin = pd.to_numeric(
+        df.loc[mask_to_bin, "fident_score"], errors="coerce"
+    )
+
+    # Perform binning only on valid scores
+    if not fident_scores_to_bin.empty:
+        binned_values = pd.cut(
+            fident_scores_to_bin,
+            bins=bins,
+            labels=labels,
+            right=True,
+            include_lowest=True,
+        )
+        df.loc[mask_to_bin, "fident"] = binned_values.astype(
+            str
+        )  # Ensure labels are strings
+
+    # Handle cases where fident_score might be NA or non-numeric for non-reference IDs
+    # These will remain pd.NA in the 'fident' column unless explicitly handled otherwise
+
+    # Fill any remaining NAs in fident (for non-reference, non-binned items) if desired, e.g. with "<0.0" or "Unknown"
+    # For now, they remain NA, which is consistent with missing data.
+
+    logging.info("Finished adding and binning fident column.")
+    return df
+
+
+# --- Helper function for value-range-based binning ---
+def add_binned_column_by_value_range(
+    df: pd.DataFrame,
+    source_column_name: str,
+    new_column_name: str,
+    num_bins: int = 10,
+    reference_id: str | None = None,
+    reference_label: str = "Reference",
+    precision: int = 1,  # Precision for bin labels
+) -> pd.DataFrame:
+    logging.info(
+        f"Binning column '{source_column_name}' into {num_bins} equal-width bins as '{new_column_name}' with precision {precision}."
+    )
+    if source_column_name not in df.columns:
+        logging.warning(
+            f"Source column '{source_column_name}' not found. Skipping binning for '{new_column_name}'."
+        )
+        df[new_column_name] = pd.NA
+        return df
+
+    # Initialize the new column
+    df[new_column_name] = pd.NA
+
+    # Handle reference ID if provided
+    if reference_id and "identifier" in df.columns:
+        ref_mask = df["identifier"] == reference_id
+        df.loc[ref_mask, new_column_name] = reference_label
+        # Data to bin excludes the reference ID and rows where source column is already NA
+        data_to_bin_mask = ~ref_mask & df[source_column_name].notna()
+        if not data_to_bin_mask.any():
+            logging.info(
+                f"No data to bin for '{source_column_name}' after excluding reference ID '{reference_id}'."
+            )
+            return df
+        numeric_source_column_for_binning = pd.to_numeric(
+            df.loc[data_to_bin_mask, source_column_name], errors="coerce"
+        )
+    else:
+        # Bin all data if no reference ID or no identifier column
+        data_to_bin_mask = df[source_column_name].notna()
+        if not data_to_bin_mask.any():
+            logging.info(f"No data to bin for '{source_column_name}'.")
+            df[new_column_name] = (
+                pd.NA
+            )  # Ensure column exists if it was all NA initially
+            return df
+        numeric_source_column_for_binning = pd.to_numeric(
+            df.loc[data_to_bin_mask, source_column_name], errors="coerce"
+        )
+
+    valid_data_for_binning = numeric_source_column_for_binning.dropna()
+
+    if valid_data_for_binning.empty:
+        logging.warning(
+            f"No valid numeric data in '{source_column_name}' (after reference handling/coercion) to bin. '{new_column_name}' might have only reference labels or NAs."
+        )
+        return df
+
+    min_val = valid_data_for_binning.min()
+    max_val = valid_data_for_binning.max()
+
+    if min_val == max_val:
+        logging.warning(
+            f"All valid data for binning in '{source_column_name}' is '{min_val}'. Assigning single category."
+        )
+        # Assign to the subset of rows that were considered for binning
+        df.loc[valid_data_for_binning.index, new_column_name] = (
+            f"[{min_val:.{precision}f}]"
+        )
+        return df
+
+    try:
+        binned_series = pd.cut(
+            valid_data_for_binning,
+            bins=num_bins,
+            include_lowest=True,
+            right=True,
+            precision=precision,  # Controls number of decimals in bin labels
+        )
+        # Assign binned categories (as strings) back to the correct rows in the original DataFrame
+        df.loc[valid_data_for_binning.index, new_column_name] = binned_series.astype(
+            str
+        )
+
+        binned_count = df.loc[data_to_bin_mask, new_column_name].notna().sum()
+        ref_count = df[new_column_name].eq(reference_label).sum() if reference_id else 0
+        logging.info(
+            f"Successfully processed '{new_column_name}'. Binned {binned_count - ref_count} non-reference values. Reference count: {ref_count}. Min: {min_val:.{precision}f}, Max: {max_val:.{precision}f}"
+        )
+
+    except ValueError as e:
+        logging.warning(
+            f"Could not perform value range binning for '{source_column_name}' (min: {min_val:.{precision}f}, max: {max_val:.{precision}f}): {e}. Column '{new_column_name}' will have NAs for these values."
+        )
+        # NAs are already set for rows that failed, or column initialized with NA
+    except Exception as e:
+        logging.error(
+            f"An unexpected error occurred during binning of '{source_column_name}': {e}"
+        )
+        # NAs are already set
+
+    return df
+
+
 # --- Main Workflow ---
 def main():
     logging.info("Starting Protospace metadata preparation script...")
@@ -420,12 +694,16 @@ def main():
     df_tmbed = load_tmbed_data(TMBED_CSV_PATH, TMBED_COLUMNS)
     interpro_shortname_map = load_interpro_shortname_mapping(INTERPRO_MAPPING_TSV_PATH)
     df_manuscript_group = load_manuscript_group_data(MANUSCRIPT_GROUP_CSV_PATH)
+    df_fident = load_and_process_fident_data(P25682_VS_ALL_TSV_PATH)  # Load fident data
 
     # 3. Merge Data: Start with base FASTA identifiers, left merge other data
     logging.info("Merging datasets with base FASTA identifiers...")
     df_merged = pd.merge(df_base, df_uniprot, on="identifier", how="left")
     df_merged = pd.merge(df_merged, df_tmbed, on="identifier", how="left")
     df_merged = pd.merge(df_merged, df_manuscript_group, on="identifier", how="left")
+    df_merged = pd.merge(
+        df_merged, df_fident, on="identifier", how="left"
+    )  # Merge fident data
     logging.info(f"Shape after merges: {df_merged.shape}")
 
     # 4. Prepare organism ID for taxonomy lookup
@@ -453,7 +731,28 @@ def main():
         df_processed, INTERPRO_PRIORITY_ORDER, interpro_shortname_map
     )
 
-    # 7. Annotate Functional Group and Protein Display Name
+    # 7. Add fident column and binning
+    df_processed = add_fident_column_and_binning(df_processed, reference_id="P25682")
+
+    # 8. Add binned neg_log_evalue and bits using value range binning
+    df_processed = add_binned_column_by_value_range(
+        df_processed,
+        "neg_log_evalue",
+        "neg_log_evalue_binned",
+        num_bins=10,
+        reference_id="P25682",
+        precision=1,
+    )
+    df_processed = add_binned_column_by_value_range(
+        df_processed,
+        "bits",
+        "bits_binned",
+        num_bins=10,
+        reference_id="P25682",
+        precision=1,
+    )
+
+    # 9. Annotate Functional Group and Protein Display Name
     logging.info("Applying functional group and protein display name annotations...")
 
     # Initialize functional_group from manuscript's group_modified
@@ -480,7 +779,7 @@ def main():
         df_processed["identifier"]
     )
 
-    # 8. Define and Select Final Columns
+    # 10. Define and Select Final Columns
     final_columns = [
         "identifier",
         "protein_display_name",
@@ -492,6 +791,9 @@ def main():
         "pfam",
         "primary_interpro_id",
         "primary_interpro_short_name",
+        "fident",
+        "neg_log_evalue_binned",
+        "bits_binned",
         "phylum",
         "order",
         "family",
@@ -514,7 +816,7 @@ def main():
         subset=["identifier"], inplace=True
     )  # Should not drop if FASTA was source
 
-    # 9. Save Data
+    # 11. Save Data
     save_dataframe(df_final_metadata, PROTOSPACE_METADATA_CSV_PATH)
 
     logging.info("Protospace metadata preparation script finished successfully.")
