@@ -178,7 +178,7 @@ if __name__ == '__main__':
     # python rm_sp.py
     # --pdb_dir ../../data/raw/pdb/
     # --signalp ../../data/interm/sp6/output.gff3
-    # --fasta ../../data/interm/merged/merged_sanitized.fasta
+    # --fasta ../../data/interm/backup/merged_sanitized.fasta
     # --out_pdb_dir ../../data/interm/pdb
     # --out_fasta ../../data/interm/pdb
     # --threshold 0.8
@@ -191,7 +191,7 @@ if __name__ == '__main__':
     )
 
     # Compare counts
-    # processed_count = count_fasta_sequences("../../data/interm/merged/merged_sanitized.fasta")
+    # processed_count = count_fasta_sequences("../../data/interm/backup/merged_sanitized.fasta")
     #
     # processed_count = count_fasta_sequences("../../data/interm/pdb/mature_missing_sequences.fasta")
     # merged_count = count_fasta_sequences("../../data/interm/pdb/mature_sequences.fasta")
