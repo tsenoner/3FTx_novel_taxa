@@ -24,16 +24,18 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(
 # ----------------- CONFIG (edit this) -----------------
 GROUP_PATTERNS = {
     "manually_annotated": [r"\bCentipede3FTx\b"],
-    "3FTx": [r"\b3ftx\b", r"\b3\-ftx\b", r"\bthree[- ]?ftx\b", r"\b3FTx\b", r"\bThree-finger toxin\b", r"\bThree finger toxins\b"],
+    "3FTx": [r"\b3ftx\b", r"\b3\-ftx\b", r"\bthree[- ]?ftx\b", r"\b3FTx\b", r"\bThree-finger toxin\b", r"\bThree finger toxins\b", r"\bThree finger toxin\b"],
     "PMF": [r"\bpmf\b", r"\bPNF\b"],
     "Ly6": [r"\bly6\b", r"\bly\-6\b", r"\blysix\b", r"\bLy-6\b", r"\bLY6\b"],
     "Quiver": [r"\bquiver\b", r"\bqvr\b"],
     "Scoloptoxin": [r"\bscoloptoxin\b"],
+    "SPF": [r"\bSodefrin\b"],
 }
 
 # Specificity order: most specific first. If a header matches multiple groups,
 # the first one listed here will be chosen.
 SPECIFICITY_ORDER = [
+    "SPF",
     "Scoloptoxin",
     "PMF",
     "Quiver",
