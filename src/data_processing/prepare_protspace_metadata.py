@@ -17,7 +17,7 @@ DATA_DIR = Path("data")
 RAW_DIR = DATA_DIR / "raw"
 INTERM_DIR = DATA_DIR / "interm"
 
-SANITIZED_FASTA_PATH = INTERM_DIR / "merged" / "merged_sanitized.fasta"
+SANITIZED_FASTA_PATH = INTERM_DIR / "backup" / "merged_sanitized.fasta"
 UNIPROT_TSV_PATH = RAW_DIR / "uniprot" / "3FTx_related.tsv"
 TMBED_CSV_PATH = RAW_DIR / "protspace" / "tmbed_predictions.csv"
 INTERPRO_MAPPING_TSV_PATH = RAW_DIR / "protspace" / "interpro_shortName_map.tsv"
@@ -77,7 +77,7 @@ def setup_taxopy_db_paths():
         db_dir.mkdir(parents=True, exist_ok=True)
         nodes_file = db_dir / "nodes.dmp"
         names_file = db_dir / "names.dmp"
-        merged_file = db_dir / "merged.dmp"
+        merged_file = db_dir / "backup.dmp"
         return db_dir, nodes_file, names_file, merged_file
     except Exception as e:
         logging.error(f"Error setting up taxopy db paths: {e}")

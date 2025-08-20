@@ -25,7 +25,7 @@ INTERM_DATA_DIR = DATA_DIR / "interm"
 FASTA1_PATH = RAW_DATA_DIR / "uniprot" / "3FTx_related.fasta"
 CENTIPEDE_PROCESSED_DIR = INTERM_DATA_DIR / "centipede_3ftx_quiver_upar_like"
 FASTA2_PATH = CENTIPEDE_PROCESSED_DIR / "centipede_3ftx_processed.fasta"
-OUTPUT_DIR = INTERM_DATA_DIR / "merged"
+OUTPUT_DIR = INTERM_DATA_DIR / "backup"
 
 # --- Constants ---
 HEADER_CLEANER = re.compile(r"[\W\s]")
