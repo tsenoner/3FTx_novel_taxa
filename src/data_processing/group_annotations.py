@@ -115,9 +115,9 @@ def determine_monomere_status(member_ids: List[str], uniprot_counts: Dict[str, i
     
     if len(unique_types) == 1:
         if "monomeric" in unique_types:
-            return "true"
+            return "monomere"
         else:
-            return "false"
+            return "multimere"
     else:
         return "mixture"
 
@@ -296,7 +296,7 @@ def build_cluster_member_headers(rep_to_members: Dict[str, List[str]],
 def write_output_csv(path: Path, rows: List[Dict[str, str]]):
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", newline="", encoding="utf-8") as fh:
-        w = csv.DictWriter(fh, fieldnames=["identifier", "group", "monomere"])
+        w = csv.DictWriter(fh, fieldnames=["identifier", "group", "Oligomeric_state"])
         w.writeheader()
         for r in rows:
             w.writerow(r)
@@ -339,15 +339,15 @@ def main():
         label = decide_cluster_label(member_fulls, rep_id)
         
         # NEW: Determine monomere status
-        monomere_status = determine_monomere_status(member_fulls, uniprot_counts)
+        oligomeric_status = determine_monomere_status(member_fulls, uniprot_counts)
         
         rows.append({
             "identifier": rep_id, 
             "group": label,
-            "monomere": monomere_status
+            "Oligomeric_state": oligomeric_status
         })
         stats[label] += 1
-        monomere_stats[monomere_status] += 1
+        monomere_stats[oligomeric_status] += 1
         
         if args.debug_cluster and args.debug_cluster == rep_id:
             logging.info(f"=== END DEBUG CLUSTER {rep_id} ===")
@@ -365,22 +365,22 @@ def main():
         label = decide_cluster_label([rep_full], rep_id)
         
         # NEW: Determine monomere status for singletons
-        monomere_status = determine_monomere_status([rep_full], uniprot_counts)
+        oligomeric_status = determine_monomere_status([rep_full], uniprot_counts)
         
         rows.append({
             "identifier": rep_full.split()[0], 
             "group": label,
-            "monomere": monomere_status
+            "Oligomeric_state": oligomeric_status
         })
         stats[label] += 1
-        monomere_stats[monomere_status] += 1
+        monomere_stats[oligomeric_status] += 1
 
     write_output_csv(args.output_csv, rows)
     logging.info("Group Summary:")
     for k, v in stats.most_common():
         logging.info(f"  {k}: {v}")
     
-    logging.info("Monomere Summary:")
+    logging.info("Oligomeric State Summary:")
     for k, v in monomere_stats.most_common():
         logging.info(f"  {k}: {v}")
 
