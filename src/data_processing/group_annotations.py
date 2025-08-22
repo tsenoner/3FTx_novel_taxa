@@ -9,6 +9,7 @@ Fixes:
  - logs missing member IDs and unmatched headers
  - FIXED: Better debugging for group assignment decisions
  - FIXED: Added IPR031424 mapping (appears to be missing from your config)
+ - ADDED: Monomere detection based on UniProt ID domain counts
 """
 
 import argparse
@@ -60,6 +61,65 @@ _COMPILED_GROUPS = [(g, [re.compile(p, re.IGNORECASE) for p in pats]) for g, pat
 _re_protein_name = re.compile(r"protein_name=(.*?)\s+(organism=|domain_pos=|signature=|interpro_id=|length=|$)", re.IGNORECASE)
 _re_interpro_id = re.compile(r"(IPR\d{6})", re.IGNORECASE)
 # ------------------------------------------------------
+
+def extract_uniprot_id(identifier: str) -> str:
+    """Extract UniProt ID from identifier like A0A7J7F872_IPR042339_1_14-139
+    If identifier contains 'Centipede', treat it as a unique identifier"""
+    if "Centipede" in identifier:
+        return identifier  # Treat the whole identifier as unique
+    return identifier.split('_')[0]
+
+def count_uniprot_domains(headers_by_id: Dict[str, str]) -> Dict[str, int]:
+    """Count how many domains each UniProt ID has in the dataset
+    Centipede IDs are treated as unique (count = 1)"""
+    uniprot_counts = Counter()
+    centipede_count = 0
+    
+    for seq_id in headers_by_id.keys():
+        uniprot_id = extract_uniprot_id(seq_id)
+        if "Centipede" in uniprot_id:
+            centipede_count += 1
+            # Each Centipede ID is unique, so we set count to 1
+            uniprot_counts[uniprot_id] = 1
+        else:
+            uniprot_counts[uniprot_id] += 1
+    
+    logging.info(f"Counted domains for {len(uniprot_counts)} UniProt IDs")
+    logging.info(f"Found {centipede_count} Centipede sequences (treated as unique)")
+    multimeric_proteins = sum(1 for count in uniprot_counts.values() if count > 1)
+    logging.info(f"Found {multimeric_proteins} proteins with multiple domains")
+    
+    return dict(uniprot_counts)
+
+def determine_monomere_status(member_ids: List[str], uniprot_counts: Dict[str, int]) -> str:
+    """Determine if cluster members are all monomeric, all multimeric, or mixed
+    Centipede IDs are treated as monomeric (unique)"""
+    domain_types = []
+    
+    for member_id in member_ids:
+        # Extract just the ID part (before any spaces)
+        seq_id = member_id.split()[0]
+        uniprot_id = extract_uniprot_id(seq_id)
+        
+        # Centipede IDs are always treated as unique/monomeric
+        if "Centipede" in uniprot_id:
+            domain_types.append("monomeric")
+        else:
+            domain_count = uniprot_counts.get(uniprot_id, 1)  # Default to 1 if not found
+            if domain_count == 1:
+                domain_types.append("monomeric")
+            else:
+                domain_types.append("multimeric")
+    
+    unique_types = set(domain_types)
+    
+    if len(unique_types) == 1:
+        if "monomeric" in unique_types:
+            return "true"
+        else:
+            return "false"
+    else:
+        return "mixture"
 
 def parse_fasta_headers(fasta_path: Path, id_mode: str = "first_token") -> Dict[str, str]:
     d = {}
@@ -236,7 +296,7 @@ def build_cluster_member_headers(rep_to_members: Dict[str, List[str]],
 def write_output_csv(path: Path, rows: List[Dict[str, str]]):
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", newline="", encoding="utf-8") as fh:
-        w = csv.DictWriter(fh, fieldnames=["identifier", "group"])
+        w = csv.DictWriter(fh, fieldnames=["identifier", "group", "monomere"])
         w.writeheader()
         for r in rows:
             w.writerow(r)
@@ -259,10 +319,15 @@ def main():
     rep_headers_by_id = parse_fasta_headers(args.rep_fasta, id_mode=args.id_mode)
     rep_to_members = parse_mmseqs_tsv(args.cluster_tsv)
 
+    # NEW: Count UniProt domain occurrences
+    uniprot_counts = count_uniprot_domains(headers_by_id)
+
     clusters = build_cluster_member_headers(rep_to_members, headers_by_id, rep_headers_by_id)
 
     rows = []
     stats = Counter()
+    monomere_stats = Counter()
+    
     for rep_full, member_fulls in clusters.items():
         rep_id = rep_full.split()[0]
         
@@ -272,8 +337,17 @@ def main():
             logging.getLogger().setLevel(logging.DEBUG)
         
         label = decide_cluster_label(member_fulls, rep_id)
-        rows.append({"identifier": rep_id, "group": label})
+        
+        # NEW: Determine monomere status
+        monomere_status = determine_monomere_status(member_fulls, uniprot_counts)
+        
+        rows.append({
+            "identifier": rep_id, 
+            "group": label,
+            "monomere": monomere_status
+        })
         stats[label] += 1
+        monomere_stats[monomere_status] += 1
         
         if args.debug_cluster and args.debug_cluster == rep_id:
             logging.info(f"=== END DEBUG CLUSTER {rep_id} ===")
@@ -289,12 +363,25 @@ def main():
     for rep_id in missing_reps:
         rep_full = rep_headers_by_id.get(rep_id, rep_id)
         label = decide_cluster_label([rep_full], rep_id)
-        rows.append({"identifier": rep_full.split()[0], "group": label})
+        
+        # NEW: Determine monomere status for singletons
+        monomere_status = determine_monomere_status([rep_full], uniprot_counts)
+        
+        rows.append({
+            "identifier": rep_full.split()[0], 
+            "group": label,
+            "monomere": monomere_status
+        })
         stats[label] += 1
+        monomere_stats[monomere_status] += 1
 
     write_output_csv(args.output_csv, rows)
-    logging.info("Summary:")
+    logging.info("Group Summary:")
     for k, v in stats.most_common():
+        logging.info(f"  {k}: {v}")
+    
+    logging.info("Monomere Summary:")
+    for k, v in monomere_stats.most_common():
         logging.info(f"  {k}: {v}")
 
 if __name__ == "__main__":
