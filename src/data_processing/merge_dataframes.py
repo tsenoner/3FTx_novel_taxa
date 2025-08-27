@@ -1,5 +1,7 @@
 import pandas as pd
 from pathlib import Path
+import time
+import requests
 
 base = Path("../../data/raw/data_for_tree/interpro")
 out = Path("../../data/interm/merged")
@@ -96,11 +98,7 @@ if "protein_id" in merged.columns:
 final_df.to_csv(Path(out,"merged.csv"), index=False)
 
 
-
-
 # --- Download UniProt sequences into FASTA (chunked, ≤100 ORs) ---
-import time
-import requests
 
 protein_ids = pd.Series(final_df["protein_id"]).dropna().astype(str).unique().tolist()
 print(f"Fetching {len(protein_ids):,} sequences from UniProt...")
@@ -137,8 +135,6 @@ print(f"Saved FASTA to {fasta_path}")
 if missed:
     print(f"Missed IDs (first 10 of {len(missed)}): {missed[:10]}")
 
-from pathlib import Path
-import pandas as pd
 
 fasta_path = Path(out, "sequences.fasta")
 
