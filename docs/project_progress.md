@@ -88,7 +88,7 @@ To interactively explore the sequence landscape based on their ProtT5 embeddings
 *   **Generating Protospace JSON Data**: The `protspace-json` command-line tool is used to process the ProtT5 embeddings (from `data/interm/merged/merged_sanitized.h5`) and the comprehensive metadata file (`data/interm/protspace/protspace_metadata.csv`). It performs dimensionality reduction using specified methods (PCA, UMAP, PacMAP with 2 components each) and integrates the metadata to create a single JSON file (`data/interm/protspace/protspace.json`) required by the Protospace viewer. Key parameters for UMAP/PacMAP like `n_neighbors` (100) and `min_dist` (0.5) are specified to control the layout of the manifold.
 
     ```bash
-    protspace-json -i data/interm/merged/merged_sanitized.h5 -m data/interm/protspace/protspace_metadata.csv -o data/interm/protspace/protspace.json --methods pca2 umap2 pacmap2 --n_neighbors 100 --min_dist 0.5
+    protspace-json -i data/interm/backup/merged_sanitized.h5 -m data/interm/protspace/protspace_metadata.csv -o data/interm/protspace/protspace.json --methods pca2 umap2 pacmap2 --n_neighbors 100 --min_dist 0.5
     ```
 
 *   **Applying Feature Styling**: To enhance the visualization with custom color schemes and styles for different metadata features, the `protspace-feature-colors` tool is employed. This tool takes a predefined styling configuration JSON (`data/interm/protspace/styling.json`) and applies it to the `protspace.json` file, producing a styled JSON file (`data/processed/protspace_styled.json`) that can then be loaded into the Protospace web viewer for interactive analysis.
@@ -105,7 +105,7 @@ To prepare the curated sequences for phylogenetic tree construction using ExaBay
 
 *   **Multiple Sequence Alignment (MSA)**: The merged and sanitized sequences were aligned using MAFFT. This step is crucial for identifying homologous regions across different sequences, which is a prerequisite for phylogenetic inference. The following command was used:
     ```bash
-    mafft --auto --dpparttree --thread 10 data/interm/merged/merged_sanitized.fasta > data/interm/exabayes/merged_aligned_auto.fasta
+    mafft --auto --dpparttree --thread 10 data/interm/backup/merged_sanitized.fasta > data/interm/exabayes/merged_aligned_auto.fasta
     ```
     This command automatically selects the appropriate MAFFT strategy (`--auto`), uses a progressive method with a distance-based partition tree (`--dpparttree`), and utilizes 10 threads for parallel processing (`--thread 10`). The output is an aligned FASTA file stored at `data/interm/exabayes/merged_aligned_auto.fasta`.
 
