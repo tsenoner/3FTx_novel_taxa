@@ -18,3 +18,7 @@ data/interm/pdb/*
 data/raw/pdb/*
 data/raw/redundancy_reduction_out_and_elbow_plot/**/tmp/
 src/data_processing/*.dmp
+
+# iqtree files
+*.mldist
+*.ckp.gz
