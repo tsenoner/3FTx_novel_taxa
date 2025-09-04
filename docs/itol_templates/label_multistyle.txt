@@ -1,0 +1,51 @@
+MULTI_STYLE
+#use this template to set multiple font styles to the tree node labels
+
+#lines starting with a hash are comments and ignored during parsing
+
+#=================================================================#
+#                    MANDATORY SETTINGS                           #
+#=================================================================#
+#select the separator which is used to delimit the data below (TAB,SPACE or COMMA).This separator must be used throughout this file (except in the SEPARATOR line, which uses space).
+
+#SEPARATOR TAB
+#SEPARATOR SPACE
+SEPARATOR COMMA
+
+
+#=================================================================#
+#                    OPTIONAL SETTINGS                            #
+#=================================================================#
+
+#define the character which will be used to split the labels into parts. Provide the actual character, or use the keywords SPACE or COMMA. 
+#if not specified, SPACE will be used
+#LABEL_SEPARATOR,SPACE
+
+#apply the style only to labels containing this number or parts/words
+#PARTS_REQUIRED,4
+
+#apply the style only to labels containing this text
+#INCLUDE_ONLY,Bact
+
+#skip the labels containing this text
+#EXCLUDE_LABELS,Euk
+
+
+#each line in the DATA section defines the style for one label part (specified in the first field)
+#fields are:
+#1: label part
+#2: style (normal, bold, italic or bold-italic)
+#3: position (normal, subscript or superscript)
+#4: color
+#5: size factor
+#6: shift X
+#7: shift Y
+#8: font family (default, Arial, Verdana, Courier, Courier New, Times New Roman, Georgia, Impact or Monotype Corsiva)
+
+
+DATA
+
+#1,bold,normal,#000000,1,0,0,default
+#2,italic,subscript,#0000ff,0.5,0,0,Courier
+#3,normal,normal,#ff0000,1.5,0,-10,Courier
+#4,normal,normal,#00ff00,1,0,0,default
