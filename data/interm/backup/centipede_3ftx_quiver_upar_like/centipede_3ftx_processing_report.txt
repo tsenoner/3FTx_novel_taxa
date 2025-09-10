@@ -1,0 +1,11 @@
+FASTA Processing Report
+=======================
+Input FASTA: data/raw/centipede_3ftx_quiver_upar_like/3ftx_Quiver_UPAR-like_in_Centipedes_AW_210425.fasta
+Output directory: data/interm/centipede_3ftx_quiver_upar_like
+Assembly ID Map: data/raw/centipede_3ftx_quiver_upar_like/centipede_genome_tol_ids.tsv (Loaded successfully)
+
+-------------------
+Total sequences read from input: 154
+Sequences written to FASTA: 148
+Sequences filtered (internal stop/empty): 6
+Duplicate sequences removed: 0

@@ -59,6 +59,7 @@ def get_lineage(tid):
         tax = taxopy.Taxon(int(tid), taxdb)
         lineage = tax.rank_name_dictionary
         return pd.Series({
+            "kingdom": lineage.get("kingdom"),
             "phylum": lineage.get("phylum"),
             "class": lineage.get("class"),
             "order": lineage.get("order"),
@@ -66,7 +67,7 @@ def get_lineage(tid):
             "genus": lineage.get("genus")
         })
     except:
-        return pd.Series(dict.fromkeys(["phylum","class","order","family","genus"], None))
+        return pd.Series(dict.fromkeys(["kingdom","phylum","class","order","family","genus"], None))
 
 df = df.join(df["tax_id"].dropna().apply(get_lineage))
 df.to_csv(out_path, index=False)

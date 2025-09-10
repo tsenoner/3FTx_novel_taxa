@@ -1,0 +1,332 @@
+IQ-TREE version 3.0.1 for MacOS ARM 64-bit built Jun 30 2025
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    e9b2557e-1aa1-4ed7-a65a-6b9abe8cd696.fritz.box (SSE4.2, 48 GB RAM)
+Command: iqtree3 -s representatives_70id_reassign_alignemnt.phy -m LG -fast -nt AUTO -alrt 1000
+Seed:    769343 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Fri Aug 22 17:08:09 2025
+Kernel:  SSE2 - auto-detect threads (14 CPU cores detected)
+
+Reading alignment file representatives_70id_reassign_alignemnt.phy ... Phylip format detected
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.139817 secs using 88.76% CPU
+WARNING: 102 sites contain only gaps or ambiguous characters.
+Alignment has 12188 sequences with 2953 columns, 2589 distinct patterns
+860 parsimony-informative, 780 singleton sites, 1313 constant sites
+Analyzing sequences: done in 0.018368 secs using 1017% CPU
+WARNING: 12188 sequences contain more than 50% gaps/ambiguity
+Checking for duplicate sequences: done in 0.100356 secs using 248.2% CPU
+Identifying sites to remove: done in 0.110262 secs using 86.54% CPU
+NOTE: 2 identical sequences (see below) will be ignored for subsequent analysis
+Alignment was printed to representatives_70id_reassign_alignemnt.phy.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to representatives_70id_reassign_alignemnt.phy.uniqueseq.phy
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 92.31 seconds
+
+NOTE: 4913 MB RAM (4 GB) is required!
+Measuring multi-threading efficiency up to 14 CPU cores
+2 trees examined
+Threads: 1 / Time: 41.08 sec / Speedup: 1.00 / Efficiency: 100% / LogL: -2876144
+Threads: 2 / Time: 30.98 sec / Speedup: 1.33 / Efficiency: 66% / LogL: -2876144
+Threads: 3 / Time: 27.65 sec / Speedup: 1.49 / Efficiency: 50% / LogL: -2876144
+Determining AUTO threadcount: done in 99.8816 secs using 123.8% CPU
+BEST NUMBER OF THREADS: 2
+
+Estimate model parameters (epsilon = 0.50)
+1. Initial log-likelihood: -3112331.18
+Optimal log-likelihood: -1914064.83
+Parameters optimization took 1 rounds (92.16 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 1943.21 secs using 198.3% CPU
+Computing ML distances took 1943.444443 sec (of wall-clock time) 3853.590483 sec (of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Setting up auxiliary I and S matrices: done in 1.25395 secs using 277.2% CPU
+Constructing RapidNJ tree: done in 18.8227 secs using 241.2% CPU
+Computing RapidNJ tree took 20.076713 sec (of wall-clock time) 48.868415 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -1906378.770
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+
+Do NNI search on 2 best initial trees
+Estimate model parameters (epsilon = 0.500)
+BETTER TREE FOUND at iteration 1: -1886969.384
+Finish initializing candidate tree set (4)
+Current best tree score: -1886969.384 / CPU time: 1316.635
+Number of iterations: 2
+TREE SEARCH COMPLETED AFTER 2 ITERATIONS / Time: 1h:5m:27s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.050)
+1. Initial log-likelihood: -1886969.384
+Optimal log-likelihood: -1886969.335
+Parameters optimization took 1 rounds (14.876 sec)
+BEST SCORE FOUND : -1886969.335
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+Alternative NNI shows better log-likelihood -1886969.269 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.072 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.437 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.814 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.915 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.615 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.236 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.205 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.264 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.834 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.277 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.135 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.288 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.973 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.222 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.059 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.327 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.292 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.237 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.930 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.261 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.212 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.088 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.155 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.051 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.319 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.146 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.120 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.048 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.195 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.180 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.143 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.309 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.320 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.245 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.210 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.302 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.466 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.131 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.298 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.945 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.037 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.717 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.543 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.054 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.846 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.289 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.286 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.286 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.928 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.322 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.016 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.088 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.709 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.643 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.217 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.323 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.311 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.187 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.207 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.258 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.223 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.378 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.122 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.326 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.179 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.182 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.238 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.078 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.120 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.264 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.396 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.306 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.608 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.891 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.235 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.217 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.295 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.064 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.122 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.211 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.157 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.315 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.325 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.154 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.118 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.275 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.265 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.751 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.901 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.931 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.943 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.227 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.295 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.273 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.177 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.265 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.197 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.830 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.386 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.126 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.766 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.706 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.205 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.246 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.310 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.328 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.217 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.779 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.302 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.309 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.109 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.283 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.206 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.308 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.641 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.252 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.420 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.920 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.240 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.940 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.257 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.333 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.629 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.331 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.126 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.330 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.732 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.311 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.134 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.116 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.925 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.172 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.817 > -1886969.335
+Alternative NNI shows better log-likelihood -1886967.861 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.158 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.399 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.321 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.109 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.315 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.239 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.228 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.258 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.157 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.199 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.318 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.183 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.280 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.831 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.102 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.183 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.217 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.001 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.193 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.261 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.284 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.320 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.287 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.118 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.021 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.214 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.940 > -1886969.335
+Alternative NNI shows better log-likelihood -1886965.507 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.609 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.292 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.702 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.129 > -1886969.335
+Alternative NNI shows better log-likelihood -1886967.752 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.276 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.009 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.871 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.755 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.830 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.981 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.045 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.119 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.949 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.068 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.091 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.265 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.757 > -1886969.335
+Alternative NNI shows better log-likelihood -1886967.494 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.317 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.002 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.915 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.253 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.320 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.008 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.678 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.296 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.964 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.302 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.238 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.450 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.939 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.953 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.329 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.197 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.984 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.319 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.514 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.297 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.307 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.991 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.260 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.211 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.215 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.134 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.302 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.316 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.827 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.306 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.296 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.295 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.087 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.294 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.098 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.145 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.302 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.155 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.938 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.324 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.237 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.538 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.197 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.859 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.106 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.261 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.146 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.117 > -1886969.335
+Alternative NNI shows better log-likelihood -1886967.257 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.114 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.479 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.151 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.293 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.219 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.802 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.331 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.299 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.235 > -1886969.335
+Alternative NNI shows better log-likelihood -1886968.909 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.278 > -1886969.335
+Alternative NNI shows better log-likelihood -1886969.062 > -1886969.335
+180.695 sec.
+Total tree length: 6909.435
+
+Total number of iterations: 2
+CPU time used for tree search: 1746.129 sec (0h:29m:6s)
+Wall-clock time used for tree search: 1316.652 sec (0h:21m:56s)
+Total CPU time used: 6808.802 sec (1h:53m:28s)
+Total wall-clock time used: 4123.332 sec (1h:8m:43s)
+
+Analysis results written to: 
+  IQ-TREE report:                representatives_70id_reassign_alignemnt.phy.iqtree
+  Maximum-likelihood tree:       representatives_70id_reassign_alignemnt.phy.treefile
+  Likelihood distances:          representatives_70id_reassign_alignemnt.phy.mldist
+  Screen log file:               representatives_70id_reassign_alignemnt.phy.log
+
+Date and Time: Fri Aug 22 18:16:54 2025
