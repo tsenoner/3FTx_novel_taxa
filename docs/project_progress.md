@@ -46,17 +46,27 @@ accession:I6R1R5 OR accession:P0DPX5 OR accession:P0DPX9 OR accession:P0DPY0 OR 
 - Data stored in `data/raw/interpro/`
 - all from the original 9 sequences are present, but one (P0DPX8)
 
-### 2. Domain Extraction
+### 2. Sequence Collection
 
 ```bash
-uv run src/data_prep/domain_extracter.py data/raw/interpro data/interm/interpro
+uv run python src/data_prep/collect_interpro_sequences.py data/raw/interpro data/interm/interpro
 ```
 
-- Used `domain_extracter.py` to extract optimal non-overlapping protein domains from InterPro data
-- Resolved overlapping domain annotations using optimization algorithms
-- The final extracted domain sequences are saved in `data/interm/interpro/extracted_domains.fasta`
+- Collected complete protein sequences from all InterPro subfolders
+- Deduplicated sequences by UniProt ID (52,828 unique sequences from 12 InterPro IDs)
+- Output: `data/interm/interpro/interpro_complete_sequences.fasta`
 
-### 3. Centipede Genome Extraction
+### 3. Domain Extraction
+
+```bash
+uv run python src/data_prep/domain_extracter.py data/raw/interpro data/interm/interpro
+```
+
+- Extracted optimal non-overlapping protein domains from InterPro data
+- Resolved overlapping domain annotations using optimization algorithms
+- Output: `data/interm/interpro/extracted_domains.fasta`
+
+### 4. Centipede Genome Extraction
 
 **Manual annotation step:**
 
@@ -76,19 +86,19 @@ uv run python src/data_prep/process_centipede_genomes.py
 - Filters sequences < 50 amino acids
 - **Output**: 151 protein sequences → `data/interm/centipede_genome/centipede_3ftx_proteins.fasta`
 
-### 4. Data Merging and Clustering
+### 5. Data Merging and Clustering
 
 - Merged all domain sequences and synteny data into a single dataset
 - Used MMseqs2 to create representative sequences at 70% sequence similarity
 - Resulting dataset: X representative sequences
 
-### 5. Phylogenetic Analysis
+### 6. Phylogenetic Analysis
 
 - Generated multiple sequence alignments using FAMSA2
 - Constructed phylogenetic trees using IQ-TREE3 with parameters: X
 - Performed X iterations with X bootstrap replicates
 
-### 6. Tree Annotation and Visualization
+### 7. Tree Annotation and Visualization
 
 - Parsed metadata information for all sequences
 - Generated iTOL-compatible annotation files
