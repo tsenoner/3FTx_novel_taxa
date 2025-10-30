@@ -1,0 +1,211 @@
+protein_id,protein_name,organism,sequence_length,domain_start,domain_end,domain_score,signature_name
+A0A061IN68,"TGF-beta receptor/activin receptor, type I/II containing protein",Cricetulus griseus (Chinese hamster),331,1,122,,InterPro:IPR039237
+A0A091CTZ3,UPAR/Ly6 domain-containing protein,Fukomys damarensis (Damaraland mole rat),125,1,125,,InterPro:IPR039237
+A0A0D9R8I0,UPAR/Ly6 domain-containing protein,Chlorocebus sabaeus (Green monkey),125,1,125,,InterPro:IPR039237
+A0A0P6JYK2,UPAR/Ly6 domain-containing protein,Heterocephalus glaber (Naked mole rat),125,1,125,,InterPro:IPR039237
+A0A151M3P9,UPAR/Ly6 domain-containing protein,Alligator mississippiensis (American alligator),128,1,119,,InterPro:IPR039237
+A0A1A6G2R9,UPAR/Ly6 domain-containing protein,Neotoma lepida (Desert woodrat),107,1,107,,InterPro:IPR039237
+A0A1S3ALL0,UPAR/Ly6 domain-containing protein,Erinaceus europaeus (Western European hedgehog),125,1,125,,InterPro:IPR039237
+A0A1S3GFL4,UPAR/Ly6 domain-containing protein,Dipodomys ordii (Ord's kangaroo rat),125,1,125,,InterPro:IPR039237
+A0A1U7QVF9,UPAR/Ly6 domain-containing protein,Mesocricetus auratus (Golden hamster),126,1,126,,InterPro:IPR039237
+A0A1U7SL27,UPAR/Ly6 domain-containing protein,Alligator sinensis (Chinese alligator),128,1,119,,InterPro:IPR039237
+A0A1U7UJ73,UPAR/Ly6 domain-containing protein,Carlito syrichta (Philippine tarsier),125,1,125,,InterPro:IPR039237
+A0A1U9X7Z1,UPAR/Ly6 domain-containing protein,Homo sapiens (Human),125,1,125,,InterPro:IPR039237
+A0A1U9X806,UPAR/Ly6 domain-containing protein,Homo sapiens (Human),125,1,125,,InterPro:IPR039237
+A0A212D4S4,UPAR/Ly6 domain-containing protein,Cervus elaphus hippelaphus (European red deer),125,1,125,,InterPro:IPR039237
+A0A250XUY9,UPAR/Ly6 domain-containing protein,Castor canadensis (American beaver),125,1,125,,InterPro:IPR039237
+A0A286XHH1,Lymphocyte antigen 6 family member G6C,Cavia porcellus (Guinea pig),71,3,56,,InterPro:IPR039237
+A0A287ADZ3,UPAR/Ly6 domain-containing protein,Sus scrofa (Pig),125,1,125,,InterPro:IPR039237
+A0A287D661,UPAR/Ly6 domain-containing protein,Ictidomys tridecemlineatus (Thirteen-lined ground squirrel),72,1,56,,InterPro:IPR039237
+A0A287DDK0,UPAR/Ly6 domain-containing protein,Ictidomys tridecemlineatus (Thirteen-lined ground squirrel),125,1,125,,InterPro:IPR039237
+A0A2I3S8U6,UPAR/Ly6 domain-containing protein,Pan troglodytes (Chimpanzee),125,1,125,,InterPro:IPR039237
+A0A2J8NXY6,LY6G6C isoform 2,Pan troglodytes (Chimpanzee),69,1,69,,InterPro:IPR039237
+A0A2J8R4N2,UPAR/Ly6 domain-containing protein,Pongo abelii (Sumatran orangutan),125,1,125,,InterPro:IPR039237
+A0A2J8R4N6,LY6G6C isoform 2,Pongo abelii (Sumatran orangutan),69,1,69,,InterPro:IPR039237
+A0A2K5EBM4,UPAR/Ly6 domain-containing protein,Aotus nancymaae (Ma's night monkey),125,1,124,,InterPro:IPR039237
+A0A2K5ICN1,UPAR/Ly6 domain-containing protein,Colobus angolensis palliatus (Peters' Angolan colobus),125,1,125,,InterPro:IPR039237
+A0A2K5NLV0,UPAR/Ly6 domain-containing protein,Cercocebus atys (Sooty mangabey),125,1,125,,InterPro:IPR039237
+A0A2K5RBC3,UPAR/Ly6 domain-containing protein,Cebus imitator (Panamanian white-faced capuchin),125,1,125,,InterPro:IPR039237
+A0A2K6A8Y8,UPAR/Ly6 domain-containing protein,Mandrillus leucophaeus (Drill),125,1,125,,InterPro:IPR039237
+A0A2K6C7C7,UPAR/Ly6 domain-containing protein,Macaca nemestrina (Pig-tailed macaque),125,1,125,,InterPro:IPR039237
+A0A2K6F9R6,UPAR/Ly6 domain-containing protein,Propithecus coquereli (Coquerel's sifaka),125,1,125,,InterPro:IPR039237
+A0A2K6PDM8,UPAR/Ly6 domain-containing protein,Rhinopithecus roxellana (Golden snub-nosed monkey),125,1,125,,InterPro:IPR039237
+A0A2K6V4T9,UPAR/Ly6 domain-containing protein,Saimiri boliviensis boliviensis (Bolivian squirrel monkey),125,1,125,,InterPro:IPR039237
+A0A2R8ZTK2,UPAR/Ly6 domain-containing protein,Pan paniscus (Pygmy chimpanzee),125,1,125,,InterPro:IPR039237
+A0A2U3WZZ1,UPAR/Ly6 domain-containing protein,Odobenus rosmarus divergens (Pacific walrus),125,1,125,,InterPro:IPR039237
+A0A2U3Y478,UPAR/Ly6 domain-containing protein,Leptonychotes weddellii (Weddell seal),125,1,125,,InterPro:IPR039237
+A0A2Y9EBT0,UPAR/Ly6 domain-containing protein,Trichechus manatus latirostris (Florida manatee),125,1,125,,InterPro:IPR039237
+A0A2Y9EW22,UPAR/Ly6 domain-containing protein,Physeter macrocephalus (Sperm whale),125,1,125,,InterPro:IPR039237
+A0A2Y9HSB9,UPAR/Ly6 domain-containing protein,Neomonachus schauinslandi (Hawaiian monk seal),125,1,125,,InterPro:IPR039237
+A0A2Y9KB81,UPAR/Ly6 domain-containing protein,Enhydra lutris kenyoni (northern sea otter),174,47,174,,InterPro:IPR039237
+A0A2Y9MID5,UPAR/Ly6 domain-containing protein,Delphinapterus leucas (Beluga whale),125,1,125,,InterPro:IPR039237
+A0A340XDT2,UPAR/Ly6 domain-containing protein,Lipotes vexillifer (Yangtze river dolphin),125,1,125,,InterPro:IPR039237
+A0A341AV73,UPAR/Ly6 domain-containing protein,Neophocaena asiaeorientalis asiaeorientalis (Yangtze finless porpoise),125,1,125,,InterPro:IPR039237
+A0A384B2Z6,UPAR/Ly6 domain-containing protein,Balaenoptera acutorostrata scammoni (North Pacific minke whale),125,1,125,,InterPro:IPR039237
+A0A384DTK8,UPAR/Ly6 domain-containing protein,Ursus maritimus (Polar bear),125,1,125,,InterPro:IPR039237
+A0A387LAC6,UPAR/Ly6 domain-containing protein,Pseudorca crassidens (False killer whale),125,1,125,,InterPro:IPR039237
+A0A3Q1NCB9,UPAR/Ly6 domain-containing protein,Bos taurus (Bovine),124,14,124,,InterPro:IPR039237
+A0A3Q2HYF9,UPAR/Ly6 domain-containing protein,Equus caballus (Horse),164,66,164,,InterPro:IPR039237
+A0A3Q2KZG1,UPAR/Ly6 domain-containing protein,Equus caballus (Horse),63,1,56,,InterPro:IPR039237
+A0A3Q7NCA7,UPAR/Ly6 domain-containing protein,Callorhinus ursinus (Northern fur seal),125,1,125,,InterPro:IPR039237
+A0A3Q7RWH6,UPAR/Ly6 domain-containing protein,Vulpes vulpes (Red fox),125,1,125,,InterPro:IPR039237
+A0A452DUZ4,UPAR/Ly6 domain-containing protein,Capra hircus (Goat),125,1,125,,InterPro:IPR039237
+A0A452R9G5,UPAR/Ly6 domain-containing protein,Ursus americanus (American black bear),125,1,125,,InterPro:IPR039237
+A0A452UEC7,UPAR/Ly6 domain-containing protein,Ursus maritimus (Polar bear),174,60,174,,InterPro:IPR039237
+A0A485PPA3,UPAR/Ly6 domain-containing protein,Lynx pardinus (Iberian lynx),125,1,125,,InterPro:IPR039237
+A0A4D9DGW4,UPAR/Ly6 domain-containing protein,Platysternon megacephalum (big-headed turtle),125,1,124,,InterPro:IPR039237
+A0A4U1EEM1,UPAR/Ly6 domain-containing protein,Monodon monoceros (Narwhal),107,1,107,,InterPro:IPR039237
+A0A4W2C4I1,UPAR/Ly6 domain-containing protein,Bos indicus x Bos taurus (Hybrid cattle),129,2,129,,InterPro:IPR039237
+A0A4W2G6V3,UPAR/Ly6 domain-containing protein,Bos indicus x Bos taurus (Hybrid cattle),125,1,125,,InterPro:IPR039237
+A0A4X2JU63,UPAR/Ly6 domain-containing protein,Vombatus ursinus (Common wombat),122,1,122,,InterPro:IPR039237
+A0A5E4C473,UPAR/Ly6 domain-containing protein,Marmota monax (Woodchuck),125,1,125,,InterPro:IPR039237
+A0A5F4WCR1,UPAR/Ly6 domain-containing protein,Callithrix jacchus (White-tufted-ear marmoset),125,1,125,,InterPro:IPR039237
+A0A5F8GPC9,UPAR/Ly6 domain-containing protein,Monodelphis domestica (Gray short-tailed opossum),122,1,122,,InterPro:IPR039237
+A0A5F8GWB7,UPAR/Ly6 domain-containing protein,Monodelphis domestica (Gray short-tailed opossum),145,1,145,,InterPro:IPR039237
+A0A5N3W0G9,UPAR/Ly6 domain-containing protein,Muntiacus reevesi (Reeves' muntjac),125,1,125,,InterPro:IPR039237
+A0A5N3WQ44,UPAR/Ly6 domain-containing protein,Muntiacus muntjak (Barking deer),125,1,125,,InterPro:IPR039237
+A0A5N4CSX6,UPAR/Ly6 domain-containing protein,Camelus dromedarius (Dromedary),125,1,125,,InterPro:IPR039237
+A0A643C9P8,UPAR/Ly6 domain-containing protein,Balaenoptera physalus (Fin whale),107,1,107,,InterPro:IPR039237
+A0A667GKX6,UPAR/Ly6 domain-containing protein,Lynx canadensis (Canada lynx),125,1,125,,InterPro:IPR039237
+A0A671DXN3,UPAR/Ly6 domain-containing protein,Rhinolophus ferrumequinum (Greater horseshoe bat),125,1,125,,InterPro:IPR039237
+A0A673T337,UPAR/Ly6 domain-containing protein,Suricata suricatta (Meerkat),125,1,125,,InterPro:IPR039237
+A0A6D2X9M8,UPAR/Ly6 domain-containing protein,Pan troglodytes (Chimpanzee),125,1,125,,InterPro:IPR039237
+A0A6G1B2K4,UPAR/Ly6 domain-containing protein,Crocuta crocuta (Spotted hyena),115,2,115,,InterPro:IPR039237
+A0A6I8ND62,UPAR/Ly6 domain-containing protein,Ornithorhynchus anatinus (Duckbill platypus),176,1,176,,InterPro:IPR039237
+A0A6I9IPF6,UPAR/Ly6 domain-containing protein,Vicugna pacos (Alpaca),125,1,125,,InterPro:IPR039237
+A0A6I9MJL9,UPAR/Ly6 domain-containing protein,Peromyscus maniculatus bairdii (Prairie deer mouse),126,1,126,,InterPro:IPR039237
+A0A6J0SAH4,UPAR/Ly6 domain-containing protein,Pogona vitticeps (central bearded dragon),125,4,125,,InterPro:IPR039237
+A0A6J0XUJ6,UPAR/Ly6 domain-containing protein,Odocoileus virginianus texanus,124,14,124,,InterPro:IPR039237
+A0A6J0XUK2,UPAR/Ly6 domain-containing protein,Odocoileus virginianus texanus,125,1,125,,InterPro:IPR039237
+A0A6J1VSJ7,UPAR/Ly6 domain-containing protein,Notechis scutatus (mainland tiger snake),124,1,122,,InterPro:IPR039237
+A0A6J1Z9L0,UPAR/Ly6 domain-containing protein,Acinonyx jubatus (Cheetah),125,1,125,,InterPro:IPR039237
+A0A6J2DTR7,UPAR/Ly6 domain-containing protein,Zalophus californianus (California sealion),125,1,125,,InterPro:IPR039237
+A0A6J2DVB3,UPAR/Ly6 domain-containing protein,Zalophus californianus (California sealion),199,64,199,,InterPro:IPR039237
+A0A6J2LJE0,LOW QUALITY PROTEIN: lymphocyte antigen 6 complex locus protein G6c,Phyllostomus discolor (pale spear-nosed bat),121,1,121,,InterPro:IPR039237
+A0A6J3H2X5,UPAR/Ly6 domain-containing protein,Sapajus apella (Brown-capped capuchin),125,1,125,,InterPro:IPR039237
+A0A6J3RZB4,UPAR/Ly6 domain-containing protein,Tursiops truncatus (Atlantic bottle-nosed dolphin),128,1,128,,InterPro:IPR039237
+A0A6J3S074,UPAR/Ly6 domain-containing protein,Tursiops truncatus (Atlantic bottle-nosed dolphin),125,1,125,,InterPro:IPR039237
+A0A6P3ECQ3,UPAR/Ly6 domain-containing protein,Ovis aries (Sheep),125,1,125,,InterPro:IPR039237
+A0A6P3EJS5,UPAR/Ly6 domain-containing protein,Octodon degus (Degu),125,1,125,,InterPro:IPR039237
+A0A6P3GY40,UPAR/Ly6 domain-containing protein,Bison bison bison (North American plains bison),125,1,125,,InterPro:IPR039237
+A0A6P3RIX8,UPAR/Ly6 domain-containing protein,Pteropus vampyrus (Large flying fox),125,1,125,,InterPro:IPR039237
+A0A6P5DSV6,UPAR/Ly6 domain-containing protein,Bos indicus (Zebu),125,1,125,,InterPro:IPR039237
+A0A6P5J9D6,UPAR/Ly6 domain-containing protein,Phascolarctos cinereus (Koala),122,1,122,,InterPro:IPR039237
+A0A6P5NR63,UPAR/Ly6 domain-containing protein,Mus caroli (Ryukyu mouse),126,1,126,,InterPro:IPR039237
+A0A6P6HBH3,UPAR/Ly6 domain-containing protein,Puma concolor (Mountain lion),125,1,125,,InterPro:IPR039237
+A0A6P7XCL8,UPAR/Ly6 domain-containing protein,Microcaecilia unicolor,125,1,112,,InterPro:IPR039237
+A0A6P8N9H7,UPAR/Ly6 domain-containing protein,Geotrypetes seraphini (Gaboon caecilian),125,1,116,,InterPro:IPR039237
+A0A6P9C505,UPAR/Ly6 domain-containing protein,Pantherophis guttatus (Corn snake),124,1,123,,InterPro:IPR039237
+A0A6P9CC30,UPAR/Ly6 domain-containing protein,Pantherophis guttatus (Corn snake),101,1,100,,InterPro:IPR039237
+A0A7J7EIE3,UPAR/Ly6 domain-containing protein,Diceros bicornis minor (South-central black rhinoceros),173,25,173,,InterPro:IPR039237
+A0A7J7RKP2,UPAR/Ly6 domain-containing protein,Myotis myotis (Greater mouse-eared bat),124,1,124,,InterPro:IPR039237
+A0A7J7YMS0,UPAR/Ly6 domain-containing protein,Pipistrellus kuhlii (Kuhl's pipistrelle),125,1,125,,InterPro:IPR039237
+A0A7J8GR77,Lymphocyte antigen 6 family member G6C,Molossus molossus (Pallas' mastiff bat),118,28,103,,InterPro:IPR039237
+A0A7J8GRI5,UPAR/Ly6 domain-containing protein,Molossus molossus (Pallas' mastiff bat),174,28,173,,InterPro:IPR039237
+A0A7J8GS23,Lymphocyte antigen 6 family member G6C,Molossus molossus (Pallas' mastiff bat),73,3,72,,InterPro:IPR039237
+A0A7J8KC06,UPAR/Ly6 domain-containing protein,Rousettus aegyptiacus (Egyptian fruit bat),125,1,125,,InterPro:IPR039237
+A0A7N9CPL8,UPAR/Ly6 domain-containing protein,Macaca fascicularis (Crab-eating macaque),125,1,125,,InterPro:IPR039237
+A0A811YMQ8,UPAR/Ly6 domain-containing protein,Nyctereutes procyonoides (Raccoon dog),125,1,125,,InterPro:IPR039237
+A0A8B6YDY2,UPAR/Ly6 domain-containing protein,Camelus ferus (Wild bactrian camel),125,1,125,,InterPro:IPR039237
+A0A8B7AP80,UPAR/Ly6 domain-containing protein,Orycteropus afer afer,124,1,124,,InterPro:IPR039237
+A0A8B7Q0J7,UPAR/Ly6 domain-containing protein,Hipposideros armiger (Great Himalayan leaf-nosed bat),125,1,125,,InterPro:IPR039237
+A0A8B7VP21,UPAR/Ly6 domain-containing protein,Castor canadensis (American beaver),136,13,136,,InterPro:IPR039237
+A0A8B8YNY4,UPAR/Ly6 domain-containing protein,Balaenoptera musculus (Blue whale),125,1,125,,InterPro:IPR039237
+A0A8B8YST3,UPAR/Ly6 domain-containing protein,Balaenoptera musculus (Blue whale),128,1,128,,InterPro:IPR039237
+A0A8B9XR28,UPAR/Ly6 domain-containing protein,Bos mutus grunniens (Wild yak),129,2,129,,InterPro:IPR039237
+A0A8C0DL37,UPAR/Ly6 domain-containing protein,Balaenoptera musculus (Blue whale),177,64,177,,InterPro:IPR039237
+A0A8C0L592,UPAR/Ly6 domain-containing protein,Canis lupus dingo (dingo),151,15,151,,InterPro:IPR039237
+A0A8C0M5R1,UPAR/Ly6 domain-containing protein,Canis lupus familiaris (Dog),125,1,125,,InterPro:IPR039237
+A0A8C0YV85,UPAR/Ly6 domain-containing protein,Canis lupus familiaris (Dog),125,1,125,,InterPro:IPR039237
+A0A8C0ZQM9,UPAR/Ly6 domain-containing protein,Castor canadensis (American beaver),124,2,124,,InterPro:IPR039237
+A0A8C2MKC0,UPAR/Ly6 domain-containing protein,Cricetulus griseus (Chinese hamster),128,1,128,,InterPro:IPR039237
+A0A8C2VI69,UPAR/Ly6 domain-containing protein,Chinchilla lanigera (Long-tailed chinchilla),150,12,150,,InterPro:IPR039237
+A0A8C3W4C8,UPAR/Ly6 domain-containing protein,Catagonus wagneri (Chacoan peccary),125,1,125,,InterPro:IPR039237
+A0A8C4KZS8,UPAR/Ly6 domain-containing protein,Equus asinus asinus,124,1,124,,InterPro:IPR039237
+A0A8C4MHD3,UPAR/Ly6 domain-containing protein,Equus asinus asinus,173,25,173,,InterPro:IPR039237
+A0A8C5IEC0,UPAR/Ly6 domain-containing protein,Junco hyemalis (Dark-eyed junco),118,8,110,,InterPro:IPR039237
+A0A8C5KF76,UPAR/Ly6 domain-containing protein,Jaculus jaculus (Lesser Egyptian jerboa),145,15,145,,InterPro:IPR039237
+A0A8C5XL49,UPAR/Ly6 domain-containing protein,Microcebus murinus (Gray mouse lemur),125,1,125,,InterPro:IPR039237
+A0A8C5ZDW8,UPAR/Ly6 domain-containing protein,Marmota marmota marmota (Alpine marmot),151,14,151,,InterPro:IPR039237
+A0A8C6BM97,UPAR/Ly6 domain-containing protein,Monodon monoceros (Narwhal),125,1,125,,InterPro:IPR039237
+A0A8C6DVV3,UPAR/Ly6 domain-containing protein,Moschus moschiferus (Siberian musk deer),125,1,125,,InterPro:IPR039237
+A0A8C6GHV9,UPAR/Ly6 domain-containing protein,Mus spicilegus (Steppe mouse),152,15,152,,InterPro:IPR039237
+A0A8C6RZH3,UPAR/Ly6 domain-containing protein,Nannospalax galili (Northern Israeli blind subterranean mole rat),152,15,152,,InterPro:IPR039237
+A0A8C6RZK1,UPAR/Ly6 domain-containing protein,Nannospalax galili (Northern Israeli blind subterranean mole rat),120,4,120,,InterPro:IPR039237
+A0A8C7BBV9,UPAR/Ly6 domain-containing protein,Neovison vison (American mink),125,1,125,,InterPro:IPR039237
+A0A8C8TDP0,UPAR/Ly6 domain-containing protein,Peromyscus maniculatus bairdii (Prairie deer mouse),152,17,152,,InterPro:IPR039237
+A0A8C8TND6,UPAR/Ly6 domain-containing protein,Peromyscus maniculatus bairdii (Prairie deer mouse),73,1,58,,InterPro:IPR039237
+A0A8C8X0U1,UPAR/Ly6 domain-containing protein,Panthera leo (Lion),125,1,125,,InterPro:IPR039237
+A0A8C9DQB6,UPAR/Ly6 domain-containing protein,Prolemur simus (Greater bamboo lemur),125,1,125,,InterPro:IPR039237
+A0A8C9EFG7,UPAR/Ly6 domain-containing protein,Phocoena sinus (Vaquita),125,1,125,,InterPro:IPR039237
+A0A8C9IX45,UPAR/Ly6 domain-containing protein,Piliocolobus tephrosceles (Ugandan red Colobus),125,1,125,,InterPro:IPR039237
+A0A8C9JYA8,UPAR/Ly6 domain-containing protein,Panthera tigris altaica (Siberian tiger),125,1,125,,InterPro:IPR039237
+A0A8C9P6N6,UPAR/Ly6 domain-containing protein,Spermophilus dauricus (Daurian ground squirrel),152,15,152,,InterPro:IPR039237
+A0A8D0QGK9,UPAR/Ly6 domain-containing protein,Sus scrofa (Pig),197,76,197,,InterPro:IPR039237
+A0A8D0Z2J0,UPAR/Ly6 domain-containing protein,Sus scrofa (Pig),125,1,125,,InterPro:IPR039237
+A0A8D2GDW6,UPAR/Ly6 domain-containing protein,Theropithecus gelada (Gelada baboon),125,1,125,,InterPro:IPR039237
+A0A8D2ICT5,UPAR/Ly6 domain-containing protein,Urocitellus parryii (Arctic ground squirrel),152,15,152,,InterPro:IPR039237
+A0A8D2JNR0,UPAR/Ly6 domain-containing protein,Sciurus vulgaris (Eurasian red squirrel),125,1,125,,InterPro:IPR039237
+A0A8D2M5S4,UPAR/Ly6 domain-containing protein,Zonotrichia albicollis (White-throated sparrow),115,6,107,,InterPro:IPR039237
+A0A8I3NAY9,UPAR/Ly6 domain-containing protein,Canis lupus familiaris (Dog),125,1,125,,InterPro:IPR039237
+A0A8I6AS77,UPAR/Ly6 domain-containing protein,Rattus norvegicus (Rat),126,1,126,,InterPro:IPR039237
+A0A8J5ZHI7,UPAR/Ly6 domain-containing protein,Galemys pyrenaicus (Iberian desman),125,1,125,,InterPro:IPR039237
+A0A8J6G7K4,UPAR/Ly6 domain-containing protein,Microtus ochrogaster (Prairie vole),126,1,126,,InterPro:IPR039237
+A0A8J8XV48,UPAR/Ly6 domain-containing protein,Macaca mulatta (Rhesus macaque),125,1,125,,InterPro:IPR039237
+A0A8T1S0G9,UPAR/Ly6 domain-containing protein,Chelydra serpentina (Snapping turtle),105,3,104,,InterPro:IPR039237
+A0A8U0NFK8,UPAR/Ly6 domain-containing protein,Mustela putorius furo (European domestic ferret),174,48,174,,InterPro:IPR039237
+A0A9B0WZB5,UPAR/Ly6 domain-containing protein,Chrysochloris asiatica (Cape golden mole),124,1,124,,InterPro:IPR039237
+A0A9L0IU57,UPAR/Ly6 domain-containing protein,Equus asinus (Donkey),124,1,124,,InterPro:IPR039237
+A0A9L0J7J4,UPAR/Ly6 domain-containing protein,Equus asinus (Donkey),124,1,124,,InterPro:IPR039237
+A0A9L0JZU9,UPAR/Ly6 domain-containing protein,Equus asinus (Donkey),200,53,200,,InterPro:IPR039237
+A0A9L0QYB5,UPAR/Ly6 domain-containing protein,Equus caballus (Horse),173,25,173,,InterPro:IPR039237
+A0A9Q0XLT4,UPAR/Ly6 domain-containing protein,Phrynocephalus forsythii,161,55,161,,InterPro:IPR039237
+A0A9V1F313,UPAR/Ly6 domain-containing protein,Panthera pardus (Leopard),125,1,125,,InterPro:IPR039237
+A0A9W3GX44,UPAR/Ly6 domain-containing protein,Camelus bactrianus (Bactrian camel),125,1,125,,InterPro:IPR039237
+A0AA35P0Q8,UPAR/Ly6 domain-containing protein,Podarcis lilfordi (Lilford's wall lizard),100,1,99,,InterPro:IPR039237
+A0AA35P1B0,UPAR/Ly6 domain-containing protein,Podarcis lilfordi (Lilford's wall lizard),124,1,124,,InterPro:IPR039237
+A0AA40HAF2,UPAR/Ly6 domain-containing protein,Cnephaeus nilssonii (Northern bat),125,1,125,,InterPro:IPR039237
+A0AA41MK45,UPAR/Ly6 domain-containing protein,Sciurus carolinensis (Eastern gray squirrel),125,1,125,,InterPro:IPR039237
+A0AA97J8P3,UPAR/Ly6 domain-containing protein,Eublepharis macularius (Leopard gecko),124,1,124,,InterPro:IPR039237
+A0AA97J946,UPAR/Ly6 domain-containing protein,Eublepharis macularius (Leopard gecko),180,1,111,,InterPro:IPR039237
+A0AAA9SFA4,UPAR/Ly6 domain-containing protein,Bos taurus (Bovine),125,8,125,,InterPro:IPR039237
+A0AAA9TBY7,UPAR/Ly6 domain-containing protein,Bos taurus (Bovine),141,20,141,,InterPro:IPR039237
+A0AAD4Y1D3,UPAR/Ly6 domain-containing protein,Ovis ammon polii,125,1,125,,InterPro:IPR039237
+A0AAF6YGU8,UPAR/Ly6 domain-containing protein,Bos taurus (Bovine),129,2,129,,InterPro:IPR039237
+A0AAJ7M2I9,UPAR/Ly6 domain-containing protein,Rhinopithecus bieti (Black snub-nosed monkey),125,1,125,,InterPro:IPR039237
+A0AAU9ZBP7,UPAR/Ly6 domain-containing protein,Phodopus roborovskii (Roborovski's desert hamster),79,1,58,,InterPro:IPR039237
+A0AAU9ZEF9,UPAR/Ly6 domain-containing protein,Phodopus roborovskii (Roborovski's desert hamster),126,1,126,,InterPro:IPR039237
+A0AAV6ZWE6,UPAR/Ly6 domain-containing protein,Engystomops pustulosus (Tungara frog),109,5,95,,InterPro:IPR039237
+A0AAW0H6B3,UPAR/Ly6 domain-containing protein,Myodes glareolus (Bank vole),126,1,126,,InterPro:IPR039237
+A0AAW1BUX8,UPAR/Ly6 domain-containing protein,Crotalus adamanteus (Eastern diamondback rattlesnake),206,1,111,,InterPro:IPR039237
+A0ABD2EYY9,Lymphocyte antigen 6 complex locus protein G6c,Daubentonia madagascariensis (Aye-aye),125,1,125,,InterPro:IPR039237
+A0JNL5,Lymphocyte antigen 6 complex locus protein G6c,Bos taurus (Bovine),125,1,125,,InterPro:IPR039237
+A6KTS4,UPAR/Ly6 domain-containing protein,Rattus norvegicus (Rat),126,1,126,,InterPro:IPR039237
+D2I4A0,UPAR/Ly6 domain-containing protein,Ailuropoda melanoleuca (Giant panda),114,1,114,,InterPro:IPR039237
+D3ZX79,UPAR/Ly6 domain-containing protein,Rattus norvegicus (Rat),152,17,152,,InterPro:IPR039237
+F7CTH6,UPAR/Ly6 domain-containing protein,Macaca mulatta (Rhesus macaque),125,1,125,,InterPro:IPR039237
+G1LRH6,UPAR/Ly6 domain-containing protein,Ailuropoda melanoleuca (Giant panda),125,1,125,,InterPro:IPR039237
+G1PDR8,UPAR/Ly6 domain-containing protein,Myotis lucifugus (Little brown bat),125,1,125,,InterPro:IPR039237
+G1R317,UPAR/Ly6 domain-containing protein,Nomascus leucogenys (Northern white-cheeked gibbon),124,1,124,,InterPro:IPR039237
+G1SU56,UPAR/Ly6 domain-containing protein,Oryctolagus cuniculus (Rabbit),125,1,125,,InterPro:IPR039237
+G3HZF7,UPAR/Ly6 domain-containing protein,Cricetulus griseus (Chinese hamster),126,1,126,,InterPro:IPR039237
+G3RRL8,UPAR/Ly6 domain-containing protein,Gorilla gorilla gorilla (Western lowland gorilla),125,1,125,,InterPro:IPR039237
+G3UXV4,UPAR/Ly6 domain-containing protein,Mus musculus (Mouse),74,1,57,,InterPro:IPR039237
+G3UYS0,UPAR/Ly6 domain-containing protein,Mus musculus (Mouse),152,15,152,,InterPro:IPR039237
+G3V1A8,"Lymphocyte antigen 6 complex, locus G6C, isoform CRA_a",Homo sapiens (Human),69,1,69,,InterPro:IPR039237
+G5C3F6,UPAR/Ly6 domain-containing protein,Heterocephalus glaber (Naked mole rat),125,1,125,,InterPro:IPR039237
+G8F3X4,UPAR/Ly6 domain-containing protein,Macaca fascicularis (Crab-eating macaque),125,1,125,,InterPro:IPR039237
+H0VXJ6,UPAR/Ly6 domain-containing protein,Cavia porcellus (Guinea pig),136,12,136,,InterPro:IPR039237
+H0Y1W6,UPAR/Ly6 domain-containing protein,Otolemur garnettii (Small-eared galago),125,1,125,,InterPro:IPR039237
+I3MKB2,UPAR/Ly6 domain-containing protein,Ictidomys tridecemlineatus (Thirteen-lined ground squirrel),152,15,152,,InterPro:IPR039237
+L5LBY5,Lymphocyte antigen 6 complex locus protein G6c,Myotis davidii (David's myotis),87,18,87,,InterPro:IPR039237
+L8I3T8,UPAR/Ly6 domain-containing protein,Bos mutus (wild yak),125,1,125,,InterPro:IPR039237
+L9KL44,UPAR/Ly6 domain-containing protein,Tupaia chinensis (Chinese tree shrew),125,1,125,,InterPro:IPR039237
+M3WX31,UPAR/Ly6 domain-containing protein,Felis catus (Cat),125,1,125,,InterPro:IPR039237
+M3YI54,UPAR/Ly6 domain-containing protein,Mustela putorius furo (European domestic ferret),125,1,125,,InterPro:IPR039237
+O95867,Lymphocyte antigen 6 complex locus protein G6c,Homo sapiens (Human),125,1,125,,InterPro:IPR039237
+Q545T2,UPAR/Ly6 domain-containing protein,Mus musculus (Mouse),126,1,126,,InterPro:IPR039237
+Q9Z1Q4,Lymphocyte antigen 6 complex locus protein G6c,Mus musculus (Mouse),126,1,126,,InterPro:IPR039237
+S7P7P9,UPAR/Ly6 domain-containing protein,Myotis brandtii (Brandt's bat),125,1,125,,InterPro:IPR039237
+U6DTI3,UPAR/Ly6 domain-containing protein,Neovison vison (American mink),71,1,71,,InterPro:IPR039237
+W5P7E4,UPAR/Ly6 domain-containing protein,Ovis aries (Sheep),125,1,125,,InterPro:IPR039237
