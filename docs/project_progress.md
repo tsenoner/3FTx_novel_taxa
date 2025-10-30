@@ -20,6 +20,8 @@ The project was initiated based on the discovery of the following centipede prot
 - P0DPX6
 - P0DPU8
 
+accession:I6R1R5 OR accession:P0DPX5 OR accession:P0DPX9 OR accession:P0DPY0 OR accession:P0DPY1 OR accession:P0DPX7 OR accession:P0DPX8 OR accession:P0DPX6 OR accession:P0DPU8
+
 ## Workflow Overview
 
 ### 1. InterPro Data Retrieval
@@ -27,32 +29,52 @@ The project was initiated based on the discovery of the following centipede prot
 - Used `interpro_fetcher.py` to programmatically retrieve proteins from InterPro database
 - Targeted the following InterPro IDs associated with 3FTx and Ly6/UPAR domains:
   - IPR016054 (Ly6/UPAR domain)
-  - IPR026110
-  - IPR026524
-  - IPR031424
-  - IPR038773
-  - IPR039457
-  - IPR039237
-  - IPR042339
-  - IPR051445
-  - IPR035076
+  - IPR026110 (LY6G5C)
+  - IPR026524 (LY6G6d/LY6G6f)
+  - IPR031424 (QVR-like)
+  - IPR038773 (LY6G5B)
+  - IPR039457 (LYPD6-like)
+  - IPR039237 (LY6G6C)
+  - IPR042339 (Ly6D)
+  - IPR051445 (LY6H/LY6L_nAChR_modulators)
+  - IPR035076 (Toxin/TOLIP)
   - IPR003571 (Three-finger toxin)
-  - IPR045860
-- Retrieved protein sequences, metadata, and domain annotations
-- Data stored in `data/raw/data_for_tree/interpro/`
+  - IPR045860 (Snake_toxin-like_sf)
+- Retrieved protein sequences, metadata, and domain annotations:
+  - Ran `uv run python src/interpro_retrieval/interpro_fetcher.py <INTERPRO_ID>` for:
+    IPR016054, IPR026110, IPR026524, IPR031424, IPR038773, IPR039457, IPR039237, IPR042339, IPR051445, IPR035076, IPR003571, IPR045860
+- Data stored in `data/raw/interpro/`
+- all from the original 9 sequences are present, but one (P0DPX8)
 
 ### 2. Domain Extraction
 
-- Used `domain_extracter.py` to extract optimal non-overlapping protein domains
-- Processed all InterPro data to identify and extract domain sequences
+```bash
+uv run src/data_prep/domain_extracter.py data/raw/interpro data/interm/interpro
+```
+
+- Used `domain_extracter.py` to extract optimal non-overlapping protein domains from InterPro data
 - Resolved overlapping domain annotations using optimization algorithms
-- Generated FASTA files with extracted domain sequences
+- The final extracted domain sequences are saved in `data/interm/interpro/extracted_domains.fasta`
 
-### 3. Centipede Synteny Analysis
+### 3. Centipede Genome Extraction
 
-- Performed synteny analysis to identify additional 3FTx-like sequences in centipede genomes
-- Extracted similar sequences from centipede genomic data
-- Results stored in `data/raw/centipede_3ftx_quiver_upar_like/`
+**Manual annotation step:**
+
+- Identified and annotated 3FTx-like gene regions in centipede genomes using sequence similarity searches
+- Created GFF annotation files with gene coordinates and exon structures
+- Files stored in `data/raw/centipede_genome/annotations/` (44 GFF files for 4 species)
+
+**Automated extraction:**
+
+```bash
+uv run python src/data_prep/process_centipede_genomes.py
+```
+
+- Downloads reference genomes from NCBI (Cylindrodesmus punicus, Rhysida immarginata, Strigamia acuminata, Lithobius variegatus)
+- Parses GFF annotations and deduplicates genes based on genomic coordinates (34 duplicates removed)
+- Extracts and translates multi-exon genes, truncating at first stop codon
+- Filters sequences < 50 amino acids
+- **Output**: 151 protein sequences → `data/interm/centipede_genome/centipede_3ftx_proteins.fasta`
 
 ### 4. Data Merging and Clustering
 
@@ -72,6 +94,13 @@ The project was initiated based on the discovery of the following centipede prot
 - Generated iTOL-compatible annotation files
 - Visualized phylogenetic trees with taxonomic and functional annotations in iTOL
 - Created interactive tree visualizations for further investigation
+
+Analyses:
+
+- purity
+- taxonomy LCA
+- cluster size
+- domain length
 
 ## Key Results
 
