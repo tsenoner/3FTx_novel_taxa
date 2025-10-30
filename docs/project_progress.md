@@ -59,7 +59,7 @@ uv run python src/data_prep/collect_interpro_sequences.py data/raw/interpro data
 ### 3. Domain Extraction
 
 ```bash
-uv run python src/data_prep/domain_extracter.py data/raw/interpro data/interm/interpro
+uv run python src/data_prep/interpro_domain_extracter.py data/raw/interpro data/interm/interpro
 ```
 
 - Extracted optimal non-overlapping protein domains from InterPro data
@@ -88,9 +88,17 @@ uv run python src/data_prep/process_centipede_genomes.py
 
 ### 5. Data Merging and Clustering
 
-- Merged all domain sequences and synteny data into a single dataset
-- Used MMseqs2 to create representative sequences at 70% sequence similarity
-- Resulting dataset: X representative sequences
+```bash
+uv run python src/data_prep/merge_and_cluster.py --cluster-reassign
+```
+
+- Merges InterPro domains (58,039 sequences) and centipede proteins (151 sequences)
+- Deduplicates by ID → 58,190 unique sequences
+- Clusters with MMseqs2: 70% identity, 80% coverage, sensitivity 9.0, cluster reassignment enabled
+- **Output**: `data/interm/mmseqs/` containing:
+  - `merged.fasta` - Merged sequences
+  - `representatives.fasta` - Cluster representatives
+  - `clusters_with_sizes.tsv` - Cluster mapping with sizes
 
 ### 6. Phylogenetic Analysis
 
