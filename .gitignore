@@ -1,3 +1,9 @@
+# Backup directories
+**/backup/
+
+# large generated files
+data/raw/centipede_genome/genomes/*
+
 # Python-generated files
 __pycache__/
 *.py[oc]
