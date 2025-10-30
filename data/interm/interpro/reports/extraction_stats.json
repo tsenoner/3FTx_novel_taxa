@@ -1,0 +1,20 @@
+{
+  "extraction_stats": {
+    "IPR038773": 205,
+    "IPR039237": 210,
+    "IPR045860": 38751,
+    "IPR039457": 1760,
+    "IPR016054": 10280,
+    "IPR031424": 5580,
+    "IPR051445": 459,
+    "IPR035076": 57,
+    "IPR026524": 405,
+    "IPR042339": 163,
+    "IPR003571": 12,
+    "IPR026110": 157
+  },
+  "total_domains_extracted": 58039,
+  "total_proteins_processed": 52828,
+  "total_sequences_loaded": 52828,
+  "overlapping_cases": 33329
+}
