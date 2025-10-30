@@ -1,6 +1,9 @@
 # Backup directories
 **/backup/
 
+# iTOL templates
+docs/itol_templates
+
 # large generated files
 data/raw/centipede_genome/genomes/*
 
