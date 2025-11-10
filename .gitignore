@@ -27,6 +27,7 @@ data/interm/pdb/*
 data/raw/pdb/*
 data/raw/redundancy_reduction_out_and_elbow_plot/**/tmp/
 data/interm/mmseqs/tmp/
+data/interm/famsa/*.fasta
 src/data_processing/*.dmp
 
 # iqtree files
