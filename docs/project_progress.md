@@ -122,10 +122,47 @@ uv run python src/data_prep/align_sequences.py \
 
 ### 7. Phylogenetic Tree Construction
 
-- Constructed phylogenetic trees using IQ-TREE3 with parameters: X
-- Performed X iterations with X bootstrap replicates
+**Installation:**
 
-### 8. Tree Annotation and Visualization
+IQ-TREE3 needs to be installed separately from [https://iqtree.github.io/](https://iqtree.github.io/)
+
+**Tree construction:**
+
+```bash
+iqtree3 -s data/interm/famsa/aligned_nj.fasta \
+  --prefix data/interm/iqtree/nj \
+  -m LG \
+  -T AUTO \
+  -B 1000 \
+  --nmax 1000
+```
+
+- Input: Multiple sequence alignment from FAMSA2 (12,276 sequences)
+- Substitution model: LG (Le-Gascuel model for proteins)
+- Bootstrap: 1000 ultrafast bootstrap (UFBoot) replicates for branch support
+- Maximum iterations: 1000 for tree search
+- Threads: Automatic detection and usage of available cores
+- **Output**: `data/interm/iqtree/nj.*` - phylogenetic tree files including:
+  - `.treefile` - Maximum likelihood tree in Newick format
+  - `.iqtree` - Main report with detailed analysis results
+  - `.log` - Execution log
+
+### 8. Cluster Annotation
+
+```bash
+uv run python src/data_prep/annotate_clusters.py --min-tax-level phylum class order
+```
+
+- Annotates all 12,276 clusters with:
+  - **Group classification**: Pattern-based assignment (3FTx, Ly6, PMF, Quiver, Scoloptoxin, SPF, manually_annotated)
+  - **Oligomeric state**: Monomeric/multimeric/mixture based on domain counts
+  - **Taxonomy**: LCA at multiple levels using taxopy (retrieved for 1,644/1,660 unique organisms)
+  - **Length bins**: Configurable protein length distribution
+- Special handling for centipede genome sequences (Rimm, Lvar, Sacu, Cpnu prefixes)
+- **Output**: `data/processed/cluster_annotations/` containing `annotations.csv` and `statistics.txt`
+- **Results**: 12 group types identified across 32 phylum, 88 class, and 304 order
+
+### 9. Tree Annotation and Visualization
 
 - Parsed metadata information for all sequences
 - Generated iTOL-compatible annotation files
@@ -141,8 +178,8 @@ Analyses:
 
 ## Key Results
 
-- Total sequences processed: X
-- Representative sequences at 70% identity: X
-- Final phylogenetic tree contains: X sequences
-- Identified X distinct clades/groups of 3FTx-like proteins
-- Confirmed presence of 3FTx-like proteins in X arthropod species
+- Total sequences processed: 58,190 (58,039 InterPro + 151 centipede genomes)
+- Representative sequences at 70% identity: 12,276
+- Final phylogenetic tree contains: 12,276 sequences
+- Identified 12 distinct groups of 3FTx-like proteins
+- Confirmed presence of 3FTx-like proteins in 1,644 species

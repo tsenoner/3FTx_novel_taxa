@@ -30,6 +30,10 @@ data/interm/mmseqs/tmp/
 data/interm/famsa/*.fasta
 src/data_processing/*.dmp
 
-# iqtree files
+# iqtree files (keep .treefile, .iqtree, .log - ignore large intermediate files)
 *.mldist
 *.ckp.gz
+*.uniqueseq.phy
+*.model.gz
+*.bionj
+*.splits.nex
