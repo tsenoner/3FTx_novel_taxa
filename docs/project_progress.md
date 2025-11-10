@@ -51,15 +51,22 @@ done
 - Data stored in `data/raw/interpro/`
 - all from the original 9 sequences are present, but one (P0DPX8)
 
-### 2. Sequence Collection
+### 2. Sequence Collection and Metazoa Filtering
 
 ```bash
-uv run python src/data_prep/collect_interpro_sequences.py data/raw/interpro data/interm/interpro
+uv run python src/data_prep/interpro_metazoa_sequences_collector.py \
+  data/raw/interpro data/interm/interpro --keep Metazoa
 ```
 
-- Collected complete protein sequences from all InterPro subfolders
-- Deduplicated sequences by UniProt ID (52,828 unique sequences from 12 InterPro IDs)
-- Output: `data/interm/interpro/interpro_complete_sequences.fasta`
+- Unified workflow: Collects sequences from InterPro and filters by taxonomy in one pass
+- Collects 52,828 unique sequences from 12 InterPro IDs with taxonomy metadata
+- Filters using NCBI taxonomy database (taxopy) to keep only Metazoa sequences
+- Result: 52,789 animal sequences (99.9%), 39 non-animal excluded (0.1%)
+- Performance: ~6 seconds (efficient pre-computation of 1,679 unique taxonomy IDs)
+- **Output**:
+  - `data/interm/interpro/interpro_metazoa_sequences.fasta`
+  - `data/interm/interpro/reports/metazoa_collection_report.txt`
+- Header format: `>UNIPROT_ID taxa_id=TAXID interpro=IPR1,IPR2,...`
 
 ### 3. Domain Extraction
 

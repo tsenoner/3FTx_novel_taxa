@@ -26,17 +26,29 @@ Output:
 import argparse
 import csv
 import logging
-import os
 import re
-import shutil
-import tempfile
 from collections import Counter, defaultdict
-from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
 import taxopy
-from tqdm import tqdm
+
+try:
+    # Try relative import first (when run as module)
+    from .taxonomy_utils import (
+        TAXONOMIC_LEVELS,
+        batch_get_taxonomy_for_organisms,
+        extract_organism_name,
+        initialize_taxdb,
+    )
+except ImportError:
+    # Fall back to direct import (when run as script)
+    from taxonomy_utils import (
+        TAXONOMIC_LEVELS,
+        batch_get_taxonomy_for_organisms,
+        extract_organism_name,
+        initialize_taxdb,
+    )
 
 logging.basicConfig(level=logging.INFO, format="%(message)s")
 logger = logging.getLogger(__name__)
@@ -99,9 +111,6 @@ SPECIFICITY_ORDER = [
 ]
 SPECIFICITY_RANK = {name: i for i, name in enumerate(SPECIFICITY_ORDER)}
 
-# Taxonomic hierarchy levels (from general to specific)
-TAXONOMIC_LEVELS = ["domain", "kingdom", "phylum", "class", "order", "family", "genus"]
-
 # ============================================================================
 # COMPILED REGEX PATTERNS
 # ============================================================================
@@ -117,267 +126,14 @@ _re_protein_name = re.compile(
     r"protein_name=([^=]+?)(?=\s+(?:organism=|domain_pos=|signature=|interpro_id=|length=)|$)",
     re.IGNORECASE,
 )
-_re_organism = re.compile(
-    r"organism=([^=]+?)(?=\s+domain_pos=)",
-    re.IGNORECASE,
-)
 _re_interpro_id = re.compile(r"\b(IPR\d{6})\b", re.IGNORECASE)
 _re_length = re.compile(r"\blength=(\d+)\b", re.IGNORECASE)
 
 
 # ============================================================================
-# TAXONOMY DATABASE INITIALIZATION
-# ============================================================================
-
-
-def initialize_taxdb() -> taxopy.TaxDb:
-    """
-    Initialize or load the taxopy taxonomy database with intelligent caching.
-
-    The database is cached locally and automatically refreshed if older than one week.
-    Uses safe atomic file operations to prevent corruption during updates.
-
-    Environment variable:
-        PROTSPACE_TAXDB_DIR: Override default cache directory
-
-    Returns:
-        taxopy.TaxDb: Initialized taxonomy database
-
-    Raises:
-        Exception: If database cannot be downloaded or loaded
-    """
-    env_override = os.environ.get("PROTSPACE_TAXDB_DIR")
-    db_dir = (
-        Path(env_override).expanduser()
-        if env_override
-        else Path.home() / ".cache" / "taxopy_db"
-    )
-    db_dir.mkdir(parents=True, exist_ok=True)
-
-    nodes_file = db_dir / "nodes.dmp"
-    names_file = db_dir / "names.dmp"
-    merged_file = db_dir / "merged.dmp"
-    timestamp_file = db_dir / ".download_timestamp"
-
-    # Determine if this is a first-time setup
-    first_time_setup = not (nodes_file.exists() and names_file.exists())
-
-    # Check if cache needs refresh based on timestamp file
-    needs_refresh = False
-    if timestamp_file.exists():
-        try:
-            with open(timestamp_file) as f:
-                download_time = datetime.fromisoformat(f.read().strip())
-            one_week_ago = datetime.now() - timedelta(weeks=1)
-            if download_time < one_week_ago:
-                logger.info(
-                    "Your taxonomy dataset is more than one week old. Refreshing cache..."
-                )
-                needs_refresh = True
-        except (ValueError, OSError) as e:
-            logger.warning(f"Could not read timestamp file: {e}. Will refresh cache.")
-            needs_refresh = True
-    else:
-        if first_time_setup:
-            needs_refresh = True
-        else:
-            try:
-                with open(timestamp_file, "w") as f:
-                    f.write(datetime.now().isoformat())
-            except OSError as e:
-                logger.warning(
-                    f"Failed to create timestamp file at first-time detection: {e}"
-                )
-
-    existing_db_present = nodes_file.exists() and names_file.exists()
-
-    # Load or download the database with a safe refresh strategy
-    if existing_db_present:
-        if needs_refresh:
-            logger.info(
-                "Taxonomy cache is stale. Attempting safe refresh without deleting existing cache."
-            )
-            temp_dir_path = None
-            try:
-                # Download into a temporary directory first
-                temp_dir_path = Path(tempfile.mkdtemp(prefix="taxopy_tmp_"))
-                taxopy.TaxDb(taxdb_dir=str(temp_dir_path), keep_files=True)
-                # Move refreshed files into place atomically
-                for src_name, dst_path in [
-                    ("nodes.dmp", nodes_file),
-                    ("names.dmp", names_file),
-                    ("merged.dmp", merged_file),
-                ]:
-                    src_path = temp_dir_path / src_name
-                    if src_path.exists():
-                        shutil.move(str(src_path), str(dst_path))
-                # Update timestamp only after a successful refresh
-                with open(timestamp_file, "w") as f:
-                    f.write(datetime.now().isoformat())
-            except Exception as e:
-                logger.warning(
-                    f"Failed to refresh taxonomy database: {e}. Falling back to existing cached database."
-                )
-            finally:
-                if temp_dir_path and temp_dir_path.exists():
-                    shutil.rmtree(temp_dir_path, ignore_errors=True)
-
-        # Load existing (potentially refreshed) DB files
-        logger.info(f"Loading taxopy database from {db_dir}")
-        try:
-            taxdb = taxopy.TaxDb(
-                nodes_dmp=str(nodes_file),
-                names_dmp=str(names_file),
-                merged_dmp=str(merged_file) if merged_file.exists() else None,
-            )
-        except Exception as e:
-            logger.error(f"Failed to load existing taxonomy database from cache: {e}")
-            raise
-    else:
-        # First-time setup: must download
-        logger.info(f"Downloading taxopy database to {db_dir}")
-        try:
-            taxdb = taxopy.TaxDb(taxdb_dir=str(db_dir), keep_files=True)
-            # Create/update timestamp file after successful download
-            with open(timestamp_file, "w") as f:
-                f.write(datetime.now().isoformat())
-        except Exception as e:
-            logger.error(
-                f"Failed to initialize taxopy database (first-time setup): {e}"
-            )
-            raise
-
-    return taxdb
-
-
-# ============================================================================
 # FASTA HEADER PARSING
 # ============================================================================
-
-
-def extract_organism_name(header: str) -> Optional[str]:
-    """
-    Extract organism scientific name from FASTA header.
-
-    Removes common names in parentheses and extra whitespace.
-
-    Args:
-        header: Full FASTA header line (without '>')
-
-    Returns:
-        Cleaned scientific name, or None if not found
-
-    Example:
-        'organism=Homo sapiens (Human)' -> 'Homo sapiens'
-        'organism=Mus musculus domain_pos=...' -> 'Mus musculus'
-    """
-    match = _re_organism.search(header)
-    if match:
-        organism_full = match.group(1).strip()
-        # Remove parenthetical common names
-        organism_clean = re.sub(r"\s*\([^)]*\)\s*", "", organism_full).strip()
-        return organism_clean
-    return None
-
-
-def get_taxonomy_from_taxopy(organism_name: str, taxdb: taxopy.TaxDb) -> Dict[str, str]:
-    """Retrieve taxonomy information for an organism using taxopy.
-
-    Returns a dict with keys: domain, kingdom, phylum, class, order, family, genus
-    """
-    taxonomy_info = {level: None for level in TAXONOMIC_LEVELS}
-
-    try:
-        # Get taxon ID from organism name
-        taxid_list = taxopy.taxid_from_name(organism_name, taxdb)
-
-        if not taxid_list or not taxid_list[0]:
-            logger.debug(f"No taxon ID found for organism: {organism_name}")
-            return taxonomy_info
-
-        # Use the first taxon ID (handle homonyms by taking the first match)
-        taxon_id = taxid_list[0]
-
-        # Get taxon object
-        taxon = taxopy.Taxon(taxon_id, taxdb)
-        ranks = taxon.rank_name_dictionary
-
-        # Map taxopy ranks to our expected levels
-        taxonomy_info["domain"] = (
-            ranks.get("domain", "")
-            or ranks.get("realm", "")
-            or ranks.get("superkingdom", "")
-        )
-        taxonomy_info["kingdom"] = ranks.get("kingdom", "")
-        taxonomy_info["phylum"] = ranks.get("phylum", "")
-        taxonomy_info["class"] = ranks.get("class", "")
-        taxonomy_info["order"] = ranks.get("order", "")
-        taxonomy_info["family"] = ranks.get("family", "")
-        taxonomy_info["genus"] = ranks.get("genus", "")
-
-        # Convert empty strings to None
-        taxonomy_info = {k: v if v else None for k, v in taxonomy_info.items()}
-
-        logger.debug(f"Retrieved taxonomy for {organism_name}: {taxonomy_info}")
-
-    except Exception as e:
-        logger.warning(f"Failed to get taxonomy for '{organism_name}': {e}")
-
-    return taxonomy_info
-
-
-def batch_get_taxonomy_for_organisms(
-    organism_names: List[str], taxdb: taxopy.TaxDb
-) -> Dict[str, Optional[taxopy.Taxon]]:
-    """Batch retrieve taxonomy Taxon objects for multiple organisms.
-
-    Returns a dict mapping organism_name -> Taxon object (or None if not found)
-    """
-    organism_to_taxon = {}
-
-    # Use batch lookup for taxon IDs (more efficient than one-by-one)
-    try:
-        # taxopy.taxid_from_name can handle a list of names
-        all_taxid_lists = taxopy.taxid_from_name(organism_names, taxdb)
-    except Exception as e:
-        logger.warning(
-            f"Batch taxid lookup failed: {e}. Falling back to individual lookups."
-        )
-        all_taxid_lists = None
-
-    # Process each organism with progress bar
-    with tqdm(
-        total=len(organism_names), desc="Fetching taxonomy", unit="organism"
-    ) as pbar:
-        for i, organism_name in enumerate(organism_names):
-            try:
-                # Get taxon ID from batch results or individual lookup
-                if all_taxid_lists is not None:
-                    taxid_list = all_taxid_lists[i] if i < len(all_taxid_lists) else []
-                else:
-                    # Fallback to individual lookup
-                    taxid_list = taxopy.taxid_from_name(organism_name, taxdb)
-
-                if taxid_list and taxid_list[0]:
-                    # Use the first taxon ID (handle homonyms by taking the first match)
-                    taxon_id = taxid_list[0]
-                    taxon = taxopy.Taxon(taxon_id, taxdb)
-                    organism_to_taxon[organism_name] = taxon
-                    logger.debug(f"Retrieved Taxon for {organism_name}: {taxon.name}")
-                else:
-                    logger.debug(f"No taxon ID found for organism: {organism_name}")
-                    organism_to_taxon[organism_name] = None
-            except Exception as e:
-                logger.warning(f"Failed to get taxonomy for '{organism_name}': {e}")
-                organism_to_taxon[organism_name] = None
-
-            pbar.update(1)
-
-    successful = sum(1 for t in organism_to_taxon.values() if t is not None)
-    logger.info(
-        f"Successfully retrieved taxonomy for {successful}/{len(organism_names)} organisms"
-    )
-    return organism_to_taxon
+# Note: extract_organism_name is imported from taxonomy_utils
 
 
 def extract_all_organism_names(
