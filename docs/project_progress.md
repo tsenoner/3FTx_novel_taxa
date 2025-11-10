@@ -41,8 +41,13 @@ accession:I6R1R5 OR accession:P0DPX5 OR accession:P0DPX9 OR accession:P0DPY0 OR 
   - IPR003571 (Three-finger toxin)
   - IPR045860 (Snake_toxin-like_sf)
 - Retrieved protein sequences, metadata, and domain annotations:
-  - Ran `uv run python src/interpro_retrieval/interpro_fetcher.py <INTERPRO_ID>` for:
-    IPR016054, IPR026110, IPR026524, IPR031424, IPR038773, IPR039457, IPR039237, IPR042339, IPR051445, IPR035076, IPR003571, IPR045860
+
+```bash
+for ipr in IPR016054 IPR026110 IPR026524 IPR031424 IPR038773 IPR039457 IPR039237 IPR042339 IPR051445 IPR035076 IPR003571 IPR045860; do
+  uv run python src/data_prep/interpro_fetcher.py $ipr
+done
+```
+
 - Data stored in `data/raw/interpro/`
 - all from the original 9 sequences are present, but one (P0DPX8)
 
@@ -100,13 +105,27 @@ uv run python src/data_prep/merge_and_cluster.py --cluster-reassign
   - `representatives.fasta` - Cluster representatives
   - `clusters_with_sizes.tsv` - Cluster mapping with sizes
 
-### 6. Phylogenetic Analysis
+### 6. Multiple Sequence Alignment
 
-- Generated multiple sequence alignments using FAMSA2
+```bash
+uv run python src/data_prep/align_sequences.py \
+  data/interm/mmseqs/representatives.fasta \
+  data/interm/famsa/aligned_nj.fasta \
+  --guide-tree nj \
+  --threads 0
+```
+
+- Generated multiple sequence alignment using FAMSA2 via pyfamsa
+- Input: 12,276 representative sequences (70% identity clusters)
+- Guide tree method: Neighbor-joining (NJ) - most accurate phylogenetically
+- **Output**: `data/interm/famsa/aligned_nj.fasta` - Multiple sequence alignment ready for tree construction
+
+### 7. Phylogenetic Tree Construction
+
 - Constructed phylogenetic trees using IQ-TREE3 with parameters: X
 - Performed X iterations with X bootstrap replicates
 
-### 7. Tree Annotation and Visualization
+### 8. Tree Annotation and Visualization
 
 - Parsed metadata information for all sequences
 - Generated iTOL-compatible annotation files

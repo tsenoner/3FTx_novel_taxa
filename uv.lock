@@ -14,6 +14,7 @@ dependencies = [
     { name = "plotly" },
     { name = "protspace", extra = ["frontend"] },
     { name = "pyfaidx" },
+    { name = "pyfamsa" },
     { name = "requests" },
     { name = "taxopy" },
     { name = "tqdm" },
@@ -28,6 +29,7 @@ requires-dist = [
     { name = "plotly", specifier = ">=6.0.1" },
     { name = "protspace", extras = ["frontend"], specifier = ">=3.1.1" },
     { name = "pyfaidx", specifier = ">=0.9.0.3" },
+    { name = "pyfamsa", specifier = ">=0.6.1" },
     { name = "requests", specifier = ">=2.32.0" },
     { name = "taxopy", specifier = ">=0.14.0" },
     { name = "tqdm", specifier = ">=4.67.1" },
@@ -1636,6 +1638,22 @@ wheels = [
 ]
 
 [[package]]
+name = "pyfamsa"
+version = "0.6.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "scoring-matrices" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/94/6b/4d5609d50fbd11a8dab31f74d1c7a1f069b0c2c37c012bf58b221c621d42/pyfamsa-0.6.1.tar.gz", hash = "sha256:9037ff739f13e302c9f006670397bb344f55436d0fa1f7794947f1d591bd49e8", size = 5211460, upload-time = "2025-10-02T15:56:42.299Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/fe/17/b3367998443b0db6fa4493e988703339752ce49f1718f9b6b98c2132d333/pyfamsa-0.6.1-cp311-abi3-macosx_10_9_x86_64.whl", hash = "sha256:703002fde654a61fea439cd32fc17281f3ba533c4b179cd70602b64ae5ae2fa1", size = 1512490, upload-time = "2025-10-02T15:56:03.274Z" },
+    { url = "https://files.pythonhosted.org/packages/68/ec/21e460484d2adf6fe4e31da0beb990d3f9a1a97749fab22233d721595dcb/pyfamsa-0.6.1-cp311-abi3-macosx_11_0_arm64.whl", hash = "sha256:876162d096b83d7663347decd9f83fb7f2948f9ce91259dc714beb94a0713a0d", size = 1502260, upload-time = "2025-10-02T15:56:05.087Z" },
+    { url = "https://files.pythonhosted.org/packages/08/d2/99a920ab4a815bbd38769956316fc8b149d78b7f10c1f91c51737323fb6f/pyfamsa-0.6.1-cp311-abi3-manylinux_2_34_aarch64.whl", hash = "sha256:60af200e4f07ff6b0f837aab90478758bf999cefbee81a793b0c91875c3703df", size = 1752350, upload-time = "2025-10-02T15:56:07.297Z" },
+    { url = "https://files.pythonhosted.org/packages/cd/96/f67a8951000186ffdf02af636ad16c2dd96930cfb2645e478554a702fb49/pyfamsa-0.6.1-cp311-abi3-manylinux_2_34_x86_64.whl", hash = "sha256:13083a407a0116333bfa827a5dea90e6d20381b4d468543b8152273f6288a3ec", size = 1771007, upload-time = "2025-10-02T15:56:09.149Z" },
+    { url = "https://files.pythonhosted.org/packages/d1/46/38029727be586463ad6279c48f304f52edac9dc9539baee50e08dbfc756b/pyfamsa-0.6.1-cp311-abi3-win_amd64.whl", hash = "sha256:066726deedfad5f01dba73665c1077003e95466c12d38e37b581b6cdbb01f3cf", size = 1483547, upload-time = "2025-10-02T15:56:11.554Z" },
+]
+
+[[package]]
 name = "pygments"
 version = "2.19.1"
 source = { registry = "https://pypi.org/simple" }
@@ -1984,6 +2002,24 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/b7/8e/038ccfe29d272b30086b25a4960f757f97122cb2ec42e62b460d02fe98e9/scipy-1.15.3-cp313-cp313t-musllinux_1_2_aarch64.whl", hash = "sha256:40e54d5c7e7ebf1aa596c374c49fa3135f04648a0caabcb66c52884b943f02b4", size = 36393132, upload-time = "2025-05-08T16:08:15.34Z" },
     { url = "https://files.pythonhosted.org/packages/10/7e/5c12285452970be5bdbe8352c619250b97ebf7917d7a9a9e96b8a8140f17/scipy-1.15.3-cp313-cp313t-musllinux_1_2_x86_64.whl", hash = "sha256:5e721fed53187e71d0ccf382b6bf977644c533e506c4d33c3fb24de89f5c3ed5", size = 38979503, upload-time = "2025-05-08T16:08:21.513Z" },
     { url = "https://files.pythonhosted.org/packages/81/06/0a5e5349474e1cbc5757975b21bd4fad0e72ebf138c5592f191646154e06/scipy-1.15.3-cp313-cp313t-win_amd64.whl", hash = "sha256:76ad1fb5f8752eabf0fa02e4cc0336b4e8f021e2d5f061ed37d6d264db35e3ca", size = 40308097, upload-time = "2025-05-08T16:08:27.627Z" },
+]
+
+[[package]]
+name = "scoring-matrices"
+version = "0.3.3"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/a6/cf/be8d88d588cbdb58b0e7d45e8f13f742a0204d352f8c8f0da95001ad1142/scoring_matrices-0.3.3.tar.gz", hash = "sha256:9f2c1508d477d7aafaacad4575a4137eaaed5f72d92ba5a7233a013b5beb0655", size = 54659, upload-time = "2025-08-13T17:47:42.912Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/fa/4e/9af00f47ec10844ba78a6584d2fc810dbfd2a38b948643d28e05caaa4ca2/scoring_matrices-0.3.3-cp312-cp312-macosx_10_13_x86_64.whl", hash = "sha256:45f4bb6ccd9ad1784bcba37cde847f4c58eb7ed43656727c50c284196f3e088f", size = 112040, upload-time = "2025-08-13T17:47:16.757Z" },
+    { url = "https://files.pythonhosted.org/packages/ca/4e/1ec7107c9c1a16a3872294dd79e55d80f5130cda7bea3fbdc14ae4191ec9/scoring_matrices-0.3.3-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:31182d5f40ab85308c53d71dc76cd1d7e974ee6a28b174d6cac34d5feb2a9322", size = 109075, upload-time = "2025-08-13T17:47:17.98Z" },
+    { url = "https://files.pythonhosted.org/packages/49/c1/33597ec33f1ffcd93b822de8faea83c77f0df85529e47821a4b7168899b6/scoring_matrices-0.3.3-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:f9c73f8fb06231e8474d7565555051cfbd532bb41ce7978cab890c52a08766fd", size = 121452, upload-time = "2025-08-13T17:47:19.073Z" },
+    { url = "https://files.pythonhosted.org/packages/27/a2/b22a272a547c024a4fae04d75a0f8c528d8fa849eb0d59de0fb778182554/scoring_matrices-0.3.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:2f3afdf62cb6c66c77137683028f27b0b1341bd57d109435b4228d2e0ac41fbe", size = 127105, upload-time = "2025-08-13T17:47:20.258Z" },
+    { url = "https://files.pythonhosted.org/packages/8c/87/74ff871eeedf183f9e2c0615ad60625c3d260457623b1cd4b74da3172e48/scoring_matrices-0.3.3-cp312-cp312-win_amd64.whl", hash = "sha256:411a9574efb8e84033b5dcf004e7c517c5a74077db0875c2e7334ba41b0e8d26", size = 110661, upload-time = "2025-08-13T17:47:21.77Z" },
+    { url = "https://files.pythonhosted.org/packages/ae/e2/8837f1cc52a06529268614cb364e2c4f2956e5595da691e6f81c95776b75/scoring_matrices-0.3.3-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:e47a54551d888bde78b42d38a1e71497a541122ae33cbd7efbb05f167675da15", size = 113743, upload-time = "2025-08-13T17:47:23.241Z" },
+    { url = "https://files.pythonhosted.org/packages/b2/78/9b3654ba2be9e99e11688a1d2ce7751773e78e7ba34d26f783da9de0d04e/scoring_matrices-0.3.3-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:4ac18da2a8833b0b8615071527c9ae09db407fe25dc692716defc23a61b739a3", size = 110909, upload-time = "2025-08-13T17:47:24.711Z" },
+    { url = "https://files.pythonhosted.org/packages/27/85/7b365316ac60c465030deb033c47c887b7903161a3500e105e22ae011e65/scoring_matrices-0.3.3-cp313-cp313-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:ed045ee847e3a360e904a5cd3b600b8ca0a0954dda5e92cf55c2724ce3b4dc7f", size = 122598, upload-time = "2025-08-13T17:47:25.855Z" },
+    { url = "https://files.pythonhosted.org/packages/0a/e2/cac268d8d8ac5452e3dad131e16fc293b7b3e05c0d237100cc29be5e4384/scoring_matrices-0.3.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:823d93622fe8ade4e77379230c201dc952a194dc8edc94f0afdc6f53e0166c84", size = 128636, upload-time = "2025-08-13T17:47:27.33Z" },
+    { url = "https://files.pythonhosted.org/packages/12/8f/306b062c6883cf6bb51d20ed9fb406e084d202d6e3e7d872ddae28abffc4/scoring_matrices-0.3.3-cp313-cp313-win_amd64.whl", hash = "sha256:47aaec6e253f4611a1a10592e991a9bae2c340a630990f9ac66de6a1afec010d", size = 113146, upload-time = "2025-08-13T17:47:28.451Z" },
 ]
 
 [[package]]
