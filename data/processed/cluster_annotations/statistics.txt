@@ -2,18 +2,18 @@
 CLUSTER ANNOTATION STATISTICS
 ================================================================================
 
-Total clusters: 12276
+Total clusters: 12192
 
 --------------------------------------------------------------------------------
 GROUP DISTRIBUTION
 --------------------------------------------------------------------------------
-  none                               6467
-  Ly6                                3779
-  mixture                            1106
+  none                               6415
+  Ly6                                3751
+  mixture                            1098
   Quiver                              558
-  3FTx                                123
+  3FTx                                122
   SPF                                 102
-  mostly_Ly6                           79
+  mostly_Ly6                           84
   manually_annotated                   41
   Scoloptoxin                          11
   mostly_Quiver                         7
@@ -23,73 +23,62 @@ GROUP DISTRIBUTION
 --------------------------------------------------------------------------------
 OLIGOMERIC STATE
 --------------------------------------------------------------------------------
-  monomere                           9207
-  multimere                          2546
-  mixture                             523
+  monomere                           9132
+  multimere                          2545
+  mixture                             515
 
 --------------------------------------------------------------------------------
 TAXONOMY DISTRIBUTION (LCA at phylum level)
 --------------------------------------------------------------------------------
-  Chordata (phylum)                                                6165
-  Arthropoda (phylum)                                              2475
-  Nematoda (phylum)                                                1151
-  Mollusca (phylum)                                                 779
+  Chordata (phylum)                                                6129
+  Arthropoda (phylum)                                              2472
+  Nematoda (phylum)                                                1150
+  Mollusca (phylum)                                                 778
   Cnidaria (phylum)                                                 446
-  Rotifera (phylum)                                                 339
-  Platyhelminthes (phylum)                                          246
-  Annelida (phylum)                                                 191
-  unknown                                                           154
+  Rotifera (phylum)                                                 337
+  Platyhelminthes (phylum)                                          245
+  Annelida (phylum)                                                 192
+  unknown                                                           131
+  Echinodermata (phylum)                                             91
   Tardigrada (phylum)                                                89
-  Echinodermata (phylum)                                             83
   Brachiopoda (phylum)                                               55
   Bryozoa (phylum)                                                   30
-  Porifera (phylum)                                                  25
-  Palpitomonas (genus)                                                7
+  Porifera (phylum)                                                  24
   Xenacoelomorpha (phylum)                                            5
   Orthonectida (phylum)                                               5
   Ctenophora (phylum)                                                 4
-  Heterolobosea (phylum)                                              4
   Hemichordata (phylum)                                               3
   Placozoa (phylum)                                                   3
   Bilateria (clade)                                                   2
-  Chlorophyta (phylum)                                                2
-  Eukaryota (domain)                                                  2
-  Cryptophyceae (class)                                               2
-  Lophotrochozoa (clade)                                              2
-  Dinophyceae (class)                                                 2
-  Bigyra (class)                                                      1
-  Streptophyta (phylum)                                               1
-  root (no rank)                                                      1
-  Phaeophyceae (class)                                                1
-  Pinguiophyceae (class)                                              1
+  Lophotrochozoa (clade)                                              1
 
 --------------------------------------------------------------------------------
 TAXONOMY DISTRIBUTION (LCA at class level)
 --------------------------------------------------------------------------------
-  Actinopteri (class)                                              2354
-  Insecta (class)                                                  1767
-  Mammalia (class)                                                 1119
-  Chromadorea (class)                                              1114
-  Amphibia (class)                                                 1045
-  Lepidosauria (class)                                              871
+  Actinopteri (class)                                              2300
+  Insecta (class)                                                  1764
+  Mammalia (class)                                                 1138
+  Chromadorea (class)                                              1113
+  Amphibia (class)                                                 1049
+  Lepidosauria (class)                                              868
   Bivalvia (class)                                                  508
   Anthozoa (class)                                                  400
-  Eurotatoria (class)                                               339
+  Eurotatoria (class)                                               337
   Arachnida (class)                                                 237
-  Gastropoda (class)                                                225
-  Aves (class)                                                      171
-  Polychaeta (class)                                                163
-  Trematoda (class)                                                 157
+  Gastropoda (class)                                                224
+  Polychaeta (class)                                                164
+  Aves (class)                                                      163
   Testudines (order)                                                156
-  unknown                                                           154
+  Trematoda (class)                                                 154
   Malacostraca (class)                                              151
+  unknown                                                           131
   Eutardigrada (class)                                               89
   Leptocardii (class)                                                77
-  Crocodylia (order)                                                 75
+  Crocodylia (order)                                                 74
   Hexanauplia (class)                                                71
   Collembola (class)                                                 62
+  Chondrichthyes (class)                                             61
   Ascidiacea (class)                                                 60
-  Chondrichthyes (class)                                             59
   Asteroidea (class)                                                 56
   Lingulata (class)                                                  55
   Branchiopoda (class)                                               50
@@ -98,383 +87,362 @@ TAXONOMY DISTRIBUTION (LCA at class level)
   Hydrozoa (class)                                                   42
   Chilopoda (class)                                                  41
   Rhabditophora (class)                                              41
-  Cestoda (class)                                                    38
+  Cestoda (class)                                                    39
   Enoplea (class)                                                    37
-  Hyperoartia (class)                                                30
   Gymnolaemata (class)                                               30
+  Hyperoartia (class)                                                30
   Thecostraca (class)                                                29
-  Euteleostomi (clade)                                               27
   Cladistia (class)                                                  27
-  Clitellata (class)                                                 27
-  Demospongiae (class)                                               23
+  Euteleostomi (clade)                                               27
+  Clitellata (class)                                                 26
+  Demospongiae (class)                                               22
+  Holothuroidea (class)                                              22
   Amniota (clade)                                                    16
   Myxini (class)                                                     15
-  Holothuroidea (class)                                              14
+  Tetrapoda (clade)                                                  13
   Echinoidea (class)                                                 13
-  Sauria (clade)                                                     11
-  Tetrapoda (clade)                                                  11
   Ichthyostraca (class)                                              10
-  Coelacanthiformes (order)                                           9
+  Sauria (clade)                                                     10
   Appendicularia (class)                                              9
-  Gnathostomata (clade)                                               8
+  Coelacanthiformes (order)                                           9
   Monogenea (class)                                                   8
-  Palpitomonas (genus)                                                7
+  Gnathostomata (clade)                                               7
+  Archelosauria (clade)                                               6
   Pancrustacea (clade)                                                5
   Rhopaluridae (family)                                               5
-  Myxozoa (class)                                                     4
   Tentaculata (class)                                                 4
-  Vahlkampfiidae (family)                                             4
-  Arthropoda (phylum)                                                 3
-  Mollusca (phylum)                                                   3
-  Acoela (order)                                                      3
-  Cyclostomata (clade)                                                3
-  Archelosauria (clade)                                               3
+  Actinopterygii (superclass)                                         4
+  Myxozoa (class)                                                     4
   Enteropneusta (class)                                               3
+  Archosauria (clade)                                                 3
   Uniplacotomia (class)                                               3
-  Actinopterygii (superclass)                                         3
-  Bilateria (clade)                                                   2
-  Platyhelminthes (phylum)                                            2
-  Chlorophyceae (class)                                               2
-  Sarcopterygii (superclass)                                          2
+  Acoela (order)                                                      3
+  Platyhelminthes (phylum)                                            3
+  Mollusca (phylum)                                                   3
+  Cyclostomata (clade)                                                3
+  Annelida (phylum)                                                   2
   Hexactinellida (class)                                              2
-  Eukaryota (domain)                                                  2
-  Cryptophyceae (class)                                               2
-  Lophotrochozoa (clade)                                              2
+  Sarcopterygii (superclass)                                          2
+  Arthropoda (phylum)                                                 2
+  Bilateria (clade)                                                   2
+  Crustacea (subphylum)                                               2
   Nemertodermatida (order)                                            2
-  Dinophyceae (class)                                                 2
-  Archosauria (clade)                                                 2
-  Bigyra (class)                                                      1
-  Crustacea (subphylum)                                               1
-  Ceratodontiformes (order)                                           1
-  Magnoliopsida (class)                                               1
-  Vertebrata (clade)                                                  1
-  root (no rank)                                                      1
-  Phaeophyceae (class)                                                1
   Multicrustacea (superclass)                                         1
+  Vertebrata (clade)                                                  1
   Mandibulata (clade)                                                 1
-  Pinguiophyceae (class)                                              1
-  Annelida (phylum)                                                   1
+  Lophotrochozoa (clade)                                              1
+  Ceratodontiformes (order)                                           1
 
 --------------------------------------------------------------------------------
 TAXONOMY DISTRIBUTION (LCA at order level)
 --------------------------------------------------------------------------------
-  Rhabditida (order)                                               1074
-  Squamata (order)                                                  857
-  Anura (order)                                                     729
-  Coleoptera (order)                                                595
-  Diptera (order)                                                   384
-  Rodentia (order)                                                  345
-  Cypriniformes (order)                                             334
+  Rhabditida (order)                                               1073
+  Squamata (order)                                                  853
+  Anura (order)                                                     727
+  Coleoptera (order)                                                591
+  Diptera (order)                                                   389
+  Rodentia (order)                                                  356
+  Cypriniformes (order)                                             326
   Scleractinia (order)                                              231
-  Caudata (order)                                                   219
-  Hemiptera (order)                                                 212
-  Cyprinodontiformes (order)                                        188
-  Hymenoptera (order)                                               187
-  Lepidoptera (order)                                               177
+  Caudata (order)                                                   221
+  Hemiptera (order)                                                 211
+  Hymenoptera (order)                                               186
+  Cyprinodontiformes (order)                                        185
+  Lepidoptera (order)                                               172
   Testudines (order)                                                156
-  unknown                                                           154
-  Gobiiformes (order)                                               146
+  Gobiiformes (order)                                               143
   Actiniaria (order)                                                141
-  Perciformes (order)                                               135
-  Artiodactyla (order)                                              132
+  Artiodactyla (order)                                              137
+  unknown                                                           131
+  Perciformes (order)                                               131
   Mytilida (order)                                                  127
-  Siluriformes (order)                                              125
+  Siluriformes (order)                                              121
   Ostreida (order)                                                  118
   Ploima (order)                                                    112
   Myida (order)                                                     111
-  Philodinida (order)                                               110
-  Primates (order)                                                  106
-  Gymnophiona (order)                                                96
-  Chiroptera (order)                                                 94
-  Clupeiformes (order)                                               93
+  Primates (order)                                                  108
+  Philodinida (order)                                               108
+  Gymnophiona (order)                                                99
+  Chiroptera (order)                                                 93
+  Anabantiformes (order)                                             90
   Parachela (order)                                                  89
   Adinetida (order)                                                  89
-  Anabantiformes (order)                                             89
-  Cichliformes (order)                                               86
+  Clupeiformes (order)                                               86
   Decapoda (order)                                                   81
+  Cichliformes (order)                                               78
   Amphioxiformes (order)                                             77
-  Crocodylia (order)                                                 75
   Sabellida (order)                                                  75
+  Crocodylia (order)                                                 74
   Salmoniformes (order)                                              71
-  Plagiorchiida (order)                                              68
+  Carnivora (order)                                                  70
   Unionida (order)                                                   68
-  Beloniformes (order)                                               66
-  Carnivora (order)                                                  66
-  Characiformes (order)                                              65
-  Pleuronectiformes (order)                                          64
+  Plagiorchiida (order)                                              67
+  Characiformes (order)                                              64
   Boreoeutheria (clade)                                              63
-  Araneae (order)                                                    62
+  Pleuronectiformes (order)                                          62
+  Percomorphaceae (clade)                                            60
+  Beloniformes (order)                                               60
   Phlebobranchia (order)                                             59
+  Araneae (order)                                                    59
   Plakobranchidae (family)                                           57
-  Osteoglossiformes (order)                                          56
   Valvatida (order)                                                  56
   Lingulida (order)                                                  55
   Pectinida (order)                                                  55
-  Percomorphaceae (clade)                                            55
-  Strigeidida (order)                                                54
-  Blenniiformes (order)                                              53
+  Osteoglossiformes (order)                                          55
+  Blenniiformes (order)                                              54
+  Sarcoptiformes (order)                                             52
   Trombidiformes (order)                                             52
-  Sarcoptiformes (order)                                             51
+  Strigeidida (order)                                                52
   Entomobryomorpha (order)                                           49
   Podocopida (order)                                                 46
-  Tetraodontiformes (order)                                          45
-  Anguilliformes (order)                                             41
-  Gadiformes (order)                                                 41
-  Passeriformes (order)                                              40
+  Tetraodontiformes (order)                                          43
+  Anguilliformes (order)                                             43
+  Gadiformes (order)                                                 43
+  Eutheria (clade)                                                   40
   Macrostomida (order)                                               39
   Blattodea (order)                                                  39
-  Eutheria (clade)                                                   38
+  Passeriformes (order)                                              39
+  Plectida (order)                                                   38
   Terebellida (order)                                                38
-  Ixodida (order)                                                    37
   Octopoda (order)                                                   37
-  Plectida (order)                                                   37
+  Ixodida (order)                                                    37
   Diplostraca (order)                                                36
   Capitellidae (family)                                              35
   Esociformes (order)                                                34
-  Eulipotyphla (order)                                               33
-  Harpacticoida (order)                                              32
   Siphonostomatoida (order)                                          32
+  Harpacticoida (order)                                              32
+  Laurasiatheria (superorder)                                        31
   Acipenseriformes (order)                                           31
-  Leptothecata (order)                                               30
-  Petromyzontiformes (order)                                         30
   Geophilomorpha (order)                                             30
   Cheilostomatida (order)                                            30
-  Scombriformes (order)                                              30
-  Laurasiatheria (superorder)                                        30
-  Ephemeroptera (order)                                              29
+  Leptothecata (order)                                               30
+  Gymnotiformes (order)                                              30
+  Petromyzontiformes (order)                                         30
+  Eulipotyphla (order)                                               30
+  Euphausiacea (order)                                               29
+  Thysanoptera (order)                                               29
+  Scombriformes (order)                                              29
   Balanomorpha (order)                                               29
-  Gymnotiformes (order)                                              28
-  Thysanoptera (order)                                               28
-  Euphausiacea (order)                                               28
+  Ephemeroptera (order)                                              29
   Orthoptera (order)                                                 28
-  Euteleostomi (clade)                                               27
-  Opisthorchiida (order)                                             27
-  Bdelloidea (subclass)                                              27
-  Polypteriformes (order)                                            27
-  Carangiformes (order)                                              27
+  Synbranchiformes (order)                                           28
   Perissodactyla (order)                                             27
-  Diprotodontia (order)                                              26
-  Rhynchobdellida (order)                                            26
-  Cyclophyllidea (order)                                             26
-  Mesostigmata (order)                                               26
+  Cyclophyllidea (order)                                             27
+  Opisthorchiida (order)                                             27
+  Carangiformes (order)                                              27
+  Polypteriformes (order)                                            27
+  Euteleostomi (clade)                                               27
+  Bdelloidea (subclass)                                              27
+  Kurtiformes (order)                                                26
   Malacalcyonacea (order)                                            26
-  Stylommatophora (order)                                            25
-  Planorbidae (family)                                               25
-  Synbranchiformes (order)                                           25
+  Mesostigmata (order)                                               26
+  Diprotodontia (order)                                              26
+  Rhynchobdellida (order)                                            25
   Amphipoda (order)                                                  25
+  Stylommatophora (order)                                            25
+  Planorbidae (family)                                               24
+  Metatheria (clade)                                                 24
   Centropomidae (family)                                             24
-  Kurtiformes (order)                                                24
-  Pomacentridae (family)                                             24
-  Metatheria (clade)                                                 23
-  Teleostei (infraclass)                                             22
-  Trichinellida (order)                                              22
+  Pomacentridae (family)                                             23
+  Psocodea (order)                                                   23
+  Spariformes (order)                                                22
+  Phasmatodea (order)                                                22
+  Aspidochirotida (order)                                            22
   Pterioida (order)                                                  22
-  Spariformes (order)                                                21
-  Semionotiformes (order)                                            21
+  Chimaeriformes (order)                                             22
+  Trichinellida (order)                                              22
   Batillariidae (family)                                             21
-  Chimaeriformes (order)                                             20
-  Phasmatodea (order)                                                20
-  Clupeocephala (clade)                                              20
-  Psocodea (order)                                                   20
+  Semionotiformes (order)                                            21
   Carcharhiniformes (order)                                          20
   Littorinimorpha (order)                                            19
-  Sciaenidae (family)                                                19
-  Lagomorpha (order)                                                 18
-  Neoptera (infraclass)                                              18
+  Teleostei (infraclass)                                             19
   Lottiidae (family)                                                 18
-  Albuliformes (order)                                               17
-  Ambassidae (family)                                                17
-  Afrosoricida (order)                                               17
-  Galliformes (order)                                                17
+  Neognathae (infraclass)                                            17
+  Lagomorpha (order)                                                 17
   Elopomorpha (clade)                                                17
-  Amniota (clade)                                                    16
-  Holocentriformes (order)                                           16
   Monotremata (order)                                                16
-  Gonorynchiformes (order)                                           16
-  Labriformes (order)                                                16
-  Architaenioglossa (order)                                          15
-  Aves (class)                                                       15
+  Holocentriformes (order)                                           16
+  Ambassidae (family)                                                16
+  Albuliformes (order)                                               16
+  Amniota (clade)                                                    16
+  Galliformes (order)                                                16
+  Neoptera (infraclass)                                              16
+  Sciaenidae (family)                                                16
+  Gonorynchiformes (order)                                           15
   Myxiniformes (order)                                               15
+  Clupeocephala (clade)                                              15
+  Architaenioglossa (order)                                          15
+  Labriformes (order)                                                15
   Elopiformes (order)                                                14
-  Syngnathiformes (order)                                            14
-  Aspidochirotida (order)                                            14
   Patellidae (family)                                                14
+  Afrosoricida (order)                                               14
+  Syngnathiformes (order)                                            13
   Anostraca (order)                                                  13
-  Scandentia (order)                                                 13
+  Tetrapoda (clade)                                                  13
   Lymnaeidae (family)                                                13
-  Camarodonta (order)                                                12
-  Neognathae (infraclass)                                            12
+  Euarchontoglires (superorder)                                      13
+  Scandentia (order)                                                 13
   Anthoathecata (order)                                              12
-  Symphypleona (order)                                               12
-  Notacanthiformes (order)                                           12
-  Proboscidea (order)                                                12
   Characiphysae (superorder)                                         12
-  Charadriiformes (order)                                            11
-  Psittaciformes (order)                                             11
-  Moronidae (family)                                                 11
-  Sauria (clade)                                                     11
-  Diphyllobothriidea (order)                                         11
-  Tetrapoda (clade)                                                  11
-  Tubulidentata (order)                                              11
-  Sphenodontia (order)                                               11
+  Proboscidea (order)                                                12
+  Camarodonta (order)                                                12
+  Aves (class)                                                       12
+  Symphypleona (order)                                               12
+  Sphenodontia (order)                                               12
+  Pterygota (subclass)                                               11
   Scolopendromorpha (order)                                          11
-  Dinophilidae (family)                                              11
   Dasyuromorphia (order)                                             11
-  Euarchontoglires (superorder)                                      10
+  Diphyllobothriidea (order)                                         11
+  Notacanthiformes (order)                                           11
+  Dinophilidae (family)                                              11
+  Orectolobiformes (order)                                           10
+  Tubulidentata (order)                                              10
+  Moronidae (family)                                                 10
   Arguloida (order)                                                  10
-  Tetractinellida (order)                                            10
-  Euacanthomorphacea (clade)                                         10
+  Sauria (clade)                                                     10
   Isopoda (order)                                                    10
-  Ovalentaria (clade)                                                 9
-  Orectolobiformes (order)                                            9
-  Gruiformes (order)                                                  9
-  Coelacanthiformes (order)                                           9
   Copelata (order)                                                    9
-  Sirenia (order)                                                     9
+  Coelacanthiformes (order)                                           9
+  Tetractinellida (order)                                             9
+  Euacanthomorphacea (clade)                                          9
   Mermithida (order)                                                  9
+  Charadriiformes (order)                                             9
+  Psittaciformes (order)                                              9
+  Neoaves (clade)                                                     8
+  Actinopteri (class)                                                 8
   Euteleosteomorpha (cohort)                                          8
-  Gnathostomata (clade)                                               8
-  Odonata (order)                                                     8
+  Gruiformes (order)                                                  8
+  Haplosclerida (order)                                               8
   Acanthomorphata (clade)                                             8
   Digenea (subclass)                                                  8
-  Neoaves (clade)                                                     8
-  Haplosclerida (order)                                               8
-  Eupercaria (clade)                                                  7
-  Pterygota (subclass)                                                7
-  Eumalacostraca (subclass)                                           7
-  Protacanthopterygii (clade)                                         7
-  Strigiformes (order)                                                7
-  Palpitomonas (genus)                                                7
   Tinamiformes (order)                                                7
+  Eupercaria (clade)                                                  7
+  Sirenia (order)                                                     7
   Didelphimorphia (order)                                             7
-  Arachnida (class)                                                   6
-  Siphonaptera (order)                                                6
-  Polyneoptera (cohort)                                               6
-  Atheriniformes (order)                                              6
-  Actinopteri (class)                                                 6
+  Arachnida (class)                                                   7
+  Gnathostomata (clade)                                               7
+  Odonata (order)                                                     7
+  Protacanthopterygii (clade)                                         6
   Sepiida (order)                                                     6
+  Ovalentaria (clade)                                                 6
   Dioctophymatida (order)                                             6
-  Chondrichthyes (class)                                              6
-  Pancrustacea (clade)                                                5
-  Osteoglossocephalai (clade)                                         5
-  Rhopaluridae (family)                                               5
+  Atherinomorphae (superorder)                                        6
+  Eumalacostraca (subclass)                                           6
+  Archelosauria (clade)                                               6
+  Siphonaptera (order)                                                6
+  Neopterygii (subclass)                                              5
+  Chondrichthyes (class)                                              5
   Dactylogyridea (order)                                              5
+  Bucerotiformes (order)                                              5
+  Pancrustacea (clade)                                                5
   Otomorpha (cohort)                                                  5
-  Galeoidea (superorder)                                              4
-  Gastropoda (class)                                                  4
-  Bivalvulida (order)                                                 4
+  Rhopaluridae (family)                                               5
+  Osteoglossocephalai (clade)                                         4
   Pteriomorphia (clade)                                               4
-  Calanoida (order)                                                   4
-  Bucerotiformes (order)                                              4
-  Mammalia (class)                                                    4
-  Vahlkampfiidae (family)                                             4
+  Polyneoptera (cohort)                                               4
+  Strigiformes (order)                                                4
   Spongillida (order)                                                 4
-  Pterocliformes (order)                                              3
-  Ostariophysi (subcohort)                                            3
-  Arthropoda (phylum)                                                 3
-  Mollusca (phylum)                                                   3
-  Neopterygii (subclass)                                              3
-  Acoela (order)                                                      3
-  Theria (clade)                                                      3
-  Cyclostomata (clade)                                                3
-  Polystomatidea (order)                                              3
-  Panpulmonata (clade)                                                3
-  Atherinomorphae (superorder)                                        3
-  Afrotheria (superorder)                                             3
-  Caenogastropoda (subclass)                                          3
-  Lymnaeoidea (superfamily)                                           3
-  Falconiformes (order)                                               3
-  Lobata (order)                                                      3
-  Patellogastropoda (subclass)                                        3
-  Piciformes (order)                                                  3
-  Anseriformes (order)                                                3
-  Chromadorea (class)                                                 3
-  Archelosauria (clade)                                               3
+  Gastropoda (class)                                                  4
+  Calanoida (order)                                                   4
+  Afrotheria (superorder)                                             4
+  Actinopterygii (superclass)                                         4
+  Anseriformes (order)                                                4
+  Bivalvulida (order)                                                 4
+  Galeoidea (superorder)                                              4
+  Mammalia (class)                                                    4
+  Piciformes (order)                                                  4
   Harrimaniidae (family)                                              3
-  Podoplea (superorder)                                               3
-  Otophysi (clade)                                                    3
-  Lepidosauria (class)                                                3
+  Panpulmonata (clade)                                                3
+  Archosauria (clade)                                                 3
   Trichoplacea (order)                                                3
-  Actinopterygii (superclass)                                         3
-  Palaeognathae (superorder)                                          2
-  Bilateria (clade)                                                   2
-  Endopterygota (cohort)                                              2
-  Platyhelminthes (phylum)                                            2
-  Sphaeropleales (order)                                              2
-  Parasitiformes (superorder)                                         2
-  Anabantaria (clade)                                                 2
-  Sarcopterygii (superclass)                                          2
-  Lyssacinosida (order)                                               2
-  Phyllodocida (order)                                                2
-  Glires (clade)                                                      2
-  Eukaryota (domain)                                                  2
-  Cryptomonadales (order)                                             2
+  Otophysi (clade)                                                    3
+  Podoplea (superorder)                                               3
+  Lepidosauria (class)                                                3
+  Caenogastropoda (subclass)                                          3
+  Atheriniformes (order)                                              3
+  Acoela (order)                                                      3
+  Platyhelminthes (phylum)                                            3
+  Lobata (order)                                                      3
+  Polystomatidea (order)                                              3
+  Mollusca (phylum)                                                   3
+  Cyclostomata (clade)                                                3
+  Theria (clade)                                                      3
+  Falconiformes (order)                                               3
+  Patellogastropoda (subclass)                                        3
+  Lymnaeoidea (superfamily)                                           3
   Columbiformes (order)                                               2
-  Lophotrochozoa (clade)                                              2
-  Nemertodermatida (order)                                            2
-  Telluraves (clade)                                                  2
-  Carangaria (clade)                                                  2
-  Gonyaulacales (order)                                               2
+  Parasitiformes (superorder)                                         2
   Autobranchia (subclass)                                             2
+  Palaeognathae (superorder)                                          2
+  Annelida (phylum)                                                   2
+  Chromadorea (class)                                                 2
+  Glires (clade)                                                      2
+  Anabantaria (clade)                                                 2
+  Phyllodocida (order)                                                2
+  Lyssacinosida (order)                                               2
+  Sarcopterygii (superclass)                                          2
   Tricladida (order)                                                  2
-  Archosauria (clade)                                                 2
-  Thraustochytrida (order)                                            1
-  Paraneoptera (cohort)                                               1
-  Stolidobranchia (order)                                             1
-  Crustacea (subphylum)                                               1
-  Apodiformes (order)                                                 1
-  Hexacorallia (subclass)                                             1
-  Ceratodontiformes (order)                                           1
-  Heteroconchia (clade)                                               1
-  Myrtales (order)                                                    1
-  Ovalentaria incertae sedis (no rank)                                1
-  Neogastropoda (order)                                               1
-  Vertebrata (clade)                                                  1
-  Hirudinida (order)                                                  1
+  Ostariophysi (subcohort)                                            2
+  Arthropoda (phylum)                                                 2
+  Polychaeta (class)                                                  2
+  Bilateria (clade)                                                   2
+  Crustacea (subphylum)                                               2
+  Nemertodermatida (order)                                            2
+  Eurypygiformes (order)                                              1
+  Pterocliformes (order)                                              1
+  Multicrustacea (superclass)                                         1
+  Telluraves (clade)                                                  1
   Cydippida (order)                                                   1
+  Strisores (clade)                                                   1
+  Coraciiformes (order)                                               1
+  Vertebrata (clade)                                                  1
+  Australaves (clade)                                                 1
+  Galloanserae (superorder)                                           1
+  Accipitriformes (order)                                             1
+  Osmeriformes (order)                                                1
+  Collembola (class)                                                  1
+  Columbimorphae (clade)                                              1
+  Branchiopoda (class)                                                1
+  Eucestoda (subclass)                                                1
+  Chondrillida (order)                                                1
+  Amphibia (class)                                                    1
+  Pelecaniformes (order)                                              1
+  Neogastropoda (order)                                               1
+  Batrachia (superorder)                                              1
+  Sedentaria (subclass)                                               1
   Cuculiformes (order)                                                1
   Musophagiformes (order)                                             1
-  Chondrillida (order)                                                1
-  Sphenisciformes (order)                                             1
-  Scorpiones (order)                                                  1
-  Echinacea (superorder)                                              1
-  Coliiformes (order)                                                 1
-  Branchiopoda (class)                                                1
-  Eurotatoria (class)                                                 1
-  Sedentaria (subclass)                                               1
-  Accipitriformes (order)                                             1
-  Strisores (clade)                                                   1
-  root (no rank)                                                      1
-  Eurypygiformes (order)                                              1
-  Batrachia (superorder)                                              1
-  Ectocarpales (order)                                                1
-  Multicrustacea (superclass)                                         1
-  Coraciiformes (order)                                               1
-  Polychaeta (class)                                                  1
+  Ovalentaria incertae sedis (no rank)                                1
+  Carangaria (clade)                                                  1
+  Mandibulata (clade)                                                 1
   Lepetellida (order)                                                 1
-  Osmeriformes (order)                                                1
+  Echinacea (superorder)                                              1
+  Hexacorallia (subclass)                                             1
+  Heteroconchia (clade)                                               1
+  Eurotatoria (class)                                                 1
+  Stolidobranchia (order)                                             1
+  Endopterygota (cohort)                                              1
+  Lophotrochozoa (clade)                                              1
+  Apodiformes (order)                                                 1
+  Acari (subclass)                                                    1
+  Scorpiones (order)                                                  1
   Penicillaria (in: tube anenomes) (order)                            1
   Trogoniformes (order)                                               1
-  Collembola (class)                                                  1
-  Mandibulata (clade)                                                 1
-  Pinguiochrysidales (order)                                          1
-  Columbimorphae (clade)                                              1
-  Eucestoda (subclass)                                                1
-  Annelida (phylum)                                                   1
-  Pelecaniformes (order)                                              1
+  Ceratodontiformes (order)                                           1
+  Hirudinida (order)                                                  1
 
 --------------------------------------------------------------------------------
 LENGTH BINS
 --------------------------------------------------------------------------------
-  50-72                              2028
-  72-95                              7014
-  95-117                             2630
-  117-140                             414
-  140-162                             127
-  162-185                              31
+  50-72                              2027
+  72-95                              6999
+  95-117                             2596
+  117-140                             400
+  140-162                             120
+  162-185                              19
   185-207                               8
   207-230                               4
-  252-275                               6
+  252-275                               5
   275-297                              10
   365-387                               4
 

@@ -37,16 +37,16 @@ try:
     # Try relative import first (when run as module)
     from .taxonomy_utils import (
         TAXONOMIC_LEVELS,
-        batch_get_taxonomy_for_organisms,
-        extract_organism_name,
+        batch_get_taxonomy_for_taxids,
+        extract_taxa_id,
         initialize_taxdb,
     )
 except ImportError:
     # Fall back to direct import (when run as script)
     from taxonomy_utils import (
         TAXONOMIC_LEVELS,
-        batch_get_taxonomy_for_organisms,
-        extract_organism_name,
+        batch_get_taxonomy_for_taxids,
+        extract_taxa_id,
         initialize_taxdb,
     )
 
@@ -123,7 +123,7 @@ _COMPILED_GROUPS = [
 
 # FASTA header field extraction patterns
 _re_protein_name = re.compile(
-    r"protein_name=([^=]+?)(?=\s+(?:organism=|domain_pos=|signature=|interpro_id=|length=)|$)",
+    r"protein_name=([^=]+?)(?=\s+(?:taxa_id=|domain_pos=|signature=|interpro_id=|length=)|$)",
     re.IGNORECASE,
 )
 _re_interpro_id = re.compile(r"\b(IPR\d{6})\b", re.IGNORECASE)
@@ -133,22 +133,22 @@ _re_length = re.compile(r"\blength=(\d+)\b", re.IGNORECASE)
 # ============================================================================
 # FASTA HEADER PARSING
 # ============================================================================
-# Note: extract_organism_name is imported from taxonomy_utils
+# Note: extract_taxa_id is imported from taxonomy_utils
 
 
-def extract_all_organism_names(
+def extract_all_taxids(
     headers_by_id: Dict[str, str],
-) -> Dict[str, str]:
-    """Extract all organism names from headers and map seq_id -> organism_name.
+) -> Dict[str, int]:
+    """Extract all taxonomy IDs from headers and map seq_id -> taxid.
 
-    Returns a dict mapping seq_id -> organism_name
+    Returns a dict mapping seq_id -> taxid (as integer)
     """
-    organism_by_seqid = {}
+    taxid_by_seqid = {}
     for seq_id, header in headers_by_id.items():
-        organism_name = extract_organism_name(header)
-        if organism_name:
-            organism_by_seqid[seq_id] = organism_name
-    return organism_by_seqid
+        taxid = extract_taxa_id(header)
+        if taxid:
+            taxid_by_seqid[seq_id] = taxid
+    return taxid_by_seqid
 
 
 def extract_length_from_header(header: str) -> Optional[int]:
@@ -383,8 +383,8 @@ def create_length_bins(
 
 def find_last_common_ancestor(
     member_ids: List[str],
-    organism_by_seqid: Dict[str, str],
-    organism_to_taxon: Dict[str, taxopy.Taxon],
+    taxid_by_seqid: Dict[str, int],
+    taxid_to_taxon: Dict[int, taxopy.Taxon],
     taxdb: taxopy.TaxDb,
     min_levels: List[str],
 ) -> Dict[str, Tuple[str, str]]:
@@ -396,8 +396,8 @@ def find_last_common_ancestor(
 
     Args:
         member_ids: List of sequence identifiers in the cluster
-        organism_by_seqid: Mapping of sequence_id -> organism_name
-        organism_to_taxon: Mapping of organism_name -> taxopy.Taxon
+        taxid_by_seqid: Mapping of sequence_id -> taxid
+        taxid_to_taxon: Mapping of taxid -> taxopy.Taxon
         taxdb: taxopy taxonomy database
         min_levels: Taxonomic levels to report (e.g., ['family', 'genus'])
 
@@ -432,10 +432,10 @@ def find_last_common_ancestor(
         # Extract just the ID part (before any spaces)
         seq_id = member_id.split()[0]
 
-        # Look up organism name and then taxon object
-        organism_name = organism_by_seqid.get(seq_id)
-        if organism_name and organism_name in organism_to_taxon:
-            taxon_obj = organism_to_taxon[organism_name]
+        # Look up taxid and then taxon object
+        taxid = taxid_by_seqid.get(seq_id)
+        if taxid and taxid in taxid_to_taxon:
+            taxon_obj = taxid_to_taxon[taxid]
             if taxon_obj is not None:
                 taxon_objects.append(taxon_obj)
             else:
@@ -1118,17 +1118,17 @@ Examples:
         rep_to_members, headers_by_id, rep_headers_by_id
     )
 
-    # Extract organism names from all headers
-    organism_by_seqid_orig = extract_all_organism_names(headers_by_id)
-    organism_by_seqid_rep = extract_all_organism_names(rep_headers_by_id)
-    organism_by_seqid = {**organism_by_seqid_orig, **organism_by_seqid_rep}
+    # Extract taxonomy IDs from all headers
+    taxid_by_seqid_orig = extract_all_taxids(headers_by_id)
+    taxid_by_seqid_rep = extract_all_taxids(rep_headers_by_id)
+    taxid_by_seqid = {**taxid_by_seqid_orig, **taxid_by_seqid_rep}
 
-    # Get unique organism names
-    unique_organisms = list(set(organism_by_seqid.values()))
-    logger.info(f"Retrieving taxonomy for {len(unique_organisms)} unique organisms...")
+    # Get unique taxonomy IDs
+    unique_taxids = list(set(taxid_by_seqid.values()))
+    logger.info(f"Retrieving taxonomy for {len(unique_taxids)} unique taxids...")
 
-    # Batch retrieve taxonomy Taxon objects for all unique organisms
-    organism_to_taxon = batch_get_taxonomy_for_organisms(unique_organisms, taxdb)
+    # Batch retrieve taxonomy Taxon objects for all unique taxids
+    taxid_to_taxon = batch_get_taxonomy_for_taxids(unique_taxids, taxdb)
 
     # First pass to collect all cluster average lengths
     cluster_avg_lengths = []
@@ -1175,8 +1175,8 @@ Examples:
         # Determine last common ancestor for all requested levels
         lca_results = find_last_common_ancestor(
             member_fulls,
-            organism_by_seqid,
-            organism_to_taxon,
+            taxid_by_seqid,
+            taxid_to_taxon,
             taxdb,
             args.min_tax_level,
         )
@@ -1221,7 +1221,7 @@ Examples:
 
         # Determine last common ancestor for singletons
         lca_results = find_last_common_ancestor(
-            [rep_full], organism_by_seqid, organism_to_taxon, taxdb, args.min_tax_level
+            [rep_full], taxid_by_seqid, taxid_to_taxon, taxdb, args.min_tax_level
         )
 
         # Format LCA with rank in parentheses for each level
