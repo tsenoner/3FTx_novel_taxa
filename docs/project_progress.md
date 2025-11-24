@@ -62,21 +62,27 @@ uv run python src/data_prep/interpro_metazoa_sequences_collector.py \
 - Collects 52,828 unique sequences from 12 InterPro IDs with taxonomy metadata
 - Filters using NCBI taxonomy database (taxopy) to keep only Metazoa sequences
 - Result: 52,789 animal sequences (99.9%), 39 non-animal excluded (0.1%)
-- Performance: ~6 seconds (efficient pre-computation of 1,679 unique taxonomy IDs)
 - **Output**:
   - `data/interm/interpro/interpro_metazoa_sequences.fasta`
   - `data/interm/interpro/reports/metazoa_collection_report.txt`
-- Header format: `>UNIPROT_ID taxa_id=TAXID interpro=IPR1,IPR2,...`
+- Header format: `>UNIPROT_ID taxa_id=TAXID protein_name=NAME interpro=IPR1,IPR2,...`
 
 ### 3. Domain Extraction
 
 ```bash
-uv run python src/data_prep/interpro_domain_extracter.py data/raw/interpro data/interm/interpro
+uv run python src/data_prep/interpro_domain_extractor.py \
+  data/raw/interpro \
+  data/interm/interpro \
+  --filtered-fasta data/interm/interpro/interpro_metazoa_sequences.fasta \
+  --min-domain-length 50
 ```
 
-- Extracted optimal non-overlapping protein domains from InterPro data
-- Resolved overlapping domain annotations using optimization algorithms
-- Output: `data/interm/interpro/extracted_domains.fasta`
+- Uses Metazoa FASTA sequences to filter for InterPro domains to process
+- Extracts optimal non-overlapping protein domains from InterPro data
+- Resolves overlapping domain annotations using optimization algorithms
+- Filters domains by minimum length (default: 50 amino acids)
+- **Output**: `data/interm/interpro/extracted_domains.fasta`
+- Header format: `>DOMAIN_ID taxa_id=TAXID protein_name=NAME interpro=IPR1,IPR2,... domain_pos=START-END domain_length=LEN`
 
 ### 4. Centipede Genome Extraction
 
