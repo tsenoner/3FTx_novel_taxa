@@ -56,8 +56,8 @@ def parse_fasta(fasta_file: Path) -> Dict[str, str]:
     return sequences
 
 
-def parse_json_metadata(json_file: Path) -> Dict[str, str]:
-    """Extract taxonomy IDs from InterPro JSON, return dict: protein_id -> taxid."""
+def parse_json_metadata(json_file: Path) -> Dict[str, Dict[str, str]]:
+    """Extract taxonomy IDs and protein names from InterPro JSON, return dict: protein_id -> {taxid, protein_name}."""
     with json_file.open() as f:
         data = json.load(f)
 
@@ -65,9 +65,12 @@ def parse_json_metadata(json_file: Path) -> Dict[str, str]:
     proteins_data = data.get("proteins_data", {}).get("proteins", {})
 
     for protein_id, protein_info in proteins_data.items():
-        source_organism = protein_info.get("metadata", {}).get("source_organism", {})
+        protein_metadata = protein_info.get("metadata", {})
+        source_organism = protein_metadata.get("source_organism", {})
+        protein_name = protein_metadata.get("name", "")
+
         if taxid := source_organism.get("taxId"):
-            metadata[protein_id] = str(taxid)
+            metadata[protein_id] = {"taxid": str(taxid), "protein_name": protein_name}
 
     return metadata
 
@@ -126,6 +129,7 @@ def collect_and_filter_sequences(
     # Track sequences and metadata
     all_sequences = {}  # seq_id -> sequence
     seq_to_taxid = {}  # seq_id -> taxid
+    seq_to_protein_name = {}  # seq_id -> protein_name
     seq_to_interpro = defaultdict(list)  # seq_id -> [interpro_ids]
 
     logger.info(f"Collecting sequences from {input_dir}...")
@@ -153,11 +157,11 @@ def collect_and_filter_sequences(
         # Load sequences
         sequences = parse_fasta(fasta_file)
 
-        # Load taxonomy IDs
-        taxid_map = {}
+        # Load taxonomy IDs and protein names from JSON
+        json_metadata = {}
         if json_file:
             try:
-                taxid_map = parse_json_metadata(json_file)
+                json_metadata = parse_json_metadata(json_file)
             except Exception as e:
                 logger.warning(f"{interpro_id}: Failed to parse JSON: {e}")
 
@@ -168,20 +172,23 @@ def collect_and_filter_sequences(
                 all_sequences[seq_id] = sequence
                 new_count += 1
 
-            # Store taxid (if available)
-            if seq_id in taxid_map:
-                seq_to_taxid[seq_id] = taxid_map[seq_id]
+            # Store taxid and protein name from JSON (if available)
+            if seq_id in json_metadata:
+                seq_to_taxid[seq_id] = json_metadata[seq_id]["taxid"]
+                if json_metadata[seq_id]["protein_name"]:
+                    seq_to_protein_name[seq_id] = json_metadata[seq_id]["protein_name"]
 
             # Track InterPro membership
             seq_to_interpro[seq_id].append(interpro_id)
 
         logger.info(
-            f"{interpro_id}: {len(sequences)} seqs, {new_count} new, {len(taxid_map)} with taxids"
+            f"{interpro_id}: {len(sequences)} seqs, {new_count} new, {len(json_metadata)} with taxids"
         )
 
     total_collected = len(all_sequences)
     logger.info(f"\nCollected {total_collected} unique sequences")
     logger.info(f"  With taxonomy IDs: {len(seq_to_taxid)}")
+    logger.info(f"  With protein names: {len(seq_to_protein_name)}")
     logger.info(f"  Missing taxonomy: {total_collected - len(seq_to_taxid)}")
 
     # Create Taxon objects for unique taxids
@@ -208,7 +215,13 @@ def collect_and_filter_sequences(
             continue
 
         if taxid in matching_taxids:
-            filtered_sequences[seq_id] = (sequence, taxid, seq_to_interpro[seq_id])
+            protein_name = seq_to_protein_name.get(seq_id, "")
+            filtered_sequences[seq_id] = (
+                sequence,
+                taxid,
+                seq_to_interpro[seq_id],
+                protein_name,
+            )
             stats["kept"] += 1
         else:
             stats["excluded"] += 1
@@ -239,13 +252,20 @@ def collect_and_filter_sequences(
 # ============================================================================
 
 
-def write_fasta(output_path: Path, sequences: Dict[str, Tuple[str, str, List[str]]]):
-    """Write sequences to FASTA with taxa_id and interpro fields."""
+def write_fasta(
+    output_path: Path, sequences: Dict[str, Tuple[str, str, List[str], str]]
+):
+    """Write sequences to FASTA with taxa_id, protein_name, and interpro fields."""
     with output_path.open("w") as f:
         for seq_id in sorted(sequences.keys()):
-            sequence, taxid, interpro_ids = sequences[seq_id]
+            sequence, taxid, interpro_ids, protein_name = sequences[seq_id]
             interpro_str = ",".join(sorted(interpro_ids))
-            header = f"{seq_id} taxa_id={taxid} interpro={interpro_str}"
+            header = f"{seq_id} taxa_id={taxid}"
+            if protein_name:
+                # Replace spaces with underscores to keep header parsing simple
+                protein_name_sanitized = protein_name.replace(" ", "_")
+                header += f" protein_name={protein_name_sanitized}"
+            header += f" interpro={interpro_str}"
 
             f.write(f">{header}\n")
             for i in range(0, len(sequence), 80):
