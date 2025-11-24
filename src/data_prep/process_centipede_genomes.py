@@ -105,13 +105,33 @@ CODON_TABLE = {
 class FastaSequence:
     """Represents a FASTA sequence."""
 
-    def __init__(self, seq_id: str, description: str, sequence: str):
+    def __init__(
+        self,
+        seq_id: str,
+        taxa_id: int,
+        protein_name: str,
+        sequence: str,
+        domain_pos: str = None,
+        domain_length: int = None,
+    ):
         self.id = seq_id
-        self.description = description
+        self.taxa_id = taxa_id
+        self.protein_name = protein_name
         self.sequence = sequence.upper()
+        # For full proteins, domain_pos and domain_length represent the entire sequence
+        self.domain_pos = domain_pos or f"1-{len(sequence)}"
+        self.domain_length = domain_length or len(sequence)
 
     def __str__(self):
-        return f">{self.id} {self.description}\n{self.sequence}"
+        # Format: >ID taxa_id=NNNN protein_name=... domain_pos=start-end domain_length=NNN
+        header_parts = [
+            f">{self.id}",
+            f"taxa_id={self.taxa_id}",
+            f"protein_name={self.protein_name}",
+            f"domain_pos={self.domain_pos}",
+            f"domain_length={self.domain_length}",
+        ]
+        return " ".join(header_parts) + "\n" + self.sequence
 
     def __len__(self):
         return len(self.sequence)
@@ -192,7 +212,15 @@ def write_fasta(sequences: List[FastaSequence], output_path: Path, width: int = 
     """
     with open(output_path, "w") as f:
         for seq in sequences:
-            f.write(f">{seq.id} {seq.description}\n")
+            # Use the __str__ method which formats header correctly
+            header_parts = [
+                f">{seq.id}",
+                f"taxa_id={seq.taxa_id}",
+                f"protein_name={seq.protein_name}",
+                f"domain_pos={seq.domain_pos}",
+                f"domain_length={seq.domain_length}",
+            ]
+            f.write(" ".join(header_parts) + "\n")
             # Write sequence with line wrapping
             for i in range(0, len(seq.sequence), width):
                 f.write(seq.sequence[i : i + width] + "\n")
@@ -521,6 +549,7 @@ def load_assembly_mapping(tsv_path: Path) -> Dict[str, Dict[str, str]]:
         for row in reader:
             # Extract species abbreviation from ToLID or SpeciesName
             species_name = row["SpeciesName"]
+            taxa_id = int(row["OrganismId"])
             # Create abbreviation from first letter of genus + first 3 of species
             parts = species_name.split()
             if len(parts) >= 2:
@@ -541,6 +570,7 @@ def load_assembly_mapping(tsv_path: Path) -> Dict[str, Dict[str, str]]:
                     "assembly_id": row["AssemblyID"],
                     "species_name": species_name,
                     "tol_id": row["ToLID"],
+                    "taxa_id": taxa_id,
                 }
 
     return mapping
@@ -662,6 +692,7 @@ def main():
 
         assembly_id = assembly_mapping[species]["assembly_id"]
         species_name = assembly_mapping[species]["species_name"]
+        taxa_id = assembly_mapping[species]["taxa_id"]
         genome_file = args.genomes_dir / f"{assembly_id}_genomic.fna"
 
         if not genome_file.exists():
@@ -696,10 +727,13 @@ def main():
             if is_valid:
                 # Create sequence record
                 record_id = f"{species}_{gene.name}_{gene.get_seqid()}"
+                # Format protein name: replace spaces with underscores
+                protein_name = gene.name.replace(" ", "_")
                 record = FastaSequence(
-                    record_id,
-                    f"{species_name} | {gene.name}",
-                    protein_seq,
+                    seq_id=record_id,
+                    taxa_id=taxa_id,
+                    protein_name=protein_name,
+                    sequence=protein_seq,
                 )
                 all_proteins.append(record)
                 stats["valid_proteins"] += 1
