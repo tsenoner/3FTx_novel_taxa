@@ -6,10 +6,10 @@ Shared utility functions for taxonomy operations using taxopy.
 
 Functions:
   - initialize_taxdb(): Initialize or load cached NCBI taxonomy database
-  - extract_organism_name(): Extract organism name from FASTA headers
-  - get_taxonomy_from_taxopy(): Retrieve taxonomy for a single organism
-  - batch_get_taxonomy_for_organisms(): Batch retrieve taxonomy for multiple organisms
-  - check_taxonomy_membership(): Check if organism belongs to a taxonomic group
+  - extract_taxa_id(): Extract numeric taxonomy ID from FASTA headers
+  - batch_get_taxonomy_for_taxids(): Batch retrieve taxonomy for multiple taxids
+  - check_taxonomy_membership(): Check if taxon belongs to a taxonomic group
+  - get_organism_kingdom(): Get kingdom for a taxon
 """
 
 import logging
@@ -29,10 +29,10 @@ logger = logging.getLogger(__name__)
 # Taxonomic hierarchy levels (from general to specific)
 TAXONOMIC_LEVELS = ["domain", "kingdom", "phylum", "class", "order", "family", "genus"]
 
-# FASTA header field extraction patterns
-# Matches "taxa_id=..." or "organism=..." followed by either another field or end of line
-_re_organism = re.compile(
-    r"(?:taxa_id|organism)=([^=]+?)(?=\s+(?:domain_pos=|interpro_id|interpro_ids=|interpro=|signature=|length=)|$)",
+# FASTA header field extraction pattern
+# Matches "taxa_id=..." (numeric ID) followed by either another field or end of line
+_re_taxa_id = re.compile(
+    r"taxa_id=(\d+)(?=\s+(?:protein_name=|domain_pos=|interpro_id|interpro_ids=|interpro=|signature=|length=)|$)",
     re.IGNORECASE,
 )
 
@@ -167,29 +167,24 @@ def initialize_taxdb() -> taxopy.TaxDb:
 # ============================================================================
 
 
-def extract_organism_name(header: str) -> Optional[str]:
+def extract_taxa_id(header: str) -> Optional[int]:
     """
-    Extract organism scientific name from FASTA header.
+    Extract numeric taxonomy ID from FASTA header.
 
-    Supports both 'taxa_id=...' and 'organism=...' field formats.
-    Removes common names in parentheses and extra whitespace.
+    Looks for 'taxa_id=NNNN' field format.
 
     Args:
         header: Full FASTA header line (without '>')
 
     Returns:
-        Cleaned scientific name, or None if not found
+        Taxonomy ID as integer, or None if not found
 
     Example:
-        'taxa_id=Homo sapiens (Human)' -> 'Homo sapiens'
-        'organism=Mus musculus domain_pos=...' -> 'Mus musculus'
+        'taxa_id=9606 protein_name=...' -> 9606
     """
-    match = _re_organism.search(header)
+    match = _re_taxa_id.search(header)
     if match:
-        organism_full = match.group(1).strip()
-        # Remove parenthetical common names
-        organism_clean = re.sub(r"\s*\([^)]*\)\s*", "", organism_full).strip()
-        return organism_clean
+        return int(match.group(1))
     return None
 
 
@@ -198,114 +193,45 @@ def extract_organism_name(header: str) -> Optional[str]:
 # ============================================================================
 
 
-def get_taxonomy_from_taxopy(organism_name: str, taxdb: taxopy.TaxDb) -> Dict[str, str]:
-    """Retrieve taxonomy information for an organism using taxopy.
-
-    Returns a dict with keys: domain, kingdom, phylum, class, order, family, genus
-    """
-    taxonomy_info = {level: None for level in TAXONOMIC_LEVELS}
-
-    try:
-        # Get taxon ID from organism name
-        taxid_list = taxopy.taxid_from_name(organism_name, taxdb)
-
-        if not taxid_list or not taxid_list[0]:
-            logger.debug(f"No taxon ID found for organism: {organism_name}")
-            return taxonomy_info
-
-        # Use the first taxon ID (handle homonyms by taking the first match)
-        taxon_id = taxid_list[0]
-
-        # Get taxon object
-        taxon = taxopy.Taxon(taxon_id, taxdb)
-        ranks = taxon.rank_name_dictionary
-
-        # Map taxopy ranks to our expected levels
-        taxonomy_info["domain"] = (
-            ranks.get("domain", "")
-            or ranks.get("realm", "")
-            or ranks.get("superkingdom", "")
-        )
-        taxonomy_info["kingdom"] = ranks.get("kingdom", "")
-        taxonomy_info["phylum"] = ranks.get("phylum", "")
-        taxonomy_info["class"] = ranks.get("class", "")
-        taxonomy_info["order"] = ranks.get("order", "")
-        taxonomy_info["family"] = ranks.get("family", "")
-        taxonomy_info["genus"] = ranks.get("genus", "")
-
-        # Convert empty strings to None
-        taxonomy_info = {k: v if v else None for k, v in taxonomy_info.items()}
-
-        logger.debug(f"Retrieved taxonomy for {organism_name}: {taxonomy_info}")
-
-    except Exception as e:
-        logger.warning(f"Failed to get taxonomy for '{organism_name}': {e}")
-
-    return taxonomy_info
-
-
-def batch_get_taxonomy_for_organisms(
-    organism_names: List[str], taxdb: taxopy.TaxDb, show_progress: bool = True
-) -> Dict[str, Optional[taxopy.Taxon]]:
-    """Batch retrieve taxonomy Taxon objects for multiple organisms.
+def batch_get_taxonomy_for_taxids(
+    taxids: List[int], taxdb: taxopy.TaxDb, show_progress: bool = True
+) -> Dict[int, Optional[taxopy.Taxon]]:
+    """Batch retrieve taxonomy Taxon objects for multiple taxonomy IDs.
 
     Args:
-        organism_names: List of organism names to look up
+        taxids: List of numeric taxonomy IDs to look up
         taxdb: Initialized taxopy database
         show_progress: Whether to show progress bar (default: True)
 
     Returns:
-        Dict mapping organism_name -> Taxon object (or None if not found)
+        Dict mapping taxid -> Taxon object (or None if not found)
     """
-    organism_to_taxon = {}
+    taxid_to_taxon = {}
 
-    # Use batch lookup for taxon IDs (more efficient than one-by-one)
-    try:
-        # taxopy.taxid_from_name can handle a list of names
-        all_taxid_lists = taxopy.taxid_from_name(organism_names, taxdb)
-    except Exception as e:
-        logger.warning(
-            f"Batch taxid lookup failed: {e}. Falling back to individual lookups."
-        )
-        all_taxid_lists = None
-
-    # Process each organism with optional progress bar
-    iterator = enumerate(organism_names)
+    # Process each taxid with optional progress bar
+    iterator = taxids
     if show_progress:
         iterator = tqdm(
             iterator,
-            total=len(organism_names),
+            total=len(taxids),
             desc="Fetching taxonomy",
-            unit="organism",
+            unit="taxid",
         )
 
-    for i, organism_name in iterator:
+    for taxid in iterator:
         try:
-            # Get taxon ID from batch results or individual lookup
-            if all_taxid_lists is not None:
-                taxid_list = all_taxid_lists[i] if i < len(all_taxid_lists) else []
-            else:
-                # Fallback to individual lookup
-                taxid_list = taxopy.taxid_from_name(organism_name, taxdb)
-
-            if taxid_list and taxid_list[0]:
-                # Use the first taxon ID (handle homonyms by taking the first match)
-                taxon_id = taxid_list[0]
-                taxon = taxopy.Taxon(taxon_id, taxdb)
-                organism_to_taxon[organism_name] = taxon
-                logger.debug(f"Retrieved Taxon for {organism_name}: {taxon.name}")
-            else:
-                logger.debug(f"No taxon ID found for organism: {organism_name}")
-                organism_to_taxon[organism_name] = None
+            taxon = taxopy.Taxon(taxid, taxdb)
+            taxid_to_taxon[taxid] = taxon
+            logger.debug(f"Retrieved Taxon for taxid {taxid}: {taxon.name}")
         except Exception as e:
-            logger.warning(f"Failed to get taxonomy for '{organism_name}': {e}")
-            organism_to_taxon[organism_name] = None
+            logger.warning(f"Failed to get taxonomy for taxid {taxid}: {e}")
+            taxid_to_taxon[taxid] = None
 
-    successful = sum(1 for t in organism_to_taxon.values() if t is not None)
+    successful = sum(1 for t in taxid_to_taxon.values() if t is not None)
     logger.info(
-        f"Successfully retrieved taxonomy for {successful}/{len(organism_names)} organisms"
+        f"Successfully retrieved taxonomy for {successful}/{len(taxids)} taxids"
     )
-    return organism_to_taxon
+    return taxid_to_taxon
 
 
 # ============================================================================
