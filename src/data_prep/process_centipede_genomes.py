@@ -1,17 +1,21 @@
 #!/usr/bin/env python3
 """
-Process centipede genome annotations from GFF files.
+Process Centipede Genome Annotations
 
-This script:
-1. Parses GFF files from data/raw/centipede_genome/annotations
-2. Downloads associated genomes from NCBI to data/raw/centipede_genome/genomes
-   (automatically skips if already present)
-3. Deduplicates genes with identical genomic coordinates (scaffold, strand, exon positions)
-4. Extracts sequences based on annotations
-5. Translates to proteins
-6. Removes everything after the first stop codon
-7. Filters sequences < 50 amino acids
-8. Outputs final FASTA to data/interm/centipede_genome
+Extracts and translates protein sequences from manually annotated centipede genomes.
+
+Workflow:
+  1. Parse GFF annotation files with gene coordinates and exon structures
+  2. Download reference genomes from NCBI (auto-skips if present)
+  3. Deduplicate genes with identical genomic coordinates
+  4. Extract and concatenate exon sequences
+  5. Translate to proteins and truncate at first stop codon
+  6. Filter sequences by minimum length (default: 50 AA)
+  7. Output FASTA with standardized headers matching InterPro domain format
+
+Output Format:
+  Header: >ID taxa_id=NNNN protein_name=NAME domain_pos=1-LEN domain_length=LEN
+  Compatible with annotate_clusters.py and merge_and_cluster.py
 """
 
 import argparse
@@ -32,6 +36,13 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+# Species abbreviation mapping for GFF filenames
+SPECIES_ABBREV_MAP = {
+    "Cylindrodesmus": "Cpun",
+    "Rhysida": "Rimm",
+    "Strigamia": "Sacu",
+    "Lithobius": "Lvar",
+}
 
 # Genetic code (standard codon table)
 CODON_TABLE = {
@@ -103,7 +114,17 @@ CODON_TABLE = {
 
 
 class FastaSequence:
-    """Represents a FASTA sequence."""
+    """
+    Represents a protein sequence with standardized metadata.
+
+    Attributes:
+        id: Unique sequence identifier
+        taxa_id: NCBI taxonomy ID
+        protein_name: Descriptive protein name
+        sequence: Amino acid sequence
+        domain_pos: Sequence position range (default: 1-length for full proteins)
+        domain_length: Sequence length in amino acids
+    """
 
     def __init__(
         self,
@@ -118,20 +139,8 @@ class FastaSequence:
         self.taxa_id = taxa_id
         self.protein_name = protein_name
         self.sequence = sequence.upper()
-        # For full proteins, domain_pos and domain_length represent the entire sequence
         self.domain_pos = domain_pos or f"1-{len(sequence)}"
         self.domain_length = domain_length or len(sequence)
-
-    def __str__(self):
-        # Format: >ID taxa_id=NNNN protein_name=... domain_pos=start-end domain_length=NNN
-        header_parts = [
-            f">{self.id}",
-            f"taxa_id={self.taxa_id}",
-            f"protein_name={self.protein_name}",
-            f"domain_pos={self.domain_pos}",
-            f"domain_length={self.domain_length}",
-        ]
-        return " ".join(header_parts) + "\n" + self.sequence
 
     def __len__(self):
         return len(self.sequence)
@@ -203,24 +212,23 @@ def parse_fasta(fasta_path: Path) -> Fasta:
 
 def write_fasta(sequences: List[FastaSequence], output_path: Path, width: int = 80):
     """
-    Write sequences to FASTA file.
+    Write sequences to FASTA file with standardized header format.
+
+    Header format matches interpro_domain_extractor.py output for consistency
+    across all FASTA files in the pipeline.
 
     Args:
         sequences: List of FastaSequence objects
         output_path: Output file path
-        width: Line width for sequence wrapping
+        width: Line width for sequence wrapping (default: 80)
     """
     with open(output_path, "w") as f:
         for seq in sequences:
-            # Use the __str__ method which formats header correctly
-            header_parts = [
-                f">{seq.id}",
-                f"taxa_id={seq.taxa_id}",
-                f"protein_name={seq.protein_name}",
-                f"domain_pos={seq.domain_pos}",
-                f"domain_length={seq.domain_length}",
-            ]
-            f.write(" ".join(header_parts) + "\n")
+            header = (
+                f">{seq.id} taxa_id={seq.taxa_id} protein_name={seq.protein_name} "
+                f"domain_pos={seq.domain_pos} domain_length={seq.domain_length}"
+            )
+            f.write(header + "\n")
             # Write sequence with line wrapping
             for i in range(0, len(seq.sequence), width):
                 f.write(seq.sequence[i : i + width] + "\n")
@@ -276,56 +284,63 @@ def translate_dna(dna_seq: str) -> str:
 
 def parse_gff_file(gff_path: Path) -> Tuple[List[Gene], str]:
     """
-    Parse a GFF file and return genes grouped by name.
+    Parse GFF file and extract gene annotations.
+
+    Groups exons by gene name and extracts species abbreviation from filename.
+    Normalizes gene names by removing '_exon_N' suffixes.
 
     Args:
-        gff_path: Path to GFF file
+        gff_path: Path to GFF annotation file
 
     Returns:
-        Tuple of (list of genes, species abbreviation)
+        Tuple of (list of Gene objects, species abbreviation)
+
+    Example:
+        Filename: "3ftx_UPAR-like_in_Cpun_OZ222540_annotations.gff"
+        Returns: ([Gene(...), ...], "Cpun")
     """
-    # Extract species abbreviation from filename
-    # e.g., "3ftx_Quiver_UPAR-like_in_Cpun_OZ222540_annotations.gff" -> "Cpun"
-    filename = gff_path.stem
-    match = re.search(r"_in_([A-Za-z]+)_", filename)
+    # Extract species abbreviation from filename pattern: "_in_SPECIES_"
+    match = re.search(r"_in_([A-Za-z]+)_", gff_path.stem)
     species = match.group(1) if match else "Unknown"
 
     genes_dict = defaultdict(lambda: Gene(name="", species=species))
 
     with open(gff_path, "r") as f:
         for line in f:
-            if line.startswith("#"):
+            if line.startswith("#") or not line.strip():
                 continue
 
             parts = line.strip().split("\t")
             if len(parts) < 9:
                 continue
 
-            seqid = parts[0]
-            start = int(parts[3])
-            end = int(parts[4])
-            strand = parts[6]
-            attributes = parts[8]
+            seqid, start, end, strand, attributes = (
+                parts[0],
+                int(parts[3]),
+                int(parts[4]),
+                parts[6],
+                parts[8],
+            )
 
-            # Parse attributes
+            # Parse GFF attributes (name and note)
             name_match = re.search(r"name=([^;]+)", attributes)
+            if not name_match:
+                continue
+
+            gene_name = name_match.group(1)
             note_match = re.search(r"note=([^;]+)", attributes)
+            note = note_match.group(1) if note_match else ""
 
-            if name_match:
-                gene_name = name_match.group(1)
-                note = note_match.group(1) if note_match else ""
+            # Normalize: "gene_exon_1" -> "gene"
+            normalized_name = re.sub(r"_exon_\d+$", "", gene_name)
 
-                # Normalize gene name by removing _exon_X suffix if present
-                # e.g., "3ftx_Quiver_UPAR-like_1_exon_1" -> "3ftx_Quiver_UPAR-like_1"
-                normalized_name = re.sub(r"_exon_\d+$", "", gene_name)
+            if normalized_name not in genes_dict:
+                genes_dict[normalized_name] = Gene(normalized_name, species)
 
-                exon = GFFFeature(seqid, start, end, strand, gene_name, note)
+            exon = GFFFeature(seqid, start, end, strand, gene_name, note)
+            genes_dict[normalized_name].add_exon(exon)
 
-                if normalized_name not in genes_dict:
-                    genes_dict[normalized_name] = Gene(normalized_name, species)
-                genes_dict[normalized_name].add_exon(exon)
-
-    # Sort exons for each gene
+    # Sort exons by genomic position
     genes = list(genes_dict.values())
     for gene in genes:
         gene.sort_exons()
@@ -406,12 +421,15 @@ def extract_sequence(gene: Gene, genome_seqs: Fasta) -> str:
     """
     Extract and concatenate exon sequences for a gene.
 
+    Handles both positive and negative strand genes. For negative strand,
+    exons are reversed and the sequence is reverse-complemented.
+
     Args:
-        gene: Gene object with exons
-        genome_seqs: Fasta object from pyfaidx
+        gene: Gene object with exon annotations
+        genome_seqs: Indexed genome sequences (pyfaidx Fasta object)
 
     Returns:
-        Concatenated DNA sequence
+        Concatenated DNA sequence (empty string on error)
     """
     if not gene.exons:
         return ""
@@ -421,28 +439,20 @@ def extract_sequence(gene: Gene, genome_seqs: Fasta) -> str:
         logger.error(f"Sequence {seqid} not found in genome")
         return ""
 
-    strand = gene.get_strand()
-
-    # Extract exons
+    # Extract all exon sequences (GFF: 1-based, pyfaidx slicing: 0-based)
     exon_sequences = []
     for exon in gene.exons:
-        # GFF coordinates are 1-based, inclusive
-        # pyfaidx also uses 1-based coordinates, but slicing is 0-based
-        start_idx = exon.start - 1
-        end_idx = exon.end
-        exon_seq = str(genome_seqs[seqid][start_idx:end_idx])
+        exon_seq = str(genome_seqs[seqid][exon.start - 1 : exon.end])
         exon_sequences.append(exon_seq)
 
-    # Concatenate exons
+    # Concatenate and handle strand orientation
+    strand = gene.get_strand()
     if strand == "-":
-        # For negative strand: reverse complement the concatenated sequence
-        # Exons should be concatenated in reverse order for negative strand
+        # Negative strand: reverse order and reverse complement
         concatenated = "".join(reversed(exon_sequences))
-        concatenated = reverse_complement(concatenated)
+        return reverse_complement(concatenated)
     else:
-        concatenated = "".join(exon_sequences)
-
-    return concatenated
+        return "".join(exon_sequences)
 
 
 def translate_and_process(dna_seq: str, gene_name: str) -> Tuple[str, bool]:
@@ -532,40 +542,38 @@ def deduplicate_genes(genes: List[Gene]) -> Tuple[List[Gene], int]:
     return unique_genes, duplicates_removed
 
 
-def load_assembly_mapping(tsv_path: Path) -> Dict[str, Dict[str, str]]:
+def load_assembly_mapping(tsv_path: Path) -> Dict[str, Dict]:
     """
-    Load assembly ID to species mapping from TSV file.
+    Load assembly and taxonomy information from TSV file.
+
+    Maps species abbreviations (used in GFF filenames) to their assembly IDs,
+    full species names, and NCBI taxonomy IDs.
 
     Args:
-        tsv_path: Path to TSV file
+        tsv_path: Path to TSV with columns: AssemblyID, ToLID, OrganismId, SpeciesName
 
     Returns:
-        Dictionary mapping species abbreviation to assembly info
+        Dict mapping species_abbrev -> {assembly_id, species_name, tol_id, taxa_id}
+
+    Example:
+        {"Cpun": {"assembly_id": "GCA_965125795.1", "taxa_id": 61981, ...}}
     """
     mapping = {}
 
     with open(tsv_path, "r") as f:
         reader = csv.DictReader(f, delimiter="\t")
         for row in reader:
-            # Extract species abbreviation from ToLID or SpeciesName
             species_name = row["SpeciesName"]
             taxa_id = int(row["OrganismId"])
-            # Create abbreviation from first letter of genus + first 3 of species
-            parts = species_name.split()
-            if len(parts) >= 2:
-                abbrev = parts[0][0] + parts[1][:3]
-                abbrev = abbrev.lower()
-                # Match to the abbreviations in GFF filenames
-                # Cpun, Rimm, Sacu, Lvar
-                if "Cylindrodesmus" in species_name:
-                    abbrev = "Cpun"
-                elif "Rhysida" in species_name:
-                    abbrev = "Rimm"
-                elif "Strigamia" in species_name:
-                    abbrev = "Sacu"
-                elif "Lithobius" in species_name:
-                    abbrev = "Lvar"
 
+            # Determine species abbreviation using genus name
+            abbrev = None
+            for genus, abbrev_code in SPECIES_ABBREV_MAP.items():
+                if genus in species_name:
+                    abbrev = abbrev_code
+                    break
+
+            if abbrev:
                 mapping[abbrev] = {
                     "assembly_id": row["AssemblyID"],
                     "species_name": species_name,
@@ -577,9 +585,25 @@ def load_assembly_mapping(tsv_path: Path) -> Dict[str, Dict[str, str]]:
 
 
 def main():
-    """Main function."""
+    """
+    Main entry point for centipede genome processing.
+
+    Orchestrates the complete workflow from GFF parsing to FASTA output.
+    """
     parser = argparse.ArgumentParser(
-        description="Process centipede genome annotations and extract proteins"
+        description="Process centipede genome annotations and extract proteins",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  # Default processing
+  %(prog)s
+
+  # Custom paths with verbose logging
+  %(prog)s --annotations-dir data/raw/annotations --verbose
+
+  # Custom minimum length threshold
+  %(prog)s --min-length 40
+        """,
     )
     parser.add_argument(
         "--annotations-dir",
@@ -691,7 +715,6 @@ def main():
             continue
 
         assembly_id = assembly_mapping[species]["assembly_id"]
-        species_name = assembly_mapping[species]["species_name"]
         taxa_id = assembly_mapping[species]["taxa_id"]
         genome_file = args.genomes_dir / f"{assembly_id}_genomic.fna"
 
@@ -725,10 +748,9 @@ def main():
             protein_seq, is_valid = translate_and_process(dna_seq, gene.name)
 
             if is_valid:
-                # Create sequence record
+                # Create sequence record with standardized header
                 record_id = f"{species}_{gene.name}_{gene.get_seqid()}"
-                # Format protein name: replace spaces with underscores
-                protein_name = gene.name.replace(" ", "_")
+                protein_name = gene.name.replace(" ", "_")  # FASTA header compatible
                 record = FastaSequence(
                     seq_id=record_id,
                     taxa_id=taxa_id,
