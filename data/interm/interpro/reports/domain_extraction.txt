@@ -1,0 +1,41 @@
+================================================================================
+DOMAIN EXTRACTION SUMMARY
+================================================================================
+
+OVERVIEW
+--------------------------------------------------------------------------------
+Total proteins in annotations:          52,828
+Total sequences loaded:                  52,789
+Total domains extracted:                 58,006
+Proteins with overlapping domains:       18,771
+Total overlap cases resolved:            33,321
+
+DOMAIN FILTERING
+--------------------------------------------------------------------------------
+Total domains found:                     87,127
+Domains filtered out (too short):         2,183
+Domains kept for processing:             84,944
+Final domains after optimization:        58,006
+
+DOMAIN LENGTH STATISTICS
+--------------------------------------------------------------------------------
+Minimum domain length:                       50 AA
+Maximum domain length:                      437 AA
+Average domain length:                     92.1 AA
+
+DOMAINS PER INTERPRO ID
+--------------------------------------------------------------------------------
+   IPR045860:  38,723 domains  ( 66.8%)
+   IPR016054:  10,276 domains  ( 17.7%)
+   IPR031424:   5,579 domains  (  9.6%)
+   IPR039457:   1,760 domains  (  3.0%)
+   IPR051445:     459 domains  (  0.8%)
+   IPR026524:     405 domains  (  0.7%)
+   IPR039237:     210 domains  (  0.4%)
+   IPR038773:     205 domains  (  0.4%)
+   IPR042339:     163 domains  (  0.3%)
+   IPR026110:     157 domains  (  0.3%)
+   IPR035076:      57 domains  (  0.1%)
+   IPR003571:      12 domains  (  0.0%)
+
+================================================================================
