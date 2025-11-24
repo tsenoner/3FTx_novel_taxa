@@ -103,6 +103,7 @@ uv run python src/data_prep/process_centipede_genomes.py
 - Extracts and translates multi-exon genes, truncating at first stop codon
 - Filters sequences < 50 amino acids
 - **Output**: 151 protein sequences → `data/interm/centipede_genome/centipede_3ftx_proteins.fasta`
+- Header format: `>SPECIES_GENE_ID taxa_id=TAXID protein_name=NAME domain_pos=1-LEN domain_length=LEN`
 
 ### 5. Data Merging and Clustering
 
@@ -166,14 +167,15 @@ iqtree3 -s data/interm/famsa/aligned_nj.fasta \
 uv run python src/data_prep/annotate_clusters.py --min-tax-level phylum class order
 ```
 
-- Annotates all 12,276 clusters with:
+- Annotates all 12,192 clusters with:
   - **Group classification**: Pattern-based assignment (3FTx, Ly6, PMF, Quiver, Scoloptoxin, SPF, manually_annotated)
   - **Oligomeric state**: Monomeric/multimeric/mixture based on domain counts
-  - **Taxonomy**: LCA at multiple levels using taxopy (retrieved for 1,644/1,660 unique organisms)
+  - **Taxonomy**: LCA at multiple levels using direct taxid lookup with taxopy (retrieved for 1,643/1,643 unique taxids, 100% success)
   - **Length bins**: Configurable protein length distribution
+- Uses numeric taxonomy IDs (taxa_id) for fast and accurate taxonomy retrieval (~60,000+ taxids/second)
 - Special handling for centipede genome sequences (Rimm, Lvar, Sacu, Cpnu prefixes)
 - **Output**: `data/processed/cluster_annotations/` containing `annotations.csv` and `statistics.txt`
-- **Results**: 12 group types identified across 32 phylum, 88 class, and 304 order
+- **Results**: 12 group types identified across 21 phyla, 77 classes, and 294 orders
 
 ### 9. Tree Annotation and Visualization
 
@@ -192,7 +194,8 @@ Analyses:
 ## Key Results
 
 - Total sequences processed: 58,190 (58,039 InterPro + 151 centipede genomes)
-- Representative sequences at 70% identity: 12,276
+- Representative sequences at 70% identity: 12,192 clusters
 - Final phylogenetic tree contains: 12,276 sequences
 - Identified 12 distinct groups of 3FTx-like proteins
-- Confirmed presence of 3FTx-like proteins in 1,644 species
+- Confirmed presence of 3FTx-like proteins across 1,643 unique taxa
+- Taxonomy coverage: 21 phyla, 77 classes, 294 orders (Metazoa)
